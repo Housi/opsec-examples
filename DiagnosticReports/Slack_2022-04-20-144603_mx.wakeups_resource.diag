@@ -1,0 +1,106 @@
+Date/Time:        2022-04-20 14:41:54.549 +0200
+End time:         2022-04-20 14:46:03.047 +0200
+OS Version:       macOS 12.0.1 (Build 21A559)
+Architecture:     arm64e
+Report Version:   35
+Incident Identifier: 9152C8B3-28F0-40E9-ADAE-8D32B8000A3B
+
+Data Source:      Microstackshots
+Shared Cache:     A6162D66-93E3-3251-93CC-B11F7C8C830E slid base address 0x1b69c0000, slide 0x369c0000
+
+Command:          Slack
+Path:             /Applications/Slack.app/Contents/MacOS/Slack
+Identifier:       com.tinyspeck.slackmacgap
+Version:          4.25.0 (6956)
+Team ID:          BQR82RBBHL
+Architecture:     arm64
+PID:              92235
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45001 wakeups over the last 248 seconds (181 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45001
+Wakeups duration: 248s
+Duration:         248.50s
+Duration Sampled: 78.04s
+Steps:            2
+
+Hardware model:   MacBookPro17,1
+Active cpus:      8
+HW page size:     16384
+VM page size:     16384
+
+Fan speed:        0 rpm
+Advisory levels:  Battery -> 3, User -> 2, ThermalPressure -> 0, Combined -> 2
+Free disk space:  200.62 GB/460.43 GB, low space threshold 3072 MB
+
+Heaviest stack for the target process:
+  2  thread_start + 8 (libsystem_pthread.dylib + 8912) [0x1b6cc82d0]
+  2  _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x1b6ccd4ec]
+  1  _NSEventThread + 196 (AppKit + 1764388) [0x1b9a58c24]
+  1  CFRunLoopRunSpecific + 600 (CoreFoundation + 534164) [0x1b6d96694]
+  1  __CFRunLoopRun + 2380 (CoreFoundation + 538496) [0x1b6d97780]
+  1  __CFRunLoopDoSource1 + 596 (CoreFoundation + 545524) [0x1b6d992f4]
+  1  __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE1_PERFORM_FUNCTION__ + 60 (CoreFoundation + 545848) [0x1b6d99438]
+  1  __CFMachPortPerform + 260 (CoreFoundation + 742052) [0x1b6dc92a4]
+  1  MessageHandler(__CFMachPort*, void*, long, void*) + 60 (HIToolbox + 250812) [0x1bf9193bc]
+  1  PullEventsFromWindowServerOnConnection(unsigned int, unsigned char, __CFMachPortBoost*) + 452 (HIToolbox + 251324) [0x1bf9195bc]
+  1  CFRunLoopTimerSetNextFireDate + 464 (CoreFoundation + 809040) [0x1b6dd9850]
+  1  CFArrayGetCount + 40 (CoreFoundation + 134500) [0x1b6d34d64]
+
+
+Powerstats for:   Slack [92235]
+UUID:             4C4C4476-5555-3144-A1FD-22BAB6BC090B
+Path:             /Applications/Slack.app/Contents/MacOS/Slack
+Identifier:       com.tinyspeck.slackmacgap
+Version:          4.25.0 (6956)
+Team ID:          BQR82RBBHL
+Architecture:     arm64
+Footprint:        103.69 MB
+Pageins:          8 pages
+Start time:       2022-04-20 14:44:20.180 +0200
+End time:         2022-04-20 14:45:38.225 +0200
+Num samples:      2 (100%)
+Primary state:    1 samples Frontmost App, Non-Suppressed, User mode, Effective Thread QoS User Interactive, Requested Thread QoS User Interactive, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 2 samples Active
+Power Source:     0 samples on Battery, 2 samples on AC
+  2  thread_start + 8 (libsystem_pthread.dylib + 8912) [0x1b6cc82d0]
+    2  _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x1b6ccd4ec]
+      1  _NSEventThread + 196 (AppKit + 1764388) [0x1b9a58c24]
+        1  CFRunLoopRunSpecific + 600 (CoreFoundation + 534164) [0x1b6d96694]
+          1  __CFRunLoopRun + 2380 (CoreFoundation + 538496) [0x1b6d97780]
+            1  __CFRunLoopDoSource1 + 596 (CoreFoundation + 545524) [0x1b6d992f4]
+              1  __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE1_PERFORM_FUNCTION__ + 60 (CoreFoundation + 545848) [0x1b6d99438]
+                1  __CFMachPortPerform + 260 (CoreFoundation + 742052) [0x1b6dc92a4]
+                  1  MessageHandler(__CFMachPort*, void*, long, void*) + 60 (HIToolbox + 250812) [0x1bf9193bc]
+                    1  PullEventsFromWindowServerOnConnection(unsigned int, unsigned char, __CFMachPortBoost*) + 452 (HIToolbox + 251324) [0x1bf9195bc]
+                      1  CFRunLoopTimerSetNextFireDate + 464 (CoreFoundation + 809040) [0x1b6dd9850]
+                        1  CFArrayGetCount + 40 (CoreFoundation + 134500) [0x1b6d34d64]
+      1  node::GetEnvironmentIsolateData(node::Environment*) + 9322468 (Electron Framework + 42571616) [0x10f271760]
+        1  node::GetEnvironmentIsolateData(node::Environment*) + 9216676 (Electron Framework + 42465824) [0x10f257a20]
+          1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 4644516 (Electron Framework + 29855456) [0x10e650ee0]
+            1  node::GetEnvironmentIsolateData(node::Environment*) + 9216304 (Electron Framework + 42465452) [0x10f2578ac]
+              1  node::GetEnvironmentIsolateData(node::Environment*) + 8912180 (Electron Framework + 42161328) [0x10f20d4b0]
+                1  node::GetEnvironmentIsolateData(node::Environment*) + 9111040 (Electron Framework + 42360188) [0x10f23dd7c]
+                  1  node::GetEnvironmentIsolateData(node::Environment*) + 9466288 (Electron Framework + 42715436) [0x10f29492c]
+                    1  node::GetEnvironmentIsolateData(node::Environment*) + 9108920 (Electron Framework + 42358068) [0x10f23d534]
+                      1  node::GetEnvironmentIsolateData(node::Environment*) + 9002708 (Electron Framework + 42251856) [0x10f223650]
+                        1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 2332128 (Electron Framework + 27543068) [0x10e41c61c]
+                          1  node::GetEnvironmentIsolateData(node::Environment*) + 9128208 (Electron Framework + 42377356) [0x10f24208c]
+                            1  node::GetEnvironmentIsolateData(node::Environment*) + 9241560 (Electron Framework + 42490708) [0x10f25db54]
+                              1  node::GetEnvironmentIsolateData(node::Environment*) + 9240780 (Electron Framework + 42489928) [0x10f25d848]
+                                1  node::GetEnvironmentIsolateData(node::Environment*) + 9239128 (Electron Framework + 42488276) [0x10f25d1d4]
+                                  1  node::GetEnvironmentIsolateData(node::Environment*) + 9069804 (Electron Framework + 42318952) [0x10f233c68]
+                                    1  node::GetEnvironmentIsolateData(node::Environment*) + 9128512 (Electron Framework + 42377660) [0x10f2421bc]
+                                      1  node::GetEnvironmentIsolateData(node::Environment*) + 9068532 (Electron Framework + 42317680) [0x10f233770]
+                                        1  <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+
+  Binary Images:
+           0x104fb0000 -                ???  com.tinyspeck.slackmacgap 4.25.0 (6956) <4C4C4476-5555-3144-A1FD-22BAB6BC090B>  /Applications/Slack.app/Contents/MacOS/Slack
+           0x10c9d8000 -        0x113ff3fff  com.github.Electron.framework (17.1.2)  <4C4C440C-5555-3144-A168-7E378379E45F>  /Applications/Slack.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework
+           0x1b6cc6000 -        0x1b6cd2fff  libsystem_pthread.dylib (485.40.4)      <4786E19A-9312-38E6-80EF-9C1394548118>  /usr/lib/system/libsystem_pthread.dylib
+           0x1b6d14000 -        0x1b7257fff  com.apple.CoreFoundation 6.9 (1855.105) <B2FF96D0-AE99-31EF-9014-FC9964B4F3E0>  /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+           0x1b98aa000 -        0x1ba75bfff  com.apple.AppKit 6.9 (2113)             <518F4E68-C324-320F-9D7F-85C224EAE972>  /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit
+           0x1bf8dc000 -        0x1bfc0bfff  com.apple.HIToolbox 2.1.1 (1112.4)      <98EA191E-B6F8-3036-B267-EEADB5F03C7D>  /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox

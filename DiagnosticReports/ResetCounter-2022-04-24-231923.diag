@@ -1,0 +1,9 @@
+{"bug_type":"115","timestamp":"2022-04-24 23:19:23.00 +0200","name":"Reset count","os_version":"macOS 12.0.1 (21A559)","incident_id":"3876B659-B186-4CB0-ABC7-238982B71EB6"}
+Incident Identifier: 3876B659-B186-4CB0-ABC7-238982B71EB6
+CrashReporter Key:   B9FD7838-108C-3871-2C9E-F847F65B7797
+Date: 2022-04-24 23:19:23.05 +0200
+Reset count: 0
+Boot failure count: 1
+Boot faults: 
+Boot stage: 0
+Boot app: 0

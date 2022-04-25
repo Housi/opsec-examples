@@ -1,0 +1,5 @@
+{"timestamp":"2022-04-19 02:03:56.37 +0200","bug_type":"211","os_version":"macOS 12.0.1 (21A559)","incident_id":"B8E2B5BE-32FA-4DAF-AE57-8D6FB2D7D78F"}
+{"_marker":"<metadata>","_preferredUserInterfaceLanguage":"en-PL","_userInterfaceLanguage":"en-GB","_userSetRegionFormat":"PL","basebandChipset":"<unknown>","basebandFirmwareVersion":"<unknown>","configUuid":"6b7683b8-a7d8-4a5a-bd8e-78586b3de9e4","currentCountry":"<unknown>","deviceCapacity":512,"homeCarrierCountry":"<unknown>","homeCarrierName":"<unknown>","isDualSim":false,"servingCarrierName":"<unknown>","startTimestamp":"2022-04-18T00:02:28Z","trialExperiments":"0","trialRollouts":"0","version":"2.2"}
+{"message":{"com.apple.message.dictation.enabled":"NO","com.apple.message.siri.enabled":"YES"},"name":"MT_com.apple.siri.settings","sampling":100,"uuid":"e7a86f0f-e568-4197-ae56-e3d7307f4d75_3"}
+{"message":{"com.apple.message.signature":null,"com.apple.message.signature2":null},"name":"MT_com.apple.usage.gatekeeper.open-unsafe-executable-type","sampling":100,"uuid":"d527877d-48a4-4b29-8b78-977c9a2341a7_3"}
+{"_marker":"<end-of-file>"}

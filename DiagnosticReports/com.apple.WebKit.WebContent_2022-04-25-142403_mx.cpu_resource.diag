@@ -1,0 +1,986 @@
+Date/Time:        2022-04-25 14:21:27.540 +0200
+End time:         2022-04-25 14:24:02.558 +0200
+OS Version:       macOS 12.0.1 (Build 21A559)
+Architecture:     arm64e
+Report Version:   35
+Incident Identifier: 6D53B40D-F4F8-4E59-9065-57564C56E3A2
+
+Data Source:      Microstackshots
+Shared Cache:     A6162D66-93E3-3251-93CC-B11F7C8C830E slid base address 0x196cb8000, slide 0x16cb8000
+
+Command:          com.apple.WebKit.WebContent
+Path:             /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent
+Identifier:       com.apple.WebKit.WebContent
+Version:          17612 (17612.2.9.1.20)
+Build Version:    3
+Project Name:     WebKit
+Source Version:   7612002009001020
+Architecture:     arm64e
+Parent:           UNKNOWN [1]
+PID:              4962
+
+Event:            cpu usage
+Action taken:     none
+CPU:              90 seconds cpu time over 155 seconds (58% cpu average), exceeding limit of 50% cpu over 180 seconds
+CPU limit:        90s
+Limit duration:   180s
+CPU used:         90s
+CPU duration:     155s
+Duration:         155.02s
+Duration Sampled: 137.12s
+Steps:            70
+
+Hardware model:   MacBookPro17,1
+Active cpus:      8
+HW page size:     16384
+VM page size:     16384
+
+Fan speed:        0 rpm
+Advisory levels:  Battery -> 2, User -> 2, ThermalPressure -> 0, Combined -> 2
+Free disk space:  217.40 GB/460.43 GB, low space threshold 3072 MB
+
+Heaviest stack for the target process:
+  32  start + 520 (dyld + 20724) [0x1043a10f4]
+  32  WebKit::XPCServiceMain(int, char const**) + 152 (WebKit + 2459656) [0x1b50df808]
+  32  xpc_main + 108 (libxpc.dylib + 98820) [0x196d22204]
+  32  _xpc_objc_main + 900 (libxpc.dylib + 100608) [0x196d22900]
+  32  -[NSRunLoop(NSRunLoop) run] + 92 (Foundation + 1003344) [0x197ff7f50]
+  32  -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 236 (Foundation + 413200) [0x197f67e10]
+  31  CFRunLoopRunSpecific + 600 (CoreFoundation + 534164) [0x19708e694]
+  31  __CFRunLoopRun + 1944 (CoreFoundation + 538060) [0x19708f5cc]
+  31  __CFRunLoopDoTimers + 392 (CoreFoundation + 649808) [0x1970aaa50]
+  31  __CFRunLoopDoTimer + 1076 (CoreFoundation + 651204) [0x1970aafc4]
+  31  __CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__ + 32 (CoreFoundation + 652232) [0x1970ab3c8]
+  30  WebCore::timerFired(__CFRunLoopTimer*, void*) + 68 (WebCore + 45152) [0x1b2459060]
+  30  WTF::Detail::CallableWrapper<WebCore::ThreadTimers::setSharedTimer(WebCore::SharedTimer*)::$_0, void>::call() + 248 (WebCore + 27193108) [0x1b3e3cf14]
+  25  WebCore::ScriptRunner::timerFired() + 1012 (WebCore + 20205980) [0x1b379319c]
+  25  WebCore::ScriptElement::executePendingScript(WebCore::PendingScript&) + 652 (WebCore + 20195164) [0x1b379075c]
+  25  WebCore::LoadableClassicScript::execute(WebCore::ScriptElement&) + 200 (WebCore + 19948032) [0x1b3754200]
+  25  WebCore::ScriptElement::executeClassicScript(WebCore::ScriptSourceCode const&) + 556 (WebCore + 20192836) [0x1b378fe44]
+  25  WebCore::ScriptController::evaluateIgnoringException(WebCore::ScriptSourceCode const&) + 52 (WebCore + 16874696) [0x1b3465cc8]
+  25  WebCore::ScriptController::evaluateInWorld(WebCore::ScriptSourceCode const&, WebCore::DOMWrapperWorld&) + 180 (WebCore + 16873756) [0x1b346591c]
+  25  WebCore::JSExecState::profiledEvaluate(JSC::JSGlobalObject*, JSC::ProfilingReason, JSC::SourceCode const&, JSC::JSValue, WTF::NakedPtr<JSC::Exception>&) + 112 (WebCore + 16874552) [0x1b3465c38]
+  25  JSC::evaluate(JSC::JSGlobalObject*, JSC::SourceCode const&, JSC::JSValue, WTF::NakedPtr<JSC::Exception>&) + 272 (JavaScriptCore + 13163572) [0x1afcafc34]
+  24  JSC::Interpreter::executeProgram(JSC::SourceCode const&, JSC::JSGlobalObject*, JSC::JSObject*) + 12000 (JavaScriptCore + 10597792) [0x1afa3d5a0]
+  24  ??? [0x1128047e8]
+  19  ??? [0x1128041e8]
+  18  ??? [0x1128041e8]
+  18  ??? [0x1128041e8]
+  18  ??? [0x1128041e8]
+  11  ??? [0x1128041e8]
+  11  ??? [0x1128041e8]
+  7  ??? [0x1128041e8]
+  7  ??? [0x1128041e8]
+  6  ??? [0x1128041e8]
+  3  ??? [0x1128041e8]
+  2  ??? [0x1128041e8]
+  1  llint_function_for_construct_arity_checkTagGateAfter + 35492 (JavaScriptCore + 3571780) [0x1af38a044]
+  1  llint_slow_path_put_by_id + 1844 (JavaScriptCore + 1089840) [0x1af12c130]
+  1  JSC::WeakGCMap<JSC::StructureTransitionTable::Hash::Key, JSC::Structure, JSC::StructureTransitionTable::Hash, WTF::SimpleClassHashTraits<JSC::StructureTransitionTable::Hash::Key> >::get(JSC::StructureTransitionTable::Hash::Key const&) const + 192 (JavaScriptCore + 4417344) [0x1af458740]
+
+
+Powerstats for:   com.apple.WebKit.WebContent [4962]
+UUID:             1963A7A2-93E5-3B03-B7EA-5394FB685F82
+Path:             /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent
+Identifier:       com.apple.WebKit.WebContent
+Version:          17612 (17612.2.9.1.20)
+Build Version:    3
+Project Name:     WebKit
+Source Version:   7612002009001020
+Architecture:     arm64e
+Parent:           UNKNOWN [1]
+UID:              502
+Sudden Term:      Tracked (allows idle exit)
+Footprint:        337.56 MB -> 542.11 MB (+204.55 MB) (max 582.09 MB )
+Pageins:          35 pages
+Start time:       2022-04-25 14:22:33.356 +0200
+End time:         2022-04-25 14:24:01.782 +0200
+Num samples:      34 (49%)
+Primary state:    17 samples Non-Frontmost App, Suppressed, User mode, Effective Thread QoS User Interactive, Requested Thread QoS User Interactive, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 34 samples Active
+Power Source:     34 samples on Battery, 0 samples on AC
+  32  start + 520 (dyld + 20724) [0x1043a10f4]
+    32  WebKit::XPCServiceMain(int, char const**) + 152 (WebKit + 2459656) [0x1b50df808]
+      32  xpc_main + 108 (libxpc.dylib + 98820) [0x196d22204]
+        32  _xpc_objc_main + 900 (libxpc.dylib + 100608) [0x196d22900]
+          32  -[NSRunLoop(NSRunLoop) run] + 92 (Foundation + 1003344) [0x197ff7f50]
+            32  -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 236 (Foundation + 413200) [0x197f67e10]
+              31  CFRunLoopRunSpecific + 600 (CoreFoundation + 534164) [0x19708e694]
+                31  __CFRunLoopRun + 1944 (CoreFoundation + 538060) [0x19708f5cc]
+                  31  __CFRunLoopDoTimers + 392 (CoreFoundation + 649808) [0x1970aaa50]
+                    31  __CFRunLoopDoTimer + 1076 (CoreFoundation + 651204) [0x1970aafc4]
+                      31  __CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__ + 32 (CoreFoundation + 652232) [0x1970ab3c8]
+                        30  WebCore::timerFired(__CFRunLoopTimer*, void*) + 68 (WebCore + 45152) [0x1b2459060]
+                          30  WTF::Detail::CallableWrapper<WebCore::ThreadTimers::setSharedTimer(WebCore::SharedTimer*)::$_0, void>::call() + 248 (WebCore + 27193108) [0x1b3e3cf14]
+                            25  WebCore::ScriptRunner::timerFired() + 1012 (WebCore + 20205980) [0x1b379319c]
+                              25  WebCore::ScriptElement::executePendingScript(WebCore::PendingScript&) + 652 (WebCore + 20195164) [0x1b379075c]
+                                25  WebCore::LoadableClassicScript::execute(WebCore::ScriptElement&) + 200 (WebCore + 19948032) [0x1b3754200]
+                                  25  WebCore::ScriptElement::executeClassicScript(WebCore::ScriptSourceCode const&) + 556 (WebCore + 20192836) [0x1b378fe44]
+                                    25  WebCore::ScriptController::evaluateIgnoringException(WebCore::ScriptSourceCode const&) + 52 (WebCore + 16874696) [0x1b3465cc8]
+                                      25  WebCore::ScriptController::evaluateInWorld(WebCore::ScriptSourceCode const&, WebCore::DOMWrapperWorld&) + 180 (WebCore + 16873756) [0x1b346591c]
+                                        25  WebCore::JSExecState::profiledEvaluate(JSC::JSGlobalObject*, JSC::ProfilingReason, JSC::SourceCode const&, JSC::JSValue, WTF::NakedPtr<JSC::Exception>&) + 112 (WebCore + 16874552) [0x1b3465c38]
+                                          25  JSC::evaluate(JSC::JSGlobalObject*, JSC::SourceCode const&, JSC::JSValue, WTF::NakedPtr<JSC::Exception>&) + 272 (JavaScriptCore + 13163572) [0x1afcafc34]
+                                            24  JSC::Interpreter::executeProgram(JSC::SourceCode const&, JSC::JSGlobalObject*, JSC::JSObject*) + 12000 (JavaScriptCore + 10597792) [0x1afa3d5a0]
+                                              24  ??? [0x1128047e8]
+                                                19  ??? [0x1128041e8]
+                                                  18  ??? [0x1128041e8]
+                                                    18  ??? [0x1128041e8]
+                                                      18  ??? [0x1128041e8]
+                                                        11  ??? [0x1128041e8]
+                                                          11  ??? [0x1128041e8]
+                                                            7   ??? [0x1128041e8]
+                                                              7   ??? [0x1128041e8]
+                                                                6   ??? [0x1128041e8]
+                                                                  3   ??? [0x1128041e8]
+                                                                    2   ??? [0x1128041e8]
+                                                                      1   llint_function_for_construct_arity_checkTagGateAfter + 35492 (JavaScriptCore + 3571780) [0x1af38a044]
+                                                                        1   llint_slow_path_put_by_id + 1844 (JavaScriptCore + 1089840) [0x1af12c130]
+                                                                          1   JSC::WeakGCMap<JSC::StructureTransitionTable::Hash::Key, JSC::Structure, JSC::StructureTransitionTable::Hash, WTF::SimpleClassHashTraits<JSC::StructureTransitionTable::Hash::Key> >::get(JSC::StructureTransitionTable::Hash::Key const&) const + 192 (JavaScriptCore + 4417344) [0x1af458740]
+                                                                      1   ??? [0x1128041e8]
+                                                                        1   llint_function_for_construct_arity_checkTagGateAfter + 48944 (JavaScriptCore + 3585232) [0x1af38d4d0]
+                                                                          1   llint_slow_path_put_by_val + 1108 (JavaScriptCore + 1101632) [0x1af12ef40]
+                                                                            1   bool JSC::JSObject::putByIndexBeyondVectorLengthWithoutAttributes<(unsigned char)4>(JSC::JSGlobalObject*, unsigned int, JSC::JSValue) + 472 (JavaScriptCore + 14046684) [0x1afd875dc]
+                                                                    1   llint_function_for_construct_arity_checkTagGateAfter + 144412 (JavaScriptCore + 3680700) [0x1af3a49bc]
+                                                                      1   JSC::LLInt::setUpCall(JSC::CallFrame*, JSC::CodeSpecializationKind, JSC::JSValue, JSC::LLIntCallLinkInfo*) + 2048 (JavaScriptCore + 11775784) [0x1afb5cf28]
+                                                                        1   JSC::ScriptExecutable::prepareForExecutionImpl(JSC::VM&, JSC::JSFunction*, JSC::JSScope*, JSC::CodeSpecializationKind, JSC::CodeBlock*&) + 108 (JavaScriptCore + 14905420) [0x1afe5904c]
+                                                                          1   JSC::ScriptExecutable::newCodeBlockFor(JSC::CodeSpecializationKind, JSC::JSFunction*, JSC::JSScope*, JSC::Exception*&) + 1388 (JavaScriptCore + 14902900) [0x1afe58674]
+                                                                            1   JSC::CodeBlock::finishCreation(JSC::VM&, JSC::ScriptExecutable*, JSC::UnlinkedCodeBlock*, JSC::JSScope*) + 13172 (JavaScriptCore + 6245736) [0x1af616d68]
+                                                                              1   JSC::CodeBlock::predictedMachineCodeSize() + 120 (JavaScriptCore + 179588) [0x1af04dd84]
+                                                                  1   llint_function_for_construct_arity_checkTagGateAfter + 144412 (JavaScriptCore + 3680700) [0x1af3a49bc]
+                                                                    1   JSC::LLInt::setUpCall(JSC::CallFrame*, JSC::CodeSpecializationKind, JSC::JSValue, JSC::LLIntCallLinkInfo*) + 2048 (JavaScriptCore + 11775784) [0x1afb5cf28]
+                                                                      1   JSC::ScriptExecutable::prepareForExecutionImpl(JSC::VM&, JSC::JSFunction*, JSC::JSScope*, JSC::CodeSpecializationKind, JSC::CodeBlock*&) + 108 (JavaScriptCore + 14905420) [0x1afe5904c]
+                                                                        1   JSC::ScriptExecutable::newCodeBlockFor(JSC::CodeSpecializationKind, JSC::JSFunction*, JSC::JSScope*, JSC::Exception*&) + 1388 (JavaScriptCore + 14902900) [0x1afe58674]
+                                                                          1   JSC::CodeBlock::finishCreation(JSC::VM&, JSC::ScriptExecutable*, JSC::UnlinkedCodeBlock*, JSC::JSScope*) + 9904 (JavaScriptCore + 6242468) [0x1af6160a4]
+                                                                  1   llint_function_for_construct_arity_checkTagGateAfter + 31456 (JavaScriptCore + 3567744) [0x1af389080]
+                                                                    1   llint_slow_path_get_by_id + 304 (JavaScriptCore + 1087752) [0x1af12b908]
+                                                                      1   JSC::LLInt::performLLIntGetByID(JSC::Instruction const*, JSC::CodeBlock*, JSC::JSGlobalObject*, JSC::JSValue, JSC::Identifier const&, JSC::GetByIdModeMetadata&) + 4884 (JavaScriptCore + 11704272) [0x1afb4b7d0]
+                                                                        1   <Non-Suppressed>
+                                                                  1   ??? [0x112804008]
+                                                                    1   JSC::objectConstructorDefineProperty(JSC::JSGlobalObject*, JSC::CallFrame*) + 0 (JavaScriptCore + 14593860) [0x1afe0cf44]
+                                                                1   llint_slow_path_get_by_val + 7620 (JavaScriptCore + 1099900) [0x1af12e87c]
+                                                                  1   <Non-Suppressed>
+                                                            1   llint_function_for_construct_arity_checkTagGateAfter + 38796 (JavaScriptCore + 3575084) [0x1af38ad2c]
+                                                              1   llint_slow_path_get_by_val + 96 (JavaScriptCore + 1092376) [0x1af12cb18]
+                                                                1   JSC::CallFrame::setCurrentVPC(JSC::Instruction const*) + 52 (JavaScriptCore + 10572336) [0x1afa37230]
+                                                            1   ??? [0x1131dd880]
+                                                              1   llint_function_for_construct_arity_checkTagGateAfter + 144412 (JavaScriptCore + 3680700) [0x1af3a49bc]
+                                                                1   JSC::LLInt::setUpCall(JSC::CallFrame*, JSC::CodeSpecializationKind, JSC::JSValue, JSC::LLIntCallLinkInfo*) + 2048 (JavaScriptCore + 11775784) [0x1afb5cf28]
+                                                                  1   JSC::ScriptExecutable::prepareForExecutionImpl(JSC::VM&, JSC::JSFunction*, JSC::JSScope*, JSC::CodeSpecializationKind, JSC::CodeBlock*&) + 108 (JavaScriptCore + 14905420) [0x1afe5904c]
+                                                                    1   JSC::ScriptExecutable::newCodeBlockFor(JSC::CodeSpecializationKind, JSC::JSFunction*, JSC::JSScope*, JSC::Exception*&) + 1388 (JavaScriptCore + 14902900) [0x1afe58674]
+                                                                      1   JSC::CodeBlock::finishCreation(JSC::VM&, JSC::ScriptExecutable*, JSC::UnlinkedCodeBlock*, JSC::JSScope*) + 268 (JavaScriptCore + 6232832) [0x1af613b00]
+                                                                        1   JSC::CodeBlock::setConstantRegisters(WTF::FixedVector<JSC::WriteBarrier<JSC::Unknown, WTF::RawValueTraits<JSC::Unknown> > > const&, WTF::FixedVector<JSC::SourceCodeRepresentation> const&, JSC::ScriptExecutable*) + 1116 (JavaScriptCore + 6247720) [0x1af617528]
+                                                                          1   JSC::SymbolTable::cloneScopePart(JSC::VM&) + 60 (JavaScriptCore + 15127212) [0x1afe8f2ac]
+                                                                            1   <Non-Suppressed>
+                                                            1   ??? [0x11301ee54]
+                                                              1   llint_function_for_construct_arity_checkTagGateAfter + 103068 (JavaScriptCore + 3639356) [0x1af39a83c]
+                                                                1   slow_path_create_lexical_environment + 356 (JavaScriptCore + 13136260) [0x1afca9184]
+                                                                  1   <Non-Suppressed>
+                                                            1   ??? [0x112e4eb7c]
+                                                              1   ??? [0x11280bcc8]
+                                                                1   operationVirtualCall + 36 (JavaScriptCore + 910304) [0x1af1003e0]
+                                                                  1   JSC::virtualForWithFunction(JSC::JSGlobalObject*, JSC::CallFrame*, JSC::CallLinkInfo*, JSC::JSCell*&) + 504 (JavaScriptCore + 11186976) [0x1afacd320]
+                                                                    1   JSC::ScriptExecutable::prepareForExecutionImpl(JSC::VM&, JSC::JSFunction*, JSC::JSScope*, JSC::CodeSpecializationKind, JSC::CodeBlock*&) + 108 (JavaScriptCore + 14905420) [0x1afe5904c]
+                                                                      1   JSC::ScriptExecutable::newCodeBlockFor(JSC::CodeSpecializationKind, JSC::JSFunction*, JSC::JSScope*, JSC::Exception*&) + 1388 (JavaScriptCore + 14902900) [0x1afe58674]
+                                                                        1   JSC::CodeBlock::finishCreation(JSC::VM&, JSC::ScriptExecutable*, JSC::UnlinkedCodeBlock*, JSC::JSScope*) + 268 (JavaScriptCore + 6232832) [0x1af613b00]
+                                                                          1   JSC::CodeBlock::setConstantRegisters(WTF::FixedVector<JSC::WriteBarrier<JSC::Unknown, WTF::RawValueTraits<JSC::Unknown> > > const&, WTF::FixedVector<JSC::SourceCodeRepresentation> const&, JSC::ScriptExecutable*) + 1116 (JavaScriptCore + 6247720) [0x1af617528]
+                                                                            1   JSC::SymbolTable::cloneScopePart(JSC::VM&) + 60 (JavaScriptCore + 15127212) [0x1afe8f2ac]
+                                                                              1   <Non-Suppressed>
+                                                        1   llint_function_for_construct_arity_checkTagGateAfter + 144412 (JavaScriptCore + 3680700) [0x1af3a49bc]
+                                                          1   JSC::LLInt::setUpCall(JSC::CallFrame*, JSC::CodeSpecializationKind, JSC::JSValue, JSC::LLIntCallLinkInfo*) + 2048 (JavaScriptCore + 11775784) [0x1afb5cf28]
+                                                            1   JSC::ScriptExecutable::prepareForExecutionImpl(JSC::VM&, JSC::JSFunction*, JSC::JSScope*, JSC::CodeSpecializationKind, JSC::CodeBlock*&) + 108 (JavaScriptCore + 14905420) [0x1afe5904c]
+                                                              1   JSC::ScriptExecutable::newCodeBlockFor(JSC::CodeSpecializationKind, JSC::JSFunction*, JSC::JSScope*, JSC::Exception*&) + 1368 (JavaScriptCore + 14902880) [0x1afe58660]
+                                                                1   WTF::fastMalloc(unsigned long) + 248 (JavaScriptCore + 15400) [0x1af025c28]
+                                                        1   ??? [0x112d5d0f4]
+                                                          1   ??? [0x112fea4b4]
+                                                            1   operationGetByValObjectInt + 360 (JavaScriptCore + 8512560) [0x1af840430]
+                                                              1   <Non-Suppressed>
+                                                        1   ??? [0x112d0f17c]
+                                                          1   ??? [0x1128041e8]
+                                                            1   ??? [0x112804c70]
+                                                              1   JSC::JSONProtoFuncParse(JSC::JSGlobalObject*, JSC::CallFrame*) + 512 (JavaScriptCore + 14156456) [0x1afda22a8]
+                                                                1   JSC::LiteralParser<unsigned char>::parse(JSC::ParserState) + 4384 (JavaScriptCore + 110156) [0x1af03ce4c]
+                                                                  1   JSC::LiteralParser<unsigned char>::parsePrimitiveValue(JSC::VM&) + 880 (JavaScriptCore + 14510560) [0x1afdf89e0]
+                                                                    1   WTF::equal(WTF::StringImpl const*, unsigned char const*, unsigned int) + 152 (JavaScriptCore + 46392) [0x1af02d538]
+                                                                      1   <Non-Suppressed>
+                                                        1   ??? [0x112b30854]
+                                                          1   ??? [0x1128041e8]
+                                                            1   ??? [0x112804c70]
+                                                              1   JSC::JSONProtoFuncParse(JSC::JSGlobalObject*, JSC::CallFrame*) + 512 (JavaScriptCore + 14156456) [0x1afda22a8]
+                                                                1   JSC::LiteralParser<unsigned char>::parse(JSC::ParserState) + 1200 (JavaScriptCore + 106972) [0x1af03c1dc]
+                                                                  1   bool JSC::JSObject::putDirectInternal<(JSC::JSObject::PutMode)1>(JSC::VM&, JSC::PropertyName, JSC::JSValue, unsigned int, JSC::PutPropertySlot&) + 244 (JavaScriptCore + 3482180) [0x1af374244]
+                                                        1   ??? [0x112af0d80]
+                                                          1   ??? [0x1128041e8]
+                                                            1   ??? [0x112804c70]
+                                                              1   JSC::JSONProtoFuncParse(JSC::JSGlobalObject*, JSC::CallFrame*) + 512 (JavaScriptCore + 14156456) [0x1afda22a8]
+                                                                1   JSC::LiteralParser<unsigned char>::parse(JSC::ParserState) + 4384 (JavaScriptCore + 110156) [0x1af03ce4c]
+                                                                  1   JSC::LiteralParser<unsigned char>::parsePrimitiveValue(JSC::VM&) + 1812 (JavaScriptCore + 14511492) [0x1afdf8d84]
+                                                                    1   JSC::JSString::create(JSC::VM&, WTF::Ref<WTF::StringImpl, WTF::RawPtrTraits<WTF::StringImpl> >&&) + 460 (JavaScriptCore + 3503420) [0x1af37953c]
+                                                                      1   JSC::LocalAllocator::allocateSlowCase(JSC::Heap&, JSC::GCDeferralContext*, JSC::AllocationFailureMode) + 248 (JavaScriptCore + 9691044) [0x1af95ffa4]
+                                                                        1   JSC::Heap::stopIfNecessarySlow() + 80 (JavaScriptCore + 9584088) [0x1af945dd8]
+                                                                          1   JSC::Heap::collectInMutatorThread() + 104 (JavaScriptCore + 9584532) [0x1af945f94]
+                                                                            1   JSC::callWithCurrentThreadState(WTF::ScopedLambda<void (JSC::CurrentThreadState&)> const&) + 156 (JavaScriptCore + 9694000) [0x1af960b30]
+                                                                              1   WTF::ScopedLambdaFunctor<void (JSC::CurrentThreadState&), JSC::Heap::collectInMutatorThread()::$_0>::implFunction(void*, JSC::CurrentThreadState&) + 40 (JavaScriptCore + 9610276) [0x1af94c424]
+                                                                                1   JSC::Heap::runCurrentPhase(JSC::GCConductor, JSC::CurrentThreadState*) + 356 (JavaScriptCore + 9569816) [0x1af942618]
+                                                                                  1   JSC::Heap::runEndPhase(JSC::GCConductor) + 560 (JavaScriptCore + 9575840) [0x1af943da0]
+                                                                                    1   JSC::WeakBlock::reap() + 172 (JavaScriptCore + 99168) [0x1af03a360]
+                                                                                      1   <Non-Suppressed>
+                                                        1   ??? [0x1128f9f80]
+                                                          1   ??? [0x1128041e8]
+                                                            1   ??? [0x1128f9954]
+                                                              1   ??? [0x112805d3c]
+                                                                1   operationLinkPolymorphicCall + 84 (JavaScriptCore + 11186440) [0x1afacd108]
+                                                                  1   JSC::linkPolymorphicCall(JSC::JSGlobalObject*, JSC::CallFrame*, JSC::CallLinkInfo&, JSC::CallVariant) + 7476 (JavaScriptCore + 11589548) [0x1afb2f7ac]
+                                                                    1   JSC::LinkBuffer::linkCode(JSC::MacroAssembler&, JSC::JITCompilationEffort) + 76 (JavaScriptCore + 4441860) [0x1af45e704]
+                                                                      1   void JSC::LinkBuffer::copyCompactAndLinkCode<unsigned int>(JSC::MacroAssembler&, JSC::JITCompilationEffort) + 48 (JavaScriptCore + 4442236) [0x1af45e87c]
+                                                                        1   JSC::LinkBuffer::allocate(JSC::MacroAssembler&, JSC::JITCompilationEffort) + 404 (JavaScriptCore + 4455356) [0x1af461bbc]
+                                                                          1   JSC::ExecutableAllocator::allocate(unsigned long, JSC::JITCompilationEffort) + 512 (JavaScriptCore + 10709488) [0x1afa589f0]
+                                                                            1   jit_try_allocate_common_primitive_impl_medium_slow_case + 132 (JavaScriptCore + 18158740) [0x1b0173494]
+                                                                              1   jit_heap_config_specialized_local_allocator_try_allocate_slow + 100 (JavaScriptCore + 18172564) [0x1b0176a94]
+                                                                                1   jit_small_bitfit_page_config_specialized_allocator_try_allocate + 420 (JavaScriptCore + 18160580) [0x1b0173bc4]
+                                                        1   ??? [0x112804c70]
+                                                          1   WebCore::jsDocumentPrototypeFunction_getElementsByTagName(JSC::JSGlobalObject*, JSC::CallFrame*) + 388 (WebCore + 6107652) [0x1b2a21204]
+                                                            1   JSC::JSValue WebCore::wrap<WebCore::HTMLCollection>(JSC::JSGlobalObject*, WebCore::JSDOMGlobalObject*, WebCore::HTMLCollection&) + 2620 (WebCore + 16779584) [0x1b344e940]
+                                                  1   llint_function_for_construct_arity_checkTagGateAfter + 144412 (JavaScriptCore + 3680700) [0x1af3a49bc]
+                                                    1   JSC::LLInt::setUpCall(JSC::CallFrame*, JSC::CodeSpecializationKind, JSC::JSValue, JSC::LLIntCallLinkInfo*) + 2048 (JavaScriptCore + 11775784) [0x1afb5cf28]
+                                                      1   JSC::ScriptExecutable::prepareForExecutionImpl(JSC::VM&, JSC::JSFunction*, JSC::JSScope*, JSC::CodeSpecializationKind, JSC::CodeBlock*&) + 108 (JavaScriptCore + 14905420) [0x1afe5904c]
+                                                        1   JSC::ScriptExecutable::newCodeBlockFor(JSC::CodeSpecializationKind, JSC::JSFunction*, JSC::JSScope*, JSC::Exception*&) + 1368 (JavaScriptCore + 14902880) [0x1afe58660]
+                                                          1   _platform_memset + 152 (libsystem_platform.dylib + 16088) [0x196fdbed8]
+                                                2   llint_function_for_construct_arity_checkTagGateAfter + 144412 (JavaScriptCore + 3680700) [0x1af3a49bc]
+                                                  2   JSC::LLInt::setUpCall(JSC::CallFrame*, JSC::CodeSpecializationKind, JSC::JSValue, JSC::LLIntCallLinkInfo*) + 2048 (JavaScriptCore + 11775784) [0x1afb5cf28]
+                                                    2   JSC::ScriptExecutable::prepareForExecutionImpl(JSC::VM&, JSC::JSFunction*, JSC::JSScope*, JSC::CodeSpecializationKind, JSC::CodeBlock*&) + 108 (JavaScriptCore + 14905420) [0x1afe5904c]
+                                                      2   JSC::ScriptExecutable::newCodeBlockFor(JSC::CodeSpecializationKind, JSC::JSFunction*, JSC::JSScope*, JSC::Exception*&) + 1388 (JavaScriptCore + 14902900) [0x1afe58674]
+                                                        1   JSC::CodeBlock::finishCreation(JSC::VM&, JSC::ScriptExecutable*, JSC::UnlinkedCodeBlock*, JSC::JSScope*) + 5440 (JavaScriptCore + 6238004) [0x1af614f34]
+                                                        1   JSC::CodeBlock::finishCreation(JSC::VM&, JSC::ScriptExecutable*, JSC::UnlinkedCodeBlock*, JSC::JSScope*) + 268 (JavaScriptCore + 6232832) [0x1af613b00]
+                                                          1   JSC::CodeBlock::setConstantRegisters(WTF::FixedVector<JSC::WriteBarrier<JSC::Unknown, WTF::RawValueTraits<JSC::Unknown> > > const&, WTF::FixedVector<JSC::SourceCodeRepresentation> const&, JSC::ScriptExecutable*) + 808 (JavaScriptCore + 6247412) [0x1af6173f4]
+                                                2   llint_function_for_construct_arity_checkTagGateAfter + 110684 (JavaScriptCore + 3646972) [0x1af39c5fc]
+                                                  2   llint_slow_path_new_array + 340 (JavaScriptCore + 1085892) [0x1af12b1c4]
+                                                    1   JSC::constructArrayNegativeIndexed(JSC::JSGlobalObject*, JSC::Structure*, JSC::JSValue const*, unsigned int) + 92 (JavaScriptCore + 13575580) [0x1afd1459c]
+                                                      1   JSC::JSObject::setIndexQuicklyToUndecided(JSC::VM&, unsigned int, JSC::JSValue) + 60 (JavaScriptCore + 199288) [0x1af052a78]
+                                                        1   JSC::JSObject::convertUndecidedToInt32(JSC::VM&) + 224 (JavaScriptCore + 14068160) [0x1afd8c9c0]
+                                                          1   <Non-Suppressed>
+                                                    1   JSC::constructArrayNegativeIndexed(JSC::JSGlobalObject*, JSC::Structure*, JSC::JSValue const*, unsigned int) + 52 (JavaScriptCore + 13575540) [0x1afd14574]
+                                                      1   JSC::constructArray(JSC::ObjectInitializationScope&, JSC::Structure*, unsigned int) + 48 (JavaScriptCore + 13574684) [0x1afd1421c]
+                                                        1   JSC::JSArray::tryCreateUninitializedRestricted(JSC::ObjectInitializationScope&, JSC::GCDeferralContext*, JSC::Structure*, unsigned int) + 1212 (JavaScriptCore + 13557796) [0x1afd10024]
+                                                          1   JSC::LocalAllocator::allocateSlowCase(JSC::Heap&, JSC::GCDeferralContext*, JSC::AllocationFailureMode) + 264 (JavaScriptCore + 9691060) [0x1af95ffb4]
+                                                            1   JSC::LocalAllocator::tryAllocateWithoutCollecting() + 48 (JavaScriptCore + 9691488) [0x1af960160]
+                                                              1   JSC::LocalAllocator::tryAllocateIn(JSC::MarkedBlock::Handle*) + 44 (JavaScriptCore + 9691728) [0x1af960250]
+                                                                1   JSC::MarkedBlock::Handle::sweep(JSC::FreeList*) + 1384 (JavaScriptCore + 9713296) [0x1af965690]
+                                                1   llint_function_for_construct_arity_checkTagGateAfter + 105788 (JavaScriptCore + 3642076) [0x1af39b2dc]
+                                                  1   slow_path_new_array_buffer + 456 (JavaScriptCore + 13157140) [0x1afcae314]
+                                                    1   JSC::JSArray::createWithButterfly(JSC::VM&, JSC::GCDeferralContext*, JSC::Structure*, JSC::Butterfly*) + 336 (JavaScriptCore + 13558176) [0x1afd101a0]
+                                                      1   JSC::LocalAllocator::allocateSlowCase(JSC::Heap&, JSC::GCDeferralContext*, JSC::AllocationFailureMode) + 264 (JavaScriptCore + 9691060) [0x1af95ffb4]
+                                                        1   JSC::LocalAllocator::tryAllocateWithoutCollecting() + 48 (JavaScriptCore + 9691488) [0x1af960160]
+                                                          1   JSC::LocalAllocator::tryAllocateIn(JSC::MarkedBlock::Handle*) + 44 (JavaScriptCore + 9691728) [0x1af960250]
+                                                            1   JSC::MarkedBlock::Handle::sweep(JSC::FreeList*) + 1384 (JavaScriptCore + 9713296) [0x1af965690]
+                                                              1   <Non-Suppressed>
+                                            1   JSC::Interpreter::executeProgram(JSC::SourceCode const&, JSC::JSGlobalObject*, JSC::JSObject*) + 12116 (JavaScriptCore + 10597908) [0x1afa3d614]
+                                              1   JSC::ScriptExecutable::prepareForExecutionImpl(JSC::VM&, JSC::JSFunction*, JSC::JSScope*, JSC::CodeSpecializationKind, JSC::CodeBlock*&) + 108 (JavaScriptCore + 14905420) [0x1afe5904c]
+                                                1   JSC::ScriptExecutable::newCodeBlockFor(JSC::CodeSpecializationKind, JSC::JSFunction*, JSC::JSScope*, JSC::Exception*&) + 584 (JavaScriptCore + 14902096) [0x1afe58350]
+                                                  1   JSC::CodeBlock::finishCreation(JSC::VM&, JSC::ScriptExecutable*, JSC::UnlinkedCodeBlock*, JSC::JSScope*) + 9904 (JavaScriptCore + 6242468) [0x1af6160a4]
+                                                    1   <Non-Suppressed>
+                            5   WebCore::Document::loadEventDelayTimerFired() + 76 (WebCore + 19467864) [0x1b36dee58]
+                              5   WebCore::FrameLoader::checkCompleted() + 656 (WebCore + 197156) [0x1b247e224]
+                                3   WebCore::Document::implicitClose() + 700 (WebCore + 198032) [0x1b247e590]
+                                  3   WebCore::DOMWindow::dispatchLoadEvent() + 680 (WebCore + 425748) [0x1b24b5f14]
+                                    3   WebCore::EventDispatcher::dispatchEvent(WebCore::Node&, WebCore::Event&) + 5460 (WebCore + 19862512) [0x1b373f3f0]
+                                      3   WebCore::dispatchEventInDOM(WebCore::Event&, WebCore::EventPath const&) + 228 (WebCore + 19865928) [0x1b3740148]
+                                        3   WebCore::EventTarget::fireEventListeners(WebCore::Event&, WebCore::EventTarget::EventInvokePhase) + 300 (WebCore + 19880736) [0x1b3743b20]
+                                          3   WebCore::EventTarget::innerInvokeEventListeners(WebCore::Event&, WTF::Vector<WTF::RefPtr<WebCore::RegisteredEventListener, WTF::RawPtrTraits<WebCore::RegisteredEventListener>, WTF::DefaultRefDerefTraits<WebCore::RegisteredEventListener> >, 1ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>, WebCore::EventTarget::EventInvokePhase) + 604 (WebCore + 19882804) [0x1b3744334]
+                                            3   WebCore::JSEventListener::handleEvent(WebCore::ScriptExecutionContext&, WebCore::Event&) + 1792 (WebCore + 16727896) [0x1b3441f58]
+                                              3   JSC::profiledCall(JSC::JSGlobalObject*, JSC::ProfilingReason, JSC::JSValue, JSC::CallData const&, JSC::JSValue, JSC::ArgList const&, WTF::NakedPtr<JSC::Exception>&) + 204 (JavaScriptCore + 12939888) [0x1afc79270]
+                                                3   JSC::Interpreter::executeCall(JSC::JSGlobalObject*, JSC::JSObject*, JSC::CallData const&, JSC::JSValue, JSC::ArgList const&) + 488 (JavaScriptCore + 10604348) [0x1afa3ef3c]
+                                                  3   ??? [0x1128047e8]
+                                                    2   ??? [0x113100fec]
+                                                      2   ??? [0x112804c70]
+                                                        2   WebCore::jsDocumentPrototypeFunction_write(JSC::JSGlobalObject*, JSC::CallFrame*) + 184 (WebCore + 6130300) [0x1b2a26a7c]
+                                                          2   WebCore::Document::write(WebCore::Document*, WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>&&) + 324 (WebCore + 19524092) [0x1b36ec9fc]
+                                                            2   WebCore::Document::write(WebCore::Document*, WebCore::SegmentedString&&) + 260 (WebCore + 19523696) [0x1b36ec870]
+                                                              2   WebCore::HTMLDocumentParser::insert(WebCore::SegmentedString&&) + 196 (WebCore + 23460128) [0x1b3aad920]
+                                                                2   WebCore::HTMLDocumentParser::pumpTokenizer(WebCore::HTMLDocumentParser::SynchronousMode) + 572 (WebCore + 152672) [0x1b2473460]
+                                                                  2   WebCore::HTMLScriptRunner::runScript(WebCore::ScriptElement&, WTF::TextPosition const&) + 588 (WebCore + 23501176) [0x1b3ab7978]
+                                                                    2   WebCore::ScriptElement::prepareScript(WTF::TextPosition const&, WebCore::ScriptElement::LegacyTypeSupport) + 5336 (WebCore + 484176) [0x1b24c4350]
+                                                                      2   WebCore::ScriptElement::executeClassicScript(WebCore::ScriptSourceCode const&) + 556 (WebCore + 20192836) [0x1b378fe44]
+                                                                        2   WebCore::ScriptController::evaluateIgnoringException(WebCore::ScriptSourceCode const&) + 52 (WebCore + 16874696) [0x1b3465cc8]
+                                                                          2   WebCore::ScriptController::evaluateInWorld(WebCore::ScriptSourceCode const&, WebCore::DOMWrapperWorld&) + 180 (WebCore + 16873756) [0x1b346591c]
+                                                                            2   WebCore::JSExecState::profiledEvaluate(JSC::JSGlobalObject*, JSC::ProfilingReason, JSC::SourceCode const&, JSC::JSValue, WTF::NakedPtr<JSC::Exception>&) + 112 (WebCore + 16874552) [0x1b3465c38]
+                                                                              2   JSC::evaluate(JSC::JSGlobalObject*, JSC::SourceCode const&, JSC::JSValue, WTF::NakedPtr<JSC::Exception>&) + 272 (JavaScriptCore + 13163572) [0x1afcafc34]
+                                                                                2   JSC::Interpreter::executeProgram(JSC::SourceCode const&, JSC::JSGlobalObject*, JSC::JSObject*) + 12000 (JavaScriptCore + 10597792) [0x1afa3d5a0]
+                                                                                  2   ??? [0x1128047e8]
+                                                                                    2   ??? [0x1128041e8]
+                                                                                      1   ??? [0x1132848dc]
+                                                                                        1   ??? [0x11328b988]
+                                                                                          1   ??? [0x112866318]
+                                                                                            1   ??? [0x11322a134]
+                                                                                              1   ??? [0x1128041e8]
+                                                                                                1   ??? [0x1133fc754]
+                                                                                                  1   JSC::sizeFrameForVarargs(JSC::JSGlobalObject*, JSC::CallFrame*, JSC::VM&, JSC::JSValue, unsigned int, unsigned int) + 60 (JavaScriptCore + 10582888) [0x1afa39b68]
+                                                                                                    1   JSC::sizeOfVarargs(JSC::JSGlobalObject*, JSC::JSValue, unsigned int) + 428 (JavaScriptCore + 10582164) [0x1afa39894]
+                                                                                                      1   JSC::JSObject::get(JSC::JSGlobalObject*, JSC::PropertyName) const + 2688 (JavaScriptCore + 4401504) [0x1af454960]
+                                                                                                        1   JSC::ClonedArguments::getOwnPropertySlot(JSC::JSObject*, JSC::JSGlobalObject*, JSC::PropertyName, JSC::PropertySlot&) + 64 (JavaScriptCore + 12940676) [0x1afc79584]
+                                                                                      1   ??? [0x113255c28]
+                                                                                        1   ??? [0x113290358]
+                                                                                          1   ??? [0x112866318]
+                                                                                            1   ??? [0x113203438]
+                                                                                              1   llint_function_for_construct_arity_checkTagGateAfter + 149148 (JavaScriptCore + 3685436) [0x1af3a5c3c]
+                                                    1   ??? [0x112cb2918]
+                                                      1   ??? [0x112804c70]
+                                                        1   WebCore::jsDocumentPrototypeFunction_write(JSC::JSGlobalObject*, JSC::CallFrame*) + 184 (WebCore + 6130300) [0x1b2a26a7c]
+                                                          1   WebCore::Document::write(WebCore::Document*, WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>&&) + 324 (WebCore + 19524092) [0x1b36ec9fc]
+                                                            1   WebCore::Document::write(WebCore::Document*, WebCore::SegmentedString&&) + 260 (WebCore + 19523696) [0x1b36ec870]
+                                                              1   WebCore::HTMLDocumentParser::insert(WebCore::SegmentedString&&) + 196 (WebCore + 23460128) [0x1b3aad920]
+                                                                1   WebCore::HTMLDocumentParser::pumpTokenizer(WebCore::HTMLDocumentParser::SynchronousMode) + 572 (WebCore + 152672) [0x1b2473460]
+                                                                  1   WebCore::HTMLScriptRunner::runScript(WebCore::ScriptElement&, WTF::TextPosition const&) + 588 (WebCore + 23501176) [0x1b3ab7978]
+                                                                    1   WebCore::ScriptElement::prepareScript(WTF::TextPosition const&, WebCore::ScriptElement::LegacyTypeSupport) + 5336 (WebCore + 484176) [0x1b24c4350]
+                                                                      1   WebCore::ScriptElement::executeClassicScript(WebCore::ScriptSourceCode const&) + 556 (WebCore + 20192836) [0x1b378fe44]
+                                                                        1   WebCore::ScriptController::evaluateIgnoringException(WebCore::ScriptSourceCode const&) + 52 (WebCore + 16874696) [0x1b3465cc8]
+                                                                          1   WebCore::ScriptController::evaluateInWorld(WebCore::ScriptSourceCode const&, WebCore::DOMWrapperWorld&) + 180 (WebCore + 16873756) [0x1b346591c]
+                                                                            1   WebCore::JSExecState::profiledEvaluate(JSC::JSGlobalObject*, JSC::ProfilingReason, JSC::SourceCode const&, JSC::JSValue, WTF::NakedPtr<JSC::Exception>&) + 112 (WebCore + 16874552) [0x1b3465c38]
+                                                                              1   JSC::evaluate(JSC::JSGlobalObject*, JSC::SourceCode const&, JSC::JSValue, WTF::NakedPtr<JSC::Exception>&) + 272 (JavaScriptCore + 13163572) [0x1afcafc34]
+                                                                                1   JSC::Interpreter::executeProgram(JSC::SourceCode const&, JSC::JSGlobalObject*, JSC::JSObject*) + 12000 (JavaScriptCore + 10597792) [0x1afa3d5a0]
+                                                                                  1   ??? [0x1128047e8]
+                                                                                    1   ??? [0x1128041e8]
+                                                                                      1   ??? [0x112d5cd54]
+                                                                                        1   ??? [0x1130908a4]
+                                                                                          1   ??? [0x112866318]
+                                                                                            1   ??? [0x11280bc70]
+                                                                                              1   <Non-Suppressed>
+                                2   WebCore::Document::implicitClose() + 1248 (WebCore + 198580) [0x1b247e7b4]
+                                  2   WebCore::FrameViewLayoutContext::layout() + 4268 (WebCore + 26224296) [0x1b3d506a8]
+                                    2   WebCore::RenderView::layout() + 684 (WebCore + 214724) [0x1b24826c4]
+                                      2   WebCore::RenderBlock::layout() + 468 (WebCore + 215736) [0x1b2482ab8]
+                                        1   WebCore::RenderBlockFlow::layoutBlock(bool, WebCore::LayoutUnit) + 5896 (WebCore + 29814384) [0x1b40bce70]
+                                          1   WebCore::RenderBlock::layout() + 468 (WebCore + 215736) [0x1b2482ab8]
+                                            1   WebCore::RenderBlockFlow::layoutBlock(bool, WebCore::LayoutUnit) + 5896 (WebCore + 29814384) [0x1b40bce70]
+                                              1   WebCore::RenderBlock::layout() + 468 (WebCore + 215736) [0x1b2482ab8]
+                                                1   WebCore::RenderBlockFlow::layoutBlock(bool, WebCore::LayoutUnit) + 5896 (WebCore + 29814384) [0x1b40bce70]
+                                                  1   WebCore::RenderBlock::layout() + 468 (WebCore + 215736) [0x1b2482ab8]
+                                                    1   WebCore::RenderBlockFlow::layoutBlock(bool, WebCore::LayoutUnit) + 8804 (WebCore + 29817292) [0x1b40bd9cc]
+                                                      1   <Non-Suppressed>
+                                        1   WebCore::RenderBlock::setLogicalTopForChild(WebCore::RenderBox&, WebCore::LayoutUnit, WebCore::RenderBlock::ApplyLayoutDeltaMode) + 0 (WebCore + 29663792) [0x1b4098230]
+                                          1   <Non-Suppressed>
+                        1   WTF::RunLoop::TimerBase::start(WTF::Seconds, bool)::$_1::__invoke(__CFRunLoopTimer*, void*) + 96 (JavaScriptCore + 17732696) [0x1b010b458]
+                          1   JSC::JSRunLoopTimer::Manager::timerDidFire() + 1064 (JavaScriptCore + 14176760) [0x1afda71f8]
+                            1   JSC::JSRunLoopTimer::timerDidFire() + 144 (JavaScriptCore + 14177548) [0x1afda750c]
+                              1   JSC::IncrementalSweeper::doSweep(JSC::VM&, WTF::MonotonicTime) + 168 (JavaScriptCore + 9645828) [0x1af954f04]
+                                1   JSC::MarkedBlock::Handle::sweep(JSC::FreeList*) + 360 (JavaScriptCore + 9712272) [0x1af965290]
+                                  1   JSC::HeapCellType::finishSweep(JSC::MarkedBlock::Handle&, JSC::FreeList*) + 36 (JavaScriptCore + 9628996) [0x1af950d44]
+                                    1   void JSC::MarkedBlock::Handle::finishSweepKnowingHeapCellType<JSC::DefaultDestroyFunc>(JSC::FreeList*, JSC::DefaultDestroyFunc const&) + 296 (JavaScriptCore + 9629304) [0x1af950e78]
+                                      1   void JSC::MarkedBlock::Handle::finishSweepKnowingHeapCellType<JSC::DefaultDestroyFunc>(JSC::FreeList*, JSC::DefaultDestroyFunc const&)::'lambda'()::operator()() const + 264 (JavaScriptCore + 9653852) [0x1af956e5c]
+                                        1   void JSC::MarkedBlock::Handle::specializedSweep<true, (JSC::MarkedBlock::Handle::EmptyMode)1, (JSC::MarkedBlock::Handle::SweepMode)0, (JSC::MarkedBlock::Handle::SweepDestructionMode)1, (JSC::MarkedBlock::Handle::ScribbleMode)0, (JSC::MarkedBlock::Handle::NewlyAllocatedMode)1, (JSC::MarkedBlock::Handle::MarksMode)1, JSC::DefaultDestroyFunc>(JSC::FreeList*, JSC::MarkedBlock::Handle::EmptyMode, JSC::MarkedBlock::Handle::SweepMode, JSC::MarkedBlock::Handle::SweepDestructionMode, JSC::MarkedBlock::Handle::ScribbleMode, JSC::MarkedBlock::Handle::NewlyAllocatedMode, JSC::MarkedBlock::Handle::MarksMode, JSC::DefaultDestroyFunc const&) + 228 (JavaScriptCore + 9660512) [0x1af958860]
+                                          1   JSC::SymbolTable::~SymbolTable() + 112 (JavaScriptCore + 15126352) [0x1afe8ef50]
+                                            1   WTF::HashMap<WTF::RefPtr<WTF::UniquedStringImpl, WTF::RawPtrTraits<WTF::UniquedStringImpl>, WTF::DefaultRefDerefTraits<WTF::UniquedStringImpl> >, JSC::SymbolTableEntry, JSC::IdentifierRepHash, WTF::HashTraits<WTF::RefPtr<WTF::UniquedStringImpl, WTF::RawPtrTraits<WTF::UniquedStringImpl>, WTF::DefaultRefDerefTraits<WTF::UniquedStringImpl> > >, JSC::SymbolTableIndexHashTraits, WTF::HashTableTraits>::~HashMap() + 152 (JavaScriptCore + 15132976) [0x1afe90930]
+              1   CFRunLoopRunSpecific + 684 (CoreFoundation + 534248) [0x19708e6e8]
+                1   __CFRunLoopDoObservers + 572 (CoreFoundation + 539640) [0x19708fbf8]
+                  1   __CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__ + 36 (CoreFoundation + 540076) [0x19708fdac]
+                    1   CA::Transaction::flush_as_runloop_observer(bool) + 136 (QuartzCore + 1641076) [0x19e044a74]
+                      1   CA::Transaction::commit() + 680 (QuartzCore + 11640) [0x19deb6d78]
+                        1   CA::Context::commit_transaction(CA::Transaction*, double, double*) + 544 (QuartzCore + 1452732) [0x19e016abc]
+                          1   CA::Layer::prepare_commit(CA::Transaction*) + 480 (QuartzCore + 152392) [0x19ded9348]
+                            1   CABackingStorePrepareFrontTexture + 84 (QuartzCore + 560792) [0x19df3ce98]
+                              1   CABackingStoreGetFrontTexture(CABackingStore*, CGColorSpace*) + 176 (QuartzCore + 222304) [0x19deea460]
+                                1   _dispatch_sync_f_slow + 172 (libdispatch.dylib + 76972) [0x196e15cac]
+                                  1   _dispatch_sync_invoke_and_complete_recurse + 88 (libdispatch.dylib + 78408) [0x196e16248]
+                                    1   _dispatch_sync_complete_recurse + 88 (libdispatch.dylib + 78268) [0x196e161bc]
+                                      1   _dispatch_event_loop_end_ownership + 356 (libdispatch.dylib + 162084) [0x196e2a924]
+                                        1   kevent_id + 8 (libsystem_kernel.dylib + 13960) [0x196f8b688]
+                                          1   <Non-Suppressed>
+  2   thread_start + 8 (libsystem_pthread.dylib + 8912) [0x196fc02d0]
+    2   _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x196fc54ec]
+      2   WTF::wtfThreadEntryPoint(void*) + 16 (JavaScriptCore + 44592) [0x1af02ce30]
+        2   WTF::Thread::entryPoint(WTF::Thread::NewThreadContext*) + 168 (JavaScriptCore + 17815588) [0x1b011f824]
+          2   WTF::Detail::CallableWrapper<WTF::AutomaticThread::start(WTF::AbstractLocker const&)::$_0, void>::call() + 468 (JavaScriptCore + 17529368) [0x1b00d9a18]
+            1   WTF::ParallelHelperPool::Thread::work() + 32 (JavaScriptCore + 17702856) [0x1b0103fc8]
+              1   WTF::ParallelHelperClient::runTask(WTF::RefPtr<WTF::SharedTask<void ()>, WTF::RawPtrTraits<WTF::SharedTask<void ()> >, WTF::DefaultRefDerefTraits<WTF::SharedTask<void ()> > > const&) + 80 (JavaScriptCore + 17699712) [0x1b0103380]
+                1   WTF::SharedTaskFunctor<void (), JSC::Heap::runBeginPhase(JSC::GCConductor)::$_18>::run() + 144 (JavaScriptCore + 9604184) [0x1af94ac58]
+                  1   JSC::SlotVisitor::drainFromShared(JSC::SlotVisitor::SharedDrainMode, WTF::MonotonicTime) + 1256 (JavaScriptCore + 9760356) [0x1af970e64]
+                    1   JSC::SlotVisitor::drain(WTF::MonotonicTime) + 180 (JavaScriptCore + 9757848) [0x1af970498]
+                      1   JSC::SlotVisitor::drain(WTF::MonotonicTime)::$_3::operator()(JSC::MarkStackArray&) const + 336 (JavaScriptCore + 9769944) [0x1af9733d8]
+                        1   JSC::JSFunction::visitChildren(JSC::JSCell*, JSC::SlotVisitor&) + 36 (JavaScriptCore + 97172) [0x1af039b94]
+                          1   JSC::JSCallee::visitChildren(JSC::JSCell*, JSC::SlotVisitor&) + 32 (JavaScriptCore + 13655084) [0x1afd27c2c]
+                            1   JSC::JSObject::visitChildren(JSC::JSCell*, JSC::SlotVisitor&) + 48 (JavaScriptCore + 76668) [0x1af034b7c]
+                              1   JSC::JSCell::visitChildren(JSC::JSCell*, JSC::SlotVisitor&) + 124 (JavaScriptCore + 96972) [0x1af039acc]
+                                1   <Non-Suppressed, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+            1   JSC::JITWorklistThread::work() + 252 (JavaScriptCore + 11523084) [0x1afb1f40c]
+              1   JSC::JITPlan::compileInThread(JSC::JITWorklistThread*) + 432 (JavaScriptCore + 11270824) [0x1afae1aa8]
+                1   JSC::DFG::Plan::compileInThreadImpl() + 4940 (JavaScriptCore + 8716208) [0x1af871fb0]
+                  1   bool JSC::DFG::runPhase<JSC::DFG::DCEPhase>(JSC::DFG::Graph&) + 104 (JavaScriptCore + 7972748) [0x1af7bc78c]
+                    1   bool JSC::DFG::runAndLog<JSC::DFG::DCEPhase>(JSC::DFG::DCEPhase&) + 52 (JavaScriptCore + 7994224) [0x1af7c1b70]
+                      1   JSC::DFG::DCEPhase::run() + 48 (JavaScriptCore + 603628) [0x1af0b55ec]
+                        1   JSC::DFG::Graph::computeRefCounts() + 1200 (JavaScriptCore + 8050564) [0x1af7cf784]
+                          1   <Non-Suppressed, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+
+  Binary Images:
+           0x10433c000 -        0x104347fff  com.apple.WebKit.WebContent 17612 (17612.2.9.1.20) <1963A7A2-93E5-3B03-B7EA-5394FB685F82>  /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent
+           0x10439c000 -        0x10440ffff  dyld (940)                                         <86A8BA48-8BB4-3B30-9CDA-051F73C74F44>  /usr/lib/dyld
+           0x196d0a000 -        0x196d43fff  libxpc.dylib (2235.40.11)                          <A35762DA-B9C1-3897-BC39-D88BC78FAD1C>  /usr/lib/system/libxpc.dylib
+           0x196e03000 -        0x196e49fff  libdispatch.dylib (1324.41.2)                      <3D7A56A3-23BF-3077-B5C6-9CE65CE7333E>  /usr/lib/system/libdispatch.dylib
+           0x196f88000 -        0x196fbdfff  libsystem_kernel.dylib (8019.41.5)                 <C8524C02-B14F-30BD-A228-C44B4A448E68>  /usr/lib/system/libsystem_kernel.dylib
+           0x196fbe000 -        0x196fcafff  libsystem_pthread.dylib (485.40.4)                 <4786E19A-9312-38E6-80EF-9C1394548118>  /usr/lib/system/libsystem_pthread.dylib
+           0x196fd8000 -        0x196fdffff  libsystem_platform.dylib (273.40.1)                <06CE953D-F22A-3724-B6D5-829B45179897>  /usr/lib/system/libsystem_platform.dylib
+           0x19700c000 -        0x19754ffff  com.apple.CoreFoundation 6.9 (1855.105)            <B2FF96D0-AE99-31EF-9014-FC9964B4F3E0>  /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+           0x197f03000 -        0x1982f0fff  com.apple.Foundation 6.9 (1855.105)                <DE039F1B-FFE5-3644-A8CF-7BA52C32CD73>  /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+           0x19deb4000 -        0x19e1b1fff  com.apple.QuartzCore 1.11 (962.57.1)               <B7469CDD-CEAE-3CB7-BB88-6C8D274D546A>  /System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore
+           0x1af022000 -        0x1b02d9fff  com.apple.JavaScriptCore 17612 (17612.2.9.1.20)    <1F13D2B9-D661-364F-8B67-865F68018E4A>  /System/Library/Frameworks/JavaScriptCore.framework/Versions/A/JavaScriptCore
+           0x1b244e000 -        0x1b47f9fff  com.apple.WebCore 17612 (17612.2.9.1.20)           <31C80A86-28B1-3F86-B92D-B6350DE8E90B>  /System/Library/Frameworks/WebKit.framework/Versions/A/Frameworks/WebCore.framework/Versions/A/WebCore
+           0x1b4e87000 -        0x1b57d6fff  com.apple.WebKit 17612 (17612.2.9.1.20)            <49D3AAB3-BD37-354C-87DC-67A6509FE79F>  /System/Library/Frameworks/WebKit.framework/Versions/A/WebKit
+
+
+Powerstats for:   com.apple.WebKit.WebContent (other tasks)
+UUID:             1963A7A2-93E5-3B03-B7EA-5394FB685F82
+Path:             /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent
+Identifier:       com.apple.WebKit.WebContent
+Version:          17612 (17612.2.9.1.20)
+Build Version:    3
+Project Name:     WebKit
+Source Version:   7612002009001020
+Architecture:     arm64e
+Start time:       2022-04-25 14:22:37.359 +0200
+End time:         2022-04-25 14:24:02.116 +0200
+Num samples:      25 (36%)
+Primary state:    11 samples Non-Frontmost App, Suppressed, User mode, Effective Thread QoS User Interactive, Requested Thread QoS User Interactive, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 25 samples Active
+Power Source:     25 samples on Battery, 0 samples on AC
+  17  start + 520 (dyld + 20724) [0x10498d0f4]
+    17  WebKit::XPCServiceMain(int, char const**) + 152 (WebKit + 2459656) [0x1b50df808]
+      17  xpc_main + 108 (libxpc.dylib + 98820) [0x196d22204]
+        17  _xpc_objc_main + 900 (libxpc.dylib + 100608) [0x196d22900]
+          17  -[NSRunLoop(NSRunLoop) run] + 92 (Foundation + 1003344) [0x197ff7f50]
+            17  -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 236 (Foundation + 413200) [0x197f67e10]
+              16  CFRunLoopRunSpecific + 600 (CoreFoundation + 534164) [0x19708e694]
+                16  __CFRunLoopRun + 1944 (CoreFoundation + 538060) [0x19708f5cc]
+                  16  __CFRunLoopDoTimers + 392 (CoreFoundation + 649808) [0x1970aaa50]
+                    16  __CFRunLoopDoTimer + 1076 (CoreFoundation + 651204) [0x1970aafc4]
+                      16  __CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__ + 32 (CoreFoundation + 652232) [0x1970ab3c8]
+                        15  WebCore::timerFired(__CFRunLoopTimer*, void*) + 68 (WebCore + 45152) [0x1b2459060]
+                          15  WTF::Detail::CallableWrapper<WebCore::ThreadTimers::setSharedTimer(WebCore::SharedTimer*)::$_0, void>::call() + 248 (WebCore + 27193108) [0x1b3e3cf14]
+                            13  WebCore::ScriptRunner::timerFired() + 1012 (WebCore + 20205980) [0x1b379319c]
+                              13  WebCore::ScriptElement::executePendingScript(WebCore::PendingScript&) + 652 (WebCore + 20195164) [0x1b379075c]
+                                13  WebCore::LoadableClassicScript::execute(WebCore::ScriptElement&) + 200 (WebCore + 19948032) [0x1b3754200]
+                                  13  WebCore::ScriptElement::executeClassicScript(WebCore::ScriptSourceCode const&) + 556 (WebCore + 20192836) [0x1b378fe44]
+                                    13  WebCore::ScriptController::evaluateIgnoringException(WebCore::ScriptSourceCode const&) + 52 (WebCore + 16874696) [0x1b3465cc8]
+                                      13  WebCore::ScriptController::evaluateInWorld(WebCore::ScriptSourceCode const&, WebCore::DOMWrapperWorld&) + 180 (WebCore + 16873756) [0x1b346591c]
+                                        13  WebCore::JSExecState::profiledEvaluate(JSC::JSGlobalObject*, JSC::ProfilingReason, JSC::SourceCode const&, JSC::JSValue, WTF::NakedPtr<JSC::Exception>&) + 112 (WebCore + 16874552) [0x1b3465c38]
+                                          13  JSC::evaluate(JSC::JSGlobalObject*, JSC::SourceCode const&, JSC::JSValue, WTF::NakedPtr<JSC::Exception>&) + 272 (JavaScriptCore + 13163572) [0x1afcafc34]
+                                            13  JSC::Interpreter::executeProgram(JSC::SourceCode const&, JSC::JSGlobalObject*, JSC::JSObject*) + 12000 (JavaScriptCore + 10597792) [0x1afa3d5a0]
+                                              13  ??? [0x1291047e8]
+                                                12  ??? [0x1291041e8]
+                                                  12  ??? [0x1291041e8]
+                                                    12  ??? [0x1291041e8]
+                                                      12  ??? [0x1291041e8]
+                                                        8   ??? [0x1291041e8]
+                                                          8   ??? [0x1291041e8]
+                                                            5   ??? [0x1291041e8]
+                                                              4   ??? [0x1291041e8]
+                                                                4   ??? [0x1291041e8]
+                                                                  1   llint_function_for_construct_arity_checkTagGateAfter + 141944 (JavaScriptCore + 3678232) [0x1af3a4018]
+                                                                    1   <Non-Suppressed>
+                                                                  1   llint_function_for_construct_arity_checkTagGateAfter + 111840 (JavaScriptCore + 3648128) [0x1af39ca80]
+                                                                    1   llint_slow_path_new_func + 208 (JavaScriptCore + 1132284) [0x1af1366fc]
+                                                                      1   JSC::JSFunction::create(JSC::VM&, JSC::FunctionExecutable*, JSC::JSScope*) + 148 (JavaScriptCore + 13702412) [0x1afd3350c]
+                                                                        1   <Non-Suppressed>
+                                                                  1   llint_function_for_construct_arity_checkTagGateAfter + 35492 (JavaScriptCore + 3571780) [0x1af38a044]
+                                                                    1   llint_slow_path_put_by_id + 1292 (JavaScriptCore + 1089288) [0x1af12bf08]
+                                                                      1   JSC::JSObject::putInlineSlow(JSC::JSGlobalObject*, JSC::PropertyName, JSC::JSValue, JSC::PutPropertySlot&) + 1292 (JavaScriptCore + 14061992) [0x1afd8b1a8]
+                                                                        1   bool JSC::JSObject::putDirectInternal<(JSC::JSObject::PutMode)0>(JSC::VM&, JSC::PropertyName, JSC::JSValue, unsigned int, JSC::PutPropertySlot&) + 884 (JavaScriptCore + 8724964) [0x1af8741e4]
+                                                                          1   JSC::Structure::addNewPropertyTransition(JSC::VM&, JSC::Structure*, JSC::PropertyName, unsigned int, int&, JSC::PutPropertySlot::Context, JSC::DeferredStructureTransitionWatchpointFire*) + 168 (JavaScriptCore + 15065384) [0x1afe80128]
+                                                                            1   JSC::Structure::create(JSC::VM&, JSC::Structure*, JSC::DeferredStructureTransitionWatchpointFire*) + 240 (JavaScriptCore + 15067912) [0x1afe80b08]
+                                                                              1   JSC::Structure::Structure(JSC::VM&, JSC::Structure*, JSC::DeferredStructureTransitionWatchpointFire*) + 508 (JavaScriptCore + 15061024) [0x1afe7f020]
+                                                                                1   JSC::StructureIDTable::allocateID(JSC::Structure*) + 92 (JavaScriptCore + 15115432) [0x1afe8c4a8]
+                                                                  1   ??? [0x1291041e8]
+                                                                    1   llint_function_for_construct_arity_checkTagGateAfter + 35492 (JavaScriptCore + 3571780) [0x1af38a044]
+                                                                      1   llint_slow_path_put_by_id + 3284 (JavaScriptCore + 1091280) [0x1af12c6d0]
+                                                                        1   JSC::Structure::prototypeChain(JSC::VM&, JSC::JSGlobalObject*, JSC::JSObject*) const + 56 (JavaScriptCore + 8734788) [0x1af876844]
+                                                                          1   JSC::Structure::isValid(JSC::JSGlobalObject*, JSC::StructureChain*, JSC::JSObject*) const + 96 (JavaScriptCore + 8735248) [0x1af876a10]
+                                                              1   llint_function_for_construct_arity_checkTagGateAfter + 35492 (JavaScriptCore + 3571780) [0x1af38a044]
+                                                                1   llint_slow_path_put_by_id + 3172 (JavaScriptCore + 1091168) [0x1af12c660]
+                                                                  1   JSC::Heap::collectIfNecessaryOrDefer(JSC::GCDeferralContext*) + 140 (JavaScriptCore + 9557596) [0x1af93f65c]
+                                                                    1   JSC::Heap::stopIfNecessarySlow() + 80 (JavaScriptCore + 9584088) [0x1af945dd8]
+                                                                      1   JSC::Heap::collectInMutatorThread() + 52 (JavaScriptCore + 9584480) [0x1af945f60]
+                                                                        1   JSC::sanitizeStackForVM(JSC::VM&) + 60 (JavaScriptCore + 15209024) [0x1afea3240]
+                                                                          1   <Non-Suppressed>
+                                                            1   llint_function_for_construct_arity_checkTagGateAfter + 35492 (JavaScriptCore + 3571780) [0x1af38a044]
+                                                              1   llint_slow_path_put_by_id + 2328 (JavaScriptCore + 1090324) [0x1af12c314]
+                                                                1   JSC::JSObject::putInlineSlow(JSC::JSGlobalObject*, JSC::PropertyName, JSC::JSValue, JSC::PutPropertySlot&) + 1292 (JavaScriptCore + 14061992) [0x1afd8b1a8]
+                                                                  1   bool JSC::JSObject::putDirectInternal<(JSC::JSObject::PutMode)0>(JSC::VM&, JSC::PropertyName, JSC::JSValue, unsigned int, JSC::PutPropertySlot&) + 460 (JavaScriptCore + 8724540) [0x1af87403c]
+                                                            1   ??? [0x12922ca80]
+                                                              1   ??? [0x1291041e8]
+                                                                1   ??? [0x1291041e8]
+                                                                  1   ??? [0x12922c454]
+                                                                    1   ??? [0x129107604]
+                                                                      1   operationLinkPolymorphicCall + 56 (JavaScriptCore + 11186412) [0x1afacd0ec]
+                                                                        1   JSC::virtualForWithFunction(JSC::JSGlobalObject*, JSC::CallFrame*, JSC::CallLinkInfo*, JSC::JSCell*&) + 504 (JavaScriptCore + 11186976) [0x1afacd320]
+                                                                          1   JSC::ScriptExecutable::prepareForExecutionImpl(JSC::VM&, JSC::JSFunction*, JSC::JSScope*, JSC::CodeSpecializationKind, JSC::CodeBlock*&) + 108 (JavaScriptCore + 14905420) [0x1afe5904c]
+                                                                            1   JSC::ScriptExecutable::newCodeBlockFor(JSC::CodeSpecializationKind, JSC::JSFunction*, JSC::JSScope*, JSC::Exception*&) + 1388 (JavaScriptCore + 14902900) [0x1afe58674]
+                                                                              1   JSC::CodeBlock::finishCreation(JSC::VM&, JSC::ScriptExecutable*, JSC::UnlinkedCodeBlock*, JSC::JSScope*) + 1224 (JavaScriptCore + 6233788) [0x1af613ebc]
+                                                                                1   <Non-Suppressed>
+                                                            1   ??? [0x12916b080]
+                                                              1   ??? [0x1291041e8]
+                                                                1   ??? [0x1291041e8]
+                                                                  1   ??? [0x12916aa54]
+                                                                    1   ??? [0x1291041e8]
+                                                                      1   ??? [0x12916ae14]
+                                                                        1   operationPutByIdDirectNonStrictOptimize + 980 (JavaScriptCore + 944952) [0x1af108b38]
+                                                                          1   JSC::repatchPutBy(JSC::JSGlobalObject*, JSC::CodeBlock*, JSC::JSValue, JSC::Structure*, JSC::CacheableIdentifier, JSC::PutPropertySlot const&, JSC::StructureStubInfo&, JSC::PutByKind, JSC::PutKind) + 2768 (JavaScriptCore + 11556084) [0x1afb274f4]
+                                                                            1   JSC::StructureStubInfo::addAccessCase(JSC::GCSafeConcurrentJSLocker const&, JSC::JSGlobalObject*, JSC::CodeBlock*, JSC::ECMAMode, JSC::CacheableIdentifier, WTF::RefPtr<JSC::AccessCase, WTF::RawPtrTraits<JSC::AccessCase>, WTF::DefaultRefDerefTraits<JSC::AccessCase> >) + 1960 (JavaScriptCore + 6574160) [0x1af667050]
+                                                                              1   JSC::PolymorphicAccess::regenerate(JSC::GCSafeConcurrentJSLocker const&, JSC::VM&, JSC::JSGlobalObject*, JSC::CodeBlock*, JSC::ECMAMode, JSC::StructureStubInfo&) + 4528 (JavaScriptCore + 6470372) [0x1af64dae4]
+                                                                                1   JSC::AccessCase::generateWithGuard(JSC::AccessGenerationState&, JSC::AbstractMacroAssembler<JSC::ARM64EAssembler>::JumpList&) + 17668 (JavaScriptCore + 5991084) [0x1af5d8aac]
+                                                                                  1   JSC::AccessCase::generateImpl(JSC::AccessGenerationState&) + 2732 (JavaScriptCore + 6004960) [0x1af5dc0e0]
+                                                        1   ??? [0x1292f3354]
+                                                          1   ??? [0x1291041e8]
+                                                            1   ??? [0x129104c70]
+                                                              1   JSC::JSONProtoFuncParse(JSC::JSGlobalObject*, JSC::CallFrame*) + 512 (JavaScriptCore + 14156456) [0x1afda22a8]
+                                                                1   JSC::LiteralParser<unsigned char>::parse(JSC::ParserState) + 3672 (JavaScriptCore + 109444) [0x1af03cb84]
+                                                                  1   WTF::equal(WTF::StringImpl const*, unsigned char const*, unsigned int) + 276 (JavaScriptCore + 46516) [0x1af02d5b4]
+                                                        1   ??? [0x1292b4e7c]
+                                                          1   llint_function_for_construct_arity_checkTagGateAfter + 144412 (JavaScriptCore + 3680700) [0x1af3a49bc]
+                                                            1   JSC::LLInt::setUpCall(JSC::CallFrame*, JSC::CodeSpecializationKind, JSC::JSValue, JSC::LLIntCallLinkInfo*) + 2048 (JavaScriptCore + 11775784) [0x1afb5cf28]
+                                                              1   JSC::ScriptExecutable::prepareForExecutionImpl(JSC::VM&, JSC::JSFunction*, JSC::JSScope*, JSC::CodeSpecializationKind, JSC::CodeBlock*&) + 108 (JavaScriptCore + 14905420) [0x1afe5904c]
+                                                                1   JSC::ScriptExecutable::newCodeBlockFor(JSC::CodeSpecializationKind, JSC::JSFunction*, JSC::JSScope*, JSC::Exception*&) + 1368 (JavaScriptCore + 14902880) [0x1afe58660]
+                                                                  1   JSC::CodeBlock::CodeBlock(JSC::VM&, JSC::Structure*, JSC::ScriptExecutable*, JSC::UnlinkedCodeBlock*, JSC::JSScope*) + 524 (JavaScriptCore + 6232264) [0x1af6138c8]
+                                                                    1   mach_absolute_time + 108 (libsystem_kernel.dylib + 7852) [0x196f89eac]
+                                                                      1   <Non-Suppressed>
+                                                        1   ??? [0x1291e7b50]
+                                                          1   ??? [0x1291041e8]
+                                                            1   ??? [0x129104c70]
+                                                              1   JSC::JSONProtoFuncParse(JSC::JSGlobalObject*, JSC::CallFrame*) + 512 (JavaScriptCore + 14156456) [0x1afda22a8]
+                                                                1   JSC::LiteralParser<unsigned char>::parse(JSC::ParserState) + 4384 (JavaScriptCore + 110156) [0x1af03ce4c]
+                                                                  1   JSC::LiteralParser<unsigned char>::parsePrimitiveValue(JSC::VM&) + 880 (JavaScriptCore + 14510560) [0x1afdf89e0]
+                                                                    1   WTF::AtomStringImpl::add(unsigned char const*, unsigned int) + 344 (JavaScriptCore + 17512808) [0x1b00d5968]
+                                                        1   ??? [0x12912997c]
+                                                          1   ??? [0x1291041e8]
+                                                            1   ??? [0x12912997c]
+                                                              1   ??? [0x1291041e8]
+                                                                1   ??? [0x12912997c]
+                                                                  1   llint_function_for_construct_arity_checkTagGateAfter + 35492 (JavaScriptCore + 3571780) [0x1af38a044]
+                                                                    1   llint_slow_path_put_by_id + 1064 (JavaScriptCore + 1089060) [0x1af12be24]
+                                                1   llint_function_for_construct_arity_checkTagGateAfter + 2940 (JavaScriptCore + 3539228) [0x1af38211c]
+                                                  1   <Non-Suppressed>
+                            2   WebCore::Document::loadEventDelayTimerFired() + 76 (WebCore + 19467864) [0x1b36dee58]
+                              2   WebCore::FrameLoader::checkCompleted() + 656 (WebCore + 197156) [0x1b247e224]
+                                2   WebCore::Document::implicitClose() + 700 (WebCore + 198032) [0x1b247e590]
+                                  2   WebCore::DOMWindow::dispatchLoadEvent() + 680 (WebCore + 425748) [0x1b24b5f14]
+                                    2   WebCore::EventDispatcher::dispatchEvent(WebCore::Node&, WebCore::Event&) + 5460 (WebCore + 19862512) [0x1b373f3f0]
+                                      2   WebCore::dispatchEventInDOM(WebCore::Event&, WebCore::EventPath const&) + 228 (WebCore + 19865928) [0x1b3740148]
+                                        2   WebCore::EventTarget::fireEventListeners(WebCore::Event&, WebCore::EventTarget::EventInvokePhase) + 300 (WebCore + 19880736) [0x1b3743b20]
+                                          2   WebCore::EventTarget::innerInvokeEventListeners(WebCore::Event&, WTF::Vector<WTF::RefPtr<WebCore::RegisteredEventListener, WTF::RawPtrTraits<WebCore::RegisteredEventListener>, WTF::DefaultRefDerefTraits<WebCore::RegisteredEventListener> >, 1ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>, WebCore::EventTarget::EventInvokePhase) + 604 (WebCore + 19882804) [0x1b3744334]
+                                            2   WebCore::JSEventListener::handleEvent(WebCore::ScriptExecutionContext&, WebCore::Event&) + 1792 (WebCore + 16727896) [0x1b3441f58]
+                                              2   JSC::profiledCall(JSC::JSGlobalObject*, JSC::ProfilingReason, JSC::JSValue, JSC::CallData const&, JSC::JSValue, JSC::ArgList const&, WTF::NakedPtr<JSC::Exception>&) + 204 (JavaScriptCore + 12939888) [0x1afc79270]
+                                                2   JSC::Interpreter::executeCall(JSC::JSGlobalObject*, JSC::JSObject*, JSC::CallData const&, JSC::JSValue, JSC::ArgList const&) + 488 (JavaScriptCore + 10604348) [0x1afa3ef3c]
+                                                  2   ??? [0x1291047e8]
+                                                    2   ??? [0x129918540]
+                                                      2   ??? [0x129104c70]
+                                                        2   WebCore::jsDocumentPrototypeFunction_write(JSC::JSGlobalObject*, JSC::CallFrame*) + 184 (WebCore + 6130300) [0x1b2a26a7c]
+                                                          2   WebCore::Document::write(WebCore::Document*, WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>&&) + 324 (WebCore + 19524092) [0x1b36ec9fc]
+                                                            2   WebCore::Document::write(WebCore::Document*, WebCore::SegmentedString&&) + 260 (WebCore + 19523696) [0x1b36ec870]
+                                                              2   WebCore::HTMLDocumentParser::insert(WebCore::SegmentedString&&) + 196 (WebCore + 23460128) [0x1b3aad920]
+                                                                1   WebCore::HTMLDocumentParser::pumpTokenizer(WebCore::HTMLDocumentParser::SynchronousMode) + 572 (WebCore + 152672) [0x1b2473460]
+                                                                  1   WebCore::HTMLScriptRunner::runScript(WebCore::ScriptElement&, WTF::TextPosition const&) + 588 (WebCore + 23501176) [0x1b3ab7978]
+                                                                    1   WebCore::ScriptElement::prepareScript(WTF::TextPosition const&, WebCore::ScriptElement::LegacyTypeSupport) + 5336 (WebCore + 484176) [0x1b24c4350]
+                                                                      1   WebCore::ScriptElement::executeClassicScript(WebCore::ScriptSourceCode const&) + 556 (WebCore + 20192836) [0x1b378fe44]
+                                                                        1   WebCore::ScriptController::evaluateIgnoringException(WebCore::ScriptSourceCode const&) + 52 (WebCore + 16874696) [0x1b3465cc8]
+                                                                          1   WebCore::ScriptController::evaluateInWorld(WebCore::ScriptSourceCode const&, WebCore::DOMWrapperWorld&) + 180 (WebCore + 16873756) [0x1b346591c]
+                                                                            1   WebCore::JSExecState::profiledEvaluate(JSC::JSGlobalObject*, JSC::ProfilingReason, JSC::SourceCode const&, JSC::JSValue, WTF::NakedPtr<JSC::Exception>&) + 112 (WebCore + 16874552) [0x1b3465c38]
+                                                                              1   JSC::evaluate(JSC::JSGlobalObject*, JSC::SourceCode const&, JSC::JSValue, WTF::NakedPtr<JSC::Exception>&) + 272 (JavaScriptCore + 13163572) [0x1afcafc34]
+                                                                                1   JSC::Interpreter::executeProgram(JSC::SourceCode const&, JSC::JSGlobalObject*, JSC::JSObject*) + 12000 (JavaScriptCore + 10597792) [0x1afa3d5a0]
+                                                                                  1   ??? [0x1291047e8]
+                                                                                    1   ??? [0x1291041e8]
+                                                                                      1   llint_function_for_construct_arity_checkTagGateAfter + 31456 (JavaScriptCore + 3567744) [0x1af389080]
+                                                                                        1   llint_slow_path_get_by_id + 304 (JavaScriptCore + 1087752) [0x1af12b908]
+                                                                                          1   JSC::LLInt::performLLIntGetByID(JSC::Instruction const*, JSC::CodeBlock*, JSC::JSGlobalObject*, JSC::JSValue, JSC::Identifier const&, JSC::GetByIdModeMetadata&) + 372 (JavaScriptCore + 11699760) [0x1afb4a630]
+                                                                                            1   JSC::Structure::materializePropertyTable(JSC::VM&, bool) + 836 (JavaScriptCore + 15063868) [0x1afe7fb3c]
+                                                                                              1   JSC::PropertyTable::add(JSC::VM&, JSC::PropertyMapEntry const&) + 48 (JavaScriptCore + 3504208) [0x1af379850]
+                                                                1   WebCore::HTMLDocumentParser::pumpTokenizer(WebCore::HTMLDocumentParser::SynchronousMode) + 188 (WebCore + 152288) [0x1b24732e0]
+                                                                  1   WebCore::XSSAuditor::init(WebCore::Document*, WebCore::XSSAuditorDelegate*) + 368 (WebCore + 157508) [0x1b2474744]
+                                                                    1   WebCore::XSSAuditor::canonicalize(WTF::String const&, WebCore::XSSAuditor::TruncationStyle) + 184 (WebCore + 23611108) [0x1b3ad26e4]
+                                                                      1   _platform_memmove + 188 (libsystem_platform.dylib + 16844) [0x196fdc1cc]
+                        1   WTF::RunLoop::TimerBase::start(WTF::Seconds, bool)::$_1::__invoke(__CFRunLoopTimer*, void*) + 96 (JavaScriptCore + 17732696) [0x1b010b458]
+                          1   JSC::JSRunLoopTimer::Manager::timerDidFire() + 1064 (JavaScriptCore + 14176760) [0x1afda71f8]
+                            1   JSC::JSRunLoopTimer::timerDidFire() + 144 (JavaScriptCore + 14177548) [0x1afda750c]
+                              1   JSC::IncrementalSweeper::doSweep(JSC::VM&, WTF::MonotonicTime) + 168 (JavaScriptCore + 9645828) [0x1af954f04]
+                                1   JSC::MarkedBlock::Handle::sweep(JSC::FreeList*) + 360 (JavaScriptCore + 9712272) [0x1af965290]
+                                  1   JSC::HeapCellType::finishSweep(JSC::MarkedBlock::Handle&, JSC::FreeList*) + 36 (JavaScriptCore + 9628996) [0x1af950d44]
+                                    1   void JSC::MarkedBlock::Handle::finishSweepKnowingHeapCellType<JSC::DefaultDestroyFunc>(JSC::FreeList*, JSC::DefaultDestroyFunc const&) + 296 (JavaScriptCore + 9629304) [0x1af950e78]
+                                      1   void JSC::MarkedBlock::Handle::finishSweepKnowingHeapCellType<JSC::DefaultDestroyFunc>(JSC::FreeList*, JSC::DefaultDestroyFunc const&)::'lambda'()::operator()() const + 264 (JavaScriptCore + 9653852) [0x1af956e5c]
+                                        1   void JSC::MarkedBlock::Handle::specializedSweep<true, (JSC::MarkedBlock::Handle::EmptyMode)1, (JSC::MarkedBlock::Handle::SweepMode)0, (JSC::MarkedBlock::Handle::SweepDestructionMode)1, (JSC::MarkedBlock::Handle::ScribbleMode)0, (JSC::MarkedBlock::Handle::NewlyAllocatedMode)1, (JSC::MarkedBlock::Handle::MarksMode)1, JSC::DefaultDestroyFunc>(JSC::FreeList*, JSC::MarkedBlock::Handle::EmptyMode, JSC::MarkedBlock::Handle::SweepMode, JSC::MarkedBlock::Handle::SweepDestructionMode, JSC::MarkedBlock::Handle::ScribbleMode, JSC::MarkedBlock::Handle::NewlyAllocatedMode, JSC::MarkedBlock::Handle::MarksMode, JSC::DefaultDestroyFunc const&) + 228 (JavaScriptCore + 9660512) [0x1af958860]
+                                          1   JSC::SymbolTable::~SymbolTable() + 112 (JavaScriptCore + 15126352) [0x1afe8ef50]
+                                            1   WTF::HashMap<WTF::RefPtr<WTF::UniquedStringImpl, WTF::RawPtrTraits<WTF::UniquedStringImpl>, WTF::DefaultRefDerefTraits<WTF::UniquedStringImpl> >, JSC::SymbolTableEntry, JSC::IdentifierRepHash, WTF::HashTraits<WTF::RefPtr<WTF::UniquedStringImpl, WTF::RawPtrTraits<WTF::UniquedStringImpl>, WTF::DefaultRefDerefTraits<WTF::UniquedStringImpl> > >, JSC::SymbolTableIndexHashTraits, WTF::HashTableTraits>::~HashMap() + 204 (JavaScriptCore + 15133028) [0x1afe90964]
+                                              1   pas_thread_local_cache_flush_deallocation_log + 216 (JavaScriptCore + 18384848) [0x1b01aa7d0]
+              1   CFRunLoopRunSpecific + 684 (CoreFoundation + 534248) [0x19708e6e8]
+                1   __CFRunLoopDoObservers + 572 (CoreFoundation + 539640) [0x19708fbf8]
+                  1   __CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__ + 36 (CoreFoundation + 540076) [0x19708fdac]
+                    1   WebKit::TiledCoreAnimationDrawingArea::updateRendering(WebKit::TiledCoreAnimationDrawingArea::UpdateRenderingType) + 588 (WebKit + 5901832) [0x1b5427e08]
+                      1   WebCore::Page::updateRendering() + 288 (WebCore + 26408096) [0x1b3d7d4a0]
+                        1   WebCore::ScrollingCoordinatorMac::willStartRenderingUpdate() + 48 (WebCore + 11000176) [0x1b2ecb970]
+                          1   WebCore::ThreadedScrollingTree::willStartRenderingUpdate() + 320 (WebCore + 26963440) [0x1b3e04df0]
+  7   thread_start + 8 (libsystem_pthread.dylib + 8912) [0x196fc02d0]
+    7   _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x196fc54ec]
+      6   WTF::wtfThreadEntryPoint(void*) + 16 (JavaScriptCore + 44592) [0x1af02ce30]
+        6   WTF::Thread::entryPoint(WTF::Thread::NewThreadContext*) + 168 (JavaScriptCore + 17815588) [0x1b011f824]
+          6   WTF::Detail::CallableWrapper<WTF::AutomaticThread::start(WTF::AbstractLocker const&)::$_0, void>::call() + 468 (JavaScriptCore + 17529368) [0x1b00d9a18]
+            4   JSC::JITWorklistThread::work() + 252 (JavaScriptCore + 11523084) [0x1afb1f40c]
+              4   JSC::JITPlan::compileInThread(JSC::JITWorklistThread*) + 432 (JavaScriptCore + 11270824) [0x1afae1aa8]
+                3   JSC::BaselineJITPlan::compileInThreadImpl() + 24 (JavaScriptCore + 10672652) [0x1afa4fa0c]
+                  2   JSC::JIT::compileAndLinkWithoutFinalizing(JSC::JITCompilationEffort) + 2012 (JavaScriptCore + 10728992) [0x1afa5d620]
+                    1   JSC::JIT::privateCompileMainPass() + 3780 (JavaScriptCore + 322476) [0x1af070bac]
+                      1   JSC::JIT::emit_op_resolve_scope(JSC::Instruction const*) + 928 (JavaScriptCore + 11412788) [0x1afb04534]
+                        1   JSC::MacroAssemblerARM64::store64(JSC::ARM64Registers::RegisterID, JSC::AbstractMacroAssembler<JSC::ARM64EAssembler>::ImplicitAddress) + 320 (JavaScriptCore + 11778304) [0x1afb5d900]
+                          1   JSC::AssemblerBuffer::outOfLineGrow() + 136 (JavaScriptCore + 16618104) [0x1afffb278]
+                            1   <Non-Suppressed, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+                    1   JSC::JIT::privateCompileMainPass() + 1316 (JavaScriptCore + 320012) [0x1af07020c]
+                      1   JSC::JIT::emit_op_get_by_id(JSC::Instruction const*) + 1420 (JavaScriptCore + 11381368) [0x1afafca78]
+                        1   JSC::JITGetByIdGenerator* WTF::Vector<JSC::JITGetByIdGenerator, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::expandCapacity<(WTF::FailureAction)0>(unsigned long, JSC::JITGetByIdGenerator*) + 156 (JavaScriptCore + 10922840) [0x1afa8cb58]
+                          1   bool WTF::Vector<JSC::JITGetByIdGenerator, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::reserveCapacity<(WTF::FailureAction)0>(unsigned long) + 436 (JavaScriptCore + 10923292) [0x1afa8cd1c]
+                            1   <Non-Suppressed, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+                  1   JSC::JIT::compileAndLinkWithoutFinalizing(JSC::JITCompilationEffort) + 152 (JavaScriptCore + 10727132) [0x1afa5cedc]
+                    1   <Non-Suppressed, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+                1   JSC::DFG::Plan::compileInThreadImpl() + 4604 (JavaScriptCore + 8715872) [0x1af871e60]
+                  1   JSC::DFG::performFastStoreBarrierInsertion(JSC::DFG::Graph&) + 304 (JavaScriptCore + 9146364) [0x1af8daffc]
+                    1   <Non-Suppressed, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+            2   WTF::ParallelHelperPool::Thread::work() + 32 (JavaScriptCore + 17702856) [0x1b0103fc8]
+              2   WTF::ParallelHelperClient::runTask(WTF::RefPtr<WTF::SharedTask<void ()>, WTF::RawPtrTraits<WTF::SharedTask<void ()> >, WTF::DefaultRefDerefTraits<WTF::SharedTask<void ()> > > const&) + 80 (JavaScriptCore + 17699712) [0x1b0103380]
+                2   WTF::SharedTaskFunctor<void (), JSC::Heap::runBeginPhase(JSC::GCConductor)::$_18>::run() + 144 (JavaScriptCore + 9604184) [0x1af94ac58]
+                  2   JSC::SlotVisitor::drainFromShared(JSC::SlotVisitor::SharedDrainMode, WTF::MonotonicTime) + 1100 (JavaScriptCore + 9760200) [0x1af970dc8]
+                    1   JSC::MarkingConstraintSolver::runExecutionThread(JSC::SlotVisitor&, JSC::MarkingConstraintSolver::SchedulerPreference, WTF::ScopedLambda<std::__1::optional<unsigned int> ()>) + 656 (JavaScriptCore + 9729488) [0x1af9695d0]
+                      1   WTF::Detail::CallableWrapper<JSC::Heap::addCoreConstraints()::$_38, void, JSC::SlotVisitor&>::call(JSC::SlotVisitor&) + 44 (JavaScriptCore + 9617964) [0x1af94e22c]
+                        1   void JSC::MarkedSpace::visitWeakSets<JSC::SlotVisitor>(JSC::SlotVisitor&) + 132 (JavaScriptCore + 9720208) [0x1af967190]
+                          1   void JSC::WeakBlock::specializedVisit<JSC::MarkedBlock, JSC::SlotVisitor>(JSC::MarkedBlock&, JSC::SlotVisitor&) + 280 (JavaScriptCore + 9790508) [0x1af97842c]
+                            1   WebCore::JSNodeOwner::isReachableFromOpaqueRoots(JSC::Handle<JSC::Unknown>, void*, JSC::AbstractSlotVisitor&, char const**) + 552 (WebCore + 16799892) [0x1b3453894]
+                              1   WTF::ConcurrentPtrHashSet::containsImpl(void*) const + 156 (WebCore + 4501956) [0x1b28991c4]
+                                1   <Non-Suppressed, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+                    1   JSC::MarkingConstraintSolver::runExecutionThread(JSC::SlotVisitor&, JSC::MarkingConstraintSolver::SchedulerPreference, WTF::ScopedLambda<std::__1::optional<unsigned int> ()>) + 520 (JavaScriptCore + 9729352) [0x1af969548]
+                      1   WTF::Ref<WTF::Ref::SharedTask<void (JSC::HeapCell)>, WTF::Ref::RawPtrTraits<WTF::Ref::RawPtrTraits> > JSC::IsoCellSet::forEachMarkedCellInParallel<JSC::SlotVisitor&, auto JSC::Heap::addCoreConstraints()::$_40::operator()<JSC::SlotVisitor>(JSC::SlotVisitor&) const::'lambda'(JSC::SlotVisitor&, JSC::HeapCell*, JSC::HeapCell*::Kind)>(auto JSC::Heap::addCoreConstraints()::$_40::operator()<JSC::SlotVisitor>(JSC::SlotVisitor&) const::'lambda'(JSC::SlotVisitor&, JSC::HeapCell*, JSC::HeapCell*::Kind) const&)::Task::run(JSC::SlotVisitor&) + 260 (JavaScriptCore + 9622360) [0x1af94f358]
+                        1   JSC::ExecutableToCodeBlockEdge::visitOutputConstraints(JSC::JSCell*, JSC::SlotVisitor&) + 60 (JavaScriptCore + 6362776) [0x1af633698]
+                          1   void JSC::ExecutableToCodeBlockEdge::runConstraint<JSC::SlotVisitor>(JSC::ConcurrentJSLocker const&, JSC::VM&, JSC::SlotVisitor&) + 56 (JavaScriptCore + 6359892) [0x1af632b54]
+                            1   void JSC::CodeBlock::propagateTransitions<JSC::SlotVisitor>(JSC::ConcurrentJSLocker const&, JSC::SlotVisitor&) + 508 (JavaScriptCore + 6221340) [0x1af610e1c]
+                              1   auto void JSC::CodeBlock::propagateTransitions<JSC::SlotVisitor>(JSC::ConcurrentJSLocker const&, JSC::SlotVisitor&)::'lambda'(JSC::SlotVisitor&)::operator()<JSC::OpPutById::Metadata>(JSC::SlotVisitor&) const + 272 (JavaScriptCore + 6326904) [0x1af62aa78]
+                                1   <Non-Suppressed, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+      1   scavenger_thread_main + 412 (JavaScriptCore + 18313996) [0x1b019930c]
+        1   pas_thread_local_cache_for_all + 688 (JavaScriptCore + 18388804) [0x1b01ab744]
+          1   <Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+  1   start_wqthread + 8 (libsystem_pthread.dylib + 8900) [0x196fc02c4]
+    1   _pthread_wqthread + 288 (libsystem_pthread.dylib + 13744) [0x196fc15b0]
+      1   _dispatch_workloop_worker_thread + 656 (libdispatch.dylib + 91912) [0x196e19708]
+        1   _dispatch_lane_invoke + 392 (libdispatch.dylib + 48804) [0x196e0eea4]
+          1   _dispatch_lane_serial_drain + 896 (libdispatch.dylib + 46096) [0x196e0e410]
+            1   _dispatch_client_callout + 20 (libdispatch.dylib + 15276) [0x196e06bac]
+              1   CA::CG::Queue::render_callback(void*) + 1420 (QuartzCore + 323564) [0x19df02fec]
+                1   CA::CG::DrawOp::render(CA::CG::Renderer&) const + 1604 (QuartzCore + 342608) [0x19df07a50]
+                  1   CA::CG::fill_path(CA::CG::Renderer&, CGPath const*, CA::CG::StrokeParameters const*, CA::Rect const*, CA::ScanConverter::FillRule, CA::Mat2<double> const&, bool) + 208 (QuartzCore + 765508) [0x19df6ee44]
+                    1   CA::OGL::emit_shape(CA::OGL::Context&, CA::Shape const*) + 828 (QuartzCore + 626448) [0x19df4cf10]
+                      1   CA::OGL::MetalContext::draw_elements(CA::OGL::PrimitiveMode, unsigned int, unsigned short const*, CA::OGL::Vertex const*, unsigned int, unsigned int, CA::OGL::ClipPlane const*) + 120 (QuartzCore + 354836) [0x19df0aa14]
+                        1   CA::OGL::MetalContext::draw(MTLPrimitiveType, unsigned int, unsigned int, void const*, unsigned long, unsigned int, unsigned int, unsigned short const*, CA::OGL::ClipPlane const*, CA::OGL::MetalBufferPool::MetalBuffer const*) + 176 (QuartzCore + 355088) [0x19df0ab10]
+                          1   CA::OGL::MetalContext::start_render_encoder(CA::OGL::MetalSurface*, bool) + 540 (QuartzCore + 371236) [0x19df0ea24]
+                            1   ??? (AGXMetal13_3 + 2053240) [0x1f85b5478]
+                              1   ??? (AGXMetal13_3 + 2844420) [0x1f8676704]
+                                1   ??? (AGXMetal13_3 + 2242580) [0x1f85e3814]
+                                  1   ??? (AGXMetal13_3 + 2932232) [0x1f868be08]
+                                    1   IOSurfaceClientGetHeightOfPlane + 40 (IOSurface + 18568) [0x19f806888]
+                                      1   <Non-Suppressed, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+
+  Binary Images:
+           0x102198000 -        0x1021a3fff  com.apple.WebKit.WebContent 17612 (17612.2.9.1.20) <1963A7A2-93E5-3B03-B7EA-5394FB685F82>  /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent
+           0x104988000 -        0x1049fbfff  dyld (940)                                         <86A8BA48-8BB4-3B30-9CDA-051F73C74F44>  /usr/lib/dyld
+           0x196d0a000 -        0x196d43fff  libxpc.dylib (2235.40.11)                          <A35762DA-B9C1-3897-BC39-D88BC78FAD1C>  /usr/lib/system/libxpc.dylib
+           0x196e03000 -        0x196e49fff  libdispatch.dylib (1324.41.2)                      <3D7A56A3-23BF-3077-B5C6-9CE65CE7333E>  /usr/lib/system/libdispatch.dylib
+           0x196f88000 -        0x196fbdfff  libsystem_kernel.dylib (8019.41.5)                 <C8524C02-B14F-30BD-A228-C44B4A448E68>  /usr/lib/system/libsystem_kernel.dylib
+           0x196fbe000 -        0x196fcafff  libsystem_pthread.dylib (485.40.4)                 <4786E19A-9312-38E6-80EF-9C1394548118>  /usr/lib/system/libsystem_pthread.dylib
+           0x196fd8000 -        0x196fdffff  libsystem_platform.dylib (273.40.1)                <06CE953D-F22A-3724-B6D5-829B45179897>  /usr/lib/system/libsystem_platform.dylib
+           0x19700c000 -        0x19754ffff  com.apple.CoreFoundation 6.9 (1855.105)            <B2FF96D0-AE99-31EF-9014-FC9964B4F3E0>  /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+           0x197f03000 -        0x1982f0fff  com.apple.Foundation 6.9 (1855.105)                <DE039F1B-FFE5-3644-A8CF-7BA52C32CD73>  /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+           0x19deb4000 -        0x19e1b1fff  com.apple.QuartzCore 1.11 (962.57.1)               <B7469CDD-CEAE-3CB7-BB88-6C8D274D546A>  /System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore
+           0x19f802000 -        0x19f815fff  com.apple.IOSurface 302.9 (302.9)                  <17C898DA-A756-3229-8DDE-0F845FDB7C79>  /System/Library/Frameworks/IOSurface.framework/Versions/A/IOSurface
+           0x1af022000 -        0x1b02d9fff  com.apple.JavaScriptCore 17612 (17612.2.9.1.20)    <1F13D2B9-D661-364F-8B67-865F68018E4A>  /System/Library/Frameworks/JavaScriptCore.framework/Versions/A/JavaScriptCore
+           0x1b244e000 -        0x1b47f9fff  com.apple.WebCore 17612 (17612.2.9.1.20)           <31C80A86-28B1-3F86-B92D-B6350DE8E90B>  /System/Library/Frameworks/WebKit.framework/Versions/A/Frameworks/WebCore.framework/Versions/A/WebCore
+           0x1b4e87000 -        0x1b57d6fff  com.apple.WebKit 17612 (17612.2.9.1.20)            <49D3AAB3-BD37-354C-87DC-67A6509FE79F>  /System/Library/Frameworks/WebKit.framework/Versions/A/WebKit
+           0x1f83c0000 -        0x1f88d3fff  com.apple.AGXMetal13-3 187.57 (187.57)             <99766C17-8110-3AA4-A379-91F73D56CBAA>  /System/Library/Extensions/AGXMetal13_3.bundle/Contents/MacOS/AGXMetal13_3
+
+
+Powerstats for:   WindowServer
+UUID:             9E39D81A-838B-3295-9FA7-2485A3D673C1
+Path:             /System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/Resources/WindowServer
+Codesigning ID:   com.apple.WindowServer
+Architecture:     arm64e
+Start time:       2022-04-25 14:23:20.290 +0200
+End time:         2022-04-25 14:23:58.490 +0200
+Num samples:      5 (7%)
+Primary state:    4 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Unspecified, Requested Thread QoS Unspecified, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 5 samples Active
+Power Source:     5 samples on Battery, 0 samples on AC
+  2  thread_start + 8 (libsystem_pthread.dylib + 8912) [0x196fc02d0]
+    2  _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x196fc54ec]
+      2  thread_fun(void*) + 32 (QuartzCore + 290004) [0x19defacd4]
+        1  CA::Render::Server::server_thread(void*) + 1600 (QuartzCore + 291620) [0x19defb324]
+          1  -[OS_voucher dealloc] + 28 (libdispatch.dylib + 14892) [0x196e06a2c]
+            1  _voucher_dispose + 88 (libdispatch.dylib + 173252) [0x196e2d4c4]
+              1  _voucher_dealloc_mach_voucher + 16 (libdispatch.dylib + 169500) [0x196e2c61c]
+                1  _kernelrpc_mach_port_deallocate_trap + 8 (libsystem_kernel.dylib + 6340) [0x196f898c4]
+        1  CA::Render::Server::server_thread(void*) + 1444 (QuartzCore + 291464) [0x19defb288]
+          1  CA::Render::Server::ReceivedMessage::run_command_stream() + 704 (QuartzCore + 1689076) [0x19e0505f4]
+            1  CA::Render::decode_commands(CA::Render::Decoder*) + 412 (QuartzCore + 2068844) [0x19e0ad16c]
+              1  CA::Render::Decoder::decode_object(CA::Render::Type) + 1364 (QuartzCore + 2059340) [0x19e0aac4c]
+                1  CA::Render::Layer::Layer(CA::Render::Decoder*) + 176 (QuartzCore + 1074800) [0x19dfba670]
+                  1  CA::Render::Decoder::decode_object(CA::Render::Type) + 144 (QuartzCore + 2058120) [0x19e0aa788]
+                    1  CA::Render::Decoder::decode_object(CA::Render::Type) + 2320 (QuartzCore + 2060296) [0x19e0ab008]
+                      1  CA::Render::Surface::decode(CA::Render::Decoder*) + 136 (QuartzCore + 2315292) [0x19e0e941c]
+                        1  CA::Render::Surface::Surface(CA::Render::Surface*, unsigned int) + 496 (QuartzCore + 406140) [0x19df1727c]
+                          1  IOSurfaceClientIncrementUseCount + 140 (IOSurface + 19048) [0x19f806a68]
+                            1  IOConnectCallMethod + 176 (IOKit + 14540) [0x199a718cc]
+                              1  io_connect_method + 440 (IOKit + 15084) [0x199a71aec]
+                                1  mach_msg_trap + 8 (libsystem_kernel.dylib + 6484) [0x196f89954]
+                                  1  <Kernel mode>
+  2  start + 520 (dyld + 20724) [0x1048c90f4]
+    2  ??? (WindowServer + 13244) [0x10477f3bc]
+      2  SLXServer + 1744 (SkyLight + 3060736) [0x19c46c400]
+        2  server_loop + 128 (SkyLight + 3061564) [0x19c46c73c]
+          2  CGXRunOneServicesPass + 1612 (SkyLight + 3057952) [0x19c46b920]
+            2  post_port_data + 272 (SkyLight + 3058876) [0x19c46bcbc]
+              2  non_coalesced_timer_handler + 24 (SkyLight + 2816900) [0x19c430b84]
+                2  run_timer_pass + 544 (SkyLight + 2816508) [0x19c4309fc]
+                  2  update_display_callback(void*, double) + 1452 (SkyLight + 2424912) [0x19c3d1050]
+                    2  CGXUpdateDisplay + 17028 (SkyLight + 2468648) [0x19c3dbb28]
+                      1  WS::Displays::SLCADisplay::render_update(WS::Displays::Update&, Compositor*, unsigned int, WSCompositeSourceLayer*) + 2776 (SkyLight + 1414376) [0x19c2da4e8]
+                        1  MetalContext::EndUpdate(bool) + 156 (SkyLight + 1207720) [0x19c2a7da8]
+                          1  MetalContext::Flush(bool) + 240 (SkyLight + 1203960) [0x19c2a6ef8]
+                            1  -[_MTLCommandQueue submitCommandBuffer:] + 136 (Metal + 159708) [0x19f846fdc]
+                              1  _dispatch_lane_barrier_sync_invoke_and_complete + 56 (libdispatch.dylib + 77312) [0x196e15e00]
+                                1  _dispatch_client_callout + 20 (libdispatch.dylib + 15276) [0x196e06bac]
+                                  1  __40-[_MTLCommandQueue submitCommandBuffer:]_block_invoke + 36 (Metal + 159784) [0x19f847028]
+                                    1  -[_MTLCommandQueue _submitAvailableCommandBuffers] + 672 (Metal + 127472) [0x19f83f1f0]
+                                      1  -[IOGPUMetalCommandQueue submitCommandBuffers:count:] + 88 (IOGPU + 24220) [0x1b151be9c]
+                                        1  -[IOGPUMetalCommandQueue _submitCommandBuffers:count:] + 804 (IOGPU + 25068) [0x1b151c1ec]
+                                          1  IOGPUCommandQueueSubmitCommandBuffers + 144 (IOGPU + 79128) [0x1b1529518]
+                                            1  IOConnectCallMethod + 176 (IOKit + 14540) [0x199a718cc]
+                                              1  io_connect_method + 440 (IOKit + 15084) [0x199a71aec]
+                                                1  mach_msg_trap + 8 (libsystem_kernel.dylib + 6484) [0x196f89954]
+                      1  WS::Displays::SLCADisplay::render_update(WS::Displays::Update&, Compositor*, unsigned int, WSCompositeSourceLayer*) + 1908 (SkyLight + 1413508) [0x19c2da184]
+                        1  CompositorMetal::CompositeLayersToDestination(WSCompositeSourceLayer*, WSCompositeDestination*, unsigned long long) + 272 (SkyLight + 2990344) [0x19c45b108]
+                          1  CompositorMetal::composite(WSCompositeSourceLayer*, WSCompositeDestination*, bool, bool) + 308 (SkyLight + 2990688) [0x19c45b260]
+                            1  MetalCompositeLayers + 56 (SkyLight + 2991736) [0x19c45b678]
+                              1  MetalCompositeLayer + 10512 (SkyLight + 3002312) [0x19c45dfc8]
+                                1  CARenderOGLRenderDisplayWithOptions + 200 (QuartzCore + 1489216) [0x19e01f940]
+                                  1  CA::OGL::render(CA::OGL::Renderer&, CA::Render::Update*, unsigned long) + 452 (QuartzCore + 1022788) [0x19dfadb44]
+                                    1  CA::OGL::Renderer::render(CA::Render::Update const*, unsigned long) + 1672 (QuartzCore + 1021644) [0x19dfad6cc]
+                                      1  CA::OGL::render_root_layers(CA::OGL::Renderer&, x_link_struct const*, CA::OGL::Gstate const&) + 164 (QuartzCore + 644512) [0x19df515a0]
+                                        1  CA::OGL::prepare_layers(CA::OGL::Renderer&, CA::OGL::Layer&, x_link_struct const&, CA::OGL::Gstate const&, bool, bool&, bool&) + 112 (QuartzCore + 1167864) [0x19dfd11f8]
+                                          1  CA::OGL::prepare_layer(CA::OGL::Renderer&, CA::Render::LayerNode*, CA::OGL::Layer&, CA::OGL::Gstate const&, unsigned int, bool) + 5148 (QuartzCore + 1167600) [0x19dfd10f0]
+                                            1  CA::OGL::LayerNode::prepare_sublayers_if_needed() + 88 (QuartzCore + 1913464) [0x19e087278]
+                                              1  CA::OGL::prepare_layers(CA::OGL::Renderer&, CA::OGL::Layer&, x_link_struct const&, CA::OGL::Gstate const&, bool, bool&, bool&) + 112 (QuartzCore + 1167864) [0x19dfd11f8]
+                                                1  CA::OGL::prepare_layer(CA::OGL::Renderer&, CA::Render::LayerNode*, CA::OGL::Layer&, CA::OGL::Gstate const&, unsigned int, bool) + 5148 (QuartzCore + 1167600) [0x19dfd10f0]
+                                                  1  CA::OGL::LayerNode::prepare_sublayers_if_needed() + 88 (QuartzCore + 1913464) [0x19e087278]
+                                                    1  CA::OGL::prepare_layers(CA::OGL::Renderer&, CA::OGL::Layer&, x_link_struct const&, CA::OGL::Gstate const&, bool, bool&, bool&) + 112 (QuartzCore + 1167864) [0x19dfd11f8]
+                                                      1  CA::OGL::prepare_layer(CA::OGL::Renderer&, CA::Render::LayerNode*, CA::OGL::Layer&, CA::OGL::Gstate const&, unsigned int, bool) + 5148 (QuartzCore + 1167600) [0x19dfd10f0]
+                                                        1  CA::OGL::LayerNode::prepare_sublayers_if_needed() + 88 (QuartzCore + 1913464) [0x19e087278]
+                                                          1  CA::OGL::prepare_layers(CA::OGL::Renderer&, CA::OGL::Layer&, x_link_struct const&, CA::OGL::Gstate const&, bool, bool&, bool&) + 112 (QuartzCore + 1167864) [0x19dfd11f8]
+                                                            1  CA::OGL::prepare_layer(CA::OGL::Renderer&, CA::Render::LayerNode*, CA::OGL::Layer&, CA::OGL::Gstate const&, unsigned int, bool) + 5148 (QuartzCore + 1167600) [0x19dfd10f0]
+                                                              1  CA::OGL::LayerNode::prepare_sublayers_if_needed() + 88 (QuartzCore + 1913464) [0x19e087278]
+                                                                1  CA::OGL::prepare_layers(CA::OGL::Renderer&, CA::OGL::Layer&, x_link_struct const&, CA::OGL::Gstate const&, bool, bool&, bool&) + 112 (QuartzCore + 1167864) [0x19dfd11f8]
+                                                                  1  CA::OGL::prepare_layer(CA::OGL::Renderer&, CA::Render::LayerNode*, CA::OGL::Layer&, CA::OGL::Gstate const&, unsigned int, bool) + 5148 (QuartzCore + 1167600) [0x19dfd10f0]
+                                                                    1  CA::OGL::LayerNode::prepare_sublayers_if_needed() + 88 (QuartzCore + 1913464) [0x19e087278]
+                                                                      1  CA::OGL::prepare_layers(CA::OGL::Renderer&, CA::OGL::Layer&, x_link_struct const&, CA::OGL::Gstate const&, bool, bool&, bool&) + 112 (QuartzCore + 1167864) [0x19dfd11f8]
+                                                                        1  CA::OGL::prepare_layer(CA::OGL::Renderer&, CA::Render::LayerNode*, CA::OGL::Layer&, CA::OGL::Gstate const&, unsigned int, bool) + 5148 (QuartzCore + 1167600) [0x19dfd10f0]
+                                                                          1  CA::OGL::LayerNode::prepare_sublayers_if_needed() + 88 (QuartzCore + 1913464) [0x19e087278]
+                                                                            1  CA::OGL::prepare_layers(CA::OGL::Renderer&, CA::OGL::Layer&, x_link_struct const&, CA::OGL::Gstate const&, bool, bool&, bool&) + 112 (QuartzCore + 1167864) [0x19dfd11f8]
+                                                                              1  CA::OGL::prepare_layer(CA::OGL::Renderer&, CA::Render::LayerNode*, CA::OGL::Layer&, CA::OGL::Gstate const&, unsigned int, bool) + 5148 (QuartzCore + 1167600) [0x19dfd10f0]
+                                                                                1  CA::OGL::LayerNode::prepare_sublayers_if_needed() + 88 (QuartzCore + 1913464) [0x19e087278]
+                                                                                  1  CA::OGL::prepare_layers(CA::OGL::Renderer&, CA::OGL::Layer&, x_link_struct const&, CA::OGL::Gstate const&, bool, bool&, bool&) + 112 (QuartzCore + 1167864) [0x19dfd11f8]
+                                                                                    1  CA::OGL::prepare_layer(CA::OGL::Renderer&, CA::Render::LayerNode*, CA::OGL::Layer&, CA::OGL::Gstate const&, unsigned int, bool) + 5148 (QuartzCore + 1167600) [0x19dfd10f0]
+                                                                                      1  CA::OGL::LayerNode::prepare_sublayers_if_needed() + 88 (QuartzCore + 1913464) [0x19e087278]
+                                                                                        1  CA::OGL::prepare_layers(CA::OGL::Renderer&, CA::OGL::Layer&, x_link_struct const&, CA::OGL::Gstate const&, bool, bool&, bool&) + 112 (QuartzCore + 1167864) [0x19dfd11f8]
+                                                                                          1  CA::OGL::prepare_layer(CA::OGL::Renderer&, CA::Render::LayerNode*, CA::OGL::Layer&, CA::OGL::Gstate const&, unsigned int, bool) + 5148 (QuartzCore + 1167600) [0x19dfd10f0]
+                                                                                            1  CA::OGL::LayerNode::prepare_sublayers_if_needed() + 88 (QuartzCore + 1913464) [0x19e087278]
+                                                                                              1  CA::OGL::prepare_layers(CA::OGL::Renderer&, CA::OGL::Layer&, x_link_struct const&, CA::OGL::Gstate const&, bool, bool&, bool&) + 112 (QuartzCore + 1167864) [0x19dfd11f8]
+                                                                                                1  CA::OGL::prepare_layer(CA::OGL::Renderer&, CA::Render::LayerNode*, CA::OGL::Layer&, CA::OGL::Gstate const&, unsigned int, bool) + 5148 (QuartzCore + 1167600) [0x19dfd10f0]
+                                                                                                  1  CA::OGL::LayerNode::prepare_sublayers_if_needed() + 88 (QuartzCore + 1913464) [0x19e087278]
+                                                                                                    1  CA::OGL::prepare_layers(CA::OGL::Renderer&, CA::OGL::Layer&, x_link_struct const&, CA::OGL::Gstate const&, bool, bool&, bool&) + 112 (QuartzCore + 1167864) [0x19dfd11f8]
+                                                                                                      1  CA::OGL::prepare_layer(CA::OGL::Renderer&, CA::Render::LayerNode*, CA::OGL::Layer&, CA::OGL::Gstate const&, unsigned int, bool) + 5148 (QuartzCore + 1167600) [0x19dfd10f0]
+                                                                                                        1  CA::OGL::LayerNode::prepare_sublayers_if_needed() + 88 (QuartzCore + 1913464) [0x19e087278]
+                                                                                                          1  CA::OGL::prepare_layers(CA::OGL::Renderer&, CA::OGL::Layer&, x_link_struct const&, CA::OGL::Gstate const&, bool, bool&, bool&) + 112 (QuartzCore + 1167864) [0x19dfd11f8]
+                                                                                                            1  CA::OGL::prepare_layer(CA::OGL::Renderer&, CA::Render::LayerNode*, CA::OGL::Layer&, CA::OGL::Gstate const&, unsigned int, bool) + 5148 (QuartzCore + 1167600) [0x19dfd10f0]
+                                                                                                              1  CA::OGL::LayerNode::prepare_sublayers_if_needed() + 88 (QuartzCore + 1913464) [0x19e087278]
+                                                                                                                1  CA::OGL::prepare_layers(CA::OGL::Renderer&, CA::OGL::Layer&, x_link_struct const&, CA::OGL::Gstate const&, bool, bool&, bool&) + 112 (QuartzCore + 1167864) [0x19dfd11f8]
+                                                                                                                  1  CA::OGL::prepare_layer(CA::OGL::Renderer&, CA::Render::LayerNode*, CA::OGL::Layer&, CA::OGL::Gstate const&, unsigned int, bool) + 5148 (QuartzCore + 1167600) [0x19dfd10f0]
+                                                                                                                    1  CA::OGL::LayerNode::prepare_sublayers_if_needed() + 88 (QuartzCore + 1913464) [0x19e087278]
+                                                                                                                      1  CA::OGL::prepare_layers(CA::OGL::Renderer&, CA::OGL::Layer&, x_link_struct const&, CA::OGL::Gstate const&, bool, bool&, bool&) + 112 (QuartzCore + 1167864) [0x19dfd11f8]
+                                                                                                                        1  CA::OGL::prepare_layer(CA::OGL::Renderer&, CA::Render::LayerNode*, CA::OGL::Layer&, CA::OGL::Gstate const&, unsigned int, bool) + 5148 (QuartzCore + 1167600) [0x19dfd10f0]
+                                                                                                                          1  CA::OGL::LayerNode::prepare_sublayers_if_needed() + 88 (QuartzCore + 1913464) [0x19e087278]
+                                                                                                                            1  CA::OGL::prepare_layers(CA::OGL::Renderer&, CA::OGL::Layer&, x_link_struct const&, CA::OGL::Gstate const&, bool, bool&, bool&) + 112 (QuartzCore + 1167864) [0x19dfd11f8]
+                                                                                                                              1  CA::OGL::prepare_layer(CA::OGL::Renderer&, CA::Render::LayerNode*, CA::OGL::Layer&, CA::OGL::Gstate const&, unsigned int, bool) + 5148 (QuartzCore + 1167600) [0x19dfd10f0]
+                                                                                                                                1  CA::OGL::LayerNode::prepare_sublayers_if_needed() + 88 (QuartzCore + 1913464) [0x19e087278]
+                                                                                                                                  1  CA::OGL::prepare_layers(CA::OGL::Renderer&, CA::OGL::Layer&, x_link_struct const&, CA::OGL::Gstate const&, bool, bool&, bool&) + 112 (QuartzCore + 1167864) [0x19dfd11f8]
+                                                                                                                                    1  CA::OGL::prepare_layer(CA::OGL::Renderer&, CA::Render::LayerNode*, CA::OGL::Layer&, CA::OGL::Gstate const&, unsigned int, bool) + 5148 (QuartzCore + 1167600) [0x19dfd10f0]
+                                                                                                                                      1  CA::OGL::LayerNode::prepare_sublayers_if_needed() + 88 (QuartzCore + 1913464) [0x19e087278]
+                                                                                                                                        1  CA::OGL::prepare_layers(CA::OGL::Renderer&, CA::OGL::Layer&, x_link_struct const&, CA::OGL::Gstate const&, bool, bool&, bool&) + 112 (QuartzCore + 1167864) [0x19dfd11f8]
+                                                                                                                                          1  CA::OGL::prepare_layer(CA::OGL::Renderer&, CA::Render::LayerNode*, CA::OGL::Layer&, CA::OGL::Gstate const&, unsigned int, bool) + 5148 (QuartzCore + 1167600) [0x19dfd10f0]
+                                                                                                                                            1  CA::OGL::LayerNode::prepare_sublayers_if_needed() + 88 (QuartzCore + 1913464) [0x19e087278]
+                                                                                                                                              1  CA::OGL::prepare_layers(CA::OGL::Renderer&, CA::OGL::Layer&, x_link_struct const&, CA::OGL::Gstate const&, bool, bool&, bool&) + 112 (QuartzCore + 1167864) [0x19dfd11f8]
+                                                                                                                                                1  CA::OGL::prepare_layer(CA::OGL::Renderer&, CA::Render::LayerNode*, CA::OGL::Layer&, CA::OGL::Gstate const&, unsigned int, bool) + 5148 (QuartzCore + 1167600) [0x19dfd10f0]
+                                                                                                                                                  1  CA::OGL::LayerNode::prepare_sublayers_if_needed() + 88 (QuartzCore + 1913464) [0x19e087278]
+                                                                                                                                                    1  CA::OGL::prepare_layers(CA::OGL::Renderer&, CA::OGL::Layer&, x_link_struct const&, CA::OGL::Gstate const&, bool, bool&, bool&) + 112 (QuartzCore + 1167864) [0x19dfd11f8]
+                                                                                                                                                      1  CA::OGL::prepare_layer(CA::OGL::Renderer&, CA::Render::LayerNode*, CA::OGL::Layer&, CA::OGL::Gstate const&, unsigned int, bool) + 5148 (QuartzCore + 1167600) [0x19dfd10f0]
+                                                                                                                                                        1  CA::OGL::LayerNode::prepare_sublayers_if_needed() + 88 (QuartzCore + 1913464) [0x19e087278]
+                                                                                                                                                          1  CA::OGL::prepare_layers(CA::OGL::Renderer&, CA::OGL::Layer&, x_link_struct const&, CA::OGL::Gstate const&, bool, bool&, bool&) + 112 (QuartzCore + 1167864) [0x19dfd11f8]
+                                                                                                                                                            1  CA::OGL::prepare_layer(CA::OGL::Renderer&, CA::Render::LayerNode*, CA::OGL::Layer&, CA::OGL::Gstate const&, unsigned int, bool) + 5148 (QuartzCore + 1167600) [0x19dfd10f0]
+                                                                                                                                                              1  CA::OGL::LayerNode::prepare_sublayers_if_needed() + 88 (QuartzCore + 1913464) [0x19e087278]
+                                                                                                                                                                1  CA::OGL::prepare_layers(CA::OGL::Renderer&, CA::OGL::Layer&, x_link_struct const&, CA::OGL::Gstate const&, bool, bool&, bool&) + 112 (QuartzCore + 1167864) [0x19dfd11f8]
+                                                                                                                                                                  1  CA::OGL::prepare_layer(CA::OGL::Renderer&, CA::Render::LayerNode*, CA::OGL::Layer&, CA::OGL::Gstate const&, unsigned int, bool) + 332 (QuartzCore + 1162784) [0x19dfcfe20]
+                                                                                                                                                                    1  CA::OGL::prepare_layer_image(CA::OGL::Renderer&, CA::OGL::Layer*, CA::OGL::Gstate const&) + 4704 (QuartzCore + 649720) [0x19df529f8]
+  1  start_wqthread + 8 (libsystem_pthread.dylib + 8900) [0x196fc02c4]
+    1  _pthread_wqthread + 288 (libsystem_pthread.dylib + 13744) [0x196fc15b0]
+      1  _dispatch_workloop_worker_thread + 656 (libdispatch.dylib + 91912) [0x196e19708]
+        1  _dispatch_workloop_invoke + 1796 (libdispatch.dylib + 53696) [0x196e101c0]
+          1  _dispatch_lane_invoke + 444 (libdispatch.dylib + 48856) [0x196e0eed8]
+            1  _dispatch_lane_serial_drain + 376 (libdispatch.dylib + 45576) [0x196e0e208]
+              1  _dispatch_mach_invoke + 456 (libdispatch.dylib + 134328) [0x196e23cb8]
+                1  _dispatch_lane_serial_drain + 376 (libdispatch.dylib + 45576) [0x196e0e208]
+                  1  _dispatch_mach_msg_invoke + 476 (libdispatch.dylib + 130920) [0x196e22f68]
+                    1  _dispatch_client_callout4 + 20 (libdispatch.dylib + 15468) [0x196e06c6c]
+                      1  ??? (IOHIDEventServicePlugin + 9580) [0x104bbe56c]
+                        1  ??? (IOHIDEventServicePlugin + 9264) [0x104bbe430]
+                          1  __IOHIDServiceEventCallback + 1448 (IOKit + 396552) [0x199aced08]
+                            1  __IOHIDSessionDispatchEvent + 464 (IOKit + 432328) [0x199ad78c8]
+                              1  __IOHIDEventSystemEventCallback + 748 (IOKit + 340212) [0x199ac10f4]
+                                1  CFSetApplyFunction + 328 (CoreFoundation + 307940) [0x1970572e4]
+                                  1  CFBasicHashApply + 144 (CoreFoundation + 308124) [0x19705739c]
+                                    1  __CFSetApplyFunction_block_invoke + 28 (CoreFoundation + 308588) [0x19705756c]
+                                      1  __EnqueueEventFunction + 224 (IOKit + 348884) [0x199ac32d4]
+                                        1  IOHIDEventSystemConnectionDispatchEvent + 204 (IOKit + 564644) [0x199af7da4]
+                                          1  IOHIDEventQueueEnqueue + 180 (IOKit + 439988) [0x199ad96b4]
+                                            1  _IODataQueueSendDataAvailableNotification + 92 (IOKit + 161848) [0x199a95838]
+                                              1  mach_msg_trap + 8 (libsystem_kernel.dylib + 6484) [0x196f89954]
+
+  Binary Images:
+           0x10477c000 -        0x10478bfff  WindowServer (645.14)                       <9E39D81A-838B-3295-9FA7-2485A3D673C1>  /System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/Resources/WindowServer
+           0x1048c4000 -        0x104937fff  dyld (940)                                  <86A8BA48-8BB4-3B30-9CDA-051F73C74F44>  /usr/lib/dyld
+           0x104bbc000 -        0x104bc7fff  com.apple.IOHIDEventServicePlugin 1.0 (1)   <ABC0CF06-D4CF-30DC-83D9-371E2DE4AA96>  /System/Library/HIDPlugins/ServicePlugins/IOHIDEventServicePlugin.plugin/Contents/MacOS/IOHIDEventServicePlugin
+           0x196e03000 -        0x196e49fff  libdispatch.dylib (1324.41.2)               <3D7A56A3-23BF-3077-B5C6-9CE65CE7333E>  /usr/lib/system/libdispatch.dylib
+           0x196f88000 -        0x196fbdfff  libsystem_kernel.dylib (8019.41.5)          <C8524C02-B14F-30BD-A228-C44B4A448E68>  /usr/lib/system/libsystem_kernel.dylib
+           0x196fbe000 -        0x196fcafff  libsystem_pthread.dylib (485.40.4)          <4786E19A-9312-38E6-80EF-9C1394548118>  /usr/lib/system/libsystem_pthread.dylib
+           0x19700c000 -        0x19754ffff  com.apple.CoreFoundation 6.9 (1855.105)     <B2FF96D0-AE99-31EF-9014-FC9964B4F3E0>  /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+           0x199a6e000 -        0x199b42fff  com.apple.framework.IOKit 2.0.2 (1955.40.6) <9A7140D9-FC80-384B-B098-AA27AD4C405F>  /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+           0x19c181000 -        0x19c548fff  com.apple.SkyLight 1.600.0 (645.14)         <C8F2838B-E64C-34DB-ACA6-1FAA164C762A>  /System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/SkyLight
+           0x19deb4000 -        0x19e1b1fff  com.apple.QuartzCore 1.11 (962.57.1)        <B7469CDD-CEAE-3CB7-BB88-6C8D274D546A>  /System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore
+           0x19f802000 -        0x19f815fff  com.apple.IOSurface 302.9 (302.9)           <17C898DA-A756-3229-8DDE-0F845FDB7C79>  /System/Library/Frameworks/IOSurface.framework/Versions/A/IOSurface
+           0x19f820000 -        0x19f959fff  com.apple.Metal 258.13 (258.13)             <490922A1-8E7C-331D-BBF8-95DC52C411A6>  /System/Library/Frameworks/Metal.framework/Versions/A/Metal
+           0x1b1516000 -        0x1b1542fff  com.apple.IOGPU 35.11 (35.11)               <B9D08160-8AB3-3A5C-9551-95BB87C87C71>  /System/Library/PrivateFrameworks/IOGPU.framework/Versions/A/IOGPU
+
+
+Powerstats for:   Safari
+UUID:             31A739A3-6CE4-394D-8D7F-EA6683E13B3B
+Path:             /Applications/Safari.app/Contents/MacOS/Safari
+Identifier:       com.apple.Safari
+Version:          15.1 (17612.2.9.1.20)
+Build Version:    3
+Project Name:     Safari
+Source Version:   7612002009001020
+Architecture:     arm64e
+Start time:       2022-04-25 14:21:44.997 +0200
+End time:         2022-04-25 14:23:41.541 +0200
+Num samples:      4 (6%)
+Primary state:    4 samples Frontmost App, Non-Suppressed, User mode, Effective Thread QoS User Interactive, Requested Thread QoS User Interactive, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 4 samples Active
+Power Source:     4 samples on Battery, 0 samples on AC
+  2  thread_start + 8 (libsystem_pthread.dylib + 8912) [0x196fc02d0]
+    2  _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x196fc54ec]
+      2  _NSEventThread + 196 (AppKit + 1764388) [0x199d50c24]
+        2  CFRunLoopRunSpecific + 600 (CoreFoundation + 534164) [0x19708e694]
+          2  __CFRunLoopRun + 2380 (CoreFoundation + 538496) [0x19708f780]
+            2  __CFRunLoopDoSource1 + 596 (CoreFoundation + 545524) [0x1970912f4]
+              2  __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE1_PERFORM_FUNCTION__ + 60 (CoreFoundation + 545848) [0x197091438]
+                2  __CFMachPortPerform + 260 (CoreFoundation + 742052) [0x1970c12a4]
+                  2  MessageHandler(__CFMachPort*, void*, long, void*) + 60 (HIToolbox + 250812) [0x19fc113bc]
+                    1  PullEventsFromWindowServerOnConnection(unsigned int, unsigned char, __CFMachPortBoost*) + 60 (HIToolbox + 250932) [0x19fc11434]
+                      1  SLEventCreateNextEvent + 16 (SkyLight + 1181252) [0x19c2a1644]
+                        1  SLSGetNextEventRecordInternal + 408 (SkyLight + 3099588) [0x19c475bc4]
+                          1  CGSSnarfAndDispatchDatagrams + 2804 (SkyLight + 47240) [0x19c18c888]
+                            1  CGSDatagramReadStream::VMData::release() + 76 (SkyLight + 3114072) [0x19c479458]
+                              1  _kernelrpc_mach_vm_deallocate_trap + 8 (libsystem_kernel.dylib + 6280) [0x196f89888]
+                    1  _SLEventCreate(SLSEventRecord*) + 0 (SkyLight + 1169236) [0x19c29e754]
+  2  start + 520 (dyld + 20724) [0x1028e10f4]
+    2  SafariMain + 436 (Safari + 25644) [0x1bd85242c]
+      2  NSApplicationMain + 1064 (AppKit + 14980) [0x199ba5a84]
+        1  -[NSApplication run] + 636 (AppKit + 205784) [0x199bd43d8]
+          1  -[NSApplication _handleEvent:] + 76 (AppKit + 4625800) [0x19a00b588]
+            1  -[BrowserApplication sendEvent:] + 664 (Safari + 433532) [0x1bd8b5d7c]
+              1  -[NSApplication(NSEvent) sendEvent:] + 2776 (AppKit + 1773540) [0x199d52fe4]
+                1  -[BrowserWindow sendEvent:] + 196 (Safari + 439596) [0x1bd8b752c]
+                  1  -[Window sendEvent:] + 136 (Safari + 440640) [0x1bd8b7940]
+                    1  -[NSWindow(NSEventRouting) sendEvent:] + 348 (AppKit + 1777792) [0x199d54080]
+                      1  -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:] + 2444 (AppKit + 1780856) [0x199d54c78]
+                        1  -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:] + 4524 (AppKit + 2357208) [0x199de17d8]
+                          1  -[UnifiedField mouseDown:] + 700 (Safari + 6052016) [0x1bde118b0]
+                            1  -[NSCell editWithFrame:inView:editor:delegate:event:] + 60 (AppKit + 4222888) [0x199fa8fa8]
+                              1  -[NSTextFieldCell _selectOrEdit:inView:target:editor:event:start:end:] + 312 (AppKit + 2249940) [0x199dc74d4]
+                                1  _NSEditTextCellWithOptions + 1804 (AppKit + 2252444) [0x199dc7e9c]
+                                  1  -[BrowserWindow makeFirstResponder:] + 308 (Safari + 275256) [0x1bd88f338]
+                                    1  -[Window makeFirstResponder:] + 68 (Safari + 275900) [0x1bd88f5bc]
+                                      1  -[NSWindow _realMakeFirstResponder:] + 444 (AppKit + 1484628) [0x199d0c754]
+                                        1  -[UnifiedFieldEditor becomeFirstResponder] + 252 (Safari + 408836) [0x1bd8afd04]
+                                          1  -[UnifiedField fieldEditorDidBecomeFirstResponder:] + 404 (Safari + 409444) [0x1bd8aff64]
+                                            1  -[BrowserWindowController unifiedFieldBecameFirstResponder:] + 180 (Safari + 410036) [0x1bd8b01b4]
+                                              1  Safari::UnifiedFieldCompletionController::sourceFieldBecameFirstResponder() + 204 (Safari + 6164508) [0x1bde2d01c]
+                                                1  -[UnifiedFieldCompletionControllerObjCAdapter showFavoritesViewIfPossible] + 84 (Safari + 6172604) [0x1bde2efbc]
+                                                  1  Safari::UnifiedFieldCompletionController::performCompletion(Safari::CompletionAction) + 228 (Safari + 753940) [0x1bd904114]
+                                                    1  Safari::UnifiedFieldCompletionController::updateCompletionUI(Safari::CompletionAction, long) + 364 (Safari + 777124) [0x1bd909ba4]
+                                                      1  Safari::UnifiedFieldCompletionController::showCustomCompletionView() + 156 (Safari + 6143256) [0x1bde27d18]
+                                                        1  Safari::UnifiedFieldCompletionController::presentCompletionUI(unsigned long) + 188 (Safari + 785756) [0x1bd90bd5c]
+                                                          1  -[CompletionUIPresentationController presentCompletionUIRelativeToRectInScreenCoordinates:animated:] + 352 (Safari + 786208) [0x1bd90bf20]
+                                                            1  -[CompletionUIPresentationController _startPresentationAnimation] + 52 (Safari + 2943492) [0x1bdb1aa04]
+                                                              1  -[CompletionUIPresentationController _updateCompletionWindowAppearanceForAnimationProgress:] + 44 (Safari + 794644) [0x1bd90e014]
+                                                                1  -[CompletionUIPresentationController _updateCompletionWindowAppearanceForAnimationProgress:shouldStop:] + 376 (Safari + 795060) [0x1bd90e1b4]
+                                                                  1  CA::Transaction::commit() + 680 (QuartzCore + 11640) [0x19deb6d78]
+                                                                    1  CA::Context::commit_transaction(CA::Transaction*, double, double*) + 5960 (QuartzCore + 1458148) [0x19e017fe4]
+                                                                      1  CA::Layer::commit_if_needed(CA::Transaction*, void (CA::Layer*, unsigned int, unsigned int) block_pointer) + 252 (QuartzCore + 173932) [0x19dede76c]
+                                                                        1  CA::Layer::commit_if_needed(CA::Transaction*, void (CA::Layer*, unsigned int, unsigned int) block_pointer) + 252 (QuartzCore + 173932) [0x19dede76c]
+                                                                          1  CA::Layer::commit_if_needed(CA::Transaction*, void (CA::Layer*, unsigned int, unsigned int) block_pointer) + 252 (QuartzCore + 173932) [0x19dede76c]
+                                                                            1  CA::Layer::commit_if_needed(CA::Transaction*, void (CA::Layer*, unsigned int, unsigned int) block_pointer) + 252 (QuartzCore + 173932) [0x19dede76c]
+                                                                              1  CA::Layer::commit_if_needed(CA::Transaction*, void (CA::Layer*, unsigned int, unsigned int) block_pointer) + 252 (QuartzCore + 173932) [0x19dede76c]
+                                                                                1  CA::Layer::commit_if_needed(CA::Transaction*, void (CA::Layer*, unsigned int, unsigned int) block_pointer) + 252 (QuartzCore + 173932) [0x19dede76c]
+                                                                                  1  CA::Layer::commit_if_needed(CA::Transaction*, void (CA::Layer*, unsigned int, unsigned int) block_pointer) + 252 (QuartzCore + 173932) [0x19dede76c]
+                                                                                    1  CA::Layer::commit_if_needed(CA::Transaction*, void (CA::Layer*, unsigned int, unsigned int) block_pointer) + 252 (QuartzCore + 173932) [0x19dede76c]
+                                                                                      1  CA::Layer::commit_if_needed(CA::Transaction*, void (CA::Layer*, unsigned int, unsigned int) block_pointer) + 252 (QuartzCore + 173932) [0x19dede76c]
+                                                                                        1  CA::Layer::commit_if_needed(CA::Transaction*, void (CA::Layer*, unsigned int, unsigned int) block_pointer) + 252 (QuartzCore + 173932) [0x19dede76c]
+                                                                                          1  CA::Layer::commit_if_needed(CA::Transaction*, void (CA::Layer*, unsigned int, unsigned int) block_pointer) + 368 (QuartzCore + 174048) [0x19dede7e0]
+                                                                                            1  invocation function for block in CA::Context::commit_transaction(CA::Transaction*, double, double*) + 252 (QuartzCore + 1467704) [0x19e01a538]
+                                                                                              1  -[CALayer(CALayerPrivate) _copyRenderLayer:layerFlags:commitFlags:] + 6144 (QuartzCore + 180300) [0x19dee004c]
+                                                                                                1  -[CALayer shadowOpacity] + 56 (QuartzCore + 190068) [0x19dee2674]
+                                                                                                  1  CA::Layer::getter(unsigned int, _CAValueType, void*) + 128 (QuartzCore + 44816) [0x19debef10]
+                                                                                                    1  object_getClass + 20 (libobjc.A.dylib + 47908) [0x196e55b24]
+        1  -[NSApplication run] + 596 (AppKit + 205744) [0x199bd43b0]
+          1  -[BrowserApplication nextEventMatchingMask:untilDate:inMode:dequeue:] + 236 (Safari + 119528) [0x1bd8692e8]
+            1  -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1332 (AppKit + 263056) [0x199be2390]
+              1  _DPSNextEvent + 844 (AppKit + 269036) [0x199be3aec]
+                1  _BlockUntilNextEventMatchingListInModeWithFilter + 72 (HIToolbox + 197828) [0x19fc044c4]
+                  1  ReceiveNextEventCommon + 552 (HIToolbox + 198404) [0x19fc04704]
+                    1  RunCurrentEventLoopInMode + 292 (HIToolbox + 199056) [0x19fc04990]
+                      1  CFRunLoopRunSpecific + 600 (CoreFoundation + 534164) [0x19708e694]
+                        1  __CFRunLoopRun + 820 (CoreFoundation + 536936) [0x19708f168]
+                          1  __CFRunLoopDoSources0 + 268 (CoreFoundation + 542708) [0x1970907f4]
+                            1  __CFRunLoopDoSource0 + 208 (CoreFoundation + 543496) [0x197090b08]
+                              1  __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 28 (CoreFoundation + 543676) [0x197090bbc]
+                                1  WTF::RunLoop::performWork(void*) + 36 (JavaScriptCore + 17730144) [0x1b010aa60]
+                                  1  WTF::RunLoop::performWork() + 200 (JavaScriptCore + 17726680) [0x1b0109cd8]
+                                    1  IPC::Connection::dispatchIncomingMessages() + 508 (WebKit + 578652) [0x1b4f1445c]
+                                      1  IPC::Connection::dispatchMessage(std::__1::unique_ptr<IPC::Decoder, std::__1::default_delete<IPC::Decoder> >) + 724 (WebKit + 581036) [0x1b4f14dac]
+                                        1  WebKit::WebProcessProxy::didReceiveMessage(IPC::Connection&, IPC::Decoder&) + 40 (WebKit + 5076892) [0x1b535e79c]
+                                          1  IPC::MessageReceiverMap::dispatchMessage(IPC::Connection&, IPC::Decoder&) + 272 (WebKit + 716528) [0x1b4f35ef0]
+                                            1  WebKit::WebPageProxy::didReceiveMessage(IPC::Connection&, IPC::Decoder&) + 7776 (WebKit + 8143244) [0x1b564b18c]
+                                              1  IPC::TupleDecoderImpl<WTF::URL, WTF::String>::decode(IPC::Decoder&) + 44 (WebKit + 810816) [0x1b4f4cf40]
+                                                1  IPC::Decoder& IPC::Decoder::operator>><WTF::URL>(std::__1::optional<WTF::URL>&) + 36 (WebKit + 608112) [0x1b4f1b770]
+                                                  1  std::__1::optional<WTF::URL> WTF::URL::decode<IPC::Decoder>(IPC::Decoder&) + 40 (WebKit + 608932) [0x1b4f1baa4]
+                                                    1  IPC::Decoder& IPC::Decoder::operator>><WTF::String>(std::__1::optional<WTF::String>&) + 48 (WebKit + 457504) [0x1b4ef6b20]
+                                                      1  void std::__1::__optional_storage_base<WTF::String, false>::__assign_from<std::__1::__optional_move_assign_base<WTF::String, false> >(std::__1::__optional_move_assign_base<WTF::String, false>&&) + 16 (WebKit + 458012) [0x1b4ef6d1c]
+
+  Binary Images:
+           0x102874000 -                ???  com.apple.Safari 15.1 (17612.2.9.1.20)            <31A739A3-6CE4-394D-8D7F-EA6683E13B3B>  /Applications/Safari.app/Contents/MacOS/Safari
+           0x1028dc000 -        0x10294ffff  dyld (940)                                        <86A8BA48-8BB4-3B30-9CDA-051F73C74F44>  /usr/lib/dyld
+           0x196e4a000 -        0x196e85fff  libobjc.A.dylib (838)                             <2EABED7F-1E81-3A1B-BB4B-985B8DD3B77F>  /usr/lib/libobjc.A.dylib
+           0x196f88000 -        0x196fbdfff  libsystem_kernel.dylib (8019.41.5)                <C8524C02-B14F-30BD-A228-C44B4A448E68>  /usr/lib/system/libsystem_kernel.dylib
+           0x196fbe000 -        0x196fcafff  libsystem_pthread.dylib (485.40.4)                <4786E19A-9312-38E6-80EF-9C1394548118>  /usr/lib/system/libsystem_pthread.dylib
+           0x19700c000 -        0x19754ffff  com.apple.CoreFoundation 6.9 (1855.105)           <B2FF96D0-AE99-31EF-9014-FC9964B4F3E0>  /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+           0x199ba2000 -        0x19aa53fff  com.apple.AppKit 6.9 (2113)                       <518F4E68-C324-320F-9D7F-85C224EAE972>  /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit
+           0x19c181000 -        0x19c548fff  com.apple.SkyLight 1.600.0 (645.14)               <C8F2838B-E64C-34DB-ACA6-1FAA164C762A>  /System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/SkyLight
+           0x19deb4000 -        0x19e1b1fff  com.apple.QuartzCore 1.11 (962.57.1)              <B7469CDD-CEAE-3CB7-BB88-6C8D274D546A>  /System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore
+           0x19fbd4000 -        0x19ff03fff  com.apple.HIToolbox 2.1.1 (1112.4)                <98EA191E-B6F8-3036-B267-EEADB5F03C7D>  /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox
+           0x1af022000 -        0x1b02d9fff  com.apple.JavaScriptCore 17612 (17612.2.9.1.20)   <1F13D2B9-D661-364F-8B67-865F68018E4A>  /System/Library/Frameworks/JavaScriptCore.framework/Versions/A/JavaScriptCore
+           0x1b4e87000 -        0x1b57d6fff  com.apple.WebKit 17612 (17612.2.9.1.20)           <49D3AAB3-BD37-354C-87DC-67A6509FE79F>  /System/Library/Frameworks/WebKit.framework/Versions/A/WebKit
+           0x1bd84c000 -        0x1be123fff  com.apple.Safari.framework 17612 (17612.2.9.1.20) <C0A6A9F4-B2E6-3536-A7A2-7E03162D92D8>  /System/Library/PrivateFrameworks/Safari.framework/Versions/A/Safari

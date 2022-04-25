@@ -1,0 +1,69 @@
+Date/Time:        2022-04-20 14:09:35.167 +0200
+End time:         2022-04-20 14:17:03.522 +0200
+OS Version:       macOS 12.0.1 (Build 21A559)
+Architecture:     arm64e
+Report Version:   35
+Incident Identifier: AC0524BD-87CE-442B-813B-A091AC458BA5
+
+Data Source:      Microstackshots
+Shared Cache:     A6162D66-93E3-3251-93CC-B11F7C8C830E slid base address 0x1b69c0000, slide 0x369c0000
+
+Command:          qemu-system-aarch64
+Path:             /Applications/Docker.app/Contents/MacOS/qemu-system-aarch64
+Codesigning ID:   qemu-system-aarch64
+Team ID:          9BNSXJN65R
+Architecture:     arm64
+PID:              95203
+
+Event:            disk writes
+Action taken:     none
+Writes:           2150.02 MB of file backed memory dirtied over 448 seconds (4795.35 KB per second average), exceeding limit of 24.86 KB per second over 86400 seconds
+Writes limit:     2147.48 MB
+Limit duration:   86400s
+Writes caused:    2150.02 MB
+Writes duration:  448s
+Duration:         448.36s
+Duration Sampled: 439.99s
+Steps:            194 ( (10.49 MB/step))
+
+Hardware model:   MacBookPro17,1
+Active cpus:      8
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 3, User -> 2, ThermalPressure -> 0, Combined -> 2
+Free disk space:  200.71 GB/460.43 GB, low space threshold 3072 MB
+
+Heaviest stack for the target process:
+  194  thread_start + 8 (libsystem_pthread.dylib + 8912) [0x1b6cc82d0]
+  194  _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x1b6ccd4ec]
+  194  qemu_thread_start + 128 (qemu-system-aarch64 + 7113756) [0x102c6cc1c]
+  194  worker_thread + 452 (qemu-system-aarch64 + 7105512) [0x102c6abe8]
+  186  pwritev + 8 (libsystem_kernel.dylib + 187796) [0x1b6cbdd94]
+
+
+Powerstats for:   qemu-system-aarch64 [95203]
+UUID:             016AF9C8-90CC-3541-9220-F0FE25468F77
+Path:             /Applications/Docker.app/Contents/MacOS/qemu-system-aarch64
+Codesigning ID:   qemu-system-aarch64
+Team ID:          9BNSXJN65R
+Architecture:     arm64
+Footprint:        2335.83 MB -> 3839.53 MB (+1503.70 MB)
+Start time:       2022-04-20 14:09:43.535 +0200
+End time:         2022-04-20 14:17:03.521 +0200
+Num samples:      194 (100%)
+Primary state:    194 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 194 samples Active
+Power Source:     0 samples on Battery, 194 samples on AC
+  194  thread_start + 8 (libsystem_pthread.dylib + 8912) [0x1b6cc82d0]
+    194  _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x1b6ccd4ec]
+      194  qemu_thread_start + 128 (qemu-system-aarch64 + 7113756) [0x102c6cc1c]
+        194  worker_thread + 452 (qemu-system-aarch64 + 7105512) [0x102c6abe8]
+          186  pwritev + 8 (libsystem_kernel.dylib + 187796) [0x1b6cbdd94]
+          8    handle_aiocb_rw + 64 (qemu-system-aarch64 + 5995712) [0x102b5bcc0]
+            8    pwrite + 8 (libsystem_kernel.dylib + 20452) [0x1b6c94fe4]
+
+  Binary Images:
+           0x1025a4000 -        0x1031dbfff  qemu-system-aarch64 (0)            <016AF9C8-90CC-3541-9220-F0FE25468F77>  /Applications/Docker.app/Contents/MacOS/qemu-system-aarch64
+           0x1b6c90000 -        0x1b6cc5fff  libsystem_kernel.dylib (8019.41.5) <C8524C02-B14F-30BD-A228-C44B4A448E68>  /usr/lib/system/libsystem_kernel.dylib
+           0x1b6cc6000 -        0x1b6cd2fff  libsystem_pthread.dylib (485.40.4) <4786E19A-9312-38E6-80EF-9C1394548118>  /usr/lib/system/libsystem_pthread.dylib

@@ -1,0 +1,80 @@
+Date/Time:        2022-04-20 15:04:38.786 +0200
+End time:         2022-04-20 15:09:17.730 +0200
+OS Version:       macOS 12.0.1 (Build 21A559)
+Architecture:     arm64e
+Report Version:   35
+Incident Identifier: C512C7A4-05E6-4D57-B9CE-E7AFA1A5DAE8
+
+Data Source:      Microstackshots
+Shared Cache:     A6162D66-93E3-3251-93CC-B11F7C8C830E slid base address 0x1b69c0000, slide 0x369c0000
+
+Command:          vpnkit-bridge
+Path:             /Applications/Docker.app/Contents/MacOS/vpnkit-bridge
+Codesigning ID:   vpnkit-bridge
+Team ID:          9BNSXJN65R
+Architecture:     arm64
+PID:              95200
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45003 wakeups over the last 279 seconds (161 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45003
+Wakeups duration: 279s
+Duration:         278.94s
+Duration Sampled: 269.53s
+Steps:            2
+
+Hardware model:   MacBookPro17,1
+Active cpus:      8
+HW page size:     16384
+VM page size:     16384
+
+Fan speed:        0 rpm
+Advisory levels:  Battery -> 3, User -> 2, ThermalPressure -> 0, Combined -> 2
+Free disk space:  200.46 GB/460.43 GB, low space threshold 3072 MB
+
+Heaviest stack for the target process:
+  2  ??? [0x14000134720]
+  2  github.com/moby/vpnkit/go/pkg/libproxy.(*multiplexer).Run.func1 + 48 (vpnkit-bridge + 3624976) [0x100a31010]
+  1  github.com/moby/vpnkit/go/pkg/libproxy.(*multiplexer).run + 3184 (vpnkit-bridge + 3630400) [0x100a32540]
+  1  io.CopyN + 148 (vpnkit-bridge + 594404) [0x10074d1e4]
+  1  io.copyBuffer + 292 (vpnkit-bridge + 594996) [0x10074d434]
+  1  bytes.(*Buffer).ReadFrom + 72 (vpnkit-bridge + 635112) [0x1007570e8]
+  1  bytes.(*Buffer).grow + 272 (vpnkit-bridge + 634032) [0x100756cb0]
+  1  bytes.makeSlice + 92 (vpnkit-bridge + 635596) [0x1007572cc]
+  1  runtime.makeslice + 108 (vpnkit-bridge + 326620) [0x10070bbdc]
+
+
+Powerstats for:   vpnkit-bridge [95200]
+UUID:             DA7AE2B4-6C1C-3F43-A0C7-202EEAA30638
+Path:             /Applications/Docker.app/Contents/MacOS/vpnkit-bridge
+Codesigning ID:   vpnkit-bridge
+Team ID:          9BNSXJN65R
+Architecture:     arm64
+Footprint:        11.91 MB -> 12.77 MB (+880 KB)
+Pageins:          4 pages
+Start time:       2022-04-20 15:04:47.138 +0200
+End time:         2022-04-20 15:09:16.670 +0200
+Num samples:      2 (100%)
+Primary state:    2 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 2 samples Active
+Power Source:     0 samples on Battery, 2 samples on AC
+  2  ??? [0x14000134720]
+    2  github.com/moby/vpnkit/go/pkg/libproxy.(*multiplexer).Run.func1 + 48 (vpnkit-bridge + 3624976) [0x100a31010]
+      1  github.com/moby/vpnkit/go/pkg/libproxy.(*multiplexer).run + 3184 (vpnkit-bridge + 3630400) [0x100a32540]
+        1  io.CopyN + 148 (vpnkit-bridge + 594404) [0x10074d1e4]
+          1  io.copyBuffer + 292 (vpnkit-bridge + 594996) [0x10074d434]
+            1  bytes.(*Buffer).ReadFrom + 72 (vpnkit-bridge + 635112) [0x1007570e8]
+              1  bytes.(*Buffer).grow + 272 (vpnkit-bridge + 634032) [0x100756cb0]
+                1  bytes.makeSlice + 92 (vpnkit-bridge + 635596) [0x1007572cc]
+                  1  runtime.makeslice + 108 (vpnkit-bridge + 326620) [0x10070bbdc]
+      1  github.com/moby/vpnkit/go/pkg/libproxy.(*multiplexer).run + 100 (vpnkit-bridge + 3627316) [0x100a31934]
+        1  runtime.newobject + 56 (vpnkit-bridge + 59224) [0x1006ca758]
+          1  runtime.mallocgc + 1240 (vpnkit-bridge + 57800) [0x1006ca1c8]
+            1  runtime.(*mcache).nextFree + 148 (vpnkit-bridge + 56148) [0x1006c9b54]
+              1  runtime.(*mcache).refill + 256 (vpnkit-bridge + 96912) [0x1006d3a90]
+
+  Binary Images:
+           0x1006bc000 -        0x100f03fff  vpnkit-bridge (0) <DA7AE2B4-6C1C-3F43-A0C7-202EEAA30638>  /Applications/Docker.app/Contents/MacOS/vpnkit-bridge

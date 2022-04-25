@@ -1,0 +1,93 @@
+Date/Time:        2022-04-25 12:11:02.797 +0200
+End time:         2022-04-25 12:15:35.563 +0200
+OS Version:       macOS 12.0.1 (Build 21A559)
+Architecture:     arm64e
+Report Version:   35
+Incident Identifier: CA87AE51-C013-45E3-B6E8-C3A8108B69FE
+
+Data Source:      Microstackshots
+Shared Cache:     A6162D66-93E3-3251-93CC-B11F7C8C830E slid base address 0x196cb8000, slide 0x16cb8000
+
+Command:          Google Chrome
+Path:             /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Identifier:       com.google.Chrome
+Version:          100.0.4896.127 (4896.127)
+Team ID:          EQHXZ8M8AV
+Architecture:     arm64
+PID:              1887
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45001 wakeups over the last 273 seconds (165 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45001
+Wakeups duration: 273s
+Duration:         272.77s
+Duration Sampled: 9.01s
+Steps:            2
+
+Hardware model:   MacBookPro17,1
+Active cpus:      8
+HW page size:     16384
+VM page size:     16384
+
+Fan speed:        0 rpm
+Advisory levels:  Battery -> 3, User -> 2, ThermalPressure -> 0, Combined -> 2
+Free disk space:  217.57 GB/460.43 GB, low space threshold 3072 MB
+
+Heaviest stack for the target process:
+  2  thread_start + 8 (libsystem_pthread.dylib + 8912) [0x196fc02d0]
+  2  _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x196fc54ec]
+  2  ChromeMain + 50860352 (Google Chrome Framework + 50873448) [0x11a87c468]
+  2  ChromeMain + 50740528 (Google Chrome Framework + 50753624) [0x11a85f058]
+  2  ChromeMain + 17273124 (Google Chrome Framework + 17286220) [0x11887444c]
+  2  ChromeMain + 50740152 (Google Chrome Framework + 50753248) [0x11a85eee0]
+  2  ChromeMain + 50403100 (Google Chrome Framework + 50416196) [0x11a80ca44]
+  2  ChromeMain + 50620708 (Google Chrome Framework + 50633804) [0x11a841c4c]
+  2  ChromeMain + 51044504 (Google Chrome Framework + 51057600) [0x11a8a93c0]
+  1  ChromeMain + 50617024 (Google Chrome Framework + 50630120) [0x11a840de8]
+  1  ChromeMain + 50531552 (Google Chrome Framework + 50544648) [0x11a82c008]
+  1  ChromeMain + 20605672 (Google Chrome Framework + 20618768) [0x118ba1e10]
+
+
+Powerstats for:   Google Chrome (Chrome) [1887]
+UUID:             4C4C44A6-5555-3144-A198-6D7EBCB61AE0
+Path:             /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Identifier:       com.google.Chrome
+Version:          100.0.4896.127 (4896.127)
+Team ID:          EQHXZ8M8AV
+Architecture:     arm64
+Footprint:        173.12 MB
+Start time:       2022-04-25 12:14:58.096 +0200
+End time:         2022-04-25 12:15:07.107 +0200
+Num samples:      2 (100%)
+Primary state:    2 samples Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Unspecified, Requested Thread QoS Unspecified, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 2 samples Active
+Power Source:     0 samples on Battery, 2 samples on AC
+  2  thread_start + 8 (libsystem_pthread.dylib + 8912) [0x196fc02d0]
+    2  _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x196fc54ec]
+      2  ChromeMain + 50860352 (Google Chrome Framework + 50873448) [0x11a87c468]
+        2  ChromeMain + 50740528 (Google Chrome Framework + 50753624) [0x11a85f058]
+          2  ChromeMain + 17273124 (Google Chrome Framework + 17286220) [0x11887444c]
+            2  ChromeMain + 50740152 (Google Chrome Framework + 50753248) [0x11a85eee0]
+              2  ChromeMain + 50403100 (Google Chrome Framework + 50416196) [0x11a80ca44]
+                2  ChromeMain + 50620708 (Google Chrome Framework + 50633804) [0x11a841c4c]
+                  2  ChromeMain + 51044504 (Google Chrome Framework + 51057600) [0x11a8a93c0]
+                    1  ChromeMain + 50617024 (Google Chrome Framework + 50630120) [0x11a840de8]
+                      1  ChromeMain + 50531552 (Google Chrome Framework + 50544648) [0x11a82c008]
+                        1  ChromeMain + 20605672 (Google Chrome Framework + 20618768) [0x118ba1e10]
+                    1  ChromeMain + 50616932 (Google Chrome Framework + 50630028) [0x11a840d8c]
+                      1  ChromeMain + 50499336 (Google Chrome Framework + 50512432) [0x11a824230]
+                        1  ChromeMain + 50639464 (Google Chrome Framework + 50652560) [0x11a846590]
+                          1  ChromeMain + 50767608 (Google Chrome Framework + 50780704) [0x11a865a20]
+                            1  ChromeMain + 11280640 (Google Chrome Framework + 11293736) [0x1182bd428]
+                              1  SLEventSourceCounterForEventType + 28 (SkyLight + 1689144) [0x19c31d638]
+                                1  std::__1::mutex::lock() + 0 (libc++.1.dylib + 48276) [0x196f15c94]
+
+  Binary Images:
+           0x1046b0000 -                ???  com.google.Chrome 100.0.4896.127 (4896.127)           <4C4C44A6-5555-3144-A198-6D7EBCB61AE0>  /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+           0x1177f8000 -        0x1206a3fff  com.google.Chrome.framework 100.0.4896.127 (4896.127) <4C4C440F-5555-3144-A1A5-2A7FE5D4812C>  /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/100.0.4896.127/Google Chrome Framework
+           0x196f0a000 -        0x196f6dfff  libc++.1.dylib (1200.3)                               <3AD094C9-4883-394C-AF5A-2B9A5BDFE45B>  /usr/lib/libc++.1.dylib
+           0x196fbe000 -        0x196fcafff  libsystem_pthread.dylib (485.40.4)                    <4786E19A-9312-38E6-80EF-9C1394548118>  /usr/lib/system/libsystem_pthread.dylib
+           0x19c181000 -        0x19c548fff  com.apple.SkyLight 1.600.0 (645.14)                   <C8F2838B-E64C-34DB-ACA6-1FAA164C762A>  /System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/SkyLight

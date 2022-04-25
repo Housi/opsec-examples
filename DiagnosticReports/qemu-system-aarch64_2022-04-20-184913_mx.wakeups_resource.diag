@@ -1,0 +1,71 @@
+Date/Time:        2022-04-20 18:44:37.110 +0200
+End time:         2022-04-20 18:49:13.814 +0200
+OS Version:       macOS 12.0.1 (Build 21A559)
+Architecture:     arm64e
+Report Version:   35
+Incident Identifier: 26FEF8FD-721E-4B62-AED5-17681F31695B
+
+Data Source:      Microstackshots
+Shared Cache:     A6162D66-93E3-3251-93CC-B11F7C8C830E slid base address 0x1b69c0000, slide 0x369c0000
+
+Command:          qemu-system-aarch64
+Path:             /Applications/Docker.app/Contents/MacOS/qemu-system-aarch64
+Codesigning ID:   qemu-system-aarch64
+Team ID:          9BNSXJN65R
+Architecture:     arm64
+PID:              95203
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45001 wakeups over the last 277 seconds (163 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45001
+Wakeups duration: 277s
+Duration:         276.70s
+Duration Sampled: 270.51s
+Steps:            6
+
+Hardware model:   MacBookPro17,1
+Active cpus:      8
+HW page size:     16384
+VM page size:     16384
+
+Fan speed:        0 rpm
+Advisory levels:  Battery -> 3, User -> 2, ThermalPressure -> 0, Combined -> 2
+Free disk space:  201.01 GB/460.43 GB, low space threshold 3072 MB
+
+Heaviest stack for the target process:
+  6  thread_start + 8 (libsystem_pthread.dylib + 8912) [0x1b6cc82d0]
+  6  _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x1b6ccd4ec]
+  6  qemu_thread_start + 128 (qemu-system-aarch64 + 7113756) [0x102c6cc1c]
+  6  hvf_cpu_thread_fn + 284 (qemu-system-aarch64 + 5371580) [0x102ac36bc]
+  6  hvf_vcpu_exec + 300 (qemu-system-aarch64 + 2463524) [0x1027fd724]
+  6  hv_trap + 8 (Hypervisor + 4488) [0x2198ba188]
+
+
+Powerstats for:   qemu-system-aarch64 [95203]
+UUID:             016AF9C8-90CC-3541-9220-F0FE25468F77
+Path:             /Applications/Docker.app/Contents/MacOS/qemu-system-aarch64
+Codesigning ID:   qemu-system-aarch64
+Team ID:          9BNSXJN65R
+Architecture:     arm64
+Footprint:        4129.64 MB
+Start time:       2022-04-20 18:44:40.841 +0200
+End time:         2022-04-20 18:49:11.348 +0200
+Num samples:      6 (100%)
+Primary state:    5 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 6 samples Active
+Power Source:     0 samples on Battery, 6 samples on AC
+  6  thread_start + 8 (libsystem_pthread.dylib + 8912) [0x1b6cc82d0]
+    6  _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x1b6ccd4ec]
+      6  qemu_thread_start + 128 (qemu-system-aarch64 + 7113756) [0x102c6cc1c]
+        6  hvf_cpu_thread_fn + 284 (qemu-system-aarch64 + 5371580) [0x102ac36bc]
+          6  hvf_vcpu_exec + 300 (qemu-system-aarch64 + 2463524) [0x1027fd724]
+            6  hv_trap + 8 (Hypervisor + 4488) [0x2198ba188]
+              1  <User mode>
+
+  Binary Images:
+           0x1025a4000 -        0x1031dbfff  qemu-system-aarch64 (0)            <016AF9C8-90CC-3541-9220-F0FE25468F77>  /Applications/Docker.app/Contents/MacOS/qemu-system-aarch64
+           0x1b6cc6000 -        0x1b6cd2fff  libsystem_pthread.dylib (485.40.4) <4786E19A-9312-38E6-80EF-9C1394548118>  /usr/lib/system/libsystem_pthread.dylib
+           0x2198b9000 -        0x2198bcfff  com.apple.Hypervisor 1.0 (1)       <7B820496-BE72-36CA-AF56-B3D8C91EA1FC>  /System/Library/Frameworks/Hypervisor.framework/Versions/A/Hypervisor

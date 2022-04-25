@@ -1,0 +1,264 @@
+Date/Time:        2022-04-21 12:37:12.266 +0200
+End time:         2022-04-21 12:39:09.272 +0200
+OS Version:       macOS 12.0.1 (Build 21A559)
+Architecture:     arm64e
+Report Version:   35
+Incident Identifier: 138E3A89-F67C-4D8F-9235-DFF82C847C5B
+
+Data Source:      Microstackshots
+Shared Cache:     B5084610-AFE4-3485-BADE-628C4468B057 slid base address 0x7ff816844000, slide 0x16844000
+
+Command:          VOX
+Path:             /Applications/VOX.app/Contents/MacOS/VOX
+Identifier:       com.coppertino.Vox
+Version:          3.4.4 (3440.1)
+Team ID:          TKTL7FHMW5
+Architecture:     x86_64 (translated)
+PID:              3644
+
+Event:            cpu usage
+Action taken:     none
+CPU:              90 seconds cpu time over 117 seconds (77% cpu average), exceeding limit of 50% cpu over 180 seconds
+CPU limit:        90s
+Limit duration:   180s
+CPU used:         90s
+CPU duration:     117s
+Duration:         117.01s
+Duration Sampled: 114.15s
+Steps:            43
+
+Hardware model:   MacBookPro17,1
+Active cpus:      8
+HW page size:     16384
+VM page size:     16384
+
+Fan speed:        0 rpm
+Advisory levels:  Battery -> 3, User -> 2, ThermalPressure -> 0, Combined -> 2
+Free disk space:  196.72 GB/460.43 GB, low space threshold 3072 MB
+
+Heaviest stack for the target process:
+  22  thread_start + 15 (libsystem_pthread.dylib + 8239) [0x7ff816b5d02f]
+  22  _pthread_start + 125 (libsystem_pthread.dylib + 25876) [0x7ff816b61514]
+  22  __NSThread__start__ + 1025 (Foundation + 365513) [0x7ff8179ad3c9]
+  22  ??? (VOX + 1944508) [0x1051acbbc]
+  22  -[NSRunLoop(NSRunLoop) run] + 76 (Foundation + 963267) [0x7ff817a3f2c3]
+  22  -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 216 (Foundation + 395102) [0x7ff8179b475e]
+  22  CFRunLoopRunSpecific + 567 (CoreFoundation + 514057) [0x7ff816c25809]
+  22  __CFRunLoopRun + 897 (CoreFoundation + 516703) [0x7ff816c2625f]
+  19  __CFRunLoopDoSources0 + 171 (CoreFoundation + 522236) [0x7ff816c277fc]
+  19  CFSetApplyFunction + 131 (CoreFoundation + 303126) [0x7ff816bf2016]
+  10  CFBasicHashApply + 114 (CoreFoundation + 303302) [0x7ff816bf20c6]
+  7  __CFSetApplyFunction_block_invoke + 18 (CoreFoundation + 303702) [0x7ff816bf2256]
+  7  ??? [0x7ff8a74f7fd4]
+
+
+Powerstats for:   VOX [3644]
+UUID:             82C41F71-3D62-31D2-8128-715F846A8C9C
+Path:             /Applications/VOX.app/Contents/MacOS/VOX
+Identifier:       com.coppertino.Vox
+Version:          3.4.4 (3440.1)
+Team ID:          TKTL7FHMW5
+Architecture:     x86_64 (translated)
+Footprint:        521.81 MB -> 1024.36 MB (+502.55 MB)
+Pageins:          507 pages
+Start time:       2022-04-21 12:37:13.783 +0200
+End time:         2022-04-21 12:39:07.930 +0200
+Num samples:      43 (100%)
+Primary state:    23 samples Non-Frontmost App, Suppressed, User mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 43 samples Active
+Power Source:     0 samples on Battery, 43 samples on AC
+  22  thread_start + 15 (libsystem_pthread.dylib + 8239) [0x7ff816b5d02f]
+    22  _pthread_start + 125 (libsystem_pthread.dylib + 25876) [0x7ff816b61514]
+      22  __NSThread__start__ + 1025 (Foundation + 365513) [0x7ff8179ad3c9]
+        22  ??? (VOX + 1944508) [0x1051acbbc]
+          22  -[NSRunLoop(NSRunLoop) run] + 76 (Foundation + 963267) [0x7ff817a3f2c3]
+            22  -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 216 (Foundation + 395102) [0x7ff8179b475e]
+              22  CFRunLoopRunSpecific + 567 (CoreFoundation + 514057) [0x7ff816c25809]
+                22  __CFRunLoopRun + 897 (CoreFoundation + 516703) [0x7ff816c2625f]
+                  19  __CFRunLoopDoSources0 + 171 (CoreFoundation + 522236) [0x7ff816c277fc]
+                    19  CFSetApplyFunction + 131 (CoreFoundation + 303126) [0x7ff816bf2016]
+                      10  CFBasicHashApply + 114 (CoreFoundation + 303302) [0x7ff816bf20c6]
+                        7   __CFSetApplyFunction_block_invoke + 18 (CoreFoundation + 303702) [0x7ff816bf2256]
+                          7   ??? [0x7ff8a74f7fd4]
+                            1   <Non-Suppressed>
+                        1   ??? [0x7ff8a7496b2c]
+                          1   <Non-Suppressed, Effective Thread QoS User Initiated>
+                        1   ??? [0x7ff8a7496b10]
+                          1   <Non-Suppressed, Effective Thread QoS User Initiated>
+                        1   ??? [0x7ff8a7496b0c]
+                          1   <Non-Suppressed>
+                      6   CFBasicHashApply + 83 (CoreFoundation + 303271) [0x7ff816bf20a7]
+                        4   ??? [0x7ff8a749699c]
+                          2   <Non-Suppressed>
+                          2   <Non-Suppressed, Effective Thread QoS User Initiated>
+                        2   ??? [0x7ff8a749694c]
+                          2   <Non-Suppressed, Effective Thread QoS User Initiated>
+                      2   ??? [0x7ff8a749684c]
+                        2   <Non-Suppressed, Effective Thread QoS User Initiated>
+                      1   ??? [0x7ff8a7496850]
+                        1   <Non-Suppressed, Effective Thread QoS User Initiated>
+                  2   __CFRunLoopDoSources0 + 242 (CoreFoundation + 522307) [0x7ff816c27843]
+                    2   __CFRunLoopDoSource0 + 180 (CoreFoundation + 522960) [0x7ff816c27ad0]
+                      2   __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17 (CoreFoundation + 523112) [0x7ff816c27b68]
+                        1   ??? (CFNetwork + 251683) [0x7ff81b529723]
+                          1   ??? (CFNetwork + 252023) [0x7ff81b529877]
+                            1   CFArrayApplyFunction + 62 (CoreFoundation + 280706) [0x7ff816bec882]
+                              1   ??? (CFNetwork + 252230) [0x7ff81b529946]
+                                1   _dispatch_block_invoke_direct + 241 (libdispatch.dylib + 23702) [0x7ff8169aac96]
+                                  1   _dispatch_client_callout + 8 (libdispatch.dylib + 11465) [0x7ff8169a7cc9]
+                                    1   ??? (CFNetwork + 1883701) [0x7ff81b6b7e35]
+                                      1   ??? (CFNetwork + 1885449) [0x7ff81b6b8509]
+                                        1   ??? (CFNetwork + 446495) [0x7ff81b55901f]
+                                          1   ??? (CFNetwork + 446601) [0x7ff81b559089]
+                                            1   ??? (CFNetwork + 446788) [0x7ff81b559144]
+                                              1   ??? (CFNetwork + 446964) [0x7ff81b5591f4]
+                                                1   ??? [0x105b5ac34]
+                                                  1   <Non-Suppressed>
+                        1   ??? (CFNetwork + 251410) [0x7ff81b529612]
+                          1   CFSetCreateMutable + 14 (CoreFoundation + 280302) [0x7ff816bec6ee]
+                            1   __CFSetCreateGeneric + 118 (CoreFoundation + 280482) [0x7ff816bec7a2]
+                              1   CFBasicHashCreate + 72 (CoreFoundation + 18946) [0x7ff816baca02]
+                                1   _CFRuntimeCreateInstance + 294 (CoreFoundation + 13986) [0x7ff816bab6a2]
+                                  1   _malloc_zone_calloc + 59 (libsystem_malloc.dylib + 121743) [0x7ff816996b8f]
+                                    1   nanov2_calloc + 126 (libsystem_malloc.dylib + 13858) [0x7ff81697c622]
+                                      1   ??? [0x7ff8a7108300]
+                                        1   <Non-Suppressed>
+                  1   __CFRunLoopDoSources0 + 340 (CoreFoundation + 522405) [0x7ff816c278a5]
+                    1   __CFRunLoopDoSource0 + 180 (CoreFoundation + 522960) [0x7ff816c27ad0]
+                      1   __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17 (CoreFoundation + 523112) [0x7ff816c27b68]
+                        1   __NSThreadPerformPerform + 179 (Foundation + 531811) [0x7ff8179d5d63]
+                          1   ??? [0x7ff8a6fe4018]
+  20  start_wqthread + 15 (libsystem_pthread.dylib + 8219) [0x7ff816b5d01b]
+    19  _pthread_wqthread + 326 (libsystem_pthread.dylib + 12431) [0x7ff816b5e08f]
+      19  _dispatch_workloop_worker_thread + 758 (libdispatch.dylib + 79841) [0x7ff8169b87e1]
+        18  _dispatch_workloop_invoke + 1986 (libdispatch.dylib + 43756) [0x7ff8169afaec]
+          18  _dispatch_lane_invoke + 417 (libdispatch.dylib + 38907) [0x7ff8169ae7fb]
+            18  _dispatch_lane_serial_drain + 696 (libdispatch.dylib + 36078) [0x7ff8169adcee]
+              18  _dispatch_client_callout + 8 (libdispatch.dylib + 11465) [0x7ff8169a7cc9]
+                17  _dispatch_call_block_and_release + 12 (libdispatch.dylib + 6872) [0x7ff8169a6ad8]
+                  17  ??? (CFNetwork + 644499) [0x7ff81b589593]
+                    8   ??? (CFNetwork + 345371) [0x7ff81b54051b]
+                      8   ??? (CFNetwork + 1681722) [0x7ff81b68693a]
+                        8   CFAbsoluteTimeGetCurrent + 37 (CoreFoundation + 299049) [0x7ff816bf1029]
+                          6   gettimeofday + 45 (libsystem_c.dylib + 38474) [0x7ff816a3564a]
+                            5   __commpage_gettimeofday_internal + 36 (libsystem_kernel.dylib + 8896) [0x7ff816b262c0]
+                              3   ??? [0x7ff8a6fe4148]
+                                2   <Non-Suppressed>
+                              1   ??? [0x7ff8a73606c4]
+                              1   ??? [0x7ff8a6fe414c]
+                                1   <Non-Suppressed>
+                            1   ??? [0x7ff8a7362dec]
+                          1   ??? [0x7ff8a7362e60]
+                          1   ??? [0x7ff8a72b8c1c]
+                    5   ??? [0x7ff8a6fe407c]
+                    1   ??? [0x7ff8adf8386c]
+                    1   ??? [0x7ff8add2c680]
+                    1   ??? (CFNetwork + 346454) [0x7ff81b540956]
+                      1   ??? (CFNetwork + 347338) [0x7ff81b540cca]
+                        1   ??? (CFNetwork + 215213) [0x7ff81b5208ad]
+                          1   ??? (CFNetwork + 220569) [0x7ff81b521d99]
+                            1   ??? (CFNetwork + 2378465) [0x7ff81b730ae1]
+                              1   ??? (CFNetwork + 2381640) [0x7ff81b731748]
+                                1   ??? (CFNetwork + 2397468) [0x7ff81b73551c]
+                                  1   +[NSString stringWithFormat:] + 153 (Foundation + 110383) [0x7ff81796ef2f]
+                                    1   _CFStringCreateWithFormatAndArgumentsAux2 + 21 (CoreFoundation + 189796) [0x7ff816bd6564]
+                                      1   _CFStringCreateWithFormatAndArgumentsReturningMetadata + 68 (CoreFoundation + 1442430) [0x7ff816d0827e]
+                                        1   CFStringCreateMutable + 69 (CoreFoundation + 74284) [0x7ff816bba22c]
+                                          1   _CFRuntimeCreateInstance + 294 (CoreFoundation + 13986) [0x7ff816bab6a2]
+                                            1   _malloc_zone_calloc + 59 (libsystem_malloc.dylib + 121743) [0x7ff816996b8f]
+                                              1   nanov2_calloc + 126 (libsystem_malloc.dylib + 13858) [0x7ff81697c622]
+                                                1   nanov2_allocate + 130 (libsystem_malloc.dylib + 5689) [0x7ff81697a639]
+                                                  1   ??? [0x7ff8a710843c]
+                    1   ??? (CFNetwork + 101932) [0x7ff81b504e2c]
+                      1   ??? (CFNetwork + 1903407) [0x7ff81b6bcb2f]
+                        1   ??? (CFNetwork + 103954) [0x7ff81b505612]
+                          1   ??? (CFNetwork + 107259) [0x7ff81b5062fb]
+                            1   ??? (CFNetwork + 107474) [0x7ff81b5063d2]
+                              1   _SCNetworkProxiesCopyMatchingInternal + 1391 (SystemConfiguration + 41813) [0x7ff81766f355]
+                                1   ??? [0x7ff8a6fe407c]
+                1   _dispatch_block_async_invoke2 + 83 (libdispatch.dylib + 64781) [0x7ff8169b4d0d]
+                  1   ??? (CFNetwork + 1315594) [0x7ff81b62d30a]
+                    1   ??? (CFNetwork + 2054051) [0x7ff81b6e17a3]
+                      1   ??? (CFNetwork + 2345310) [0x7ff81b72895e]
+                        1   ??? (CFNetwork + 2348426) [0x7ff81b72958a]
+                          1   ??? (CFNetwork + 258472) [0x7ff81b52b1a8]
+                            1   ??? (CFNetwork + 259176) [0x7ff81b52b468]
+                              1   ??? (CFNetwork + 40552) [0x7ff81b4f5e68]
+                                1   ??? (CFNetwork + 43366) [0x7ff81b4f6966]
+                                  1   CFDictionaryGetValue + 88 (CoreFoundation + 30151) [0x7ff816baf5c7]
+                                    1   CFBasicHashFindBucket + 182 (CoreFoundation + 30414) [0x7ff816baf6ce]
+                                      1   ??? (CFNetwork + 43628) [0x7ff81b4f6a6c]
+                                        1   ??? [0x7ff8a74a8960]
+        1   _dispatch_lane_invoke + 417 (libdispatch.dylib + 38907) [0x7ff8169ae7fb]
+          1   _dispatch_lane_serial_drain + 696 (libdispatch.dylib + 36078) [0x7ff8169adcee]
+            1   _dispatch_client_callout + 8 (libdispatch.dylib + 11465) [0x7ff8169a7cc9]
+              1   _dispatch_call_block_and_release + 12 (libdispatch.dylib + 6872) [0x7ff8169a6ad8]
+                1   ??? (CFNetwork + 561139) [0x7ff81b574ff3]
+                  1   ??? (CFNetwork + 562891) [0x7ff81b5756cb]
+                    1   ??? (CFNetwork + 563037) [0x7ff81b57575d]
+                      1   ??? (CFNetwork + 445227) [0x7ff81b558b2b]
+                        1   ??? (CFNetwork + 445506) [0x7ff81b558c42]
+                          1   ??? (CFNetwork + 89108) [0x7ff81b501c14]
+                            1   ??? (CFNetwork + 797220) [0x7ff81b5aea24]
+                              1   ??? (CFNetwork + 89351) [0x7ff81b501d07]
+                                1   ??? (CFNetwork + 1106366) [0x7ff81b5fa1be]
+                                  1   ??? (CFNetwork + 2019955) [0x7ff81b6d9273]
+                                    1   appSSO_willHandle + 64 (AppSSOCore + 7552) [0x7ff82286ed80]
+                                      1   +[SOAuthorizationCore _canPerformAuthorizationWithURL:responseCode:callerBundleIdentifier:useInternalExtensions:] + 163 (AppSSOCore + 9812) [0x7ff82286f654]
+                                        1   -[SOConfigurationClient willHandleURL:responseCode:callerBundleIdentifier:] + 82 (AppSSOCore + 12968) [0x7ff8228702a8]
+                                          1   -[SOConfigurationClient _checkNewVersion] + 26 (AppSSOCore + 13095) [0x7ff822870327]
+                                            1   ??? [0x7ff8b6bfb044]
+    1   _pthread_wqthread + 256 (libsystem_pthread.dylib + 12361) [0x7ff816b5e049]
+      1   _dispatch_worker_thread2 + 160 (libdispatch.dylib + 76634) [0x7ff8169b7b5a]
+        1   _dispatch_root_queue_drain + 343 (libdispatch.dylib + 74682) [0x7ff8169b73ba]
+          1   _dispatch_async_redirect_invoke + 716 (libdispatch.dylib + 19949) [0x7ff8169a9ded]
+            1   _dispatch_continuation_pop + 460 (libdispatch.dylib + 22342) [0x7ff8169aa746]
+              1   _dispatch_client_callout + 8 (libdispatch.dylib + 11465) [0x7ff8169a7cc9]
+                1   _dispatch_block_async_invoke2 + 83 (libdispatch.dylib + 64781) [0x7ff8169b4d0d]
+                  1   __NSOQSchedule_f + 182 (Foundation + 266810) [0x7ff81799523a]
+                    1   __NSOPERATIONQUEUE_IS_STARTING_AN_OPERATION__ + 17 (Foundation + 267109) [0x7ff817995365]
+                      1   ??? (VOX + 1950535) [0x1051ae347]
+                        1   ??? (VOX + 1948538) [0x1051adb7a]
+                          1   NSKeyValueWillChangeWithPerThreadPendingNotifications + 316 (Foundation + 1708835) [0x7ff817af5323]
+                            1   NSKVOCopyPendingNotificationStack + 237 (Foundation + 1019738) [0x7ff817a4cf5a]
+                              1   CFDictionarySetValue + 176 (CoreFoundation + 21574) [0x7ff816bad446]
+                                1   CFBasicHashSetValue + 223 (CoreFoundation + 21906) [0x7ff816bad592]
+                                  1   ??? [0x7ff8a83f2ff0]
+                                    1   <Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+  1   ??? [0x104fd2000]
+    1   ??? [0x2058b3000]
+      1   start + 462 (dyld + 21758) [0x2058b84fe]
+        1   ??? (VOX + 16468) [0x104fd6054]
+          1   NSApplicationMain + 816 (AppKit + 12792) [0x7ff81953c1f8]
+            1   -[NSApplication run] + 586 (AppKit + 193369) [0x7ff819568359]
+              1   -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1411 (AppKit + 249692) [0x7ff819575f5c]
+                1   _DPSNextEvent + 886 (AppKit + 256240) [0x7ff8195778f0]
+                  1   _BlockUntilNextEventMatchingListInModeWithFilter + 70 (HIToolbox + 192213) [0x7ff81fc91ed5]
+                    1   ReceiveNextEventCommon + 587 (HIToolbox + 192823) [0x7ff81fc92137]
+                      1   RunCurrentEventLoopInMode + 292 (HIToolbox + 193505) [0x7ff81fc923e1]
+                        1   CFRunLoopRunSpecific + 567 (CoreFoundation + 514057) [0x7ff816c25809]
+                          1   __CFRunLoopRun + 2760 (CoreFoundation + 518566) [0x7ff816c269a6]
+                            1   __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__ + 9 (CoreFoundation + 775096) [0x7ff816c653b8]
+                              1   _dispatch_main_queue_callback_4CF + 951 (libdispatch.dylib + 62936) [0x7ff8169b45d8]
+                                1   _dispatch_client_callout + 8 (libdispatch.dylib + 11465) [0x7ff8169a7cc9]
+                                  1   _dispatch_call_block_and_release + 12 (libdispatch.dylib + 6872) [0x7ff8169a6ad8]
+                                    1   ??? (VOX + 1933403) [0x1051aa05b]
+                                      1   ??? (VOX + 1042691) [0x1050d0903]
+                                        1   ??? [0x7ff8a71a50f8]
+                                          1   <Non-Suppressed, Effective Thread QoS User Interactive, Requested Thread QoS User Interactive>
+
+  Binary Images:
+           0x104fd2000 -        0x105639fff  com.coppertino.Vox 3.4.4 (3440.1)         <82C41F71-3D62-31D2-8128-715F846A8C9C>  /Applications/VOX.app/Contents/MacOS/VOX
+           0x2058b3000 -        0x20592efff  dyld (940)                                <1A6AE033-9438-33C0-8077-988FD885250A>  /usr/lib/dyld
+        0x7ff816979000 -     0x7ff8169a4fff  libsystem_malloc.dylib (374.40.6)         <896704B7-96B0-32B4-986D-A6BCD5C816B4>  /usr/lib/system/libsystem_malloc.dylib
+        0x7ff8169a5000 -     0x7ff8169ebfff  libdispatch.dylib (1324.41.2)             <BE53A13C-8CE1-3E40-B9BC-98473D3EED3E>  /usr/lib/system/libdispatch.dylib
+        0x7ff816a2c000 -     0x7ff816ab4fff  libsystem_c.dylib (1506.40.4)             <991F58B7-B4C0-3C3A-84A8-C9C571DE5A27>  /usr/lib/system/libsystem_c.dylib
+        0x7ff816b24000 -     0x7ff816b5afff  libsystem_kernel.dylib (8019.41.5)        <12BD6F13-C452-35EE-9069-51BEFEF29F1A>  /usr/lib/system/libsystem_kernel.dylib
+        0x7ff816b5b000 -     0x7ff816b66fff  libsystem_pthread.dylib (485.40.4)        <29A2750E-F31B-3630-8761-242A6BC3E99E>  /usr/lib/system/libsystem_pthread.dylib
+        0x7ff816ba8000 -     0x7ff8170a8fff  com.apple.CoreFoundation 6.9 (1855.105)   <AFCC752E-074D-340F-890C-263EFD2DA77F>  /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+        0x7ff817665000 -     0x7ff8176dffff  com.apple.SystemConfiguration 1.21 (1.21) <9DE0CE40-6A1D-3791-AE83-DE2164EB9303>  /System/Library/Frameworks/SystemConfiguration.framework/Versions/A/SystemConfiguration
+        0x7ff817954000 -     0x7ff817d0efff  com.apple.Foundation 6.9 (1855.105)       <D7FD0214-4BBB-3D84-88F7-820B25A6E16C>  /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+        0x7ff819539000 -     0x7ff81a3c5fff  com.apple.AppKit 6.9 (2113)               <DD0028A3-78E3-3A8A-A51B-DDD68123ADEF>  /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit
+        0x7ff81b4ec000 -     0x7ff81b981fff  com.apple.CFNetwork 1325.0.1 (1325.0.1)   <8A8CD85D-CF83-3019-BD2C-B99A711C97D7>  /System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork
+        0x7ff81fc63000 -     0x7ff81ff5afff  com.apple.HIToolbox 2.1.1 (1112.4)        <4163A93F-BF71-3219-80ED-6F65E9266B81>  /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox
+        0x7ff82286d000 -     0x7ff822888fff  com.apple.AppSSOCore 1.0 (1)              <EE7E7966-75EC-3813-B813-EAFC1B423001>  /System/Library/PrivateFrameworks/AppSSOCore.framework/Versions/A/AppSSOCore

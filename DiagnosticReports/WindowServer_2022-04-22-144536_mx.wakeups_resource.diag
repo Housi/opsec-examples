@@ -1,0 +1,746 @@
+Date/Time:        2022-04-22 14:40:50.750 +0200
+End time:         2022-04-22 14:45:34.768 +0200
+OS Version:       macOS 12.0.1 (Build 21A559)
+Architecture:     arm64e
+Report Version:   35
+Incident Identifier: 3168561E-84C3-4E56-A27F-8121C0357746
+
+Data Source:      Microstackshots
+Shared Cache:     A6162D66-93E3-3251-93CC-B11F7C8C830E slid base address 0x1b32e0000, slide 0x332e0000
+
+Command:          WindowServer
+Path:             /System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/Resources/WindowServer
+Codesigning ID:   com.apple.WindowServer
+Architecture:     arm64
+PID:              160
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45001 wakeups over the last 284 seconds (158 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45001
+Wakeups duration: 284s
+Duration:         284.02s
+Duration Sampled: 266.07s
+Steps:            69
+
+Hardware model:   MacBookPro17,1
+Active cpus:      8
+HW page size:     16384
+VM page size:     16384
+
+Fan speed:        0 rpm
+Advisory levels:  Battery -> 3, User -> 2, ThermalPressure -> 0, Combined -> 2
+Free disk space:  201.54 GB/460.43 GB, low space threshold 3072 MB
+
+Heaviest stack for the target process:
+  10  start + 520 (dyld + 20724) [0x1027bd0f4]
+  10  ??? (WindowServer + 13244) [0x10272b3bc]
+  10  SLXServer + 1744 (SkyLight + 3060736) [0x1b8a94400]
+  10  server_loop + 128 (SkyLight + 3061564) [0x1b8a9473c]
+  9   CGXRunOneServicesPass + 1612 (SkyLight + 3057952) [0x1b8a93920]
+  9   post_port_data + 272 (SkyLight + 3058876) [0x1b8a93cbc]
+  9   non_coalesced_timer_handler + 24 (SkyLight + 2816900) [0x1b8a58b84]
+  9   run_timer_pass + 544 (SkyLight + 2816508) [0x1b8a589fc]
+  9   update_display_callback(void*, double) + 1452 (SkyLight + 2424912) [0x1b89f9050]
+  4   CGXUpdateDisplay + 17848 (SkyLight + 2469468) [0x1b8a03e5c]
+  3   WS::Displays::SLCADisplay::present_update(WS::Displays::Update&, WS::Displays::SyncType) + 856 (SkyLight + 1409408) [0x1b8901180]
+  3   WS::Displays::SLCADisplay::finish_external_update(_CARenderUpdate*, unsigned int, unsigned long long, unsigned int) + 152 (SkyLight + 1404840) [0x1b88fffa8]
+  3   -[CAWindowServerDisplay finishExternalUpdate:withFlags:debugInfo:] + 84 (QuartzCore + 2158356) [0x1ba6eaf14]
+  3   CA::WindowServer::IOMFBServer::finish_skylight_update(CA::Render::Update*, unsigned int, unsigned long long) + 68 (QuartzCore + 2305356) [0x1ba70ed4c]
+  2   CA::WindowServer::IOMFBDisplay::finish_skylight_update(CA::Render::Update*, unsigned int, unsigned long long) + 1076 (QuartzCore + 2580960) [0x1ba7521e0]
+  2   kern_SwapBegin + 88 (IOMobileFramebuffer + 18120) [0x1bd36e6c8]
+  2   IOConnectCallScalarMethod + 80 (IOKit + 49512) [0x1b60a2168]
+  2   io_connect_method + 440 (IOKit + 15084) [0x1b6099aec]
+  2   mach_msg_trap + 8 (libsystem_kernel.dylib + 6484) [0x1b35b1954]
+
+
+Powerstats for:   WindowServer [160]
+UUID:             9E39D81A-838B-3295-9FA7-2485A3D673C1
+Path:             /System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/Resources/WindowServer
+Codesigning ID:   com.apple.WindowServer
+Architecture:     arm64
+Footprint:        283.23 MB -> 306.55 MB (+23.31 MB)
+Pageins:          20 pages
+Start time:       2022-04-22 14:41:41.099 +0200
+End time:         2022-04-22 14:45:26.449 +0200
+Num samples:      12 (17%)
+Primary state:    6 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Unspecified, Requested Thread QoS Unspecified, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 12 samples Active
+Power Source:     0 samples on Battery, 12 samples on AC
+  10  start + 520 (dyld + 20724) [0x1027bd0f4]
+    10  ??? (WindowServer + 13244) [0x10272b3bc]
+      10  SLXServer + 1744 (SkyLight + 3060736) [0x1b8a94400]
+        10  server_loop + 128 (SkyLight + 3061564) [0x1b8a9473c]
+          9   CGXRunOneServicesPass + 1612 (SkyLight + 3057952) [0x1b8a93920]
+            9   post_port_data + 272 (SkyLight + 3058876) [0x1b8a93cbc]
+              9   non_coalesced_timer_handler + 24 (SkyLight + 2816900) [0x1b8a58b84]
+                9   run_timer_pass + 544 (SkyLight + 2816508) [0x1b8a589fc]
+                  9   update_display_callback(void*, double) + 1452 (SkyLight + 2424912) [0x1b89f9050]
+                    4   CGXUpdateDisplay + 17848 (SkyLight + 2469468) [0x1b8a03e5c]
+                      3   WS::Displays::SLCADisplay::present_update(WS::Displays::Update&, WS::Displays::SyncType) + 856 (SkyLight + 1409408) [0x1b8901180]
+                        3   WS::Displays::SLCADisplay::finish_external_update(_CARenderUpdate*, unsigned int, unsigned long long, unsigned int) + 152 (SkyLight + 1404840) [0x1b88fffa8]
+                          3   -[CAWindowServerDisplay finishExternalUpdate:withFlags:debugInfo:] + 84 (QuartzCore + 2158356) [0x1ba6eaf14]
+                            3   CA::WindowServer::IOMFBServer::finish_skylight_update(CA::Render::Update*, unsigned int, unsigned long long) + 68 (QuartzCore + 2305356) [0x1ba70ed4c]
+                              2   CA::WindowServer::IOMFBDisplay::finish_skylight_update(CA::Render::Update*, unsigned int, unsigned long long) + 1076 (QuartzCore + 2580960) [0x1ba7521e0]
+                                2   kern_SwapBegin + 88 (IOMobileFramebuffer + 18120) [0x1bd36e6c8]
+                                  2   IOConnectCallScalarMethod + 80 (IOKit + 49512) [0x1b60a2168]
+                                    2   io_connect_method + 440 (IOKit + 15084) [0x1b6099aec]
+                                      2   mach_msg_trap + 8 (libsystem_kernel.dylib + 6484) [0x1b35b1954]
+                                        2   <Kernel mode>
+                              1   CA::WindowServer::IOMFBDisplay::finish_skylight_update(CA::Render::Update*, unsigned int, unsigned long long) + 3828 (QuartzCore + 2583712) [0x1ba752ca0]
+                                1   kern_SwapEnd + 52 (IOMobileFramebuffer + 18268) [0x1bd36e75c]
+                                  1   IOConnectCallStructMethod + 56 (IOKit + 18348) [0x1b609a7ac]
+                                    1   IOConnectCallMethod + 176 (IOKit + 14540) [0x1b60998cc]
+                                      1   io_connect_method + 440 (IOKit + 15084) [0x1b6099aec]
+                                        1   mach_msg_trap + 8 (libsystem_kernel.dylib + 6484) [0x1b35b1954]
+                                          1   <Kernel mode>
+                      1   WS::Displays::SLCADisplay::present_update(WS::Displays::Update&, WS::Displays::SyncType) + 700 (SkyLight + 1409252) [0x1b89010e4]
+                        1   IOSurfaceClientSetIndexedTimestamp + 160 (IOSurface + 33772) [0x1bbe323ec]
+                    3   CGXUpdateDisplay + 17028 (SkyLight + 2468648) [0x1b8a03b28]
+                      3   WS::Displays::SLCADisplay::render_update(WS::Displays::Update&, Compositor*, unsigned int, WSCompositeSourceLayer*) + 1908 (SkyLight + 1413508) [0x1b8902184]
+                        3   CompositorMetal::CompositeLayersToDestination(WSCompositeSourceLayer*, WSCompositeDestination*, unsigned long long) + 272 (SkyLight + 2990344) [0x1b8a83108]
+                          3   CompositorMetal::composite(WSCompositeSourceLayer*, WSCompositeDestination*, bool, bool) + 308 (SkyLight + 2990688) [0x1b8a83260]
+                            3   MetalCompositeLayers + 56 (SkyLight + 2991736) [0x1b8a83678]
+                              3   MetalCompositeLayer + 10512 (SkyLight + 3002312) [0x1b8a85fc8]
+                                3   CARenderOGLRenderDisplayWithOptions + 200 (QuartzCore + 1489216) [0x1ba647940]
+                                  3   CA::OGL::render(CA::OGL::Renderer&, CA::Render::Update*, unsigned long) + 452 (QuartzCore + 1022788) [0x1ba5d5b44]
+                                    3   CA::OGL::Renderer::render(CA::Render::Update const*, unsigned long) + 1672 (QuartzCore + 1021644) [0x1ba5d56cc]
+                                      3   CA::OGL::render_root_layers(CA::OGL::Renderer&, x_link_struct const*, CA::OGL::Gstate const&) + 184 (QuartzCore + 644532) [0x1ba5795b4]
+                                        3   CA::OGL::render_prepared_layers(CA::OGL::Renderer&, CA::OGL::Layer&, CA::OGL::Layer*, CA::OGL::Gstate const&) + 124 (QuartzCore + 1168100) [0x1ba5f92e4]
+                                          3   CA::OGL::render_layers(CA::OGL::Renderer&, CA::OGL::Layer*) + 264 (QuartzCore + 658672) [0x1ba57ccf0]
+                                            3   CA::OGL::ImagingNode::render(CA::OGL::ImagingNode::RenderClosure*, unsigned int) + 744 (QuartzCore + 659656) [0x1ba57d0c8]
+                                              3   CA::OGL::LayerNode::apply(float, CA::OGL::Surface**, float*) + 112 (QuartzCore + 662572) [0x1ba57dc2c]
+                                                3   CA::OGL::render_layers(CA::OGL::Renderer&, CA::OGL::Layer*) + 264 (QuartzCore + 658672) [0x1ba57ccf0]
+                                                  3   CA::OGL::ImagingNode::render(CA::OGL::ImagingNode::RenderClosure*, unsigned int) + 744 (QuartzCore + 659656) [0x1ba57d0c8]
+                                                    3   CA::OGL::LayerNode::apply(float, CA::OGL::Surface**, float*) + 112 (QuartzCore + 662572) [0x1ba57dc2c]
+                                                      3   CA::OGL::render_layers(CA::OGL::Renderer&, CA::OGL::Layer*) + 264 (QuartzCore + 658672) [0x1ba57ccf0]
+                                                        3   CA::OGL::ImagingNode::render(CA::OGL::ImagingNode::RenderClosure*, unsigned int) + 744 (QuartzCore + 659656) [0x1ba57d0c8]
+                                                          3   CA::OGL::LayerNode::apply(float, CA::OGL::Surface**, float*) + 112 (QuartzCore + 662572) [0x1ba57dc2c]
+                                                            3   CA::OGL::render_layers(CA::OGL::Renderer&, CA::OGL::Layer*) + 264 (QuartzCore + 658672) [0x1ba57ccf0]
+                                                              3   CA::OGL::ImagingNode::render(CA::OGL::ImagingNode::RenderClosure*, unsigned int) + 744 (QuartzCore + 659656) [0x1ba57d0c8]
+                                                                3   CA::OGL::LayerNode::apply(float, CA::OGL::Surface**, float*) + 112 (QuartzCore + 662572) [0x1ba57dc2c]
+                                                                  3   CA::OGL::render_layers(CA::OGL::Renderer&, CA::OGL::Layer*) + 264 (QuartzCore + 658672) [0x1ba57ccf0]
+                                                                    3   CA::OGL::ImagingNode::render(CA::OGL::ImagingNode::RenderClosure*, unsigned int) + 744 (QuartzCore + 659656) [0x1ba57d0c8]
+                                                                      3   CA::OGL::LayerNode::apply(float, CA::OGL::Surface**, float*) + 112 (QuartzCore + 662572) [0x1ba57dc2c]
+                                                                        3   CA::OGL::render_layers(CA::OGL::Renderer&, CA::OGL::Layer*) + 264 (QuartzCore + 658672) [0x1ba57ccf0]
+                                                                          3   CA::OGL::ImagingNode::render(CA::OGL::ImagingNode::RenderClosure*, unsigned int) + 744 (QuartzCore + 659656) [0x1ba57d0c8]
+                                                                            3   CA::OGL::LayerNode::apply(float, CA::OGL::Surface**, float*) + 112 (QuartzCore + 662572) [0x1ba57dc2c]
+                                                                              3   CA::OGL::render_layers(CA::OGL::Renderer&, CA::OGL::Layer*) + 264 (QuartzCore + 658672) [0x1ba57ccf0]
+                                                                                3   CA::OGL::ImagingNode::render(CA::OGL::ImagingNode::RenderClosure*, unsigned int) + 744 (QuartzCore + 659656) [0x1ba57d0c8]
+                                                                                  3   CA::OGL::LayerNode::apply(float, CA::OGL::Surface**, float*) + 112 (QuartzCore + 662572) [0x1ba57dc2c]
+                                                                                    3   CA::OGL::render_layers(CA::OGL::Renderer&, CA::OGL::Layer*) + 264 (QuartzCore + 658672) [0x1ba57ccf0]
+                                                                                      3   CA::OGL::ImagingNode::render(CA::OGL::ImagingNode::RenderClosure*, unsigned int) + 744 (QuartzCore + 659656) [0x1ba57d0c8]
+                                                                                        3   CA::OGL::LayerNode::apply(float, CA::OGL::Surface**, float*) + 112 (QuartzCore + 662572) [0x1ba57dc2c]
+                                                                                          3   CA::OGL::render_layers(CA::OGL::Renderer&, CA::OGL::Layer*) + 264 (QuartzCore + 658672) [0x1ba57ccf0]
+                                                                                            3   CA::OGL::ImagingNode::render(CA::OGL::ImagingNode::RenderClosure*, unsigned int) + 744 (QuartzCore + 659656) [0x1ba57d0c8]
+                                                                                              3   CA::OGL::LayerNode::apply(float, CA::OGL::Surface**, float*) + 112 (QuartzCore + 662572) [0x1ba57dc2c]
+                                                                                                3   CA::OGL::render_layers(CA::OGL::Renderer&, CA::OGL::Layer*) + 264 (QuartzCore + 658672) [0x1ba57ccf0]
+                                                                                                  3   CA::OGL::ImagingNode::render(CA::OGL::ImagingNode::RenderClosure*, unsigned int) + 744 (QuartzCore + 659656) [0x1ba57d0c8]
+                                                                                                    3   CA::OGL::LayerNode::apply(float, CA::OGL::Surface**, float*) + 112 (QuartzCore + 662572) [0x1ba57dc2c]
+                                                                                                      3   CA::OGL::render_layers(CA::OGL::Renderer&, CA::OGL::Layer*) + 264 (QuartzCore + 658672) [0x1ba57ccf0]
+                                                                                                        3   CA::OGL::ImagingNode::render(CA::OGL::ImagingNode::RenderClosure*, unsigned int) + 744 (QuartzCore + 659656) [0x1ba57d0c8]
+                                                                                                          3   CA::OGL::LayerNode::apply(float, CA::OGL::Surface**, float*) + 112 (QuartzCore + 662572) [0x1ba57dc2c]
+                                                                                                            3   CA::OGL::render_layers(CA::OGL::Renderer&, CA::OGL::Layer*) + 264 (QuartzCore + 658672) [0x1ba57ccf0]
+                                                                                                              3   CA::OGL::ImagingNode::render(CA::OGL::ImagingNode::RenderClosure*, unsigned int) + 744 (QuartzCore + 659656) [0x1ba57d0c8]
+                                                                                                                3   CA::OGL::LayerNode::apply(float, CA::OGL::Surface**, float*) + 112 (QuartzCore + 662572) [0x1ba57dc2c]
+                                                                                                                  3   CA::OGL::render_layers(CA::OGL::Renderer&, CA::OGL::Layer*) + 264 (QuartzCore + 658672) [0x1ba57ccf0]
+                                                                                                                    3   CA::OGL::ImagingNode::render(CA::OGL::ImagingNode::RenderClosure*, unsigned int) + 744 (QuartzCore + 659656) [0x1ba57d0c8]
+                                                                                                                      3   CA::OGL::LayerNode::apply(float, CA::OGL::Surface**, float*) + 64 (QuartzCore + 662524) [0x1ba57dbfc]
+                                                                                                                        3   CA::OGL::render_contents_background(CA::OGL::Renderer&, CA::OGL::Layer const*) + 7208 (QuartzCore + 670668) [0x1ba57fbcc]
+                                                                                                                          3   CA::OGL::Context::bind_image(unsigned int, CA::Render::Texture*, unsigned int, CA::OGL::TextureFilter, CA::OGL::TextureFilter, float, CA::OGL::TextureEdgeMode, CA::OGL::ContentsGeometry const*, float*, char const*) + 668 (QuartzCore + 465188) [0x1ba54d924]
+                                                                                                                            3   CA::OGL::MetalContext::bind_image_impl(unsigned int, CA::Render::Texture*, unsigned int, CA::OGL::TextureFilter, CA::OGL::TextureFilter, float, CA::OGL::TextureEdgeMode, float*, char const*) + 688 (QuartzCore + 468532) [0x1ba54e634]
+                                                                                                                              3   CA::OGL::MetalContext::update_surface(CA::OGL::MetalImage*, CA::Render::Surface*, unsigned int, char const*) + 3892 (QuartzCore + 1793856) [0x1ba691f40]
+                                                                                                                                2   ??? (AGXMetal13_3 + 5017480) [0x214eb0f88]
+                                                                                                                                  2   -[IOGPUMetalTexture initWithDevice:descriptor:iosurface:plane:field:args:argsSize:] + 768 (IOGPU + 65448) [0x1cdb4dfa8]
+                                                                                                                                    2   -[IOGPUMetalResource initWithDevice:remoteStorageResource:options:args:argsSize:] + 476 (IOGPU + 55800) [0x1cdb4b9f8]
+                                                                                                                                      2   IOGPUResourceCreate + 224 (IOGPU + 80240) [0x1cdb51970]
+                                                                                                                                        2   IOConnectCallMethod + 236 (IOKit + 14600) [0x1b6099908]
+                                                                                                                                          2   io_connect_method + 440 (IOKit + 15084) [0x1b6099aec]
+                                                                                                                                            2   mach_msg_trap + 8 (libsystem_kernel.dylib + 6484) [0x1b35b1954]
+                                                                                                                                              2   <Kernel mode>
+                                                                                                                                1   ??? (AGXMetal13_3 + 3038296) [0x214ccdc58]
+                                                                                                                                  1   IOSurfaceClientCopyValue + 24 (IOSurface + 14936) [0x1bbe2da58]
+                                                                                                                                    1   IOSurfaceClientCopyAllValues + 360 (IOSurface + 15360) [0x1bbe2dc00]
+                                                                                                                                      1   IOConnectCallMethod + 236 (IOKit + 14600) [0x1b6099908]
+                                                                                                                                        1   io_connect_method + 440 (IOKit + 15084) [0x1b6099aec]
+                                                                                                                                          1   mach_msg_trap + 8 (libsystem_kernel.dylib + 6484) [0x1b35b1954]
+                                                                                                                                            1   <Kernel mode>
+                    1   CGXUpdateDisplay + 24888 (SkyLight + 2476508) [0x1b8a059dc]
+                      1   x_list_filter + 56 (SkyLight + 1883432) [0x1b8974d28]
+                        1   __WSWindowSessionLogUpdateContributors_block_invoke + 924 (SkyLight + 729556) [0x1b885b1d4]
+                          1   _CFRelease + 248 (CoreFoundation + 1431284) [0x1b37916f4]
+                            1   __CGRegionDeallocate + 44 (CoreGraphics + 75012) [0x1b8b83504]
+                              1   free_small + 872 (libsystem_malloc.dylib + 21080) [0x1b3405258]
+                    1   CGXUpdateDisplay + 4240 (SkyLight + 2455860) [0x1b8a00934]
+                      1   prepare_CoreAnimation_update_state(CGXConnection*, CGXWindowSubArray, WSCAPrepareState*) + 2076 (SkyLight + 2487040) [0x1b8a08300]
+                        1   WSBeginCAWindowUpdate(CGXConnection*, CGXWindow*, double, unsigned int, unsigned int, WSCAPrepareState*, unsigned int*, CGSRegionObject*, CGSRegionObject**, CGXCoreAnimationUpdateState*) + 308 (SkyLight + 2539068) [0x1b8a14e3c]
+                          1   WSCAWindowBacking::BeginUpdate(LayerUpdateParams) + 864 (SkyLight + 1927816) [0x1b897fa88]
+          1   CGXRunOneServicesPass + 1736 (SkyLight + 3058076) [0x1b8a9399c]
+  1   thread_start + 8 (libsystem_pthread.dylib + 8912) [0x1b35e82d0]
+    1   _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x1b35ed4ec]
+      1   thread_fun(void*) + 32 (QuartzCore + 290004) [0x1ba522cd4]
+        1   CA::WindowServer::IOMFBServer::frame_info_thread_body(void*) + 404 (QuartzCore + 2300880) [0x1ba70dbd0]
+          1   CFRunLoopRun + 64 (CoreFoundation + 1109032) [0x1b3742c28]
+            1   CFRunLoopRunSpecific + 600 (CoreFoundation + 534164) [0x1b36b6694]
+              1   __CFRunLoopRun + 2380 (CoreFoundation + 538496) [0x1b36b7780]
+                1   __CFRunLoopDoSource1 + 596 (CoreFoundation + 545524) [0x1b36b92f4]
+                  1   __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE1_PERFORM_FUNCTION__ + 60 (CoreFoundation + 545848) [0x1b36b9438]
+                    1   __CFMachPortPerform + 308 (CoreFoundation + 742100) [0x1b36e92d4]
+                      1   IODispatchCalloutFromCFMessage + 380 (IOKit + 23580) [0x1b609bc1c]
+                        1   FrameInfoNotifyFunc + 484 (IOMobileFramebuffer + 37700) [0x1bd373344]
+                          1   CFDictionarySetValue + 152 (CoreFoundation + 25348) [0x1b363a304]
+  1   start_wqthread + 8 (libsystem_pthread.dylib + 8900) [0x1b35e82c4]
+    1   _pthread_wqthread + 288 (libsystem_pthread.dylib + 13744) [0x1b35e95b0]
+      1   _dispatch_workloop_worker_thread + 656 (libdispatch.dylib + 91912) [0x1b3441708]
+        1   _dispatch_workloop_invoke + 1796 (libdispatch.dylib + 53696) [0x1b34381c0]
+          1   _dispatch_lane_invoke + 444 (libdispatch.dylib + 48856) [0x1b3436ed8]
+            1   _dispatch_lane_serial_drain + 376 (libdispatch.dylib + 45576) [0x1b3436208]
+              1   _dispatch_mach_invoke + 456 (libdispatch.dylib + 134328) [0x1b344bcb8]
+                1   _dispatch_lane_serial_drain + 376 (libdispatch.dylib + 45576) [0x1b3436208]
+                  1   _dispatch_mach_msg_invoke + 476 (libdispatch.dylib + 130920) [0x1b344af68]
+                    1   _dispatch_client_callout4 + 20 (libdispatch.dylib + 15468) [0x1b342ec6c]
+                      1   ??? (IOHIDEventServicePlugin + 9580) [0x102b6a56c]
+                        1   ??? (IOHIDEventServicePlugin + 9264) [0x102b6a430]
+                          1   __IOHIDServiceEventCallback + 1328 (IOKit + 396432) [0x1b60f6c90]
+                            1   CFArrayApplyFunction + 84 (CoreFoundation + 283584) [0x1b36793c0]
+                              1   __FilterFunctionFilterEvent + 32 (IOKit + 410988) [0x1b60fa56c]
+                                1   IOHIDServiceFilterFilterEvent + 96 (IOKit + 552380) [0x1b611cdbc]
+                                  1   ColorSensorPlugIn::filter(__IOHIDEvent*) + 1340 (ColourSensorFilterPlugin + 34824) [0x102b10808]
+                                    1   ColorSensorPlugIn::colourCalculationDynamic(float*, float*, int) + 512 (ColourSensorFilterPlugin + 36124) [0x102b10d1c]
+                                      1   pow + 384 (libsystem_m.dylib + 26496) [0x1bdfea780]
+
+  Binary Images:
+           0x102728000 -        0x102737fff  WindowServer (645.14)                           <9E39D81A-838B-3295-9FA7-2485A3D673C1>  /System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/Resources/WindowServer
+           0x1027b8000 -        0x10282bfff  dyld (940)                                      <86A8BA48-8BB4-3B30-9CDA-051F73C74F44>  /usr/lib/dyld
+           0x102b08000 -        0x102b1ffff  com.apple.hid.ColourSensorFilterPlugin 1.0 (1)  <D087DC10-03E1-3525-A63A-7D82C770B89F>  /System/Library/HIDPlugins/ColourSensorFilterPlugin.plugin/Contents/MacOS/ColourSensorFilterPlugin
+           0x102b68000 -        0x102b73fff  com.apple.IOHIDEventServicePlugin 1.0 (1)       <ABC0CF06-D4CF-30DC-83D9-371E2DE4AA96>  /System/Library/HIDPlugins/ServicePlugins/IOHIDEventServicePlugin.plugin/Contents/MacOS/IOHIDEventServicePlugin
+           0x1b3400000 -        0x1b342afff  libsystem_malloc.dylib (374.40.6)               <0B1B0684-D16A-3CEE-A9E6-126236D29C51>  /usr/lib/system/libsystem_malloc.dylib
+           0x1b342b000 -        0x1b3471fff  libdispatch.dylib (1324.41.2)                   <3D7A56A3-23BF-3077-B5C6-9CE65CE7333E>  /usr/lib/system/libdispatch.dylib
+           0x1b35b0000 -        0x1b35e5fff  libsystem_kernel.dylib (8019.41.5)              <C8524C02-B14F-30BD-A228-C44B4A448E68>  /usr/lib/system/libsystem_kernel.dylib
+           0x1b35e6000 -        0x1b35f2fff  libsystem_pthread.dylib (485.40.4)              <4786E19A-9312-38E6-80EF-9C1394548118>  /usr/lib/system/libsystem_pthread.dylib
+           0x1b3634000 -        0x1b3b77fff  com.apple.CoreFoundation 6.9 (1855.105)         <B2FF96D0-AE99-31EF-9014-FC9964B4F3E0>  /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+           0x1b6096000 -        0x1b616afff  com.apple.framework.IOKit 2.0.2 (1955.40.6)     <9A7140D9-FC80-384B-B098-AA27AD4C405F>  /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+           0x1b87a9000 -        0x1b8b70fff  com.apple.SkyLight 1.600.0 (645.14)             <C8F2838B-E64C-34DB-ACA6-1FAA164C762A>  /System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/SkyLight
+           0x1b8b71000 -        0x1b9180fff  com.apple.CoreGraphics 2.0 (1557.3.1)           <BBC0F558-01EC-3B2C-A558-99B027CC43CD>  /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+           0x1ba4dc000 -        0x1ba7d9fff  com.apple.QuartzCore 1.11 (962.57.1)            <B7469CDD-CEAE-3CB7-BB88-6C8D274D546A>  /System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore
+           0x1bbe2a000 -        0x1bbe3dfff  com.apple.IOSurface 302.9 (302.9)               <17C898DA-A756-3229-8DDE-0F845FDB7C79>  /System/Library/Frameworks/IOSurface.framework/Versions/A/IOSurface
+           0x1bd36a000 -        0x1bd375fff  com.apple.IOMobileFramebuffer 343.0.0 (343.0.0) <8C8496F7-829F-3042-81E1-BEBF4CA7FB30>  /System/Library/PrivateFrameworks/IOMobileFramebuffer.framework/Versions/A/IOMobileFramebuffer
+           0x1bdfe4000 -        0x1be01afff  libsystem_m.dylib (3204)                        <15B61131-14E1-31F2-9219-D2F7823A5167>  /usr/lib/system/libsystem_m.dylib
+           0x1cdb3e000 -        0x1cdb6afff  com.apple.IOGPU 35.11 (35.11)                   <B9D08160-8AB3-3A5C-9551-95BB87C87C71>  /System/Library/PrivateFrameworks/IOGPU.framework/Versions/A/IOGPU
+           0x2149e8000 -        0x214efbfff  com.apple.AGXMetal13-3 187.57 (187.57)          <99766C17-8110-3AA4-A379-91F73D56CBAA>  /System/Library/Extensions/AGXMetal13_3.bundle/Contents/MacOS/AGXMetal13_3
+
+
+Powerstats for:   Spotify Helper (GPU)
+UUID:             4461F5BF-83C8-326F-BB03-12E788A0B516
+Path:             /Applications/Spotify.app/Contents/Frameworks/Spotify Helper (GPU).app/Contents/MacOS/Spotify Helper (GPU)
+Identifier:       com.spotify.client.helper.gpu
+Team ID:          2FNC3A47ZF
+Architecture:     arm64
+Start time:       2022-04-22 14:44:40.323 +0200
+End time:         2022-04-22 14:45:34.472 +0200
+Num samples:      21 (30%)
+Primary state:    14 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Default, Requested Thread QoS User Interactive, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 21 samples Active
+Power Source:     0 samples on Battery, 21 samples on AC
+  14  start + 520 (dyld + 20724) [0x10457d0f4]
+    14  ??? (Spotify Helper (GPU) + 80728) [0x104147b58]
+      14  ??? (Spotify Helper (GPU) + 372364) [0x10418ee8c]
+        14  cef_execute_process + 172 (Chromium Embedded Framework + 9288) [0x10db3e448]
+          14  ChromeAppModeStart_v6 + 7219084 (Chromium Embedded Framework + 46509536) [0x110796de0]
+            14  ChromeAppModeStart_v6 + 7325732 (Chromium Embedded Framework + 46616184) [0x1107b0e78]
+              14  ChromeAppModeStart_v6 + 6742016 (Chromium Embedded Framework + 46032468) [0x110722654]
+                14  ChromeAppModeStart_v6 + 6741768 (Chromium Embedded Framework + 46032220) [0x11072255c]
+                  14  ChromeAppModeStart_v6 + 6741532 (Chromium Embedded Framework + 46031984) [0x110722470]
+                    14  ChromeAppModeStart_v6 + 6745892 (Chromium Embedded Framework + 46036344) [0x110723578]
+                      14  ChromeAppModeStart_v6 + 6743572 (Chromium Embedded Framework + 46034024) [0x110722c68]
+                        14  cef_time_delta + 50161676 (Chromium Embedded Framework + 97269192) [0x1137ff5c8]
+                          14  cef_time_delta + 2319536 (Chromium Embedded Framework + 49427052) [0x110a5f26c]
+                            14  cef_time_delta + 2493244 (Chromium Embedded Framework + 49600760) [0x110a898f8]
+                              14  cef_time_delta + 2730336 (Chromium Embedded Framework + 49837852) [0x110ac371c]
+                                14  cef_time_delta + 2734220 (Chromium Embedded Framework + 49841736) [0x110ac4648]
+                                  14  -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 236 (Foundation + 413200) [0x1b458fe10]
+                                    14  CFRunLoopRunSpecific + 600 (CoreFoundation + 534164) [0x1b36b6694]
+                                      14  __CFRunLoopRun + 820 (CoreFoundation + 536936) [0x1b36b7168]
+                                        14  __CFRunLoopDoSources0 + 268 (CoreFoundation + 542708) [0x1b36b87f4]
+                                          14  __CFRunLoopDoSource0 + 208 (CoreFoundation + 543496) [0x1b36b8b08]
+                                            14  __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 28 (CoreFoundation + 543676) [0x1b36b8bbc]
+                                              14  cef_time_delta + 2731564 (Chromium Embedded Framework + 49839080) [0x110ac3be8]
+                                                14  cef_time_delta + 2730180 (Chromium Embedded Framework + 49837696) [0x110ac3680]
+                                                  14  cef_time_delta + 2732972 (Chromium Embedded Framework + 49840488) [0x110ac4168]
+                                                    14  cef_time_delta + 2491144 (Chromium Embedded Framework + 49598660) [0x110a890c4]
+                                                      14  cef_time_delta + 2491712 (Chromium Embedded Framework + 49599228) [0x110a892fc]
+                                                        14  cef_time_delta + 2417932 (Chromium Embedded Framework + 49525448) [0x110a772c8]
+                                                          14  cef_time_delta + 17057632 (Chromium Embedded Framework + 64165148) [0x11186d51c]
+                                                            11  ChromeAppModeStart_v6 + 160452 (Chromium Embedded Framework + 39450904) [0x1100db918]
+                                                              9   ChromeAppModeStart_v6 + 156448 (Chromium Embedded Framework + 39446900) [0x1100da974]
+                                                                9   ChromeAppModeStart_v6 + 169116 (Chromium Embedded Framework + 39459568) [0x1100ddaf0]
+                                                                  9   ChromeAppModeStart_v6 + 169704 (Chromium Embedded Framework + 39460156) [0x1100ddd3c]
+                                                                    9   ChromeAppModeStart_v6 + 114772 (Chromium Embedded Framework + 39405224) [0x1100d06a8]
+                                                                      9   ChromeAppModeStart_v6 + 105024 (Chromium Embedded Framework + 39395476) [0x1100ce094]
+                                                                        9   ChromeAppModeStart_v6 + 191464 (Chromium Embedded Framework + 39481916) [0x1100e323c]
+                                                                          9   ChromeAppModeStart_v6 + 182396 (Chromium Embedded Framework + 39472848) [0x1100e0ed0]
+                                                                            9   ChromeAppModeStart_v6 + 117316 (Chromium Embedded Framework + 39407768) [0x1100d1098]
+                                                                              9   ChromeAppModeStart_v6 + 102240 (Chromium Embedded Framework + 39392692) [0x1100cd5b4]
+                                                                                9   cef_time_delta + 22023508 (Chromium Embedded Framework + 69131024) [0x111d29b10]
+                                                                                  9   cef_time_delta + 22021284 (Chromium Embedded Framework + 69128800) [0x111d29260]
+                                                                                    7   cef_time_delta + 22033744 (Chromium Embedded Framework + 69141260) [0x111d2c30c]
+                                                                                      7   cef_time_delta + 22036404 (Chromium Embedded Framework + 69143920) [0x111d2cd70]
+                                                                                        7   cef_time_delta + 22037364 (Chromium Embedded Framework + 69144880) [0x111d2d130]
+                                                                                          3   cef_time_delta + 22043308 (Chromium Embedded Framework + 69150824) [0x111d2e868]
+                                                                                            3   cef_time_delta + 22043968 (Chromium Embedded Framework + 69151484) [0x111d2eafc]
+                                                                                              3   cef_time_delta + 22045316 (Chromium Embedded Framework + 69152832) [0x111d2f040]
+                                                                                                1   IOSurfaceGetTypeID + 0 (IOSurface + 11696) [0x1bbe2cdb0]
+                                                                                                1   CA::release_objects(X::List<void const*>*) + 56 (QuartzCore + 68408) [0x1ba4ecb38]
+                                                                                                  1   free + 232 (libsystem_malloc.dylib + 7836) [0x1b3401e9c]
+                                                                                                    1   szone_size + 68 (libsystem_malloc.dylib + 18928) [0x1b34049f0]
+                                                                                                      1   tiny_size + 80 (libsystem_malloc.dylib + 19132) [0x1b3404abc]
+                                                                                                1   -[CALayer setContents:] + 132 (QuartzCore + 55596) [0x1ba4e992c]
+                                                                                                  1   CA::Layer::begin_change(CA::Transaction*, unsigned int, objc_object*, objc_object*&) + 252 (QuartzCore + 35416) [0x1ba4e4a58]
+                                                                                                    1   os_unfair_recursive_lock_unlock + 0 (libsystem_platform.dylib + 5672) [0x1b3601628]
+                                                                                          2   cef_time_delta + 22042668 (Chromium Embedded Framework + 69150184) [0x111d2e5e8]
+                                                                                            2   CA::Layer::set_bit(unsigned int, unsigned int, unsigned int, bool, void (CA::Layer::*)(CA::Transaction*)) + 316 (QuartzCore + 2015324) [0x1ba6c805c]
+                                                                                          1   objc_msgSend + 76 (libobjc.A.dylib + 25612) [0x1b347840c]
+                                                                                          1   objc_retain + 88 (libobjc.A.dylib + 25432) [0x1b3478358]
+                                                                                    1   CA::Transaction::commit() + 680 (QuartzCore + 11640) [0x1ba4ded78]
+                                                                                      1   CA::Context::commit_transaction(CA::Transaction*, double, double*) + 4960 (QuartzCore + 1457148) [0x1ba63fbfc]
+                                                                                    1   objc_msgSend + 64 (libobjc.A.dylib + 25600) [0x1b3478400]
+                                                              2   ChromeAppModeStart_v6 + 159348 (Chromium Embedded Framework + 39449800) [0x1100db4c8]
+                                                                2   ChromeAppModeStart_v6 + 159476 (Chromium Embedded Framework + 39449928) [0x1100db548]
+                                                                  2   ChromeAppModeStart_v6 + 179632 (Chromium Embedded Framework + 39470084) [0x1100e0404]
+                                                                    2   ChromeAppModeStart_v6 + 114384 (Chromium Embedded Framework + 39404836) [0x1100d0524]
+                                                                      1   ChromeAppModeStart_v6 + 103536 (Chromium Embedded Framework + 39393988) [0x1100cdac4]
+                                                                      1   ChromeAppModeStart_v6 + 103456 (Chromium Embedded Framework + 39393908) [0x1100cda74]
+                                                                        1   cef_time_delta + 22033500 (Chromium Embedded Framework + 69141016) [0x111d2c218]
+                                                            3   cef_time_delta + 21806148 (Chromium Embedded Framework + 68913664) [0x111cf4a00]
+                                                              3   cef_time_delta + 21797048 (Chromium Embedded Framework + 68904564) [0x111cf2674]
+                                                                3   cef_time_delta + 21766568 (Chromium Embedded Framework + 68874084) [0x111ceaf64]
+                                                                  3   cef_time_delta + 21767344 (Chromium Embedded Framework + 68874860) [0x111ceb26c]
+                                                                    3   cef_time_delta + 21762216 (Chromium Embedded Framework + 68869732) [0x111ce9e64]
+                                                                      3   cef_time_delta + 21913700 (Chromium Embedded Framework + 69021216) [0x111d0ee20]
+                                                                        2   cef_time_delta + 21905404 (Chromium Embedded Framework + 69012920) [0x111d0cdb8]
+                                                                          2   cef_time_delta + 21935264 (Chromium Embedded Framework + 69042780) [0x111d1425c]
+                                                                            1   cef_time_delta + 11756624 (Chromium Embedded Framework + 58864140) [0x11135f20c]
+                                                                            1   cef_string_map_size + 14870736 (Chromium Embedded Framework + 15437312) [0x10e9f4e00]
+                                                                              1   cef_string_map_size + 14870808 (Chromium Embedded Framework + 15437384) [0x10e9f4e48]
+                                                                                1   cef_time_delta + 11737364 (Chromium Embedded Framework + 58844880) [0x11135a6d0]
+                                                                                  1   cef_time_delta + 11731132 (Chromium Embedded Framework + 58838648) [0x111358e78]
+                                                                                    1   cef_time_delta + 11719644 (Chromium Embedded Framework + 58827160) [0x111356198]
+                                                                                      1   cef_time_delta + 11715016 (Chromium Embedded Framework + 58822532) [0x111354f84]
+                                                                                        1   cef_string_map_size + 15121144 (Chromium Embedded Framework + 15687720) [0x10ea32028]
+                                                                        1   cef_time_delta + 21905324 (Chromium Embedded Framework + 69012840) [0x111d0cd68]
+                                                                          1   cef_time_delta + 21933588 (Chromium Embedded Framework + 69041104) [0x111d13bd0]
+                                                                            1   cef_string_map_size + 15745268 (Chromium Embedded Framework + 16311844) [0x10eaca624]
+                                                                              1   cef_time_delta + 11466148 (Chromium Embedded Framework + 58573664) [0x111318360]
+                                                                                1   cef_string_map_size + 14856000 (Chromium Embedded Framework + 15422576) [0x10e9f1470]
+                                                                                  1   cef_time_delta + 11738728 (Chromium Embedded Framework + 58846244) [0x11135ac24]
+  4   start_wqthread + 0 (libsystem_pthread.dylib + 8892) [0x1b35e82bc]
+    4   <Kernel mode, Requested Thread QoS Default>
+  2   start_wqthread + 8 (libsystem_pthread.dylib + 8900) [0x1b35e82c4]
+    2   _pthread_wqthread + 288 (libsystem_pthread.dylib + 13744) [0x1b35e95b0]
+      1   _dispatch_workloop_worker_thread + 656 (libdispatch.dylib + 91912) [0x1b3441708]
+        1   _dispatch_lane_invoke + 392 (libdispatch.dylib + 48804) [0x1b3436ea4]
+          1   _dispatch_lane_serial_drain + 376 (libdispatch.dylib + 45576) [0x1b3436208]
+            1   _dispatch_source_invoke + 1356 (libdispatch.dylib + 106916) [0x1b34451a4]
+              1   _dispatch_continuation_pop + 504 (libdispatch.dylib + 28800) [0x1b3432080]
+                1   _dispatch_client_callout + 20 (libdispatch.dylib + 15276) [0x1b342ebac]
+                  1   dispatch_mig_server + 256 (libdispatch.dylib + 137540) [0x1b344c944]
+                    1   mach_msg_trap + 8 (libsystem_kernel.dylib + 6484) [0x1b35b1954]
+                      1   <Kernel mode, Requested Thread QoS Default>
+      1   _dispatch_workloop_worker_thread + 392 (libdispatch.dylib + 91648) [0x1b3441600]
+        1   _dispatch_event_loop_poke + 0 (libdispatch.dylib + 155656) [0x1b3451008]
+          1   <Requested Thread QoS Default>
+  1   thread_start + 8 (libsystem_pthread.dylib + 8912) [0x1b35e82d0]
+    1   _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x1b35ed4ec]
+      1   cef_time_delta + 2700140 (Chromium Embedded Framework + 49807656) [0x110abc128]
+        1   cef_time_delta + 2585204 (Chromium Embedded Framework + 49692720) [0x110aa0030]
+          1   cef_time_delta + 2584824 (Chromium Embedded Framework + 49692340) [0x110a9feb4]
+            1   cef_time_delta + 2319536 (Chromium Embedded Framework + 49427052) [0x110a5f26c]
+              1   cef_time_delta + 2493244 (Chromium Embedded Framework + 49600760) [0x110a898f8]
+                1   cef_time_delta + 2198716 (Chromium Embedded Framework + 49306232) [0x110a41a78]
+                  1   cef_time_delta + 2491144 (Chromium Embedded Framework + 49598660) [0x110a890c4]
+                    1   cef_time_delta + 2491712 (Chromium Embedded Framework + 49599228) [0x110a892fc]
+                      1   cef_time_delta + 2417932 (Chromium Embedded Framework + 49525448) [0x110a772c8]
+                        1   cef_string_map_size + 23141556 (Chromium Embedded Framework + 23708132) [0x10f1d81e4]
+                          1   cef_time_delta + 2505996 (Chromium Embedded Framework + 49613512) [0x110a8cac8]
+                            1   cef_time_delta + 2607804 (Chromium Embedded Framework + 49715320) [0x110aa5878]
+                              1   cef_time_delta + 15850960 (Chromium Embedded Framework + 62958476) [0x111746b8c]
+                                1   cef_time_delta + 15850196 (Chromium Embedded Framework + 62957712) [0x111746890]
+                                  1   cef_time_delta + 50258496 (Chromium Embedded Framework + 97366012) [0x113816ffc]
+                                    1   cef_string_map_size + 21854240 (Chromium Embedded Framework + 22420816) [0x10f09dd50]
+                                      1   cef_time_delta + 2083472 (Chromium Embedded Framework + 49190988) [0x110a2584c]
+                                        1   cef_time_delta + 2012564 (Chromium Embedded Framework + 49120080) [0x110a14350]
+                                          1   cef_time_delta + 2000652 (Chromium Embedded Framework + 49108168) [0x110a114c8]
+                                            1   cef_time_delta + 2070476 (Chromium Embedded Framework + 49177992) [0x110a22588]
+                                              1   <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+
+  Binary Images:
+           0x104134000 -        0x1041e3fff  com.spotify.client.helper.gpu (0)       <4461F5BF-83C8-326F-BB03-12E788A0B516>  /Applications/Spotify.app/Contents/Frameworks/Spotify Helper (GPU).app/Contents/MacOS/Spotify Helper (GPU)
+           0x104578000 -        0x1045ebfff  dyld (940)                              <86A8BA48-8BB4-3B30-9CDA-051F73C74F44>  /usr/lib/dyld
+           0x10db3c000 -        0x117087fff  org.cef.framework 98.1.21.0 (21.0)      <4C4C4416-5555-3144-A1A4-4FE0265F75F0>  /Applications/Spotify.app/Contents/Frameworks/Chromium Embedded Framework.framework/Chromium Embedded Framework
+           0x1b3400000 -        0x1b342afff  libsystem_malloc.dylib (374.40.6)       <0B1B0684-D16A-3CEE-A9E6-126236D29C51>  /usr/lib/system/libsystem_malloc.dylib
+           0x1b342b000 -        0x1b3471fff  libdispatch.dylib (1324.41.2)           <3D7A56A3-23BF-3077-B5C6-9CE65CE7333E>  /usr/lib/system/libdispatch.dylib
+           0x1b3472000 -        0x1b34adfff  libobjc.A.dylib (838)                   <2EABED7F-1E81-3A1B-BB4B-985B8DD3B77F>  /usr/lib/libobjc.A.dylib
+           0x1b35b0000 -        0x1b35e5fff  libsystem_kernel.dylib (8019.41.5)      <C8524C02-B14F-30BD-A228-C44B4A448E68>  /usr/lib/system/libsystem_kernel.dylib
+           0x1b35e6000 -        0x1b35f2fff  libsystem_pthread.dylib (485.40.4)      <4786E19A-9312-38E6-80EF-9C1394548118>  /usr/lib/system/libsystem_pthread.dylib
+           0x1b3600000 -        0x1b3607fff  libsystem_platform.dylib (273.40.1)     <06CE953D-F22A-3724-B6D5-829B45179897>  /usr/lib/system/libsystem_platform.dylib
+           0x1b3634000 -        0x1b3b77fff  com.apple.CoreFoundation 6.9 (1855.105) <B2FF96D0-AE99-31EF-9014-FC9964B4F3E0>  /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+           0x1b452b000 -        0x1b4918fff  com.apple.Foundation 6.9 (1855.105)     <DE039F1B-FFE5-3644-A8CF-7BA52C32CD73>  /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+           0x1ba4dc000 -        0x1ba7d9fff  com.apple.QuartzCore 1.11 (962.57.1)    <B7469CDD-CEAE-3CB7-BB88-6C8D274D546A>  /System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore
+           0x1bbe2a000 -        0x1bbe3dfff  com.apple.IOSurface 302.9 (302.9)       <17C898DA-A756-3229-8DDE-0F845FDB7C79>  /System/Library/Frameworks/IOSurface.framework/Versions/A/IOSurface
+
+
+Powerstats for:   Slack Helper (GPU)
+UUID:             4C4C4423-5555-3144-A134-ECB8E13FAB18
+Path:             /Applications/Slack.app/Contents/Frameworks/Slack Helper (GPU).app/Contents/MacOS/Slack Helper (GPU)
+Identifier:       com.tinyspeck.slackmacgap.helper
+Version:          4.25.0 (6956)
+Team ID:          BQR82RBBHL
+Architecture:     arm64
+Start time:       2022-04-22 14:44:42.327 +0200
+End time:         2022-04-22 14:45:24.445 +0200
+Num samples:      9 (13%)
+Primary state:    7 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 9 samples Active
+Power Source:     0 samples on Battery, 9 samples on AC
+  5  start_wqthread + 0 (libsystem_pthread.dylib + 8892) [0x1b35e82bc]
+  4  start_wqthread + 8 (libsystem_pthread.dylib + 8900) [0x1b35e82c4]
+    4  _pthread_wqthread + 288 (libsystem_pthread.dylib + 13744) [0x1b35e95b0]
+      3  _dispatch_workloop_worker_thread + 656 (libdispatch.dylib + 91912) [0x1b3441708]
+        2  _dispatch_lane_invoke + 392 (libdispatch.dylib + 48804) [0x1b3436ea4]
+          2  _dispatch_lane_serial_drain + 376 (libdispatch.dylib + 45576) [0x1b3436208]
+            2  _dispatch_source_invoke + 1356 (libdispatch.dylib + 106916) [0x1b34451a4]
+              2  _dispatch_continuation_pop + 504 (libdispatch.dylib + 28800) [0x1b3432080]
+                2  _dispatch_client_callout + 20 (libdispatch.dylib + 15276) [0x1b342ebac]
+                  2  dispatch_mig_server + 256 (libdispatch.dylib + 137540) [0x1b344c944]
+                    2  mach_msg_trap + 8 (libsystem_kernel.dylib + 6484) [0x1b35b1954]
+        1  _dispatch_lane_invoke + 340 (libdispatch.dylib + 48752) [0x1b3436e70]
+          1  _dispatch_last_resort_autorelease_pool_push + 32 (libdispatch.dylib + 15172) [0x1b342eb44]
+            1  <User mode>
+      1  _dispatch_workloop_worker_thread + 196 (libdispatch.dylib + 91452) [0x1b344153c]
+        1  <User mode>
+
+  Binary Images:
+           0x10032c000 -                ???  com.tinyspeck.slackmacgap.helper 4.25.0 (6956) <4C4C4423-5555-3144-A134-ECB8E13FAB18>  /Applications/Slack.app/Contents/Frameworks/Slack Helper (GPU).app/Contents/MacOS/Slack Helper (GPU)
+           0x1b342b000 -        0x1b3471fff  libdispatch.dylib (1324.41.2)                  <3D7A56A3-23BF-3077-B5C6-9CE65CE7333E>  /usr/lib/system/libdispatch.dylib
+           0x1b35b0000 -        0x1b35e5fff  libsystem_kernel.dylib (8019.41.5)             <C8524C02-B14F-30BD-A228-C44B4A448E68>  /usr/lib/system/libsystem_kernel.dylib
+           0x1b35e6000 -        0x1b35f2fff  libsystem_pthread.dylib (485.40.4)             <4786E19A-9312-38E6-80EF-9C1394548118>  /usr/lib/system/libsystem_pthread.dylib
+
+
+Powerstats for:   Spotify Helper (Renderer)
+UUID:             03D5728E-8860-32DA-A3C1-484A0D5541B9
+Path:             /Applications/Spotify.app/Contents/Frameworks/Spotify Helper (Renderer).app/Contents/MacOS/Spotify Helper (Renderer)
+Identifier:       com.spotify.client.helper.renderer
+Team ID:          2FNC3A47ZF
+Architecture:     arm64
+Start time:       2022-04-22 14:43:25.772 +0200
+End time:         2022-04-22 14:45:33.475 +0200
+Num samples:      8 (12%)
+Primary state:    5 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Default, Requested Thread QoS User Interactive, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 8 samples Active
+Power Source:     0 samples on Battery, 8 samples on AC
+  5  start + 520 (dyld + 20724) [0x100b0d0f4]
+    5  ??? (Spotify Helper (Renderer) + 80728) [0x10070fb58]
+      5  ??? (Spotify Helper (Renderer) + 372364) [0x100756e8c]
+        5  cef_execute_process + 172 (Chromium Embedded Framework + 9288) [0x10a0ce448]
+          5  ChromeAppModeStart_v6 + 7219084 (Chromium Embedded Framework + 46509536) [0x10cd26de0]
+            5  ChromeAppModeStart_v6 + 7325732 (Chromium Embedded Framework + 46616184) [0x10cd40e78]
+              5  ChromeAppModeStart_v6 + 6742016 (Chromium Embedded Framework + 46032468) [0x10ccb2654]
+                5  ChromeAppModeStart_v6 + 6741768 (Chromium Embedded Framework + 46032220) [0x10ccb255c]
+                  5  ChromeAppModeStart_v6 + 6741532 (Chromium Embedded Framework + 46031984) [0x10ccb2470]
+                    5  ChromeAppModeStart_v6 + 6745892 (Chromium Embedded Framework + 46036344) [0x10ccb3578]
+                      5  ChromeAppModeStart_v6 + 6743572 (Chromium Embedded Framework + 46034024) [0x10ccb2c68]
+                        5  cef_time_delta + 81358008 (Chromium Embedded Framework + 128465524) [0x111b4fa74]
+                          5  cef_time_delta + 2319536 (Chromium Embedded Framework + 49427052) [0x10cfef26c]
+                            5  cef_time_delta + 2493244 (Chromium Embedded Framework + 49600760) [0x10d0198f8]
+                              5  cef_time_delta + 2730336 (Chromium Embedded Framework + 49837852) [0x10d05371c]
+                                5  cef_time_delta + 2734220 (Chromium Embedded Framework + 49841736) [0x10d054648]
+                                  5  -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 236 (Foundation + 413200) [0x1b458fe10]
+                                    5  CFRunLoopRunSpecific + 600 (CoreFoundation + 534164) [0x1b36b6694]
+                                      5  __CFRunLoopRun + 1944 (CoreFoundation + 538060) [0x1b36b75cc]
+                                        5  __CFRunLoopDoTimers + 392 (CoreFoundation + 649808) [0x1b36d2a50]
+                                          5  __CFRunLoopDoTimer + 1076 (CoreFoundation + 651204) [0x1b36d2fc4]
+                                            5  __CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__ + 32 (CoreFoundation + 652232) [0x1b36d33c8]
+                                              5  cef_time_delta + 2731484 (Chromium Embedded Framework + 49839000) [0x10d053b98]
+                                                5  cef_time_delta + 2730180 (Chromium Embedded Framework + 49837696) [0x10d053680]
+                                                  5  cef_time_delta + 2732972 (Chromium Embedded Framework + 49840488) [0x10d054168]
+                                                    5  cef_time_delta + 2491144 (Chromium Embedded Framework + 49598660) [0x10d0190c4]
+                                                      4  cef_time_delta + 2491712 (Chromium Embedded Framework + 49599228) [0x10d0192fc]
+                                                        4  cef_time_delta + 2417932 (Chromium Embedded Framework + 49525448) [0x10d0072c8]
+                                                          2  cef_time_delta + 17000684 (Chromium Embedded Framework + 64108200) [0x10ddef6a8]
+                                                            2  cef_time_delta + 16505016 (Chromium Embedded Framework + 63612532) [0x10dd76674]
+                                                              2  cef_time_delta + 64064264 (Chromium Embedded Framework + 111171780) [0x110ad18c4]
+                                                                2  cef_time_delta + 54931868 (Chromium Embedded Framework + 102039384) [0x11021bf58]
+                                                                  2  cef_time_delta + 60064480 (Chromium Embedded Framework + 107171996) [0x11070109c]
+                                                                    2  cef_time_delta + 54665000 (Chromium Embedded Framework + 101772516) [0x1101dace4]
+                                                                      2  cef_time_delta + 54665372 (Chromium Embedded Framework + 101772888) [0x1101dae58]
+                                                                        1  cef_time_delta + 54668552 (Chromium Embedded Framework + 101776068) [0x1101dbac4]
+                                                                          1  cef_time_delta + 54672384 (Chromium Embedded Framework + 101779900) [0x1101dc9bc]
+                                                                            1  cef_time_delta + 54677880 (Chromium Embedded Framework + 101785396) [0x1101ddf34]
+                                                                              1  cef_time_delta + 63313452 (Chromium Embedded Framework + 110420968) [0x110a1a3e8]
+                                                                                1  cef_time_delta + 63308972 (Chromium Embedded Framework + 110416488) [0x110a19268]
+                                                                                  1  cef_time_delta + 63308436 (Chromium Embedded Framework + 110415952) [0x110a19050]
+                                                                                    1  cef_time_delta + 63369484 (Chromium Embedded Framework + 110477000) [0x110a27ec8]
+                                                                                      1  cef_time_delta + 63524524 (Chromium Embedded Framework + 110632040) [0x110a4dc68]
+                                                                                        1  cef_time_delta + 63526628 (Chromium Embedded Framework + 110634144) [0x110a4e4a0]
+                                                                        1  cef_time_delta + 54668100 (Chromium Embedded Framework + 101775616) [0x1101db900]
+                                                                          1  cef_time_delta + 54669568 (Chromium Embedded Framework + 101777084) [0x1101dbebc]
+                                                                            1  cef_time_delta + 54673468 (Chromium Embedded Framework + 101780984) [0x1101dcdf8]
+                                                                              1  cef_time_delta + 54657612 (Chromium Embedded Framework + 101765128) [0x1101d9008]
+                                                                                1  cef_time_delta + 54681864 (Chromium Embedded Framework + 101789380) [0x1101deec4]
+                                                                                  1  cef_time_delta + 52618324 (Chromium Embedded Framework + 99725840) [0x10ffe7210]
+                                                                                    1  cef_time_delta + 52619984 (Chromium Embedded Framework + 99727500) [0x10ffe788c]
+                                                                                      1  cef_time_delta + 52304748 (Chromium Embedded Framework + 99412264) [0x10ff9a928]
+                                                                                        1  cef_time_delta + 52303260 (Chromium Embedded Framework + 99410776) [0x10ff9a358]
+                                                                                          1  cef_time_delta + 52870300 (Chromium Embedded Framework + 99977816) [0x110024a58]
+                                                                                            1  cef_time_delta + 52529164 (Chromium Embedded Framework + 99636680) [0x10ffd15c8]
+                                                                                              1  cef_time_delta + 52870300 (Chromium Embedded Framework + 99977816) [0x110024a58]
+                                                                                                1  cef_time_delta + 52529164 (Chromium Embedded Framework + 99636680) [0x10ffd15c8]
+                                                                                                  1  cef_time_delta + 52870300 (Chromium Embedded Framework + 99977816) [0x110024a58]
+                                                                                                    1  cef_time_delta + 52529164 (Chromium Embedded Framework + 99636680) [0x10ffd15c8]
+                                                                                                      1  cef_time_delta + 52869484 (Chromium Embedded Framework + 99977000) [0x110024728]
+                                                                                                        1  cef_time_delta + 52873020 (Chromium Embedded Framework + 99980536) [0x1100254f8]
+                                                                                                          1  cef_time_delta + 57885528 (Chromium Embedded Framework + 104993044) [0x1104ed114]
+                                                                                                            1  cef_time_delta + 58779776 (Chromium Embedded Framework + 105887292) [0x1105c763c]
+                                                                                                              1  cef_time_delta + 57289836 (Chromium Embedded Framework + 104397352) [0x11045ba28]
+                                                                                                                1  cef_time_delta + 57186308 (Chromium Embedded Framework + 104293824) [0x1104425c0]
+                                                                                                                  1  cef_time_delta + 57451228 (Chromium Embedded Framework + 104558744) [0x110483098]
+                                                                                                                    1  cef_time_delta + 57577536 (Chromium Embedded Framework + 104685052) [0x1104a1dfc]
+                                                                                                                      1  cef_time_delta + 60492772 (Chromium Embedded Framework + 107600288) [0x1107699a0]
+                                                                                                                        1  cef_time_delta + 60463184 (Chromium Embedded Framework + 107570700) [0x11076260c]
+                                                                                                                          1  cef_time_delta + 54388940 (Chromium Embedded Framework + 101496456) [0x110197688]
+                                                          2  cef_string_map_size + 23141556 (Chromium Embedded Framework + 23708132) [0x10b7681e4]
+                                                            2  cef_time_delta + 2505996 (Chromium Embedded Framework + 49613512) [0x10d01cac8]
+                                                              2  cef_time_delta + 63874144 (Chromium Embedded Framework + 110981660) [0x110aa321c]
+                                                                2  cef_time_delta + 54348592 (Chromium Embedded Framework + 101456108) [0x11018d8ec]
+                                                                  2  cef_time_delta + 54345120 (Chromium Embedded Framework + 101452636) [0x11018cb5c]
+                                                                    2  cef_time_delta + 64927964 (Chromium Embedded Framework + 112035480) [0x110ba4698]
+                                                                      2  cef_time_delta + 64927392 (Chromium Embedded Framework + 112034908) [0x110ba445c]
+                                                                        2  cef_time_delta + 64913680 (Chromium Embedded Framework + 112021196) [0x110ba0ecc]
+                                                                          2  cef_time_delta + 50944356 (Chromium Embedded Framework + 98051872) [0x10fe4e720]
+                                                                            2  cef_zip_reader_create + 132324 (Chromium Embedded Framework + 481560) [0x10a141918]
+                                                                              2  cef_string_map_size + 968460 (Chromium Embedded Framework + 1535036) [0x10a242c3c]
+                                                                                1  cef_string_map_size + 971052 (Chromium Embedded Framework + 1537628) [0x10a24365c]
+                                                                                  1  ??? [0x7c07e8b0c8]
+                                                                                    1  ??? [0x7c07e8b42c]
+                                                                                      1  ??? [0x7c004679fc]
+                                                                                        1  ??? [0x7c07f0a0ec]
+                                                                                          1  cef_string_map_size + 232800 (Chromium Embedded Framework + 799376) [0x10a18f290]
+                                                                                            1  cef_string_map_size + 235172 (Chromium Embedded Framework + 801748) [0x10a18fbd4]
+                                                                                              1  cef_string_map_size + 237688 (Chromium Embedded Framework + 804264) [0x10a1905a8]
+                                                                                                1  cef_time_delta + 80519860 (Chromium Embedded Framework + 127627376) [0x111a83070]
+                                                                                                  1  cef_time_delta + 54349876 (Chromium Embedded Framework + 101457392) [0x11018ddf0]
+                                                                                                    1  cef_time_delta + 54347144 (Chromium Embedded Framework + 101454660) [0x11018d344]
+                                                                                                      1  cef_time_delta + 63873484 (Chromium Embedded Framework + 110981000) [0x110aa2f88]
+                                                                                                        1  cef_time_delta + 54349328 (Chromium Embedded Framework + 101456844) [0x11018dbcc]
+                                                                                                          1  ChromeAppModeStart_v6 + 6966492 (Chromium Embedded Framework + 46256944) [0x10cce9330]
+                                                                                                            1  _malloc_zone_malloc + 156 (libsystem_malloc.dylib + 124784) [0x1b341e770]
+                                                                                                              1  cef_time_delta + 2702068 (Chromium Embedded Framework + 49809584) [0x10d04c8b0]
+                                                                                                                1  nanov2_malloc + 64 (libsystem_malloc.dylib + 4800) [0x1b34012c0]
+                                                                                                                  1  nanov2_allocate + 128 (libsystem_malloc.dylib + 5028) [0x1b34013a4]
+                                                                                                                    1  nanov2_allocate_from_block + 220 (libsystem_malloc.dylib + 7252) [0x1b3401c54]
+                                                                                1  cef_string_map_size + 968604 (Chromium Embedded Framework + 1535180) [0x10a242ccc]
+                                                      1  cef_time_delta + 2491756 (Chromium Embedded Framework + 49599272) [0x10d019328]
+                                                        1  cef_time_delta + 2437968 (Chromium Embedded Framework + 49545484) [0x10d00c10c]
+                                                          1  cef_time_delta + 54764148 (Chromium Embedded Framework + 101871664) [0x1101f3030]
+  3  thread_start + 8 (libsystem_pthread.dylib + 8912) [0x1b35e82d0]
+    3  _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x1b35ed4ec]
+      3  cef_time_delta + 2700140 (Chromium Embedded Framework + 49807656) [0x10d04c128]
+        2  ChromeAppModeStart_v6 + 1259320 (Chromium Embedded Framework + 40549772) [0x10c777d8c]
+          2  cef_time_delta + 2319536 (Chromium Embedded Framework + 49427052) [0x10cfef26c]
+            2  cef_time_delta + 2493244 (Chromium Embedded Framework + 49600760) [0x10d0198f8]
+              2  cef_time_delta + 2198716 (Chromium Embedded Framework + 49306232) [0x10cfd1a78]
+                2  cef_time_delta + 2491144 (Chromium Embedded Framework + 49598660) [0x10d0190c4]
+                  2  cef_time_delta + 2491712 (Chromium Embedded Framework + 49599228) [0x10d0192fc]
+                    2  cef_time_delta + 2417932 (Chromium Embedded Framework + 49525448) [0x10d0072c8]
+                      2  cef_time_delta + 3894780 (Chromium Embedded Framework + 51002296) [0x10d16fbb8]
+                        2  cef_time_delta + 2001484 (Chromium Embedded Framework + 49109000) [0x10cfa1808]
+                          2  cef_time_delta + 1999192 (Chromium Embedded Framework + 49106708) [0x10cfa0f14]
+                            2  cef_time_delta + 2022904 (Chromium Embedded Framework + 49130420) [0x10cfa6bb4]
+                              2  cef_time_delta + 2035760 (Chromium Embedded Framework + 49143276) [0x10cfa9dec]
+                                2  cef_time_delta + 2037684 (Chromium Embedded Framework + 49145200) [0x10cfaa570]
+                                  2  cef_time_delta + 2013956 (Chromium Embedded Framework + 49121472) [0x10cfa48c0]
+                                    1  cef_time_delta + 2022904 (Chromium Embedded Framework + 49130420) [0x10cfa6bb4]
+                                      1  cef_time_delta + 2009480 (Chromium Embedded Framework + 49116996) [0x10cfa3744]
+                                        1  cef_string_map_size + 21855292 (Chromium Embedded Framework + 22421868) [0x10b62e16c]
+                                          1  cef_time_delta + 34455232 (Chromium Embedded Framework + 81562748) [0x10ee94c7c]
+                                            1  cef_time_delta + 15853232 (Chromium Embedded Framework + 62960748) [0x10dcd746c]
+                                              1  cef_time_delta + 15844972 (Chromium Embedded Framework + 62952488) [0x10dcd5428]
+                                                1  cef_time_delta + 16977464 (Chromium Embedded Framework + 64084980) [0x10dde9bf4]
+                                                  1  cef_time_delta + 16978796 (Chromium Embedded Framework + 64086312) [0x10ddea128]
+                                                    1  cef_time_delta + 16971188 (Chromium Embedded Framework + 64078704) [0x10dde8370]
+                                                      1  cef_time_delta + 16996640 (Chromium Embedded Framework + 64104156) [0x10ddee6dc]
+                                                        1  cef_time_delta + 16786836 (Chromium Embedded Framework + 63894352) [0x10ddbb350]
+                                                          1  cef_time_delta + 16788048 (Chromium Embedded Framework + 63895564) [0x10ddbb80c]
+                                                            1  cef_time_delta + 16790424 (Chromium Embedded Framework + 63897940) [0x10ddbc154]
+                                                              1  cef_time_delta + 16349940 (Chromium Embedded Framework + 63457456) [0x10dd508b0]
+                                                                1  cef_time_delta + 16350620 (Chromium Embedded Framework + 63458136) [0x10dd50b58]
+                                                                  1  cef_time_delta + 16799744 (Chromium Embedded Framework + 63907260) [0x10ddbe5bc]
+                                                                    1  cef_time_delta + 16613676 (Chromium Embedded Framework + 63721192) [0x10dd90ee8]
+                                                                      1  cef_time_delta + 16608440 (Chromium Embedded Framework + 63715956) [0x10dd8fa74]
+                                                                        1  cef_time_delta + 16608604 (Chromium Embedded Framework + 63716120) [0x10dd8fb18]
+                                                                          1  cef_time_delta + 16601980 (Chromium Embedded Framework + 63709496) [0x10dd8e138]
+                                                                            1  cef_time_delta + 16602684 (Chromium Embedded Framework + 63710200) [0x10dd8e3f8]
+                                                                              1  cef_time_delta + 16607084 (Chromium Embedded Framework + 63714600) [0x10dd8f528]
+                                                                                1  cef_time_delta + 16603980 (Chromium Embedded Framework + 63711496) [0x10dd8e908]
+                                                                                  1  cef_time_delta + 10026724 (Chromium Embedded Framework + 57134240) [0x10d748ca0]
+                                                                                    1  <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+                                    1  cef_time_delta + 2022724 (Chromium Embedded Framework + 49130240) [0x10cfa6b00]
+                                      1  cef_time_delta + 2004568 (Chromium Embedded Framework + 49112084) [0x10cfa2414]
+                                        1  cef_string_map_size + 12475960 (Chromium Embedded Framework + 13042536) [0x10ad3c368]
+                                          1  cef_string_map_size + 12477596 (Chromium Embedded Framework + 13044172) [0x10ad3c9cc]
+                                            1  cef_string_map_size + 12497744 (Chromium Embedded Framework + 13064320) [0x10ad41880]
+                                              1  <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+        1  cef_time_delta + 2561216 (Chromium Embedded Framework + 49668732) [0x10d02a27c]
+          1  cef_time_delta + 2562040 (Chromium Embedded Framework + 49669556) [0x10d02a5b4]
+            1  cef_time_delta + 2512468 (Chromium Embedded Framework + 49619984) [0x10d01e410]
+              1  cef_time_delta + 2698924 (Chromium Embedded Framework + 49806440) [0x10d04bc68]
+                1  cef_time_delta + 2513212 (Chromium Embedded Framework + 49620728) [0x10d01e6f8]
+                  1  cef_time_delta + 2514828 (Chromium Embedded Framework + 49622344) [0x10d01ed48]
+                    1  cef_time_delta + 2513768 (Chromium Embedded Framework + 49621284) [0x10d01e924]
+                      1  cef_time_delta + 2417932 (Chromium Embedded Framework + 49525448) [0x10d0072c8]
+                        1  cef_time_delta + 59779644 (Chromium Embedded Framework + 106887160) [0x1106bb7f8]
+                          1  cef_string_map_size + 582900 (Chromium Embedded Framework + 1149476) [0x10a1e4a24]
+                            1  cef_string_map_size + 584380 (Chromium Embedded Framework + 1150956) [0x10a1e4fec]
+                              1  cef_string_map_size + 3989072 (Chromium Embedded Framework + 4555648) [0x10a524380]
+                                1  cef_string_map_size + 3929200 (Chromium Embedded Framework + 4495776) [0x10a5159a0]
+                                  1  cef_string_map_size + 4054376 (Chromium Embedded Framework + 4620952) [0x10a534298]
+                                    1  cef_string_map_size + 4019560 (Chromium Embedded Framework + 4586136) [0x10a52ba98]
+                                      1  cef_string_map_size + 3999208 (Chromium Embedded Framework + 4565784) [0x10a526b18]
+                                        1  cef_string_map_size + 4003140 (Chromium Embedded Framework + 4569716) [0x10a527a74]
+                                          1  cef_string_map_size + 4013176 (Chromium Embedded Framework + 4579752) [0x10a52a1a8]
+                                            1  cef_string_map_size + 4019560 (Chromium Embedded Framework + 4586136) [0x10a52ba98]
+                                              1  cef_string_map_size + 3999208 (Chromium Embedded Framework + 4565784) [0x10a526b18]
+                                                1  cef_string_map_size + 4003140 (Chromium Embedded Framework + 4569716) [0x10a527a74]
+                                                  1  cef_string_map_size + 4017704 (Chromium Embedded Framework + 4584280) [0x10a52b358]
+                                                    1  cef_string_map_size + 3933460 (Chromium Embedded Framework + 4500036) [0x10a516a44]
+                                                      1  cef_string_map_size + 3977792 (Chromium Embedded Framework + 4544368) [0x10a521770]
+                                                        1  cef_string_map_size + 3981744 (Chromium Embedded Framework + 4548320) [0x10a5226e0]
+                                                          1  cef_string_map_size + 3948632 (Chromium Embedded Framework + 4515208) [0x10a51a588]
+                                                            1  cef_string_map_size + 4058304 (Chromium Embedded Framework + 4624880) [0x10a5351f0]
+                                                              1  cef_string_map_size + 3999208 (Chromium Embedded Framework + 4565784) [0x10a526b18]
+                                                                1  cef_string_map_size + 4003140 (Chromium Embedded Framework + 4569716) [0x10a527a74]
+                                                                  1  cef_string_map_size + 4017704 (Chromium Embedded Framework + 4584280) [0x10a52b358]
+                                                                    1  cef_string_map_size + 3933328 (Chromium Embedded Framework + 4499904) [0x10a5169c0]
+                                                                      1  cef_string_map_size + 3975752 (Chromium Embedded Framework + 4542328) [0x10a520f78]
+                                                                        1  cef_string_map_size + 4080264 (Chromium Embedded Framework + 4646840) [0x10a53a7b8]
+                                                                          1  cef_string_map_size + 4082664 (Chromium Embedded Framework + 4649240) [0x10a53b118]
+                                                                            1  cef_string_map_size + 4086792 (Chromium Embedded Framework + 4653368) [0x10a53c138]
+                                                                              1  cef_string_map_size + 4129900 (Chromium Embedded Framework + 4696476) [0x10a54699c]
+                                                                                1  cef_string_map_size + 4111040 (Chromium Embedded Framework + 4677616) [0x10a541ff0]
+                                                                                  1  cef_string_map_size + 4114836 (Chromium Embedded Framework + 4681412) [0x10a542ec4]
+                                                                                    1  cef_string_map_size + 4096544 (Chromium Embedded Framework + 4663120) [0x10a53e750]
+                                                                                      1  cef_string_map_size + 4109664 (Chromium Embedded Framework + 4676240) [0x10a541a90]
+                                                                                        1  cef_string_map_size + 4111040 (Chromium Embedded Framework + 4677616) [0x10a541ff0]
+                                                                                          1  cef_string_map_size + 4114748 (Chromium Embedded Framework + 4681324) [0x10a542e6c]
+                                                                                            1  cef_string_map_size + 4103472 (Chromium Embedded Framework + 4670048) [0x10a540260]
+                                                                                              1  cef_string_map_size + 4083516 (Chromium Embedded Framework + 4650092) [0x10a53b46c]
+                                                                                                1  cef_string_map_size + 4085000 (Chromium Embedded Framework + 4651576) [0x10a53ba38]
+                                                                                                  1  cef_string_map_size + 4142140 (Chromium Embedded Framework + 4708716) [0x10a54996c]
+                                                                                                    1  cef_string_map_size + 4106664 (Chromium Embedded Framework + 4673240) [0x10a540ed8]
+                                                                                                      1  cef_string_map_size + 4111040 (Chromium Embedded Framework + 4677616) [0x10a541ff0]
+                                                                                                        1  cef_string_map_size + 4116156 (Chromium Embedded Framework + 4682732) [0x10a5433ec]
+                                                                                                          1  cef_string_map_size + 4098660 (Chromium Embedded Framework + 4665236) [0x10a53ef94]
+                                                                                                            1  cef_string_map_size + 4106664 (Chromium Embedded Framework + 4673240) [0x10a540ed8]
+                                                                                                              1  cef_string_map_size + 4111080 (Chromium Embedded Framework + 4677656) [0x10a542018]
+                                                                                                                1  cef_string_map_size + 4115608 (Chromium Embedded Framework + 4682184) [0x10a5431c8]
+                                                                                                                  1  cef_string_map_size + 4111040 (Chromium Embedded Framework + 4677616) [0x10a541ff0]
+                                                                                                                    1  cef_string_map_size + 4114804 (Chromium Embedded Framework + 4681380) [0x10a542ea4]
+                                                                                                                      1  cef_string_map_size + 4127360 (Chromium Embedded Framework + 4693936) [0x10a545fb0]
+                                                                                                                        1  cef_string_map_size + 4178296 (Chromium Embedded Framework + 4744872) [0x10a5526a8]
+                                                                                                                          1  <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+
+  Binary Images:
+           0x1006fc000 -        0x1007abfff  com.spotify.client.helper.renderer (0)  <03D5728E-8860-32DA-A3C1-484A0D5541B9>  /Applications/Spotify.app/Contents/Frameworks/Spotify Helper (Renderer).app/Contents/MacOS/Spotify Helper (Renderer)
+           0x100b08000 -        0x100b7bfff  dyld (940)                              <86A8BA48-8BB4-3B30-9CDA-051F73C74F44>  /usr/lib/dyld
+           0x10a0cc000 -        0x113617fff  org.cef.framework 98.1.21.0 (21.0)      <4C4C4416-5555-3144-A1A4-4FE0265F75F0>  /Applications/Spotify.app/Contents/Frameworks/Chromium Embedded Framework.framework/Chromium Embedded Framework
+           0x1b3400000 -        0x1b342afff  libsystem_malloc.dylib (374.40.6)       <0B1B0684-D16A-3CEE-A9E6-126236D29C51>  /usr/lib/system/libsystem_malloc.dylib
+           0x1b35e6000 -        0x1b35f2fff  libsystem_pthread.dylib (485.40.4)      <4786E19A-9312-38E6-80EF-9C1394548118>  /usr/lib/system/libsystem_pthread.dylib
+           0x1b3634000 -        0x1b3b77fff  com.apple.CoreFoundation 6.9 (1855.105) <B2FF96D0-AE99-31EF-9014-FC9964B4F3E0>  /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+           0x1b452b000 -        0x1b4918fff  com.apple.Foundation 6.9 (1855.105)     <DE039F1B-FFE5-3644-A8CF-7BA52C32CD73>  /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+
+
+Powerstats for:   Google Chrome Helper (GPU)
+UUID:             4C4C44CC-5555-3144-A12E-82656B01A50D
+Path:             /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/100.0.4896.75/Helpers/Google Chrome Helper (GPU).app/Contents/MacOS/Google Chrome Helper (GPU)
+Architecture:     arm64
+Start time:       2022-04-22 14:43:57.193 +0200
+End time:         2022-04-22 14:45:06.395 +0200
+Num samples:      5 (7%)
+Primary state:    4 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 5 samples Active
+Power Source:     0 samples on Battery, 5 samples on AC
+  4  start_wqthread + 8 (libsystem_pthread.dylib + 8900) [0x1b35e82c4]
+    4  _pthread_wqthread + 288 (libsystem_pthread.dylib + 13744) [0x1b35e95b0]
+      4  _dispatch_workloop_worker_thread + 656 (libdispatch.dylib + 91912) [0x1b3441708]
+        4  _dispatch_lane_invoke + 392 (libdispatch.dylib + 48804) [0x1b3436ea4]
+          4  _dispatch_lane_serial_drain + 376 (libdispatch.dylib + 45576) [0x1b3436208]
+            4  _dispatch_source_invoke + 1356 (libdispatch.dylib + 106916) [0x1b34451a4]
+              4  _dispatch_continuation_pop + 504 (libdispatch.dylib + 28800) [0x1b3432080]
+                4  _dispatch_client_callout + 20 (libdispatch.dylib + 15276) [0x1b342ebac]
+                  4  dispatch_mig_server + 256 (libdispatch.dylib + 137540) [0x1b344c944]
+                    4  mach_msg_trap + 8 (libsystem_kernel.dylib + 6484) [0x1b35b1954]
+                      1  <User mode>
+  1  start_wqthread + 0 (libsystem_pthread.dylib + 8892) [0x1b35e82bc]
+
+  Binary Images:
+           0x10256c000 -                ???  Google Chrome Helper (GPU)         <4C4C44CC-5555-3144-A12E-82656B01A50D>  /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/100.0.4896.75/Helpers/Google Chrome Helper (GPU).app/Contents/MacOS/Google Chrome Helper (GPU)
+           0x1b342b000 -        0x1b3471fff  libdispatch.dylib (1324.41.2)      <3D7A56A3-23BF-3077-B5C6-9CE65CE7333E>  /usr/lib/system/libdispatch.dylib
+           0x1b35b0000 -        0x1b35e5fff  libsystem_kernel.dylib (8019.41.5) <C8524C02-B14F-30BD-A228-C44B4A448E68>  /usr/lib/system/libsystem_kernel.dylib
+           0x1b35e6000 -        0x1b35f2fff  libsystem_pthread.dylib (485.40.4) <4786E19A-9312-38E6-80EF-9C1394548118>  /usr/lib/system/libsystem_pthread.dylib
+
+
+Powerstats for:   Spotify
+UUID:             54151220-3ADA-3367-82FA-8C9E67FE6356
+Path:             /Applications/Spotify.app/Contents/MacOS/Spotify
+Identifier:       com.spotify.client
+Version:          1.1.81.604.gccacfc8c (1.1.81.604.gccacfc8c-16)
+Team ID:          2FNC3A47ZF
+Architecture:     arm64
+Start time:       2022-04-22 14:44:50.449 +0200
+End time:         2022-04-22 14:45:25.445 +0200
+Num samples:      4 (6%)
+Primary state:    3 samples Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 4 samples Active
+Power Source:     0 samples on Battery, 4 samples on AC
+  4  thread_start + 8 (libsystem_pthread.dylib + 8912) [0x1b35e82d0]
+    4  _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x1b35ed4ec]
+      4  ??? (Spotify + 17891936) [0x1036b4260]
+        2  ??? (Spotify + 11592572) [0x1030b237c]
+          2  ??? (Spotify + 197796) [0x1025d44a4]
+            2  ??? (Spotify + 11452108) [0x10308fecc]
+              2  ??? (Spotify + 197796) [0x1025d44a4]
+                2  ??? (Spotify + 11374228) [0x10307ce94]
+                  2  ??? (Spotify + 11367444) [0x10307b414]
+                    2  ??? (Spotify + 11604320) [0x1030b5160]
+                      2  ??? (Spotify + 11606176) [0x1030b58a0]
+                        1  ??? (Spotify + 11810528) [0x1030e76e0]
+                          1  ??? (Spotify + 11739624) [0x1030d61e8]
+                        1  ??? (Spotify + 11810136) [0x1030e7558]
+                          1  ??? (Spotify + 11804388) [0x1030e5ee4]
+                            1  ??? (Spotify + 11812952) [0x1030e8058]
+                              1  ??? (Spotify + 11819164) [0x1030e989c]
+        1  ??? (Spotify + 16050288) [0x1034f2870]
+          1  ??? (Spotify + 16042628) [0x1034f0a84]
+            1  ??? (Spotify + 17761548) [0x10369450c]
+              1  ??? (Spotify + 17756164) [0x103693004]
+                1  ??? (Spotify + 11516208) [0x10309f930]
+                  1  ??? (Spotify + 11497868) [0x10309b18c]
+                    1  ??? (Spotify + 11499512) [0x10309b7f8]
+                      1  ??? (Spotify + 11513184) [0x10309ed60]
+                        1  ??? (Spotify + 11374724) [0x10307d084]
+                          1  ??? (Spotify + 11367444) [0x10307b414]
+                            1  ??? (Spotify + 11604320) [0x1030b5160]
+                              1  ??? (Spotify + 11606176) [0x1030b58a0]
+                                1  ??? (Spotify + 11810364) [0x1030e763c]
+        1  ??? (Spotify + 11592584) [0x1030b2388]
+          1  std::__1::this_thread::sleep_for(std::__1::chrono::duration<long long, std::__1::ratio<1l, 1000000000l> > const&) + 84 (libc++.1.dylib + 92192) [0x1b3548820]
+            1  __semwait_signal + 8 (libsystem_kernel.dylib + 20156) [0x1b35b4ebc]
+              1  <Kernel mode>
+
+  Binary Images:
+           0x1025a4000 -        0x103b0bfff  com.spotify.client 1.1.81.604.gccacfc8c (1.1.81.604.gccacfc8c-16) <54151220-3ADA-3367-82FA-8C9E67FE6356>  /Applications/Spotify.app/Contents/MacOS/Spotify
+           0x1b3532000 -        0x1b3595fff  libc++.1.dylib (1200.3)                                           <3AD094C9-4883-394C-AF5A-2B9A5BDFE45B>  /usr/lib/libc++.1.dylib
+           0x1b35b0000 -        0x1b35e5fff  libsystem_kernel.dylib (8019.41.5)                                <C8524C02-B14F-30BD-A228-C44B4A448E68>  /usr/lib/system/libsystem_kernel.dylib
+           0x1b35e6000 -        0x1b35f2fff  libsystem_pthread.dylib (485.40.4)                                <4786E19A-9312-38E6-80EF-9C1394548118>  /usr/lib/system/libsystem_pthread.dylib

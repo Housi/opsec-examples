@@ -1,0 +1,103 @@
+Date/Time:        2022-04-25 20:28:28.328 +0200
+End time:         2022-04-25 20:31:49.467 +0200
+OS Version:       macOS 12.0.1 (Build 21A559)
+Architecture:     arm64e
+Report Version:   35
+Incident Identifier: 384B5B0A-90DB-48C9-95A7-CE945797D33A
+
+Data Source:      Microstackshots
+Shared Cache:     A6162D66-93E3-3251-93CC-B11F7C8C830E slid base address 0x196cb8000, slide 0x16cb8000
+
+Command:          com.apple.WebKit.Networking
+Path:             /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.Networking.xpc/Contents/MacOS/com.apple.WebKit.Networking
+Identifier:       com.apple.WebKit.Networking
+Version:          17612 (17612.2.9.1.20)
+Build Version:    3
+Project Name:     WebKit
+Source Version:   7612002009001020
+Architecture:     arm64
+PID:              19863
+
+Event:            disk writes
+Action taken:     none
+Writes:           2147.61 MB of file backed memory dirtied over 201 seconds (10.68 MB per second average), exceeding limit of 24.86 KB per second over 86400 seconds
+Writes limit:     2147.48 MB
+Limit duration:   86400s
+Writes caused:    2147.61 MB
+Writes duration:  201s
+Duration:         201.14s
+Duration Sampled: 195.76s
+Steps:            204 ( (10.49 MB/step))
+
+Hardware model:   MacBookPro17,1
+Active cpus:      8
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 2, User -> 2, ThermalPressure -> 0, Combined -> 2
+Free disk space:  214.74 GB/460.43 GB, low space threshold 3072 MB
+
+Heaviest stack for the target process:
+  201  start_wqthread + 8 (libsystem_pthread.dylib + 8900) [0x196fc02c4]
+  201  _pthread_wqthread + 228 (libsystem_pthread.dylib + 13684) [0x196fc1574]
+  201  _dispatch_worker_thread2 + 164 (libdispatch.dylib + 88920) [0x196e18b58]
+  200  _dispatch_root_queue_drain + 396 (libdispatch.dylib + 86812) [0x196e1831c]
+  198  _dispatch_queue_override_invoke + 792 (libdispatch.dylib + 27860) [0x196e09cd4]
+  198  _dispatch_client_callout + 20 (libdispatch.dylib + 15276) [0x196e06bac]
+  198  _dispatch_disk_perform + 516 (libdispatch.dylib + 212200) [0x196e36ce8]
+  197  __write_nocancel + 8 (libsystem_kernel.dylib + 22740) [0x196f8d8d4]
+
+
+Powerstats for:   com.apple.WebKit.Networking (com.apple.WebKit.Networking) [19863]
+UUID:             B8A805F5-DA07-39F7-BBE5-EB690B224856
+Path:             /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.Networking.xpc/Contents/MacOS/com.apple.WebKit.Networking
+Identifier:       com.apple.WebKit.Networking
+Version:          17612 (17612.2.9.1.20)
+Build Version:    3
+Project Name:     WebKit
+Source Version:   7612002009001020
+Architecture:     arm64
+Footprint:        25.64 MB -> 37.08 MB (+11.44 MB) (max 41.05 MB )
+Pageins:          635 pages
+Start time:       2022-04-25 20:28:58.336 +0200
+End time:         2022-04-25 20:31:49.398 +0200
+Num samples:      201 (99%)
+Primary state:    197 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 201 samples Active
+Power Source:     201 samples on Battery, 0 samples on AC
+  201  start_wqthread + 8 (libsystem_pthread.dylib + 8900) [0x196fc02c4]
+    201  _pthread_wqthread + 228 (libsystem_pthread.dylib + 13684) [0x196fc1574]
+      201  _dispatch_worker_thread2 + 164 (libdispatch.dylib + 88920) [0x196e18b58]
+        200  _dispatch_root_queue_drain + 396 (libdispatch.dylib + 86812) [0x196e1831c]
+          198  _dispatch_queue_override_invoke + 792 (libdispatch.dylib + 27860) [0x196e09cd4]
+            198  _dispatch_client_callout + 20 (libdispatch.dylib + 15276) [0x196e06bac]
+              198  _dispatch_disk_perform + 516 (libdispatch.dylib + 212200) [0x196e36ce8]
+                197  __write_nocancel + 8 (libsystem_kernel.dylib + 22740) [0x196f8d8d4]
+                1    __pwrite_nocancel + 8 (libsystem_kernel.dylib + 182976) [0x196fb4ac0]
+                  1    <Effective Thread QoS Background, Requested Thread QoS Background>
+          2    _dispatch_async_redirect_invoke + 596 (libdispatch.dylib + 26332) [0x196e096dc]
+            2    _dispatch_continuation_pop + 504 (libdispatch.dylib + 28800) [0x196e0a080]
+              2    _dispatch_client_callout + 20 (libdispatch.dylib + 15276) [0x196e06bac]
+                2    void WTF::dispatchWorkItem<WTF::(anonymous namespace)::DispatchWorkItem>(void*) + 60 (JavaScriptCore + 18030448) [0x1b0153f70]
+                  2    WTF::Detail::CallableWrapper<WebKit::NetworkCache::Storage::dispatchWriteOperation(std::__1::unique_ptr<WebKit::NetworkCache::Storage::WriteOperation, std::__1::default_delete<WebKit::NetworkCache::Storage::WriteOperation> >)::$_22, void>::call() + 184 (WebKit + 3155072) [0x1b5189480]
+                    2    WebKit::NetworkCache::BlobStorage::add(WTF::String const&, WebKit::NetworkCache::Data const&) + 568 (WebKit + 2977596) [0x1b515df3c]
+                      2    WTF::FileSystemImpl::mapToFile(WTF::String const&, unsigned long, WTF::Function<void (WTF::Function<bool (WTF::Span<unsigned char const, 18446744073709551615ul>)> const&)>&&, int*) + 368 (JavaScriptCore + 17585240) [0x1b00e7458]
+                        2    WebKit::NetworkCache::Data::apply(WTF::Function<bool (WTF::Span<unsigned char const, 18446744073709551615ul>)> const&) const + 108 (WebKit + 1539824) [0x1b4ffeef0]
+                          1    _platform_memmove + 88 (libsystem_platform.dylib + 16744) [0x196fdc168]
+                            1    <Effective Thread QoS Background, Requested Thread QoS Background>
+                          1    _platform_memmove + 76 (libsystem_platform.dylib + 16732) [0x196fdc15c]
+                            1    <Effective Thread QoS Background, Requested Thread QoS Background>
+        1    _dispatch_root_queue_drain + 684 (libdispatch.dylib + 87100) [0x196e1843c]
+          1    _dispatch_client_callout + 20 (libdispatch.dylib + 15276) [0x196e06bac]
+            1    _dispatch_disk_perform + 516 (libdispatch.dylib + 212200) [0x196e36ce8]
+              1    __write_nocancel + 8 (libsystem_kernel.dylib + 22740) [0x196f8d8d4]
+                1    <Effective Thread QoS Default, Requested Thread QoS Default>
+
+  Binary Images:
+           0x1029cc000 -                ???  com.apple.WebKit.Networking 17612 (17612.2.9.1.20) <B8A805F5-DA07-39F7-BBE5-EB690B224856>  /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.Networking.xpc/Contents/MacOS/com.apple.WebKit.Networking
+           0x196e03000 -        0x196e49fff  libdispatch.dylib (1324.41.2)                      <3D7A56A3-23BF-3077-B5C6-9CE65CE7333E>  /usr/lib/system/libdispatch.dylib
+           0x196f88000 -        0x196fbdfff  libsystem_kernel.dylib (8019.41.5)                 <C8524C02-B14F-30BD-A228-C44B4A448E68>  /usr/lib/system/libsystem_kernel.dylib
+           0x196fbe000 -        0x196fcafff  libsystem_pthread.dylib (485.40.4)                 <4786E19A-9312-38E6-80EF-9C1394548118>  /usr/lib/system/libsystem_pthread.dylib
+           0x196fd8000 -        0x196fdffff  libsystem_platform.dylib (273.40.1)                <06CE953D-F22A-3724-B6D5-829B45179897>  /usr/lib/system/libsystem_platform.dylib
+           0x1af022000 -        0x1b02d9fff  com.apple.JavaScriptCore 17612 (17612.2.9.1.20)    <1F13D2B9-D661-364F-8B67-865F68018E4A>  /System/Library/Frameworks/JavaScriptCore.framework/Versions/A/JavaScriptCore
+           0x1b4e87000 -        0x1b57d6fff  com.apple.WebKit 17612 (17612.2.9.1.20)            <49D3AAB3-BD37-354C-87DC-67A6509FE79F>  /System/Library/Frameworks/WebKit.framework/Versions/A/WebKit

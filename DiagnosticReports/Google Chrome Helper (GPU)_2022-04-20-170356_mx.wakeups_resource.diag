@@ -1,0 +1,397 @@
+Date/Time:        2022-04-20 16:59:13.269 +0200
+End time:         2022-04-20 17:03:55.610 +0200
+OS Version:       macOS 12.0.1 (Build 21A559)
+Architecture:     arm64e
+Report Version:   35
+Incident Identifier: 3CFD30B8-9271-4A4A-8B21-61D5695C7959
+
+Data Source:      Microstackshots
+Shared Cache:     A6162D66-93E3-3251-93CC-B11F7C8C830E slid base address 0x1b69c0000, slide 0x369c0000
+
+Command:          Google Chrome Helper (GPU)
+Path:             /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/100.0.4896.88/Helpers/Google Chrome Helper (GPU).app/Contents/MacOS/Google Chrome Helper (GPU)
+Identifier:       com.google.Chrome.helper
+Version:          100.0.4896.88 (4896.88)
+Team ID:          EQHXZ8M8AV
+Architecture:     arm64
+PID:              95102
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45001 wakeups over the last 282 seconds (159 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45001
+Wakeups duration: 282s
+Duration:         282.34s
+Duration Sampled: 262.15s
+Steps:            18
+
+Hardware model:   MacBookPro17,1
+Active cpus:      8
+HW page size:     16384
+VM page size:     16384
+
+Fan speed:        0 rpm
+Advisory levels:  Battery -> 3, User -> 2, ThermalPressure -> 0, Combined -> 2
+Free disk space:  200.17 GB/460.43 GB, low space threshold 3072 MB
+
+Heaviest stack for the target process:
+  8  start + 520 (dyld + 20724) [0x102cad0f4]
+  8  main + 232 (Google Chrome Helper (GPU) + 2408) [0x10287c968]
+  8  ChromeMain + 212 (Google Chrome Framework + 13308) [0x115c873fc]
+  8  ChromeMain + 46350664 (Google Chrome Framework + 46363760) [0x1188bb470]
+  8  ChromeMain + 46355112 (Google Chrome Framework + 46368208) [0x1188bc5d0]
+  8  ChromeMain + 93013228 (Google Chrome Framework + 93026324) [0x11b53b814]
+  8  ChromeMain + 50453836 (Google Chrome Framework + 50466932) [0x118ca5074]
+  8  ChromeMain + 50671444 (Google Chrome Framework + 50684540) [0x118cda27c]
+  8  ChromeMain + 50936228 (Google Chrome Framework + 50949324) [0x118d1accc]
+  8  ChromeMain + 50941036 (Google Chrome Framework + 50954132) [0x118d1bf94]
+  8  -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 236 (Foundation + 413200) [0x1b7c6fe10]
+  8  CFRunLoopRunSpecific + 600 (CoreFoundation + 534164) [0x1b6d96694]
+  8  __CFRunLoopRun + 820 (CoreFoundation + 536936) [0x1b6d97168]
+  8  __CFRunLoopDoSources0 + 268 (CoreFoundation + 542708) [0x1b6d987f4]
+  8  __CFRunLoopDoSource0 + 208 (CoreFoundation + 543496) [0x1b6d98b08]
+  8  __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 28 (CoreFoundation + 543676) [0x1b6d98bbc]
+  8  ChromeMain + 50937504 (Google Chrome Framework + 50950600) [0x118d1b1c8]
+  8  ChromeMain + 1467080 (Google Chrome Framework + 1480176) [0x115ded5f0]
+  8  ChromeMain + 50939404 (Google Chrome Framework + 50952500) [0x118d1b934]
+  8  ChromeMain + 50667668 (Google Chrome Framework + 50680764) [0x118cd93bc]
+  8  ChromeMain + 50550072 (Google Chrome Framework + 50563168) [0x118cbc860]
+  8  ChromeMain + 68533936 (Google Chrome Framework + 68547032) [0x119de31d8]
+  4  ChromeMain + 72812836 (Google Chrome Framework + 72825932) [0x11a1f7c4c]
+  4  ChromeMain + 72802904 (Google Chrome Framework + 72816000) [0x11a1f5580]
+  4  ChromeMain + 72775344 (Google Chrome Framework + 72788440) [0x11a1ee9d8]
+  4  ChromeMain + 72770824 (Google Chrome Framework + 72783920) [0x11a1ed830]
+  4  ChromeMain + 72914584 (Google Chrome Framework + 72927680) [0x11a2109c0]
+  4  ChromeMain + 72904248 (Google Chrome Framework + 72917344) [0x11a20e160]
+  4  ChromeMain + 72922260 (Google Chrome Framework + 72935356) [0x11a2127bc]
+  4  ChromeMain + 57178156 (Google Chrome Framework + 57191252) [0x11930eb54]
+  4  ChromeMain + 56756832 (Google Chrome Framework + 56769928) [0x1192a7d88]
+  4  ChromeMain + 56777820 (Google Chrome Framework + 56790916) [0x1192acf84]
+  3  ChromeMain + 56774904 (Google Chrome Framework + 56788000) [0x1192ac420]
+  1  ChromeMain + 57401416 (Google Chrome Framework + 57414512) [0x119345370]
+  1  ChromeMain + 57904564 (Google Chrome Framework + 57917660) [0x1193c00dc]
+  1  GL_BlitFramebufferNV + 256 (libGLESv2.dylib + 224648) [0x10ce8ad88]
+  1  glFramebufferTextureMultiviewOVR + 106224 (libGLESv2.dylib + 354736) [0x10ceaa9b0]
+  1  glFramebufferTextureMultiviewOVR + 249016 (libGLESv2.dylib + 497528) [0x10cecd778]
+  1  ANGLEResetDisplayPlatform + 2106040 (libGLESv2.dylib + 2668908) [0x10d0df96c]
+  1  glBlitFramebuffer + 80 (libGL.dylib + 20000) [0x217eb2e20]
+  1  glBlitFramebufferEXT_Exec + 2032 (GLEngine + 346376) [0x217f0c908]
+  1  gleBlitFramebuffer + 600 (GLEngine + 996324) [0x217fab3e4]
+  1  gldBlitFramebufferData + 8320 (AppleMetalOpenGLRenderer + 250624) [0x102f4d300]
+  1  GLDContextRec::flushContext(bool) + 512 (AppleMetalOpenGLRenderer + 347748) [0x102f64e64]
+  1  -[_MTLCommandQueue submitCommandBuffer:] + 136 (Metal + 159708) [0x1bf54efdc]
+  1  _dispatch_lane_barrier_sync_invoke_and_complete + 56 (libdispatch.dylib + 77312) [0x1b6b1de00]
+  1  _dispatch_client_callout + 20 (libdispatch.dylib + 15276) [0x1b6b0ebac]
+  1  __40-[_MTLCommandQueue submitCommandBuffer:]_block_invoke + 36 (Metal + 159784) [0x1bf54f028]
+  1  -[_MTLCommandQueue _submitAvailableCommandBuffers] + 672 (Metal + 127472) [0x1bf5471f0]
+  1  -[IOGPUMetalCommandQueue submitCommandBuffers:count:] + 88 (IOGPU + 24220) [0x1d1223e9c]
+  1  -[IOGPUMetalCommandQueue _submitCommandBuffers:count:] + 804 (IOGPU + 25068) [0x1d12241ec]
+  1  IOGPUCommandQueueSubmitCommandBuffers + 144 (IOGPU + 79128) [0x1d1231518]
+  1  IOConnectCallMethod + 176 (IOKit + 14540) [0x1b97798cc]
+  1  io_connect_method + 440 (IOKit + 15084) [0x1b9779aec]
+  1  mach_msg_trap + 8 (libsystem_kernel.dylib + 6484) [0x1b6c91954]
+
+
+Powerstats for:   Google Chrome Helper (GPU) (Chrome Helper (GPU)) [95102]
+UUID:             4C4C4461-5555-3144-A10A-2312213B4CBC
+Path:             /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/100.0.4896.88/Helpers/Google Chrome Helper (GPU).app/Contents/MacOS/Google Chrome Helper (GPU)
+Identifier:       com.google.Chrome.helper
+Version:          100.0.4896.88 (4896.88)
+Team ID:          EQHXZ8M8AV
+Architecture:     arm64
+Footprint:        1266.06 MB -> 1281.19 MB (+15.12 MB) (max 1393.70 MB )
+Pageins:          102 pages
+Start time:       2022-04-20 16:59:29.448 +0200
+End time:         2022-04-20 17:03:51.598 +0200
+Num samples:      18 (100%)
+Primary state:    9 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Default, Requested Thread QoS User Interactive, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 18 samples Active
+Power Source:     0 samples on Battery, 18 samples on AC
+  8   start + 520 (dyld + 20724) [0x102cad0f4]
+    8   main + 232 (Google Chrome Helper (GPU) + 2408) [0x10287c968]
+      8   ChromeMain + 212 (Google Chrome Framework + 13308) [0x115c873fc]
+        8   ChromeMain + 46350664 (Google Chrome Framework + 46363760) [0x1188bb470]
+          8   ChromeMain + 46355112 (Google Chrome Framework + 46368208) [0x1188bc5d0]
+            8   ChromeMain + 93013228 (Google Chrome Framework + 93026324) [0x11b53b814]
+              8   ChromeMain + 50453836 (Google Chrome Framework + 50466932) [0x118ca5074]
+                8   ChromeMain + 50671444 (Google Chrome Framework + 50684540) [0x118cda27c]
+                  8   ChromeMain + 50936228 (Google Chrome Framework + 50949324) [0x118d1accc]
+                    8   ChromeMain + 50941036 (Google Chrome Framework + 50954132) [0x118d1bf94]
+                      8   -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 236 (Foundation + 413200) [0x1b7c6fe10]
+                        8   CFRunLoopRunSpecific + 600 (CoreFoundation + 534164) [0x1b6d96694]
+                          8   __CFRunLoopRun + 820 (CoreFoundation + 536936) [0x1b6d97168]
+                            8   __CFRunLoopDoSources0 + 268 (CoreFoundation + 542708) [0x1b6d987f4]
+                              8   __CFRunLoopDoSource0 + 208 (CoreFoundation + 543496) [0x1b6d98b08]
+                                8   __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 28 (CoreFoundation + 543676) [0x1b6d98bbc]
+                                  8   ChromeMain + 50937504 (Google Chrome Framework + 50950600) [0x118d1b1c8]
+                                    8   ChromeMain + 1467080 (Google Chrome Framework + 1480176) [0x115ded5f0]
+                                      8   ChromeMain + 50939404 (Google Chrome Framework + 50952500) [0x118d1b934]
+                                        8   ChromeMain + 50667668 (Google Chrome Framework + 50680764) [0x118cd93bc]
+                                          8   ChromeMain + 50550072 (Google Chrome Framework + 50563168) [0x118cbc860]
+                                            8   ChromeMain + 68533936 (Google Chrome Framework + 68547032) [0x119de31d8]
+                                              4   ChromeMain + 72812836 (Google Chrome Framework + 72825932) [0x11a1f7c4c]
+                                                4   ChromeMain + 72802904 (Google Chrome Framework + 72816000) [0x11a1f5580]
+                                                  4   ChromeMain + 72775344 (Google Chrome Framework + 72788440) [0x11a1ee9d8]
+                                                    4   ChromeMain + 72770824 (Google Chrome Framework + 72783920) [0x11a1ed830]
+                                                      4   ChromeMain + 72914584 (Google Chrome Framework + 72927680) [0x11a2109c0]
+                                                        4   ChromeMain + 72904248 (Google Chrome Framework + 72917344) [0x11a20e160]
+                                                          4   ChromeMain + 72922260 (Google Chrome Framework + 72935356) [0x11a2127bc]
+                                                            4   ChromeMain + 57178156 (Google Chrome Framework + 57191252) [0x11930eb54]
+                                                              4   ChromeMain + 56756832 (Google Chrome Framework + 56769928) [0x1192a7d88]
+                                                                4   ChromeMain + 56777820 (Google Chrome Framework + 56790916) [0x1192acf84]
+                                                                  3   ChromeMain + 56774904 (Google Chrome Framework + 56788000) [0x1192ac420]
+                                                                    1   ChromeMain + 57401416 (Google Chrome Framework + 57414512) [0x119345370]
+                                                                      1   ChromeMain + 57904564 (Google Chrome Framework + 57917660) [0x1193c00dc]
+                                                                        1   GL_BlitFramebufferNV + 256 (libGLESv2.dylib + 224648) [0x10ce8ad88]
+                                                                          1   glFramebufferTextureMultiviewOVR + 106224 (libGLESv2.dylib + 354736) [0x10ceaa9b0]
+                                                                            1   glFramebufferTextureMultiviewOVR + 249016 (libGLESv2.dylib + 497528) [0x10cecd778]
+                                                                              1   ANGLEResetDisplayPlatform + 2106040 (libGLESv2.dylib + 2668908) [0x10d0df96c]
+                                                                                1   glBlitFramebuffer + 80 (libGL.dylib + 20000) [0x217eb2e20]
+                                                                                  1   glBlitFramebufferEXT_Exec + 2032 (GLEngine + 346376) [0x217f0c908]
+                                                                                    1   gleBlitFramebuffer + 600 (GLEngine + 996324) [0x217fab3e4]
+                                                                                      1   gldBlitFramebufferData + 8320 (AppleMetalOpenGLRenderer + 250624) [0x102f4d300]
+                                                                                        1   GLDContextRec::flushContext(bool) + 512 (AppleMetalOpenGLRenderer + 347748) [0x102f64e64]
+                                                                                          1   -[_MTLCommandQueue submitCommandBuffer:] + 136 (Metal + 159708) [0x1bf54efdc]
+                                                                                            1   _dispatch_lane_barrier_sync_invoke_and_complete + 56 (libdispatch.dylib + 77312) [0x1b6b1de00]
+                                                                                              1   _dispatch_client_callout + 20 (libdispatch.dylib + 15276) [0x1b6b0ebac]
+                                                                                                1   __40-[_MTLCommandQueue submitCommandBuffer:]_block_invoke + 36 (Metal + 159784) [0x1bf54f028]
+                                                                                                  1   -[_MTLCommandQueue _submitAvailableCommandBuffers] + 672 (Metal + 127472) [0x1bf5471f0]
+                                                                                                    1   -[IOGPUMetalCommandQueue submitCommandBuffers:count:] + 88 (IOGPU + 24220) [0x1d1223e9c]
+                                                                                                      1   -[IOGPUMetalCommandQueue _submitCommandBuffers:count:] + 804 (IOGPU + 25068) [0x1d12241ec]
+                                                                                                        1   IOGPUCommandQueueSubmitCommandBuffers + 144 (IOGPU + 79128) [0x1d1231518]
+                                                                                                          1   IOConnectCallMethod + 176 (IOKit + 14540) [0x1b97798cc]
+                                                                                                            1   io_connect_method + 440 (IOKit + 15084) [0x1b9779aec]
+                                                                                                              1   mach_msg_trap + 8 (libsystem_kernel.dylib + 6484) [0x1b6c91954]
+                                                                    1   ChromeMain + 57401284 (Google Chrome Framework + 57414380) [0x1193452ec]
+                                                                      1   ChromeMain + 57226768 (Google Chrome Framework + 57239864) [0x11931a938]
+                                                                        1   ChromeMain + 57368884 (Google Chrome Framework + 57381980) [0x11933d45c]
+                                                                          1   ChromeMain + 57364588 (Google Chrome Framework + 57377684) [0x11933c394]
+                                                                            1   ChromeMain + 57939904 (Google Chrome Framework + 57953000) [0x1193c8ae8]
+                                                                              1   ChromeMain + 72063536 (Google Chrome Framework + 72076632) [0x11a140d58]
+                                                                                1   GL_DrawElementsInstancedBaseVertexBaseInstanceANGLE + 316 (libGLESv2.dylib + 157876) [0x10ce7a8b4]
+                                                                                  1   glFramebufferTextureMultiviewOVR + 138488 (libGLESv2.dylib + 387000) [0x10ceb27b8]
+                                                                                    1   ANGLEResetDisplayPlatform + 1899368 (libGLESv2.dylib + 2462236) [0x10d0ad21c]
+                                                                                      1   glDrawElementsInstancedBaseVertex_ACC_GL3Exec + 400 (GLEngine + 779860) [0x217f76654]
+                                                                                        1   gldRenderVertexArray(GLDContextRec*, unsigned int, unsigned int, int, int, unsigned int, void const*, int, void const*) + 492 (AppleMetalOpenGLRenderer + 276160) [0x102f536c0]
+                                                                                          1   GLDContextRec::beginRenderPass() + 136 (AppleMetalOpenGLRenderer + 180376) [0x102f3c098]
+                                                                                            1   ??? (AGXMetal13_3 + 2053240) [0x2182bd478]
+                                                                                              1   ??? (AGXMetal13_3 + 2844584) [0x21837e7a8]
+                                                                                                1   ??? (AGXMetal13_3 + 2765204) [0x21836b194]
+                                                                                                  1   IOGPUResourceListAddResource + 52 (IOGPU + 84228) [0x1d1232904]
+                                                                    1   ChromeMain + 56768964 (Google Chrome Framework + 56782060) [0x1192aacec]
+                                                                      1   ChromeMain + 56820488 (Google Chrome Framework + 56833584) [0x1192b7630]
+                                                                        1   ChromeMain + 57909812 (Google Chrome Framework + 57922908) [0x1193c155c]
+                                                                          1   GL_BlitFramebufferNV + 256 (libGLESv2.dylib + 224648) [0x10ce8ad88]
+                                                                            1   glFramebufferTextureMultiviewOVR + 106224 (libGLESv2.dylib + 354736) [0x10ceaa9b0]
+                                                                              1   glFramebufferTextureMultiviewOVR + 249016 (libGLESv2.dylib + 497528) [0x10cecd778]
+                                                                                1   ANGLEResetDisplayPlatform + 2106040 (libGLESv2.dylib + 2668908) [0x10d0df96c]
+                                                                                  1   glBlitFramebuffer + 80 (libGL.dylib + 20000) [0x217eb2e20]
+                                                                                    1   glBlitFramebufferEXT_Exec + 2032 (GLEngine + 346376) [0x217f0c908]
+                                                                                      1   gleBlitFramebuffer + 600 (GLEngine + 996324) [0x217fab3e4]
+                                                                                        1   ??? (AGXMetal13_3 + 2805272) [0x218374e18]
+                                                                  1   ChromeMain + 56774040 (Google Chrome Framework + 56787136) [0x1192ac0c0]
+                                                                    1   ChromeMain + 56828624 (Google Chrome Framework + 56841720) [0x1192b95f8]
+                                                                      1   ChromeMain + 56763164 (Google Chrome Framework + 56776260) [0x1192a9644]
+                                                                        1   ChromeMain + 57875336 (Google Chrome Framework + 57888432) [0x1193b8eb0]
+                                                                          1   GL_BufferData + 200 (libGLESv2.dylib + 74232) [0x10ce661f8]
+                                                                            1   glFramebufferTextureMultiviewOVR + 14596 (libGLESv2.dylib + 263108) [0x10ce943c4]
+                                                                              1   ANGLEResetDisplayPlatform + 1890780 (libGLESv2.dylib + 2453648) [0x10d0ab090]
+                                                                                1   glBufferData_Exec + 520 (GLEngine + 257008) [0x217ef6bf0]
+                                                                                  1   gleAcquireBufferData + 188 (GLEngine + 257568) [0x217ef6e20]
+                                                                                    1   gleGetFreeOrphanNode + 404 (GLEngine + 926320) [0x217f9a270]
+                                                                                      1   gldTestMemoryPlugin + 72 (AppleMetalOpenGLRenderer + 33768) [0x102f183e8]
+                                                                                        1   IOGPUDeviceTestEventFast + 108 (IOGPU + 82064) [0x1d1232090]
+                                              4   ChromeMain + 40052752 (Google Chrome Framework + 40065848) [0x1182b9b38]
+                                                4   ChromeMain + 40050172 (Google Chrome Framework + 40063268) [0x1182b9124]
+                                                  4   ChromeMain + 40063180 (Google Chrome Framework + 40076276) [0x1182bc3f4]
+                                                    4   ChromeMain + 40063640 (Google Chrome Framework + 40076736) [0x1182bc5c0]
+                                                      4   ChromeMain + 40009684 (Google Chrome Framework + 40022780) [0x1182af2fc]
+                                                        4   ChromeMain + 39998820 (Google Chrome Framework + 40011916) [0x1182ac88c]
+                                                          4   ChromeMain + 40083008 (Google Chrome Framework + 40096104) [0x1182c1168]
+                                                            4   ChromeMain + 40076200 (Google Chrome Framework + 40089296) [0x1182bf6d0]
+                                                              4   ChromeMain + 40013520 (Google Chrome Framework + 40026616) [0x1182b01f8]
+                                                                4   ChromeMain + 39996208 (Google Chrome Framework + 40009304) [0x1182abe58]
+                                                                  4   ChromeMain + 73032332 (Google Chrome Framework + 73045428) [0x11a22d5b4]
+                                                                    4   ChromeMain + 73029792 (Google Chrome Framework + 73042888) [0x11a22cbc8]
+                                                                      4   ChromeMain + 73037768 (Google Chrome Framework + 73050864) [0x11a22eaf0]
+                                                                        4   CA::Transaction::commit() + 680 (QuartzCore + 11640) [0x1bdbbed78]
+                                                                          3   CA::Context::commit_transaction(CA::Transaction*, double, double*) + 5960 (QuartzCore + 1458148) [0x1bdd1ffe4]
+                                                                            3   CA::Layer::commit_if_needed(CA::Transaction*, void (CA::Layer*, unsigned int, unsigned int) block_pointer) + 252 (QuartzCore + 173932) [0x1bdbe676c]
+                                                                              3   CA::Layer::commit_if_needed(CA::Transaction*, void (CA::Layer*, unsigned int, unsigned int) block_pointer) + 252 (QuartzCore + 173932) [0x1bdbe676c]
+                                                                                3   CA::Layer::commit_if_needed(CA::Transaction*, void (CA::Layer*, unsigned int, unsigned int) block_pointer) + 252 (QuartzCore + 173932) [0x1bdbe676c]
+                                                                                  3   CA::Layer::commit_if_needed(CA::Transaction*, void (CA::Layer*, unsigned int, unsigned int) block_pointer) + 252 (QuartzCore + 173932) [0x1bdbe676c]
+                                                                                    3   CA::Layer::commit_if_needed(CA::Transaction*, void (CA::Layer*, unsigned int, unsigned int) block_pointer) + 252 (QuartzCore + 173932) [0x1bdbe676c]
+                                                                                      3   CA::Layer::commit_if_needed(CA::Transaction*, void (CA::Layer*, unsigned int, unsigned int) block_pointer) + 368 (QuartzCore + 174048) [0x1bdbe67e0]
+                                                                                        2   invocation function for block in CA::Context::commit_transaction(CA::Transaction*, double, double*) + 252 (QuartzCore + 1467704) [0x1bdd22538]
+                                                                                          2   -[CALayer(CALayerPrivate) _copyRenderLayer:layerFlags:commitFlags:] + 820 (QuartzCore + 174976) [0x1bdbe6b80]
+                                                                                            2   CA::Render::copy_render_value(void const*, CGColorSpace*) + 672 (QuartzCore + 1443044) [0x1bdd1c4e4]
+                                                                                              2   CA::Render::Surface::Surface(__IOSurface*, unsigned int, unsigned int, unsigned int, CA::Render::YCbCrMatrix, CA::Render::ChromaLocation) + 1792 (QuartzCore + 80044) [0x1bdbcf8ac]
+                                                                                                2   CA::Render::iosurface_load_attachments(CA::Render::Surface*, unsigned int) + 284 (QuartzCore + 82924) [0x1bdbd03ec]
+                                                                                                  2   CGColorSpaceFromICCDataCacheGetRetained + 88 (CoreGraphics + 4037356) [0x1bc62aaec]
+                                                                                                    2   ColorSyncProfileCreate + 32 (ColorSync + 30228) [0x1bc868614]
+                                                                                                      1   create + 868 (ColorSync + 9020) [0x1bc86333c]
+                                                                                                        1   AppleCMMValidateProfile + 28 (ColorSync + 13356) [0x1bc86442c]
+                                                                                                          1   DoValidateProfile + 88 (ColorSync + 13460) [0x1bc864494]
+                                                                                                            1   CMMProfileMaker::MakeProfile(ColorSyncProfile const*, CMMMemMgr&) + 1332 (ColorSync + 15336) [0x1bc864be8]
+                                                                                                              1   CMMProfile::CMMProfile(ColorSyncProfile const*, CMMMemMgr&) + 96 (ColorSync + 17056) [0x1bc8652a0]
+                                                                                                                1   ColorSyncProfileCopyHeader + 92 (ColorSync + 15540) [0x1bc864cb4]
+                                                                                                                  1   copyHeaderData + 88 (ColorSync + 15700) [0x1bc864d54]
+                                                                                                                    1   CFRetain + 180 (CoreFoundation + 18684) [0x1b6d188fc]
+                                                                                                      1   create + 532 (ColorSync + 8684) [0x1bc8631ec]
+                                                                                                        1   CFDictionaryContainsValue + 32 (CoreFoundation + 299060) [0x1b6d5d034]
+                                                                                                          1   -[NSDictionary containsObject:] + 204 (CoreFoundation + 299436) [0x1b6d5d1ac]
+                                                                                                            1   -[__NSDictionaryM objectForKey:] + 184 (CoreFoundation + 141340) [0x1b6d3681c]
+                                                                                                              1   -[__NSCFString isEqual:] + 172 (CoreFoundation + 40160) [0x1b6d1dce0]
+                                                                                        1   invocation function for block in CA::Context::commit_transaction(CA::Transaction*, double, double*) + 324 (QuartzCore + 1467776) [0x1bdd22580]
+                                                                                          1   CA::Render::encode_set_object(CA::Render::Encoder*, unsigned long, unsigned int, CA::Render::Object*, unsigned int) + 196 (QuartzCore + 190740) [0x1bdbea914]
+                                                                                            1   CA::Render::Layer::encode(CA::Render::Encoder*) const + 160 (QuartzCore + 191196) [0x1bdbeaadc]
+                                                                                              1   CA::Render::Surface::encode(CA::Render::Encoder*) const + 956 (QuartzCore + 204044) [0x1bdbedd0c]
+                                                                                                1   CA::Render::Texture::encode(CA::Render::Encoder*) const + 64 (QuartzCore + 195520) [0x1bdbebbc0]
+                                                                                                  1   CA::Render::Encoder::encode_colorspace(CGColorSpace*) + 132 (QuartzCore + 121500) [0x1bdbd9a9c]
+                                                                          1   CA::Context::commit_transaction(CA::Transaction*, double, double*) + 6496 (QuartzCore + 1458684) [0x1bdd201fc]
+  6   thread_start + 8 (libsystem_pthread.dylib + 8912) [0x1b6cc82d0]
+    6   _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x1b6ccd4ec]
+      6   ChromeMain + 50911088 (Google Chrome Framework + 50924184) [0x118d14a98]
+        5   ChromeMain + 50791264 (Google Chrome Framework + 50804360) [0x118cf7688]
+          5   ChromeMain + 50790888 (Google Chrome Framework + 50803984) [0x118cf7510]
+            5   ChromeMain + 50453836 (Google Chrome Framework + 50466932) [0x118ca5074]
+              5   ChromeMain + 50671444 (Google Chrome Framework + 50684540) [0x118cda27c]
+                5   ChromeMain + 50305348 (Google Chrome Framework + 50318444) [0x118c80c6c]
+                  5   ChromeMain + 50667668 (Google Chrome Framework + 50680764) [0x118cd93bc]
+                    5   ChromeMain + 50550072 (Google Chrome Framework + 50563168) [0x118cbc860]
+                      4   ChromeMain + 50690200 (Google Chrome Framework + 50703296) [0x118cdebc0]
+                        3   ChromeMain + 50820100 (Google Chrome Framework + 50833196) [0x118cfe72c]
+                          3   ChromeMain + 68436748 (Google Chrome Framework + 68449844) [0x119dcb634]
+                            3   ChromeMain + 68436020 (Google Chrome Framework + 68449116) [0x119dcb35c]
+                              1   ChromeMain + 93125484 (Google Chrome Framework + 93138580) [0x11b556e94]
+                                1   ChromeMain + 13238064 (Google Chrome Framework + 13251160) [0x116927258]
+                                  1   ChromeMain + 52358192 (Google Chrome Framework + 52371288) [0x118e75f58]
+                                    1   ChromeMain + 52249364 (Google Chrome Framework + 52262460) [0x118e5b63c]
+                                      1   ChromeMain + 52226292 (Google Chrome Framework + 52239388) [0x118e55c1c]
+                                        1   ChromeMain + 22692748 (Google Chrome Framework + 22705844) [0x11722b6b4]
+                                          1   ChromeMain + 22737880 (Google Chrome Framework + 22750976) [0x117236700]
+                                            1   ChromeMain + 80281708 (Google Chrome Framework + 80294804) [0x11a917394]
+                                              1   ChromeMain + 22764352 (Google Chrome Framework + 22777448) [0x11723ce68]
+                                                1   ChromeMain + 22825876 (Google Chrome Framework + 22838972) [0x11724bebc]
+                                                  1   mach_msg_trap + 8 (libsystem_kernel.dylib + 6484) [0x1b6c91954]
+                                                    1   <Kernel mode, Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+                              1   ChromeMain + 93125296 (Google Chrome Framework + 93138392) [0x11b556dd8]
+                                1   ChromeMain + 93614332 (Google Chrome Framework + 93627428) [0x11b5ce424]
+                                  1   <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+                              1   ChromeMain + 68432284 (Google Chrome Framework + 68445380) [0x119dca4c4]
+                                1   ChromeMain + 93512436 (Google Chrome Framework + 93525532) [0x11b5b561c]
+                                  1   ChromeMain + 93510020 (Google Chrome Framework + 93523116) [0x11b5b4cac]
+                                    1   ChromeMain + 93506640 (Google Chrome Framework + 93519736) [0x11b5b3f78]
+                                      1   ChromeMain + 93508328 (Google Chrome Framework + 93521424) [0x11b5b4610]
+                                        1   ChromeMain + 93489172 (Google Chrome Framework + 93502268) [0x11b5afb3c]
+                                          1   ChromeMain + 93230672 (Google Chrome Framework + 93243768) [0x11b570978]
+                                            1   ChromeMain + 93234432 (Google Chrome Framework + 93247528) [0x11b571828]
+                                              1   ChromeMain + 93298428 (Google Chrome Framework + 93311524) [0x11b581224]
+                                                1   ChromeMain + 93301448 (Google Chrome Framework + 93314544) [0x11b581df0]
+                                                  1   ChromeMain + 93316376 (Google Chrome Framework + 93329472) [0x11b585840]
+                                                    1   ChromeMain + 58774528 (Google Chrome Framework + 58787624) [0x119494728]
+                                                      1   <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+                        1   ChromeMain + 50820064 (Google Chrome Framework + 50833160) [0x118cfe708]
+                          1   ChromeMain + 50993364 (Google Chrome Framework + 51006460) [0x118d28bfc]
+                            1   <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+                      1   ChromeMain + 52378184 (Google Chrome Framework + 52391280) [0x118e7ad70]
+                        1   ChromeMain + 52227388 (Google Chrome Framework + 52240484) [0x118e56064]
+                          1   ChromeMain + 52262376 (Google Chrome Framework + 52275472) [0x118e5e910]
+                            1   ChromeMain + 52296464 (Google Chrome Framework + 52309560) [0x118e66e38]
+                              1   ChromeMain + 52262376 (Google Chrome Framework + 52275472) [0x118e5e910]
+                                1   ChromeMain + 52241704 (Google Chrome Framework + 52254800) [0x118e59850]
+                                  1   ChromeMain + 13304528 (Google Chrome Framework + 13317624) [0x1169375f8]
+                                    1   ChromeMain + 93105080 (Google Chrome Framework + 93118176) [0x11b551ee0]
+                                      1   ChromeMain + 93131208 (Google Chrome Framework + 93144304) [0x11b5584f0]
+                                        1   ChromeMain + 93131436 (Google Chrome Framework + 93144532) [0x11b5585d4]
+                                          1   ChromeMain + 93121108 (Google Chrome Framework + 93134204) [0x11b555d7c]
+                                            1   ChromeMain + 93576328 (Google Chrome Framework + 93589424) [0x11b5c4fb0]
+                                              1   ChromeMain + 93580368 (Google Chrome Framework + 93593464) [0x11b5c5f78]
+                                                1   ChromeMain + 93612632 (Google Chrome Framework + 93625728) [0x11b5cdd80]
+                                                  1   ChromeMain + 93611696 (Google Chrome Framework + 93624792) [0x11b5cd9d8]
+                                                    1   ChromeMain + 93213868 (Google Chrome Framework + 93226964) [0x11b56c7d4]
+                                                      1   ChromeMain + 93210864 (Google Chrome Framework + 93223960) [0x11b56bc18]
+                                                        1   ChromeMain + 93211396 (Google Chrome Framework + 93224492) [0x11b56be2c]
+                                                          1   ChromeMain + 93507552 (Google Chrome Framework + 93520648) [0x11b5b4308]
+                                                            1   ChromeMain + 93510908 (Google Chrome Framework + 93524004) [0x11b5b5024]
+                                                              1   ChromeMain + 50819664 (Google Chrome Framework + 50832760) [0x118cfe578]
+                                                                1   ChromeMain + 50605360 (Google Chrome Framework + 50618456) [0x118cca058]
+                                                                  1   ChromeMain + 50605020 (Google Chrome Framework + 50618116) [0x118cc9f04]
+                                                                    1   ChromeMain + 50654864 (Google Chrome Framework + 50667960) [0x118cd61b8]
+                                                                      1   <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+        1   ChromeMain + 50762348 (Google Chrome Framework + 50775444) [0x118cf0594]
+          1   ChromeMain + 50763008 (Google Chrome Framework + 50776104) [0x118cf0828]
+            1   ChromeMain + 50702740 (Google Chrome Framework + 50715836) [0x118ce1cbc]
+              1   ChromeMain + 50909632 (Google Chrome Framework + 50922728) [0x118d144e8]
+                1   ChromeMain + 50703788 (Google Chrome Framework + 50716884) [0x118ce20d4]
+                  1   ChromeMain + 50707340 (Google Chrome Framework + 50720436) [0x118ce2eb4]
+                    1   ChromeMain + 50550072 (Google Chrome Framework + 50563168) [0x118cbc860]
+                      1   ANGLEResetDisplayPlatform + 296576 (libGLESv2.dylib + 859444) [0x10cf25d34]
+                        1   ANGLEResetDisplayPlatform + 2126820 (libGLESv2.dylib + 2689688) [0x10d0e4a98]
+                          1   ANGLEResetDisplayPlatform + 2126452 (libGLESv2.dylib + 2689320) [0x10d0e4928]
+                            1   glLinkProgramARB_Exec + 256 (GLEngine + 502328) [0x217f32a38]
+                              1   gleLinkProgram + 1260 (GLEngine + 1098524) [0x217fc431c]
+                                1   ShLink + 216 (libGLProgrammability.dylib + 822428) [0x217e07c9c]
+                                  1   glpLinkProgram + 224 (libGLProgrammability.dylib + 706020) [0x217deb5e4]
+                                    1   glpASTMergePhase2 + 444 (libGLProgrammability.dylib + 524264) [0x217dbefe8]
+                                      1   phase2AddDef + 228 (libGLProgrammability.dylib + 1006724) [0x217e34c84]
+                                        1   phase2Process + 72 (libGLProgrammability.dylib + 1007024) [0x217e34db0]
+                                          1   phase2Process + 72 (libGLProgrammability.dylib + 1007024) [0x217e34db0]
+                                            1   phase2Process + 72 (libGLProgrammability.dylib + 1007024) [0x217e34db0]
+                                              1   phase2Process + 72 (libGLProgrammability.dylib + 1007024) [0x217e34db0]
+                                                1   phase2Process + 72 (libGLProgrammability.dylib + 1007024) [0x217e34db0]
+                                                  1   phase2Process + 72 (libGLProgrammability.dylib + 1007024) [0x217e34db0]
+                                                    1   phase2Process + 72 (libGLProgrammability.dylib + 1007024) [0x217e34db0]
+                                                      1   phase2Process + 72 (libGLProgrammability.dylib + 1007024) [0x217e34db0]
+                                                        1   phase2Process + 72 (libGLProgrammability.dylib + 1007024) [0x217e34db0]
+                                                          1   phase2Process + 72 (libGLProgrammability.dylib + 1007024) [0x217e34db0]
+                                                            1   phase2Process + 72 (libGLProgrammability.dylib + 1007024) [0x217e34db0]
+                                                              1   phase2Process + 72 (libGLProgrammability.dylib + 1007024) [0x217e34db0]
+                                                                1   phase2Process + 72 (libGLProgrammability.dylib + 1007024) [0x217e34db0]
+                                                                  1   phase2ProcessLValue + 236 (libGLProgrammability.dylib + 1009492) [0x217e35754]
+                                                                    1   phase2AddDef + 228 (libGLProgrammability.dylib + 1006724) [0x217e34c84]
+                                                                      1   phase2Process + 236 (libGLProgrammability.dylib + 1007188) [0x217e34e54]
+                                                                        1   phase2ProcessVariableDeclaration + 52 (libGLProgrammability.dylib + 1008076) [0x217e351cc]
+                                                                          1   lazyPrepareVariableObject + 528 (libGLProgrammability.dylib + 1011260) [0x217e35e3c]
+                                                                            1   glpABIGetTypeSize + 44 (libGLProgrammability.dylib + 516716) [0x217dbd26c]
+                                                                              1   applevec4TypeSize + 144 (libGLProgrammability.dylib + 518260) [0x217dbd874]
+                                                                                1   glpPrimitiveTypeGetNumVec4s + 100 (libGLProgrammability.dylib + 774604) [0x217dfc1cc]
+                                                                                  1   <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+  3   start_wqthread + 0 (libsystem_pthread.dylib + 8892) [0x1b6cc82bc]
+    1   <Requested Thread QoS Default>
+    1   <Kernel mode>
+  1   start_wqthread + 8 (libsystem_pthread.dylib + 8900) [0x1b6cc82c4]
+    1   _pthread_wqthread + 288 (libsystem_pthread.dylib + 13744) [0x1b6cc95b0]
+      1   _dispatch_workloop_worker_thread + 656 (libdispatch.dylib + 91912) [0x1b6b21708]
+        1   _dispatch_lane_invoke + 392 (libdispatch.dylib + 48804) [0x1b6b16ea4]
+          1   _dispatch_lane_serial_drain + 376 (libdispatch.dylib + 45576) [0x1b6b16208]
+            1   _dispatch_source_invoke + 1356 (libdispatch.dylib + 106916) [0x1b6b251a4]
+              1   _dispatch_continuation_pop + 504 (libdispatch.dylib + 28800) [0x1b6b12080]
+                1   _dispatch_client_callout + 20 (libdispatch.dylib + 15276) [0x1b6b0ebac]
+                  1   dispatch_mig_server + 256 (libdispatch.dylib + 137540) [0x1b6b2c944]
+                    1   mach_msg_trap + 8 (libsystem_kernel.dylib + 6484) [0x1b6c91954]
+                      1   <Requested Thread QoS Default>
+
+  Binary Images:
+           0x10287c000 -        0x1028b3fff  com.google.Chrome.helper 100.0.4896.88 (4896.88)    <4C4C4461-5555-3144-A10A-2312213B4CBC>  /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/100.0.4896.88/Helpers/Google Chrome Helper (GPU).app/Contents/MacOS/Google Chrome Helper (GPU)
+           0x102ca8000 -        0x102d1bfff  dyld (940)                                          <86A8BA48-8BB4-3B30-9CDA-051F73C74F44>  /usr/lib/dyld
+           0x102f10000 -        0x102f83fff  com.apple.AppleMetalOpenGLRenderer 1.0 (1)          <561D1F36-51EB-3A8F-972E-15BEEAC26465>  /System/Library/Extensions/AppleMetalOpenGLRenderer.bundle/Contents/MacOS/AppleMetalOpenGLRenderer
+           0x10ce54000 -        0x10dc83fff  libGLESv2.dylib (0)                                 <4C4C4454-5555-3144-A17C-51C9F663ED93>  /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/100.0.4896.88/Libraries/libGLESv2.dylib
+           0x115c84000 -        0x11eb3bfff  com.google.Chrome.framework 100.0.4896.88 (4896.88) <4C4C4434-5555-3144-A15C-F4AE4F6491A7>  /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/100.0.4896.88/Google Chrome Framework
+           0x1b6b0b000 -        0x1b6b51fff  libdispatch.dylib (1324.41.2)                       <3D7A56A3-23BF-3077-B5C6-9CE65CE7333E>  /usr/lib/system/libdispatch.dylib
+           0x1b6c90000 -        0x1b6cc5fff  libsystem_kernel.dylib (8019.41.5)                  <C8524C02-B14F-30BD-A228-C44B4A448E68>  /usr/lib/system/libsystem_kernel.dylib
+           0x1b6cc6000 -        0x1b6cd2fff  libsystem_pthread.dylib (485.40.4)                  <4786E19A-9312-38E6-80EF-9C1394548118>  /usr/lib/system/libsystem_pthread.dylib
+           0x1b6d14000 -        0x1b7257fff  com.apple.CoreFoundation 6.9 (1855.105)             <B2FF96D0-AE99-31EF-9014-FC9964B4F3E0>  /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+           0x1b7c0b000 -        0x1b7ff8fff  com.apple.Foundation 6.9 (1855.105)                 <DE039F1B-FFE5-3644-A8CF-7BA52C32CD73>  /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+           0x1b9776000 -        0x1b984afff  com.apple.framework.IOKit 2.0.2 (1955.40.6)         <9A7140D9-FC80-384B-B098-AA27AD4C405F>  /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+           0x1bc251000 -        0x1bc860fff  com.apple.CoreGraphics 2.0 (1557.3.1)               <BBC0F558-01EC-3B2C-A558-99B027CC43CD>  /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+           0x1bc861000 -        0x1bc95dfff  com.apple.ColorSync 4.13.0 (3521.2.3)               <DFC33257-1359-3E50-A770-44E7C842B927>  /System/Library/Frameworks/ColorSync.framework/Versions/A/ColorSync
+           0x1bdbbc000 -        0x1bdeb9fff  com.apple.QuartzCore 1.11 (962.57.1)                <B7469CDD-CEAE-3CB7-BB88-6C8D274D546A>  /System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore
+           0x1bf528000 -        0x1bf661fff  com.apple.Metal 258.13 (258.13)                     <490922A1-8E7C-331D-BBF8-95DC52C411A6>  /System/Library/Frameworks/Metal.framework/Versions/A/Metal
+           0x1d121e000 -        0x1d124afff  com.apple.IOGPU 35.11 (35.11)                       <B9D08160-8AB3-3A5C-9551-95BB87C87C71>  /System/Library/PrivateFrameworks/IOGPU.framework/Versions/A/IOGPU
+           0x217d3f000 -        0x217eadfff  libGLProgrammability.dylib (19.1.1)                 <2A85D48A-6F02-3F68-B386-83A2ECCC352D>  /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLProgrammability.dylib
+           0x217eae000 -        0x217eb7fff  libGL.dylib (19.1.1)                                <7299554A-A705-3E15-9B91-BADCA52F31F4>  /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
+           0x217eb8000 -        0x218026fff  GLEngine (19.1.1)                                   <2AC316B4-7EFC-300C-BCB4-7E7534405B82>  /System/Library/Frameworks/OpenGL.framework/Versions/A/Resources/GLEngine.bundle/GLEngine
+           0x2180c8000 -        0x2185dbfff  com.apple.AGXMetal13-3 187.57 (187.57)              <99766C17-8110-3AA4-A379-91F73D56CBAA>  /System/Library/Extensions/AGXMetal13_3.bundle/Contents/MacOS/AGXMetal13_3

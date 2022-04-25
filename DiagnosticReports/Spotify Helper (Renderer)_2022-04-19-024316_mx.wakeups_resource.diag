@@ -1,0 +1,90 @@
+Date/Time:        2022-04-19 02:39:33.877 +0200
+End time:         2022-04-19 02:43:16.533 +0200
+OS Version:       macOS 12.0.1 (Build 21A559)
+Architecture:     arm64e
+Report Version:   35
+Incident Identifier: B9E06FB7-C9E4-46C8-A689-AA66E213143B
+
+Data Source:      Microstackshots
+Shared Cache:     A6162D66-93E3-3251-93CC-B11F7C8C830E slid base address 0x1b69c0000, slide 0x369c0000
+
+Command:          Spotify Helper (Renderer)
+Path:             /Applications/Spotify.app/Contents/Frameworks/Spotify Helper (Renderer).app/Contents/MacOS/Spotify Helper (Renderer)
+Identifier:       com.spotify.client.helper.renderer
+Team ID:          2FNC3A47ZF
+Architecture:     arm64
+PID:              52198
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45001 wakeups over the last 223 seconds (202 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45001
+Wakeups duration: 223s
+Duration:         222.66s
+Duration Sampled: 0.00s
+Steps:            1
+
+Hardware model:   MacBookPro17,1
+Active cpus:      8
+HW page size:     16384
+VM page size:     16384
+
+Fan speed:        0 rpm
+Advisory levels:  Battery -> 3, User -> 2, ThermalPressure -> 0, Combined -> 2
+Free disk space:  201.63 GB/460.43 GB, low space threshold 3072 MB
+
+Heaviest stack for the target process:
+  1  thread_start + 8 (libsystem_pthread.dylib + 8912) [0x1b6cc82d0]
+  1  _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x1b6ccd4ec]
+  1  cef_time_delta + 2700140 (Chromium Embedded Framework + 49807656) [0x12af80128]
+  1  cef_time_delta + 2561216 (Chromium Embedded Framework + 49668732) [0x12af5e27c]
+  1  cef_time_delta + 2562040 (Chromium Embedded Framework + 49669556) [0x12af5e5b4]
+  1  cef_time_delta + 2512468 (Chromium Embedded Framework + 49619984) [0x12af52410]
+  1  cef_time_delta + 2698924 (Chromium Embedded Framework + 49806440) [0x12af7fc68]
+  1  cef_time_delta + 2513212 (Chromium Embedded Framework + 49620728) [0x12af526f8]
+  1  cef_time_delta + 2514828 (Chromium Embedded Framework + 49622344) [0x12af52d48]
+  1  cef_time_delta + 2513768 (Chromium Embedded Framework + 49621284) [0x12af52924]
+  1  cef_time_delta + 2417932 (Chromium Embedded Framework + 49525448) [0x12af3b2c8]
+  1  cef_time_delta + 42398536 (Chromium Embedded Framework + 89506052) [0x12d55c104]
+  1  cef_time_delta + 50154776 (Chromium Embedded Framework + 97262292) [0x12dcc1ad4]
+  1  cef_string_map_size + 1245656 (Chromium Embedded Framework + 1812232) [0x1281ba708]
+  1  cef_string_map_size + 1226708 (Chromium Embedded Framework + 1793284) [0x1281b5d04]
+  1  cef_string_map_size + 1237524 (Chromium Embedded Framework + 1804100) [0x1281b8744]
+
+
+Powerstats for:   Spotify Helper (Renderer) (Spotify Helper (Renderer)) [52198]
+UUID:             03D5728E-8860-32DA-A3C1-484A0D5541B9
+Path:             /Applications/Spotify.app/Contents/Frameworks/Spotify Helper (Renderer).app/Contents/MacOS/Spotify Helper (Renderer)
+Identifier:       com.spotify.client.helper.renderer
+Team ID:          2FNC3A47ZF
+Architecture:     arm64
+Footprint:        130.97 MB
+Start time:       2022-04-19 02:40:19.922 +0200
+End time:         2022-04-19 02:40:19.922 +0200
+Num samples:      1 (100%)
+Primary state:    1 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Unspecified, Requested Thread QoS Unspecified, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 1 samples Active
+Power Source:     0 samples on Battery, 1 samples on AC
+  1  thread_start + 8 (libsystem_pthread.dylib + 8912) [0x1b6cc82d0]
+    1  _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x1b6ccd4ec]
+      1  cef_time_delta + 2700140 (Chromium Embedded Framework + 49807656) [0x12af80128]
+        1  cef_time_delta + 2561216 (Chromium Embedded Framework + 49668732) [0x12af5e27c]
+          1  cef_time_delta + 2562040 (Chromium Embedded Framework + 49669556) [0x12af5e5b4]
+            1  cef_time_delta + 2512468 (Chromium Embedded Framework + 49619984) [0x12af52410]
+              1  cef_time_delta + 2698924 (Chromium Embedded Framework + 49806440) [0x12af7fc68]
+                1  cef_time_delta + 2513212 (Chromium Embedded Framework + 49620728) [0x12af526f8]
+                  1  cef_time_delta + 2514828 (Chromium Embedded Framework + 49622344) [0x12af52d48]
+                    1  cef_time_delta + 2513768 (Chromium Embedded Framework + 49621284) [0x12af52924]
+                      1  cef_time_delta + 2417932 (Chromium Embedded Framework + 49525448) [0x12af3b2c8]
+                        1  cef_time_delta + 42398536 (Chromium Embedded Framework + 89506052) [0x12d55c104]
+                          1  cef_time_delta + 50154776 (Chromium Embedded Framework + 97262292) [0x12dcc1ad4]
+                            1  cef_string_map_size + 1245656 (Chromium Embedded Framework + 1812232) [0x1281ba708]
+                              1  cef_string_map_size + 1226708 (Chromium Embedded Framework + 1793284) [0x1281b5d04]
+                                1  cef_string_map_size + 1237524 (Chromium Embedded Framework + 1804100) [0x1281b8744]
+
+  Binary Images:
+           0x1021fc000 -        0x1022abfff  com.spotify.client.helper.renderer (0) <03D5728E-8860-32DA-A3C1-484A0D5541B9>  /Applications/Spotify.app/Contents/Frameworks/Spotify Helper (Renderer).app/Contents/MacOS/Spotify Helper (Renderer)
+           0x128000000 -        0x13154bfff  org.cef.framework 98.1.21.0 (21.0)     <4C4C4416-5555-3144-A1A4-4FE0265F75F0>  /Applications/Spotify.app/Contents/Frameworks/Chromium Embedded Framework.framework/Chromium Embedded Framework
+           0x1b6cc6000 -        0x1b6cd2fff  libsystem_pthread.dylib (485.40.4)     <4786E19A-9312-38E6-80EF-9C1394548118>  /usr/lib/system/libsystem_pthread.dylib

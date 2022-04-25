@@ -1,0 +1,312 @@
+Date/Time:        2022-04-20 16:18:08.682 +0200
+End time:         2022-04-20 16:21:17.514 +0200
+OS Version:       macOS 12.0.1 (Build 21A559)
+Architecture:     arm64e
+Report Version:   35
+Incident Identifier: 0BB334BA-E21C-4417-AEE3-0CE9B606DCE8
+
+Data Source:      Microstackshots
+Shared Cache:     A6162D66-93E3-3251-93CC-B11F7C8C830E slid base address 0x1b69c0000, slide 0x369c0000
+
+Command:          Spotify Helper (Renderer)
+Path:             /Applications/Spotify.app/Contents/Frameworks/Spotify Helper (Renderer).app/Contents/MacOS/Spotify Helper (Renderer)
+Identifier:       com.spotify.client.helper.renderer
+Team ID:          2FNC3A47ZF
+Architecture:     arm64
+PID:              853
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45001 wakeups over the last 189 seconds (238 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45001
+Wakeups duration: 189s
+Duration:         188.83s
+Duration Sampled: 184.53s
+Steps:            17
+
+Hardware model:   MacBookPro17,1
+Active cpus:      8
+HW page size:     16384
+VM page size:     16384
+
+Fan speed:        0 rpm
+Advisory levels:  Battery -> 3, User -> 2, ThermalPressure -> 0, Combined -> 2
+Free disk space:  200.29 GB/460.43 GB, low space threshold 3072 MB
+
+Heaviest stack for the target process:
+  9  start + 520 (dyld + 20724) [0x100c590f4]
+  9  ??? (Spotify Helper (Renderer) + 80728) [0x100a4bb58]
+  9  ??? (Spotify Helper (Renderer) + 372364) [0x100a92e8c]
+  9  cef_execute_process + 172 (Chromium Embedded Framework + 9288) [0x10a25a448]
+  9  ChromeAppModeStart_v6 + 7219084 (Chromium Embedded Framework + 46509536) [0x10ceb2de0]
+  9  ChromeAppModeStart_v6 + 7325732 (Chromium Embedded Framework + 46616184) [0x10cecce78]
+  9  ChromeAppModeStart_v6 + 6742016 (Chromium Embedded Framework + 46032468) [0x10ce3e654]
+  9  ChromeAppModeStart_v6 + 6741768 (Chromium Embedded Framework + 46032220) [0x10ce3e55c]
+  9  ChromeAppModeStart_v6 + 6741532 (Chromium Embedded Framework + 46031984) [0x10ce3e470]
+  9  ChromeAppModeStart_v6 + 6745892 (Chromium Embedded Framework + 46036344) [0x10ce3f578]
+  9  ChromeAppModeStart_v6 + 6743572 (Chromium Embedded Framework + 46034024) [0x10ce3ec68]
+  9  cef_time_delta + 81358008 (Chromium Embedded Framework + 128465524) [0x111cdba74]
+  9  cef_time_delta + 2319536 (Chromium Embedded Framework + 49427052) [0x10d17b26c]
+  9  cef_time_delta + 2493244 (Chromium Embedded Framework + 49600760) [0x10d1a58f8]
+  9  cef_time_delta + 2730336 (Chromium Embedded Framework + 49837852) [0x10d1df71c]
+  9  cef_time_delta + 2734220 (Chromium Embedded Framework + 49841736) [0x10d1e0648]
+  9  -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 236 (Foundation + 413200) [0x1b7c6fe10]
+  9  CFRunLoopRunSpecific + 600 (CoreFoundation + 534164) [0x1b6d96694]
+  6  __CFRunLoopRun + 1944 (CoreFoundation + 538060) [0x1b6d975cc]
+  6  __CFRunLoopDoTimers + 392 (CoreFoundation + 649808) [0x1b6db2a50]
+  6  __CFRunLoopDoTimer + 1076 (CoreFoundation + 651204) [0x1b6db2fc4]
+  6  __CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__ + 32 (CoreFoundation + 652232) [0x1b6db33c8]
+  6  cef_time_delta + 2731484 (Chromium Embedded Framework + 49839000) [0x10d1dfb98]
+  6  cef_time_delta + 2730180 (Chromium Embedded Framework + 49837696) [0x10d1df680]
+  5  cef_time_delta + 2732972 (Chromium Embedded Framework + 49840488) [0x10d1e0168]
+  5  cef_time_delta + 2491144 (Chromium Embedded Framework + 49598660) [0x10d1a50c4]
+  3  cef_time_delta + 2491712 (Chromium Embedded Framework + 49599228) [0x10d1a52fc]
+  3  cef_time_delta + 2417932 (Chromium Embedded Framework + 49525448) [0x10d1932c8]
+  3  cef_string_map_size + 23141556 (Chromium Embedded Framework + 23708132) [0x10b8f41e4]
+  3  cef_time_delta + 2505996 (Chromium Embedded Framework + 49613512) [0x10d1a8ac8]
+  3  cef_time_delta + 63874144 (Chromium Embedded Framework + 110981660) [0x110c2f21c]
+  2  cef_time_delta + 54348592 (Chromium Embedded Framework + 101456108) [0x1103198ec]
+  1  cef_time_delta + 54345120 (Chromium Embedded Framework + 101452636) [0x110318b5c]
+  1  cef_time_delta + 64927964 (Chromium Embedded Framework + 112035480) [0x110d30698]
+  1  cef_time_delta + 64927392 (Chromium Embedded Framework + 112034908) [0x110d3045c]
+  1  cef_time_delta + 64913680 (Chromium Embedded Framework + 112021196) [0x110d2cecc]
+  1  cef_time_delta + 50944356 (Chromium Embedded Framework + 98051872) [0x10ffda720]
+  1  cef_zip_reader_create + 132324 (Chromium Embedded Framework + 481560) [0x10a2cd918]
+  1  cef_string_map_size + 968460 (Chromium Embedded Framework + 1535036) [0x10a3cec3c]
+  1  cef_string_map_size + 971052 (Chromium Embedded Framework + 1537628) [0x10a3cf65c]
+  1  ??? [0x7c07e8b0c8]
+  1  ??? [0x7c07e8b42c]
+  1  ??? [0x7c005baf5c]
+  1  ??? [0x7c07f0a0ec]
+  1  cef_string_map_size + 232800 (Chromium Embedded Framework + 799376) [0x10a31b290]
+  1  cef_string_map_size + 235172 (Chromium Embedded Framework + 801748) [0x10a31bbd4]
+  1  cef_string_map_size + 237688 (Chromium Embedded Framework + 804264) [0x10a31c5a8]
+  1  cef_time_delta + 80519860 (Chromium Embedded Framework + 127627376) [0x111c0f070]
+  1  cef_time_delta + 80252992 (Chromium Embedded Framework + 127360508) [0x111bcddfc]
+  1  cef_time_delta + 54343784 (Chromium Embedded Framework + 101451300) [0x110318624]
+  1  cef_time_delta + 54344100 (Chromium Embedded Framework + 101451616) [0x110318760]
+
+
+Powerstats for:   Spotify Helper (Renderer) (Spotify Helper (Renderer)) [853] [unique pid 100419]
+UUID:             03D5728E-8860-32DA-A3C1-484A0D5541B9
+Path:             /Applications/Spotify.app/Contents/Frameworks/Spotify Helper (Renderer).app/Contents/MacOS/Spotify Helper (Renderer)
+Identifier:       com.spotify.client.helper.renderer
+Team ID:          2FNC3A47ZF
+Architecture:     arm64
+Footprint:        99.20 MB -> 147.72 MB (+48.52 MB) (max 156.58 MB )
+Pageins:          294 pages
+Start time:       2022-04-20 16:18:12.773 +0200
+End time:         2022-04-20 16:21:17.303 +0200
+Num samples:      17 (100%)
+Primary state:    8 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Default, Requested Thread QoS User Interactive, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 17 samples Active
+Power Source:     0 samples on Battery, 17 samples on AC
+  9   start + 520 (dyld + 20724) [0x100c590f4]
+    9   ??? (Spotify Helper (Renderer) + 80728) [0x100a4bb58]
+      9   ??? (Spotify Helper (Renderer) + 372364) [0x100a92e8c]
+        9   cef_execute_process + 172 (Chromium Embedded Framework + 9288) [0x10a25a448]
+          9   ChromeAppModeStart_v6 + 7219084 (Chromium Embedded Framework + 46509536) [0x10ceb2de0]
+            9   ChromeAppModeStart_v6 + 7325732 (Chromium Embedded Framework + 46616184) [0x10cecce78]
+              9   ChromeAppModeStart_v6 + 6742016 (Chromium Embedded Framework + 46032468) [0x10ce3e654]
+                9   ChromeAppModeStart_v6 + 6741768 (Chromium Embedded Framework + 46032220) [0x10ce3e55c]
+                  9   ChromeAppModeStart_v6 + 6741532 (Chromium Embedded Framework + 46031984) [0x10ce3e470]
+                    9   ChromeAppModeStart_v6 + 6745892 (Chromium Embedded Framework + 46036344) [0x10ce3f578]
+                      9   ChromeAppModeStart_v6 + 6743572 (Chromium Embedded Framework + 46034024) [0x10ce3ec68]
+                        9   cef_time_delta + 81358008 (Chromium Embedded Framework + 128465524) [0x111cdba74]
+                          9   cef_time_delta + 2319536 (Chromium Embedded Framework + 49427052) [0x10d17b26c]
+                            9   cef_time_delta + 2493244 (Chromium Embedded Framework + 49600760) [0x10d1a58f8]
+                              9   cef_time_delta + 2730336 (Chromium Embedded Framework + 49837852) [0x10d1df71c]
+                                9   cef_time_delta + 2734220 (Chromium Embedded Framework + 49841736) [0x10d1e0648]
+                                  9   -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 236 (Foundation + 413200) [0x1b7c6fe10]
+                                    9   CFRunLoopRunSpecific + 600 (CoreFoundation + 534164) [0x1b6d96694]
+                                      6   __CFRunLoopRun + 1944 (CoreFoundation + 538060) [0x1b6d975cc]
+                                        6   __CFRunLoopDoTimers + 392 (CoreFoundation + 649808) [0x1b6db2a50]
+                                          6   __CFRunLoopDoTimer + 1076 (CoreFoundation + 651204) [0x1b6db2fc4]
+                                            6   __CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__ + 32 (CoreFoundation + 652232) [0x1b6db33c8]
+                                              6   cef_time_delta + 2731484 (Chromium Embedded Framework + 49839000) [0x10d1dfb98]
+                                                6   cef_time_delta + 2730180 (Chromium Embedded Framework + 49837696) [0x10d1df680]
+                                                  5   cef_time_delta + 2732972 (Chromium Embedded Framework + 49840488) [0x10d1e0168]
+                                                    5   cef_time_delta + 2491144 (Chromium Embedded Framework + 49598660) [0x10d1a50c4]
+                                                      3   cef_time_delta + 2491712 (Chromium Embedded Framework + 49599228) [0x10d1a52fc]
+                                                        3   cef_time_delta + 2417932 (Chromium Embedded Framework + 49525448) [0x10d1932c8]
+                                                          3   cef_string_map_size + 23141556 (Chromium Embedded Framework + 23708132) [0x10b8f41e4]
+                                                            3   cef_time_delta + 2505996 (Chromium Embedded Framework + 49613512) [0x10d1a8ac8]
+                                                              3   cef_time_delta + 63874144 (Chromium Embedded Framework + 110981660) [0x110c2f21c]
+                                                                2   cef_time_delta + 54348592 (Chromium Embedded Framework + 101456108) [0x1103198ec]
+                                                                  1   cef_time_delta + 54345120 (Chromium Embedded Framework + 101452636) [0x110318b5c]
+                                                                    1   cef_time_delta + 64927964 (Chromium Embedded Framework + 112035480) [0x110d30698]
+                                                                      1   cef_time_delta + 64927392 (Chromium Embedded Framework + 112034908) [0x110d3045c]
+                                                                        1   cef_time_delta + 64913680 (Chromium Embedded Framework + 112021196) [0x110d2cecc]
+                                                                          1   cef_time_delta + 50944356 (Chromium Embedded Framework + 98051872) [0x10ffda720]
+                                                                            1   cef_zip_reader_create + 132324 (Chromium Embedded Framework + 481560) [0x10a2cd918]
+                                                                              1   cef_string_map_size + 968460 (Chromium Embedded Framework + 1535036) [0x10a3cec3c]
+                                                                                1   cef_string_map_size + 971052 (Chromium Embedded Framework + 1537628) [0x10a3cf65c]
+                                                                                  1   ??? [0x7c07e8b0c8]
+                                                                                    1   ??? [0x7c07e8b42c]
+                                                                                      1   ??? [0x7c005baf5c]
+                                                                                        1   ??? [0x7c07f0a0ec]
+                                                                                          1   cef_string_map_size + 232800 (Chromium Embedded Framework + 799376) [0x10a31b290]
+                                                                                            1   cef_string_map_size + 235172 (Chromium Embedded Framework + 801748) [0x10a31bbd4]
+                                                                                              1   cef_string_map_size + 237688 (Chromium Embedded Framework + 804264) [0x10a31c5a8]
+                                                                                                1   cef_time_delta + 80519860 (Chromium Embedded Framework + 127627376) [0x111c0f070]
+                                                                                                  1   cef_time_delta + 80252992 (Chromium Embedded Framework + 127360508) [0x111bcddfc]
+                                                                                                    1   cef_time_delta + 54343784 (Chromium Embedded Framework + 101451300) [0x110318624]
+                                                                                                      1   cef_time_delta + 54344100 (Chromium Embedded Framework + 101451616) [0x110318760]
+                                                                  1   cef_time_delta + 54345072 (Chromium Embedded Framework + 101452588) [0x110318b2c]
+                                                                    1   cef_time_delta + 54542652 (Chromium Embedded Framework + 101650168) [0x110348ef8]
+                                                                1   cef_time_delta + 54082320 (Chromium Embedded Framework + 101189836) [0x1102d88cc]
+                                                      1   cef_time_delta + 2491756 (Chromium Embedded Framework + 49599272) [0x10d1a5328]
+                                                        1   cef_time_delta + 2437968 (Chromium Embedded Framework + 49545484) [0x10d19810c]
+                                                          1   cef_time_delta + 2440012 (Chromium Embedded Framework + 49547528) [0x10d198908]
+                                                            1   cef_time_delta + 54764176 (Chromium Embedded Framework + 101871692) [0x11037f04c]
+                                                      1   cef_time_delta + 2491620 (Chromium Embedded Framework + 49599136) [0x10d1a52a0]
+                                                        1   cef_time_delta + 2433244 (Chromium Embedded Framework + 49540760) [0x10d196e98]
+                                                          1   cef_time_delta + 2433684 (Chromium Embedded Framework + 49541200) [0x10d197050]
+                                                            1   cef_time_delta + 2494696 (Chromium Embedded Framework + 49602212) [0x10d1a5ea4]
+                                                              1   cef_time_delta + 2464012 (Chromium Embedded Framework + 49571528) [0x10d19e6c8]
+                                                                1   cef_time_delta + 2462460 (Chromium Embedded Framework + 49569976) [0x10d19e0b8]
+                                                                  1   cef_time_delta + 2476480 (Chromium Embedded Framework + 49583996) [0x10d1a177c]
+                                                                    1   cef_time_delta + 2476820 (Chromium Embedded Framework + 49584336) [0x10d1a18d0]
+                                                                      1   cef_time_delta + 2481316 (Chromium Embedded Framework + 49588832) [0x10d1a2a60]
+                                                  1   cef_time_delta + 2733016 (Chromium Embedded Framework + 49840532) [0x10d1e0194]
+                                                    1   CFSetGetValues + 0 (CoreFoundation + 482160) [0x1b6d89b70]
+                                      2   __CFRunLoopRun + 820 (CoreFoundation + 536936) [0x1b6d97168]
+                                        2   __CFRunLoopDoSources0 + 268 (CoreFoundation + 542708) [0x1b6d987f4]
+                                          2   __CFRunLoopDoSource0 + 208 (CoreFoundation + 543496) [0x1b6d98b08]
+                                            2   __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 28 (CoreFoundation + 543676) [0x1b6d98bbc]
+                                              2   cef_time_delta + 2731564 (Chromium Embedded Framework + 49839080) [0x10d1dfbe8]
+                                                2   cef_time_delta + 2730180 (Chromium Embedded Framework + 49837696) [0x10d1df680]
+                                                  2   cef_time_delta + 2732972 (Chromium Embedded Framework + 49840488) [0x10d1e0168]
+                                                    2   cef_time_delta + 2491144 (Chromium Embedded Framework + 49598660) [0x10d1a50c4]
+                                                      1   cef_time_delta + 2491712 (Chromium Embedded Framework + 49599228) [0x10d1a52fc]
+                                                        1   cef_time_delta + 2417932 (Chromium Embedded Framework + 49525448) [0x10d1932c8]
+                                                          1   cef_time_delta + 17001352 (Chromium Embedded Framework + 64108868) [0x10df7b944]
+                                                            1   cef_time_delta + 60074272 (Chromium Embedded Framework + 107181788) [0x11088f6dc]
+                                                              1   cef_time_delta + 54651512 (Chromium Embedded Framework + 101759028) [0x110363834]
+                                                                1   cef_time_delta + 54652192 (Chromium Embedded Framework + 101759708) [0x110363adc]
+                                                                  1   cef_time_delta + 54653060 (Chromium Embedded Framework + 101760576) [0x110363e40]
+                                                                    1   cef_time_delta + 57127304 (Chromium Embedded Framework + 104234820) [0x1105bff44]
+                                                                      1   cef_time_delta + 54623564 (Chromium Embedded Framework + 101731080) [0x11035cb08]
+                                                                        1   cef_time_delta + 54623500 (Chromium Embedded Framework + 101731016) [0x11035cac8]
+                                                                          1   cef_time_delta + 2222992 (Chromium Embedded Framework + 49330508) [0x10d16394c]
+                                                                            1   cef_time_delta + 2261936 (Chromium Embedded Framework + 49369452) [0x10d16d16c]
+                                                      1   cef_time_delta + 2491620 (Chromium Embedded Framework + 49599136) [0x10d1a52a0]
+                                                        1   cef_time_delta + 2433244 (Chromium Embedded Framework + 49540760) [0x10d196e98]
+                                                          1   cef_time_delta + 2434308 (Chromium Embedded Framework + 49541824) [0x10d1972c0]
+                                                            1   cef_time_delta + 54764104 (Chromium Embedded Framework + 101871620) [0x11037f004]
+                                      1   __CFRunLoopRun + 1212 (CoreFoundation + 537328) [0x1b6d972f0]
+                                        1   __CFRunLoopServiceMachPort + 372 (CoreFoundation + 544312) [0x1b6d98e38]
+                                          1   mach_msg_trap + 8 (libsystem_kernel.dylib + 6484) [0x1b6c91954]
+                                            1   <Kernel mode>
+  8   thread_start + 8 (libsystem_pthread.dylib + 8912) [0x1b6cc82d0]
+    8   _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x1b6ccd4ec]
+      8   cef_time_delta + 2700140 (Chromium Embedded Framework + 49807656) [0x10d1d8128]
+        5   ChromeAppModeStart_v6 + 1259320 (Chromium Embedded Framework + 40549772) [0x10c903d8c]
+          5   cef_time_delta + 2319536 (Chromium Embedded Framework + 49427052) [0x10d17b26c]
+            5   cef_time_delta + 2493244 (Chromium Embedded Framework + 49600760) [0x10d1a58f8]
+              5   cef_time_delta + 2198716 (Chromium Embedded Framework + 49306232) [0x10d15da78]
+                5   cef_time_delta + 2491144 (Chromium Embedded Framework + 49598660) [0x10d1a50c4]
+                  4   cef_time_delta + 2491712 (Chromium Embedded Framework + 49599228) [0x10d1a52fc]
+                    4   cef_time_delta + 2417932 (Chromium Embedded Framework + 49525448) [0x10d1932c8]
+                      3   cef_time_delta + 3894780 (Chromium Embedded Framework + 51002296) [0x10d2fbbb8]
+                        3   cef_time_delta + 2001484 (Chromium Embedded Framework + 49109000) [0x10d12d808]
+                          3   cef_time_delta + 1999192 (Chromium Embedded Framework + 49106708) [0x10d12cf14]
+                            3   cef_time_delta + 2022904 (Chromium Embedded Framework + 49130420) [0x10d132bb4]
+                              3   cef_time_delta + 2035760 (Chromium Embedded Framework + 49143276) [0x10d135dec]
+                                3   cef_time_delta + 2037684 (Chromium Embedded Framework + 49145200) [0x10d136570]
+                                  3   cef_time_delta + 2013956 (Chromium Embedded Framework + 49121472) [0x10d1308c0]
+                                    3   cef_time_delta + 2022904 (Chromium Embedded Framework + 49130420) [0x10d132bb4]
+                                      3   cef_time_delta + 2009480 (Chromium Embedded Framework + 49116996) [0x10d12f744]
+                                        3   cef_string_map_size + 21855292 (Chromium Embedded Framework + 22421868) [0x10b7ba16c]
+                                          2   cef_time_delta + 34455160 (Chromium Embedded Framework + 81562676) [0x10f020c34]
+                                            1   cef_time_delta + 16804428 (Chromium Embedded Framework + 63911944) [0x10df4b808]
+                                              1   ChromeAppModeStart_v6 + 6966492 (Chromium Embedded Framework + 46256944) [0x10ce75330]
+                                                1   _malloc_zone_malloc + 156 (libsystem_malloc.dylib + 124784) [0x1b6afe770]
+                                                  1   cef_time_delta + 2702068 (Chromium Embedded Framework + 49809584) [0x10d1d88b0]
+                                                    1   nanov2_malloc + 64 (libsystem_malloc.dylib + 4800) [0x1b6ae12c0]
+                                                      1   nanov2_allocate + 116 (libsystem_malloc.dylib + 5016) [0x1b6ae1398]
+                                                        1   <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+                                            1   cef_time_delta + 16804300 (Chromium Embedded Framework + 63911816) [0x10df4b788]
+                                              1   cef_time_delta + 16991432 (Chromium Embedded Framework + 64098948) [0x10df79284]
+                                                1   cef_time_delta + 16719748 (Chromium Embedded Framework + 63827264) [0x10df36d40]
+                                                  1   cef_time_delta + 16696336 (Chromium Embedded Framework + 63803852) [0x10df311cc]
+                                                    1   cef_time_delta + 16696104 (Chromium Embedded Framework + 63803620) [0x10df310e4]
+                                                      1   cef_time_delta + 16702112 (Chromium Embedded Framework + 63809628) [0x10df3285c]
+                                                        1   cef_time_delta + 16704520 (Chromium Embedded Framework + 63812036) [0x10df331c4]
+                                                          1   cef_time_delta + 16704900 (Chromium Embedded Framework + 63812416) [0x10df33340]
+                                                            1   cef_time_delta + 2222992 (Chromium Embedded Framework + 49330508) [0x10d16394c]
+                                                              1   cef_time_delta + 2241332 (Chromium Embedded Framework + 49348848) [0x10d1680f0]
+                                                                1   <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+                                          1   cef_time_delta + 34455232 (Chromium Embedded Framework + 81562748) [0x10f020c7c]
+                                            1   cef_time_delta + 15853232 (Chromium Embedded Framework + 62960748) [0x10de6346c]
+                                              1   cef_time_delta + 15844972 (Chromium Embedded Framework + 62952488) [0x10de61428]
+                                                1   cef_time_delta + 16977464 (Chromium Embedded Framework + 64084980) [0x10df75bf4]
+                                                  1   cef_time_delta + 16978796 (Chromium Embedded Framework + 64086312) [0x10df76128]
+                                                    1   cef_time_delta + 16971188 (Chromium Embedded Framework + 64078704) [0x10df74370]
+                                                      1   cef_time_delta + 16996640 (Chromium Embedded Framework + 64104156) [0x10df7a6dc]
+                                                        1   cef_time_delta + 16786304 (Chromium Embedded Framework + 63893820) [0x10df4713c]
+                                                          1   cef_time_delta + 16866760 (Chromium Embedded Framework + 63974276) [0x10df5ab84]
+                                                            1   cef_time_delta + 16419628 (Chromium Embedded Framework + 63527144) [0x10deed8e8]
+                                                              1   <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+                      1   cef_string_map_size + 12913504 (Chromium Embedded Framework + 13480080) [0x10af33090]
+                        1   cef_time_delta + 16979424 (Chromium Embedded Framework + 64086940) [0x10df7639c]
+                          1   cef_time_delta + 16971516 (Chromium Embedded Framework + 64079032) [0x10df744b8]
+                            1   cef_time_delta + 16993416 (Chromium Embedded Framework + 64100932) [0x10df79a44]
+                              1   cef_time_delta + 16973532 (Chromium Embedded Framework + 64081048) [0x10df74c98]
+                                1   cef_time_delta + 16716096 (Chromium Embedded Framework + 63823612) [0x10df35efc]
+                                  1   <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+                  1   cef_time_delta + 2491620 (Chromium Embedded Framework + 49599136) [0x10d1a52a0]
+                    1   cef_time_delta + 2433244 (Chromium Embedded Framework + 49540760) [0x10d196e98]
+                      1   cef_time_delta + 2434308 (Chromium Embedded Framework + 49541824) [0x10d1972c0]
+                        1   cef_time_delta + 2435448 (Chromium Embedded Framework + 49542964) [0x10d197734]
+                          1   cef_time_delta + 2452432 (Chromium Embedded Framework + 49559948) [0x10d19b98c]
+                            1   cef_time_delta + 2867332 (Chromium Embedded Framework + 49974848) [0x10d200e40]
+                              1   thread_info + 132 (libsystem_kernel.dylib + 35540) [0x1b6c98ad4]
+                                1   mach_msg_trap + 8 (libsystem_kernel.dylib + 6484) [0x1b6c91954]
+                                  1   <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+        2   cef_time_delta + 81280148 (Chromium Embedded Framework + 128387664) [0x111cc8a50]
+          2   cef_time_delta + 81284592 (Chromium Embedded Framework + 128392108) [0x111cc9bac]
+            2   cef_time_delta + 16371880 (Chromium Embedded Framework + 63479396) [0x10dee1e64]
+              2   cef_time_delta + 16598120 (Chromium Embedded Framework + 63705636) [0x10df19224]
+                2   cef_time_delta + 16600572 (Chromium Embedded Framework + 63708088) [0x10df19bb8]
+                  2   cef_string_map_size + 20645200 (Chromium Embedded Framework + 21211776) [0x10b692a80]
+                    1   cef_time_delta + 13184820 (Chromium Embedded Framework + 60292336) [0x10dbd7cf0]
+                      1   <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+                    1   cef_time_delta + 13184724 (Chromium Embedded Framework + 60292240) [0x10dbd7c90]
+                      1   cef_time_delta + 13185096 (Chromium Embedded Framework + 60292612) [0x10dbd7e04]
+                        1   cef_string_map_size + 15405104 (Chromium Embedded Framework + 15971680) [0x10b193560]
+                          1   cef_string_map_size + 14946288 (Chromium Embedded Framework + 15512864) [0x10b123520]
+                            1   <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+        1   cef_time_delta + 2561216 (Chromium Embedded Framework + 49668732) [0x10d1b627c]
+          1   cef_time_delta + 2562040 (Chromium Embedded Framework + 49669556) [0x10d1b65b4]
+            1   cef_time_delta + 2512468 (Chromium Embedded Framework + 49619984) [0x10d1aa410]
+              1   cef_time_delta + 2698924 (Chromium Embedded Framework + 49806440) [0x10d1d7c68]
+                1   cef_time_delta + 2513212 (Chromium Embedded Framework + 49620728) [0x10d1aa6f8]
+                  1   cef_time_delta + 2514828 (Chromium Embedded Framework + 49622344) [0x10d1aad48]
+                    1   cef_time_delta + 2513768 (Chromium Embedded Framework + 49621284) [0x10d1aa924]
+                      1   cef_time_delta + 2417932 (Chromium Embedded Framework + 49525448) [0x10d1932c8]
+                        1   cef_string_map_size + 719912 (Chromium Embedded Framework + 1286488) [0x10a392158]
+                          1   cef_string_map_size + 714720 (Chromium Embedded Framework + 1281296) [0x10a390d10]
+                            1   cef_string_map_size + 578968 (Chromium Embedded Framework + 1145544) [0x10a36fac8]
+                              1   cef_string_map_size + 9062936 (Chromium Embedded Framework + 9629512) [0x10ab86f48]
+                                1   cef_string_map_size + 9066164 (Chromium Embedded Framework + 9632740) [0x10ab87be4]
+                                  1   cef_string_map_size + 9082896 (Chromium Embedded Framework + 9649472) [0x10ab8bd40]
+                                    1   cef_string_map_size + 9091368 (Chromium Embedded Framework + 9657944) [0x10ab8de58]
+                                      1   cef_string_map_size + 9099232 (Chromium Embedded Framework + 9665808) [0x10ab8fd10]
+                                        1   cef_string_map_size + 7743140 (Chromium Embedded Framework + 8309716) [0x10aa44bd4]
+                                          1   cef_string_map_size + 7751404 (Chromium Embedded Framework + 8317980) [0x10aa46c1c]
+                                            1   cef_string_map_size + 7754276 (Chromium Embedded Framework + 8320852) [0x10aa47754]
+                                              1   cef_string_map_size + 7770952 (Chromium Embedded Framework + 8337528) [0x10aa4b878]
+                                                1   <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+
+  Binary Images:
+           0x100a38000 -        0x100ae7fff  com.spotify.client.helper.renderer (0)  <03D5728E-8860-32DA-A3C1-484A0D5541B9>  /Applications/Spotify.app/Contents/Frameworks/Spotify Helper (Renderer).app/Contents/MacOS/Spotify Helper (Renderer)
+           0x100c54000 -        0x100cc7fff  dyld (940)                              <86A8BA48-8BB4-3B30-9CDA-051F73C74F44>  /usr/lib/dyld
+           0x10a258000 -        0x1137a3fff  org.cef.framework 98.1.21.0 (21.0)      <4C4C4416-5555-3144-A1A4-4FE0265F75F0>  /Applications/Spotify.app/Contents/Frameworks/Chromium Embedded Framework.framework/Chromium Embedded Framework
+           0x1b6ae0000 -        0x1b6b0afff  libsystem_malloc.dylib (374.40.6)       <0B1B0684-D16A-3CEE-A9E6-126236D29C51>  /usr/lib/system/libsystem_malloc.dylib
+           0x1b6c90000 -        0x1b6cc5fff  libsystem_kernel.dylib (8019.41.5)      <C8524C02-B14F-30BD-A228-C44B4A448E68>  /usr/lib/system/libsystem_kernel.dylib
+           0x1b6cc6000 -        0x1b6cd2fff  libsystem_pthread.dylib (485.40.4)      <4786E19A-9312-38E6-80EF-9C1394548118>  /usr/lib/system/libsystem_pthread.dylib
+           0x1b6d14000 -        0x1b7257fff  com.apple.CoreFoundation 6.9 (1855.105) <B2FF96D0-AE99-31EF-9014-FC9964B4F3E0>  /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+           0x1b7c0b000 -        0x1b7ff8fff  com.apple.Foundation 6.9 (1855.105)     <DE039F1B-FFE5-3644-A8CF-7BA52C32CD73>  /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation

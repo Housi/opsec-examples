@@ -1,0 +1,140 @@
+Date/Time:        2022-04-24 19:45:32.246 +0200
+End time:         2022-04-24 22:51:54.175 +0200
+OS Version:       macOS 12.0.1 (Build 21A559)
+Architecture:     arm64e
+Report Version:   35
+Incident Identifier: 835313B2-18DB-4D14-9285-E0397ECC3A1D
+
+Data Source:      Microstackshots
+Shared Cache:     A6162D66-93E3-3251-93CC-B11F7C8C830E slid base address 0x18e51c000, slide 0xe51c000
+
+Command:          Google Chrome Helper
+Path:             /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/100.0.4896.127/Helpers/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper
+Identifier:       com.google.Chrome.helper
+Version:          100.0.4896.127 (4896.127)
+Team ID:          EQHXZ8M8AV
+Architecture:     arm64
+Parent:           UNKNOWN [589]
+PID:              601
+
+Event:            disk writes
+Action taken:     none
+Writes:           2147.49 MB of file backed memory dirtied over 11182 seconds (192.05 KB per second average), exceeding limit of 24.86 KB per second over 86400 seconds
+Writes limit:     2147.48 MB
+Limit duration:   86400s
+Writes caused:    2147.49 MB
+Writes duration:  11182s
+Duration:         11181.93s
+Duration Sampled: 5288.32s
+Steps:            32 ( (10.49 MB/step))
+
+Hardware model:   MacBookPro17,1
+Active cpus:      8
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 2, User -> 2, ThermalPressure -> 0, Combined -> 2
+Free disk space:  200.55 GB/460.43 GB, low space threshold 3072 MB
+
+Heaviest stack for the target process:
+  32  thread_start + 8 (libsystem_pthread.dylib + 8912) [0x18e8242d0]
+  32  _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x18e8294ec]
+  32  ChromeMain + 50860352 (Google Chrome Framework + 50873448) [0x11a46c468]
+  29  ChromeMain + 50711612 (Google Chrome Framework + 50724708) [0x11a447f64]
+  29  ChromeMain + 50712272 (Google Chrome Framework + 50725368) [0x11a4481f8]
+  29  ChromeMain + 50652004 (Google Chrome Framework + 50665100) [0x11a43968c]
+  29  ChromeMain + 50858896 (Google Chrome Framework + 50871992) [0x11a46beb8]
+  23  ChromeMain + 50653568 (Google Chrome Framework + 50666664) [0x11a439ca8]
+  23  ChromeMain + 50655644 (Google Chrome Framework + 50668740) [0x11a43a4c4]
+  23  ChromeMain + 50499336 (Google Chrome Framework + 50512432) [0x11a414230]
+  23  ChromeMain + 50727460 (Google Chrome Framework + 50740556) [0x11a44bd4c]
+  23  ChromeMain + 50726820 (Google Chrome Framework + 50739916) [0x11a44bacc]
+  23  ChromeMain + 54902868 (Google Chrome Framework + 54915964) [0x11a84737c]
+  16  ChromeMain + 54991232 (Google Chrome Framework + 55004328) [0x11a85cca8]
+  16  pwrite + 8 (libsystem_kernel.dylib + 20452) [0x18e7f0fe4]
+
+
+Powerstats for:   Google Chrome Helper (Chrome Helper) [601]
+UUID:             4C4C446B-5555-3144-A106-8EA90C6574DC
+Path:             /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/100.0.4896.127/Helpers/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper
+Identifier:       com.google.Chrome.helper
+Version:          100.0.4896.127 (4896.127)
+Team ID:          EQHXZ8M8AV
+Architecture:     arm64
+Parent:           UNKNOWN [589]
+UID:              501
+Footprint:        35.61 MB
+Pageins:          4 pages
+Start time:       2022-04-24 21:23:28.759 +0200
+End time:         2022-04-24 22:51:37.083 +0200
+Num samples:      32 (100%)
+Primary state:    32 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Unspecified, Requested Thread QoS Unspecified, Override Thread QoS Unspecified
+User Activity:    10 samples Idle, 22 samples Active
+Power Source:     32 samples on Battery, 0 samples on AC
+  32  thread_start + 8 (libsystem_pthread.dylib + 8912) [0x18e8242d0]
+    32  _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x18e8294ec]
+      32  ChromeMain + 50860352 (Google Chrome Framework + 50873448) [0x11a46c468]
+        29  ChromeMain + 50711612 (Google Chrome Framework + 50724708) [0x11a447f64]
+          29  ChromeMain + 50712272 (Google Chrome Framework + 50725368) [0x11a4481f8]
+            29  ChromeMain + 50652004 (Google Chrome Framework + 50665100) [0x11a43968c]
+              29  ChromeMain + 50858896 (Google Chrome Framework + 50871992) [0x11a46beb8]
+                23  ChromeMain + 50653568 (Google Chrome Framework + 50666664) [0x11a439ca8]
+                  23  ChromeMain + 50655644 (Google Chrome Framework + 50668740) [0x11a43a4c4]
+                    23  ChromeMain + 50499336 (Google Chrome Framework + 50512432) [0x11a414230]
+                      23  ChromeMain + 50727460 (Google Chrome Framework + 50740556) [0x11a44bd4c]
+                        23  ChromeMain + 50726820 (Google Chrome Framework + 50739916) [0x11a44bacc]
+                          23  ChromeMain + 54902868 (Google Chrome Framework + 54915964) [0x11a84737c]
+                            16  ChromeMain + 54991232 (Google Chrome Framework + 55004328) [0x11a85cca8]
+                              16  pwrite + 8 (libsystem_kernel.dylib + 20452) [0x18e7f0fe4]
+                            6   ChromeMain + 54950844 (Google Chrome Framework + 54963940) [0x11a852ee4]
+                              5   ChromeMain + 54987928 (Google Chrome Framework + 55001024) [0x11a85bfc0]
+                                5   ChromeMain + 54992940 (Google Chrome Framework + 55006036) [0x11a85d354]
+                                  5   pwrite + 8 (libsystem_kernel.dylib + 20452) [0x18e7f0fe4]
+                              1   ChromeMain + 54987904 (Google Chrome Framework + 55001000) [0x11a85bfa8]
+                                1   ChromeMain + 54999544 (Google Chrome Framework + 55012640) [0x11a85ed20]
+                                  1   ChromeMain + 50155384 (Google Chrome Framework + 50168480) [0x11a3c02a0]
+                                    1   ChromeMain + 50838260 (Google Chrome Framework + 50851356) [0x11a466e1c]
+                                      1   __open + 8 (libsystem_kernel.dylib + 9172) [0x18e7ee3d4]
+                            1   ChromeMain + 54997296 (Google Chrome Framework + 55010392) [0x11a85e458]
+                              1   pwrite + 8 (libsystem_kernel.dylib + 20452) [0x18e7f0fe4]
+                6   ChromeMain + 50653796 (Google Chrome Framework + 50666892) [0x11a439d8c]
+                  6   ChromeMain + 50657784 (Google Chrome Framework + 50670880) [0x11a43ad20]
+                    6   ChromeMain + 50499336 (Google Chrome Framework + 50512432) [0x11a414230]
+                      5   ChromeMain + 71157884 (Google Chrome Framework + 71170980) [0x11b7c7ba4]
+                        5   ChromeMain + 69320568 (Google Chrome Framework + 69333664) [0x11b6072a0]
+                          5   ChromeMain + 69354704 (Google Chrome Framework + 69367800) [0x11b60f7f8]
+                            5   ChromeMain + 69378016 (Google Chrome Framework + 69391112) [0x11b615308]
+                              5   ChromeMain + 69562596 (Google Chrome Framework + 69575692) [0x11b64240c]
+                                5   ChromeMain + 69543412 (Google Chrome Framework + 69556508) [0x11b63d91c]
+                                  4   ChromeMain + 69386692 (Google Chrome Framework + 69399788) [0x11b6174ec]
+                                    4   ChromeMain + 69495608 (Google Chrome Framework + 69508704) [0x11b631e60]
+                                      4   pwrite + 8 (libsystem_kernel.dylib + 20452) [0x18e7f0fe4]
+                                  1   ChromeMain + 69386960 (Google Chrome Framework + 69400056) [0x11b6175f8]
+                                    1   fsync + 8 (libsystem_kernel.dylib + 21440) [0x18e7f13c0]
+                      1   ChromeMain + 71175176 (Google Chrome Framework + 71188272) [0x11b7cbf30]
+                        1   ChromeMain + 69320568 (Google Chrome Framework + 69333664) [0x11b6072a0]
+                          1   ChromeMain + 69354704 (Google Chrome Framework + 69367800) [0x11b60f7f8]
+                            1   ChromeMain + 69378016 (Google Chrome Framework + 69391112) [0x11b615308]
+                              1   ChromeMain + 69562596 (Google Chrome Framework + 69575692) [0x11b64240c]
+                                1   ChromeMain + 69543412 (Google Chrome Framework + 69556508) [0x11b63d91c]
+                                  1   ChromeMain + 69386692 (Google Chrome Framework + 69399788) [0x11b6174ec]
+                                    1   ChromeMain + 69495608 (Google Chrome Framework + 69508704) [0x11b631e60]
+                                      1   pwrite + 8 (libsystem_kernel.dylib + 20452) [0x18e7f0fe4]
+        3   ChromeMain + 50711480 (Google Chrome Framework + 50724576) [0x11a447ee0]
+          3   ChromeMain + 50712272 (Google Chrome Framework + 50725368) [0x11a4481f8]
+            3   ChromeMain + 50652004 (Google Chrome Framework + 50665100) [0x11a43968c]
+              3   ChromeMain + 50858896 (Google Chrome Framework + 50871992) [0x11a46beb8]
+                3   ChromeMain + 50653796 (Google Chrome Framework + 50666892) [0x11a439d8c]
+                  3   ChromeMain + 50657784 (Google Chrome Framework + 50670880) [0x11a43ad20]
+                    3   ChromeMain + 50499336 (Google Chrome Framework + 50512432) [0x11a414230]
+                      3   ChromeMain + 17465560 (Google Chrome Framework + 17478656) [0x118493400]
+                        3   ChromeMain + 50184572 (Google Chrome Framework + 50197668) [0x11a3c74a4]
+                          3   ChromeMain + 50181324 (Google Chrome Framework + 50194420) [0x11a3c67f4]
+                            3   ChromeMain + 50180936 (Google Chrome Framework + 50194032) [0x11a3c6670]
+                              3   write + 8 (libsystem_kernel.dylib + 21820) [0x18e7f153c]
+
+  Binary Images:
+           0x104060000 -                ???  com.google.Chrome.helper 100.0.4896.127 (4896.127)    <4C4C446B-5555-3144-A106-8EA90C6574DC>  /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/100.0.4896.127/Helpers/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper
+           0x1173e8000 -        0x120293fff  com.google.Chrome.framework 100.0.4896.127 (4896.127) <4C4C440F-5555-3144-A1A5-2A7FE5D4812C>  /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/100.0.4896.127/Google Chrome Framework
+           0x18e7ec000 -        0x18e821fff  libsystem_kernel.dylib (8019.41.5)                    <C8524C02-B14F-30BD-A228-C44B4A448E68>  /usr/lib/system/libsystem_kernel.dylib
+           0x18e822000 -        0x18e82efff  libsystem_pthread.dylib (485.40.4)                    <4786E19A-9312-38E6-80EF-9C1394548118>  /usr/lib/system/libsystem_pthread.dylib

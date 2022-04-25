@@ -1,0 +1,185 @@
+Date/Time:        2022-04-25 20:26:28.335 +0200
+End time:         2022-04-25 20:27:12.931 +0200
+OS Version:       macOS 12.0.1 (Build 21A559)
+Architecture:     arm64e
+Report Version:   35
+Incident Identifier: EF7B653A-6D81-4A73-AFBA-EECE7159B951
+
+Data Source:      Microstackshots
+Shared Cache:     B5084610-AFE4-3485-BADE-628C4468B057 slid base address 0x7ff80ad18000, slide 0xad18000
+
+Command:          OpenMTP Helper (Renderer)
+Path:             /Applications/OpenMTP.app/Contents/Frameworks/OpenMTP Helper (Renderer).app/Contents/MacOS/OpenMTP Helper (Renderer)
+Identifier:       io.ganeshrvel.openmtp.helper.Renderer
+Version:          ??? (3.1.15)
+Team ID:          6UR4H85SA2
+Architecture:     x86_64 (translated)
+PID:              19761
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45001 wakeups over the last 45 seconds (1009 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45001
+Wakeups duration: 45s
+Duration:         44.60s
+Duration Sampled: 0.00s
+Steps:            1
+
+Hardware model:   MacBookPro17,1
+Active cpus:      8
+HW page size:     16384
+VM page size:     16384
+
+Fan speed:        0 rpm
+Advisory levels:  Battery -> 2, User -> 2, ThermalPressure -> 0, Combined -> 2
+Free disk space:  216.97 GB/460.43 GB, low space threshold 3072 MB
+
+Heaviest stack for the target process:
+  1  ??? [0x104dfe000]
+  1  ??? [0x9]
+  1  start + 462 (dyld + 21758) [0x2050174fe]
+  1  ??? (OpenMTP Helper (Renderer) + 4581) [0x104dff1e5]
+  1  ElectronMain + 74 (Electron Framework + 10954) [0x1151d7aca]
+  1  ElectronInitializeICUandStartNode + 13858261 (Electron Framework + 13869269) [0x115f0f0d5]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 42492085 (Electron Framework + 68768149) [0x11936a195]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 2844805 (Electron Framework + 29120869) [0x116d9a965]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 76188039 (Electron Framework + 102464103) [0x11b38ca67]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 17187914 (Electron Framework + 43463978) [0x117b4852a]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 17360385 (Electron Framework + 43636449) [0x117b726e1]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 17614594 (Electron Framework + 43890658) [0x117bb07e2]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 17618889 (Electron Framework + 43894953) [0x117bb18a9]
+  1  -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 216 (Foundation + 395102) [0x7ff80be8875e]
+  1  CFRunLoopRunSpecific + 567 (CoreFoundation + 514057) [0x7ff80b0f9809]
+  1  __CFRunLoopRun + 897 (CoreFoundation + 516703) [0x7ff80b0fa25f]
+  1  __CFRunLoopDoSources0 + 242 (CoreFoundation + 522307) [0x7ff80b0fb843]
+  1  __CFRunLoopDoSource0 + 180 (CoreFoundation + 522960) [0x7ff80b0fbad0]
+  1  __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17 (CoreFoundation + 523112) [0x7ff80b0fbb68]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 17615743 (Electron Framework + 43891807) [0x117bb0c5f]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 17599178 (Electron Framework + 43875242) [0x117bacbaa]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 17617342 (Electron Framework + 43893406) [0x117bb129e]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 17358241 (Electron Framework + 43634305) [0x117b71e81]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 17359066 (Electron Framework + 43635130) [0x117b721ba]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 17291410 (Electron Framework + 43567474) [0x117b61972]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 20894872 (Electron Framework + 47170936) [0x117ed1578]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 20786931 (Electron Framework + 47062995) [0x117eb6fd3]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 20785097 (Electron Framework + 47061161) [0x117eb68a9]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 60180102 (Electron Framework + 86456166) [0x11a448766]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 52154840 (Electron Framework + 78430904) [0x119ca12b8]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 52155195 (Electron Framework + 78431259) [0x119ca141b]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 52157007 (Electron Framework + 78433071) [0x119ca1b2f]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 42896676 (Electron Framework + 69172740) [0x1193cce04]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 42897951 (Electron Framework + 69174015) [0x1193cd2ff]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 43804542 (Electron Framework + 70080606) [0x1194aa85e]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 43152816 (Electron Framework + 69428880) [0x11940b690]
+  1  v8::internal::MicrotaskQueue::PerformCheckpoint(v8::Isolate*) + 32 (Electron Framework + 16155008) [0x11613d180]
+  1  v8::internal::MicrotaskQueue::RunMicrotasks(v8::internal::Isolate*) + 443 (Electron Framework + 16155515) [0x11613d37b]
+  1  v8::internal::Execution::TryCall(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, int, v8::internal::Handle<v8::internal::Object>*, v8::internal::Execution::MessageHandling, v8::internal::MaybeHandle<v8::internal::Object>*, bool) + 576 (Electron Framework + 15987120) [0x1161141b0]
+  1  v8::internal::Execution::TryCall(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, int, v8::internal::Handle<v8::internal::Object>*, v8::internal::Execution::MessageHandling, v8::internal::MaybeHandle<v8::internal::Object>*, bool) + 355 (Electron Framework + 15986899) [0x1161140d3]
+  1  v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, int, v8::internal::Handle<v8::internal::Object>*) + 2383 (Electron Framework + 15984575) [0x1161137bf]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 41560 (Electron Framework + 26317624) [0x116aee338]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 182178 (Electron Framework + 26458242) [0x116b10882]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 488472 (Electron Framework + 26764536) [0x116b5b4f8]
+  1  v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) + 66664 (Electron Framework + 20205672) [0x11651a068]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 46463746 (Electron Framework + 72739810) [0x119733be2]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 59935162 (Electron Framework + 86211226) [0x11a40ca9a]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 59934508 (Electron Framework + 86210572) [0x11a40c80c]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 59924826 (Electron Framework + 86200890) [0x11a40a23a]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 60077497 (Electron Framework + 86353561) [0x11a42f699]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 60069484 (Electron Framework + 86345548) [0x11a42d74c]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 1573344 (Electron Framework + 27849408) [0x116c642c0]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 1562582 (Electron Framework + 27838646) [0x116c618b6]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 60072687 (Electron Framework + 86348751) [0x11a42e3cf]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 60070846 (Electron Framework + 86346910) [0x11a42dc9e]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 60082887 (Electron Framework + 86358951) [0x11a430ba7]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 61914434 (Electron Framework + 88190498) [0x11a5efe22]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 54198221 (Electron Framework + 80474285) [0x119e940ad]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 54126116 (Electron Framework + 80402180) [0x119e82704]
+  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 51918640 (Electron Framework + 78194704) [0x119c67810]
+  1  ??? (runtime + 62660) [0x7ff7ffc194c4]
+
+
+Powerstats for:   OpenMTP Helper (Renderer) (Electron Helper (Renderer)) [19761]
+UUID:             50CCCCA0-7101-3917-B005-87CDE7351DDF
+Path:             /Applications/OpenMTP.app/Contents/Frameworks/OpenMTP Helper (Renderer).app/Contents/MacOS/OpenMTP Helper (Renderer)
+Identifier:       io.ganeshrvel.openmtp.helper.Renderer
+Version:          ??? (3.1.15)
+Team ID:          6UR4H85SA2
+Architecture:     x86_64 (translated)
+Footprint:        93.62 MB
+Start time:       2022-04-25 20:26:31.707 +0200
+End time:         2022-04-25 20:26:31.707 +0200
+Num samples:      1 (100%)
+Primary state:    1 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Default, Requested Thread QoS User Interactive, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 1 samples Active
+Power Source:     1 samples on Battery, 0 samples on AC
+  1  ??? [0x104dfe000]
+    1  ??? [0x9]
+      1  start + 462 (dyld + 21758) [0x2050174fe]
+        1  ??? (OpenMTP Helper (Renderer) + 4581) [0x104dff1e5]
+          1  ElectronMain + 74 (Electron Framework + 10954) [0x1151d7aca]
+            1  ElectronInitializeICUandStartNode + 13858261 (Electron Framework + 13869269) [0x115f0f0d5]
+              1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 42492085 (Electron Framework + 68768149) [0x11936a195]
+                1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 2844805 (Electron Framework + 29120869) [0x116d9a965]
+                  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 76188039 (Electron Framework + 102464103) [0x11b38ca67]
+                    1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 17187914 (Electron Framework + 43463978) [0x117b4852a]
+                      1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 17360385 (Electron Framework + 43636449) [0x117b726e1]
+                        1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 17614594 (Electron Framework + 43890658) [0x117bb07e2]
+                          1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 17618889 (Electron Framework + 43894953) [0x117bb18a9]
+                            1  -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 216 (Foundation + 395102) [0x7ff80be8875e]
+                              1  CFRunLoopRunSpecific + 567 (CoreFoundation + 514057) [0x7ff80b0f9809]
+                                1  __CFRunLoopRun + 897 (CoreFoundation + 516703) [0x7ff80b0fa25f]
+                                  1  __CFRunLoopDoSources0 + 242 (CoreFoundation + 522307) [0x7ff80b0fb843]
+                                    1  __CFRunLoopDoSource0 + 180 (CoreFoundation + 522960) [0x7ff80b0fbad0]
+                                      1  __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17 (CoreFoundation + 523112) [0x7ff80b0fbb68]
+                                        1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 17615743 (Electron Framework + 43891807) [0x117bb0c5f]
+                                          1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 17599178 (Electron Framework + 43875242) [0x117bacbaa]
+                                            1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 17617342 (Electron Framework + 43893406) [0x117bb129e]
+                                              1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 17358241 (Electron Framework + 43634305) [0x117b71e81]
+                                                1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 17359066 (Electron Framework + 43635130) [0x117b721ba]
+                                                  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 17291410 (Electron Framework + 43567474) [0x117b61972]
+                                                    1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 20894872 (Electron Framework + 47170936) [0x117ed1578]
+                                                      1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 20786931 (Electron Framework + 47062995) [0x117eb6fd3]
+                                                        1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 20785097 (Electron Framework + 47061161) [0x117eb68a9]
+                                                          1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 60180102 (Electron Framework + 86456166) [0x11a448766]
+                                                            1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 52154840 (Electron Framework + 78430904) [0x119ca12b8]
+                                                              1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 52155195 (Electron Framework + 78431259) [0x119ca141b]
+                                                                1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 52157007 (Electron Framework + 78433071) [0x119ca1b2f]
+                                                                  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 42896676 (Electron Framework + 69172740) [0x1193cce04]
+                                                                    1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 42897951 (Electron Framework + 69174015) [0x1193cd2ff]
+                                                                      1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 43804542 (Electron Framework + 70080606) [0x1194aa85e]
+                                                                        1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 43152816 (Electron Framework + 69428880) [0x11940b690]
+                                                                          1  v8::internal::MicrotaskQueue::PerformCheckpoint(v8::Isolate*) + 32 (Electron Framework + 16155008) [0x11613d180]
+                                                                            1  v8::internal::MicrotaskQueue::RunMicrotasks(v8::internal::Isolate*) + 443 (Electron Framework + 16155515) [0x11613d37b]
+                                                                              1  v8::internal::Execution::TryCall(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, int, v8::internal::Handle<v8::internal::Object>*, v8::internal::Execution::MessageHandling, v8::internal::MaybeHandle<v8::internal::Object>*, bool) + 576 (Electron Framework + 15987120) [0x1161141b0]
+                                                                                1  v8::internal::Execution::TryCall(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, int, v8::internal::Handle<v8::internal::Object>*, v8::internal::Execution::MessageHandling, v8::internal::MaybeHandle<v8::internal::Object>*, bool) + 355 (Electron Framework + 15986899) [0x1161140d3]
+                                                                                  1  v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, int, v8::internal::Handle<v8::internal::Object>*) + 2383 (Electron Framework + 15984575) [0x1161137bf]
+                                                                                    1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 41560 (Electron Framework + 26317624) [0x116aee338]
+                                                                                      1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 182178 (Electron Framework + 26458242) [0x116b10882]
+                                                                                        1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 488472 (Electron Framework + 26764536) [0x116b5b4f8]
+                                                                                          1  v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) + 66664 (Electron Framework + 20205672) [0x11651a068]
+                                                                                            1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 46463746 (Electron Framework + 72739810) [0x119733be2]
+                                                                                              1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 59935162 (Electron Framework + 86211226) [0x11a40ca9a]
+                                                                                                1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 59934508 (Electron Framework + 86210572) [0x11a40c80c]
+                                                                                                  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 59924826 (Electron Framework + 86200890) [0x11a40a23a]
+                                                                                                    1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 60077497 (Electron Framework + 86353561) [0x11a42f699]
+                                                                                                      1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 60069484 (Electron Framework + 86345548) [0x11a42d74c]
+                                                                                                        1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 1573344 (Electron Framework + 27849408) [0x116c642c0]
+                                                                                                          1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 1562582 (Electron Framework + 27838646) [0x116c618b6]
+                                                                                                            1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 60072687 (Electron Framework + 86348751) [0x11a42e3cf]
+                                                                                                              1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 60070846 (Electron Framework + 86346910) [0x11a42dc9e]
+                                                                                                                1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 60082887 (Electron Framework + 86358951) [0x11a430ba7]
+                                                                                                                  1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 61914434 (Electron Framework + 88190498) [0x11a5efe22]
+                                                                                                                    1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 54198221 (Electron Framework + 80474285) [0x119e940ad]
+                                                                                                                      1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 54126116 (Electron Framework + 80402180) [0x119e82704]
+                                                                                                                        1  v8::internal::SetupIsolateDelegate::SetupHeap(v8::internal::Heap*) + 51918640 (Electron Framework + 78194704) [0x119c67810]
+                                                                                                                          1  ??? (runtime + 62660) [0x7ff7ffc194c4]
+
+  Binary Images:
+           0x104dfe000 -        0x104e3afff  io.ganeshrvel.openmtp.helper.Renderer (3.1.15) <50CCCCA0-7101-3917-B005-87CDE7351DDF>  /Applications/OpenMTP.app/Contents/Frameworks/OpenMTP Helper (Renderer).app/Contents/MacOS/OpenMTP Helper (Renderer)
+           0x1151d5000 -        0x11cc1ffff  com.github.Electron.framework (10.1.5)         <BD7A4915-3786-32C7-B365-C4D6B8800E39>  /Applications/OpenMTP.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework
+           0x205012000 -        0x20508dfff  dyld (940)                                     <1A6AE033-9438-33C0-8077-988FD885250A>  /usr/lib/dyld
+        0x7ff7ffc0a000 -     0x7ff7ffc49fff  runtime (254.5.3)                              <9F5D65BE-D8D0-3979-BB05-E651A67E785C>  /usr/libexec/rosetta/runtime
+        0x7ff80b07c000 -     0x7ff80b57cfff  com.apple.CoreFoundation 6.9 (1855.105)        <AFCC752E-074D-340F-890C-263EFD2DA77F>  /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+        0x7ff80be28000 -     0x7ff80c1e2fff  com.apple.Foundation 6.9 (1855.105)            <D7FD0214-4BBB-3D84-88F7-820B25A6E16C>  /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation

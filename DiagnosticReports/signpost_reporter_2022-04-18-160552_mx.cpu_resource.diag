@@ -1,0 +1,485 @@
+Date/Time:        2022-04-18 16:04:06.657 +0200
+End time:         2022-04-18 16:05:52.102 +0200
+OS Version:       macOS 12.0.1 (Build 21A559)
+Architecture:     arm64e
+Report Version:   35
+Incident Identifier: E61D5AC3-3691-446F-B836-9800A196674E
+
+Data Source:      Microstackshots
+Shared Cache:     B5084610-AFE4-3485-BADE-628C4468B057 slid base address 0x7ff816844000, slide 0x16844000
+Shared Cache:     A6162D66-93E3-3251-93CC-B11F7C8C830E slid base address 0x1b69c0000, slide 0x369c0000
+
+Command:          signpost_reporter
+Path:             /usr/libexec/signpost_reporter
+Codesigning ID:   com.apple.signpost_reporter
+Architecture:     arm64
+PID:              38456
+
+Event:            cpu usage
+Action taken:     none
+CPU:              90 seconds cpu time over 105 seconds (85% cpu average), exceeding limit of 50% cpu over 180 seconds
+CPU limit:        90s
+Limit duration:   180s
+CPU used:         90s
+CPU duration:     105s
+Duration:         105.45s
+Duration Sampled: 105.10s
+Steps:            72
+
+Hardware model:   MacBookPro17,1
+Active cpus:      8
+HW page size:     16384
+VM page size:     16384
+
+Fan speed:        0 rpm
+Advisory levels:  Battery -> 3, User -> 2, ThermalPressure -> 0, Combined -> 2
+Free disk space:  203.65 GB/460.43 GB, low space threshold 3072 MB
+
+Heaviest stack for the target process:
+  43  start_wqthread + 8 (libsystem_pthread.dylib + 8900) [0x1b6cc82c4]
+  43  _pthread_wqthread + 288 (libsystem_pthread.dylib + 13744) [0x1b6cc95b0]
+  43  _dispatch_workloop_worker_thread + 656 (libdispatch.dylib + 91912) [0x1b6b21708]
+  43  _dispatch_lane_invoke + 392 (libdispatch.dylib + 48804) [0x1b6b16ea4]
+  43  _dispatch_lane_serial_drain + 672 (libdispatch.dylib + 45872) [0x1b6b16330]
+  43  _dispatch_client_callout + 20 (libdispatch.dylib + 15276) [0x1b6b0ebac]
+  43  _dispatch_call_block_and_release + 32 (libdispatch.dylib + 7776) [0x1b6b0ce60]
+  43  __43-[OSLogEventStream activateStreamFromDate:]_block_invoke + 580 (LoggingSupport + 37248) [0x1d66a5180]
+  43  -[OSLogEventStream _activateStreamInRange:] + 516 (LoggingSupport + 38696) [0x1d66a5728]
+  43  -[_OSLogIndex enumerateEntriesInRange:options:usingCatalogFilter:usingBlock:] + 760 (LoggingSupport + 39880) [0x1d66a5bc8]
+  43  -[_OSLogIndexEnumerator enumerateTracepointsInRange:timesync:options:usingBlock:] + 5104 (LoggingSupport + 47152) [0x1d66a7830]
+  43  -[_OSLogTracepointBuffer enumerateEventsFromTime:to:options:usingBlock:] + 200 (LoggingSupport + 69320) [0x1d66acec8]
+  43  __81-[_OSLogIndexEnumerator enumerateTracepointsInRange:timesync:options:usingBlock:]_block_invoke + 76 (LoggingSupport + 69496) [0x1d66acf78]
+  42  __77-[_OSLogIndex enumerateEntriesInRange:options:usingCatalogFilter:usingBlock:]_block_invoke + 424 (LoggingSupport + 70000) [0x1d66ad170]
+  42  __43-[OSLogEventStream _activateStreamInRange:]_block_invoke + 184 (LoggingSupport + 74576) [0x1d66ae350]
+  42  __112-[SignpostSupportObjectExtractor(OSLogEventStreamProcessing) _processLogEventStream:startDate:endDate:errorOut:]_block_invoke + 176 (SignpostCollection + 29740) [0x1d6c8942c]
+  20  -[SignpostSupportObjectExtractor(OSLogEventStreamProcessing) _processOSLogEventProxy:] + 1016 (SignpostCollection + 28540) [0x1d6c88f7c]
+  11  -[SignpostEvent(LoggingSupport) initWithOSLogEventProxy:] + 1312 (SignpostCollection + 9884) [0x1d6c8469c]
+  4   -[SignpostEvent(LoggingSupport) _parseMetadata:] + 428 (SignpostCollection + 12212) [0x1d6c84fb4]
+  4   -[SignpostEvent(LoggingSupport) _processName:formatterName:formatType:value:] + 452 (SignpostCollection + 13576) [0x1d6c85508]
+  4   -[NSNumberFormatter numberFromString:] + 64 (Foundation + 917364) [0x1b7ceaf74]
+  4   -[NSNumberFormatter getObjectValue:forString:errorDescription:] + 340 (Foundation + 1019540) [0x1b7d03e94]
+  2   getObjectValue + 1336 (Foundation + 1877012) [0x1b7dd5414]
+  2   -[NSNumberFormatter maximum] + 80 (Foundation + 1021756) [0x1b7d0473c]
+  1   -[__NSDictionaryM objectForKey:] + 156 (CoreFoundation + 141312) [0x1b6d36800]
+
+
+Powerstats for:   signpost_reporter [38456]
+UUID:             E30EB063-344B-3E49-8F2B-3921F6BB9F31
+Path:             /usr/libexec/signpost_reporter
+Codesigning ID:   com.apple.signpost_reporter
+Shared Cache:     A6162D66-93E3-3251-93CC-B11F7C8C830E slid base address 0x1b69c0000, slide 0x369c0000
+Architecture:     arm64
+Footprint:        10.31 MB -> 8592 KB (-1968 KB) (max 18.31 MB )
+Pageins:          227 pages
+Start time:       2022-04-18 16:04:07.959 +0200
+End time:         2022-04-18 16:05:50.056 +0200
+Num samples:      44 (61%)
+Primary state:    42 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Background, Requested Thread QoS Background, Override Thread QoS Unspecified
+User Activity:    44 samples Idle, 0 samples Active
+Power Source:     0 samples on Battery, 44 samples on AC
+  43  start_wqthread + 8 (libsystem_pthread.dylib + 8900) [0x1b6cc82c4]
+    43  _pthread_wqthread + 288 (libsystem_pthread.dylib + 13744) [0x1b6cc95b0]
+      43  _dispatch_workloop_worker_thread + 656 (libdispatch.dylib + 91912) [0x1b6b21708]
+        43  _dispatch_lane_invoke + 392 (libdispatch.dylib + 48804) [0x1b6b16ea4]
+          43  _dispatch_lane_serial_drain + 672 (libdispatch.dylib + 45872) [0x1b6b16330]
+            43  _dispatch_client_callout + 20 (libdispatch.dylib + 15276) [0x1b6b0ebac]
+              43  _dispatch_call_block_and_release + 32 (libdispatch.dylib + 7776) [0x1b6b0ce60]
+                43  __43-[OSLogEventStream activateStreamFromDate:]_block_invoke + 580 (LoggingSupport + 37248) [0x1d66a5180]
+                  43  -[OSLogEventStream _activateStreamInRange:] + 516 (LoggingSupport + 38696) [0x1d66a5728]
+                    43  -[_OSLogIndex enumerateEntriesInRange:options:usingCatalogFilter:usingBlock:] + 760 (LoggingSupport + 39880) [0x1d66a5bc8]
+                      43  -[_OSLogIndexEnumerator enumerateTracepointsInRange:timesync:options:usingBlock:] + 5104 (LoggingSupport + 47152) [0x1d66a7830]
+                        43  -[_OSLogTracepointBuffer enumerateEventsFromTime:to:options:usingBlock:] + 200 (LoggingSupport + 69320) [0x1d66acec8]
+                          43  __81-[_OSLogIndexEnumerator enumerateTracepointsInRange:timesync:options:usingBlock:]_block_invoke + 76 (LoggingSupport + 69496) [0x1d66acf78]
+                            42  __77-[_OSLogIndex enumerateEntriesInRange:options:usingCatalogFilter:usingBlock:]_block_invoke + 424 (LoggingSupport + 70000) [0x1d66ad170]
+                              42  __43-[OSLogEventStream _activateStreamInRange:]_block_invoke + 184 (LoggingSupport + 74576) [0x1d66ae350]
+                                42  __112-[SignpostSupportObjectExtractor(OSLogEventStreamProcessing) _processLogEventStream:startDate:endDate:errorOut:]_block_invoke + 176 (SignpostCollection + 29740) [0x1d6c8942c]
+                                  20  -[SignpostSupportObjectExtractor(OSLogEventStreamProcessing) _processOSLogEventProxy:] + 1016 (SignpostCollection + 28540) [0x1d6c88f7c]
+                                    11  -[SignpostEvent(LoggingSupport) initWithOSLogEventProxy:] + 1312 (SignpostCollection + 9884) [0x1d6c8469c]
+                                      4   -[SignpostEvent(LoggingSupport) _parseMetadata:] + 428 (SignpostCollection + 12212) [0x1d6c84fb4]
+                                        4   -[SignpostEvent(LoggingSupport) _processName:formatterName:formatType:value:] + 452 (SignpostCollection + 13576) [0x1d6c85508]
+                                          4   -[NSNumberFormatter numberFromString:] + 64 (Foundation + 917364) [0x1b7ceaf74]
+                                            4   -[NSNumberFormatter getObjectValue:forString:errorDescription:] + 340 (Foundation + 1019540) [0x1b7d03e94]
+                                              2   getObjectValue + 1336 (Foundation + 1877012) [0x1b7dd5414]
+                                                2   -[NSNumberFormatter maximum] + 80 (Foundation + 1021756) [0x1b7d0473c]
+                                                  1   -[__NSDictionaryM objectForKey:] + 156 (CoreFoundation + 141312) [0x1b6d36800]
+                                                  1   objc_msgSend + 76 (libobjc.A.dylib + 25612) [0x1b6b5840c]
+                                                    1   <Kernel mode>
+                                              2   getObjectValue + 1096 (Foundation + 1876772) [0x1b7dd5324]
+                                                2   CFNumberFormatterCreateNumberFromString + 168 (CoreFoundation + 1136392) [0x1b6e29708]
+                                                  2   CFNumberFormatterGetValueFromString + 576 (CoreFoundation + 1061012) [0x1b6e17094]
+                                                    1   unum_parseDecimal + 184 (libicucore.A.dylib + 2247468) [0x1b9371b2c]
+                                                      1   icu::Formattable::getDecimalNumber(UErrorCode&) + 92 (libicucore.A.dylib + 1343932) [0x1b92951bc]
+                                                        1   icu::Formattable::internalGetCharString(UErrorCode&) + 616 (libicucore.A.dylib + 1344608) [0x1b9295460]
+                                                          1   icu::CharString::appendInvariantChars(char16_t const*, int, UErrorCode&) + 112 (libicucore.A.dylib + 39804) [0x1b9156b7c]
+                                                            1   icu::CharString::ensureCapacity(int, int, UErrorCode&) + 188 (libicucore.A.dylib + 38540) [0x1b915668c]
+                                                    1   unum_parseDecimal + 172 (libicucore.A.dylib + 2247456) [0x1b9371b20]
+                                                      1   ??? (libicucore.A.dylib + 2246772) [0x1b9371874]
+                                                        1   icu::DecimalFormat::parse(icu::UnicodeString const&, icu::Formattable&, icu::ParsePosition&) const + 256 (libicucore.A.dylib + 1191932) [0x1b926fffc]
+                                                          1   icu::numparse::impl::NumberParserImpl::parse(icu::UnicodeString const&, int, bool, icu::numparse::impl::ParsedNumber&, UErrorCode&) const + 120 (libicucore.A.dylib + 1675316) [0x1b92e6034]
+                                                            1   icu::numparse::impl::NumberParserImpl::parseGreedy(icu::StringSegment&, icu::numparse::impl::ParsedNumber&, UErrorCode&) const + 208 (libicucore.A.dylib + 1675692) [0x1b92e61ac]
+                                                              1   ??? (libicucore.A.dylib + 1664772) [0x1b92e3704]
+                                                                1   icu::number::impl::DecimalQuantity::adjustMagnitude(int) + 52 (libicucore.A.dylib + 1520640) [0x1b92c0400]
+                                      2   -[SignpostEvent(LoggingSupport) _parseMetadata:] + 756 (SignpostCollection + 12540) [0x1d6c850fc]
+                                        2   -[NSString stringByReplacingOccurrencesOfString:withString:options:range:] + 116 (Foundation + 200032) [0x1b7c3bd60]
+                                          2   CFStringFindAndReplace + 428 (CoreFoundation + 473340) [0x1b6d878fc]
+                                            1   CFStringFindWithOptionsAndLocale + 3228 (CoreFoundation + 54224) [0x1b6d213d0]
+                                            1   CFStringFindWithOptionsAndLocale + 2760 (CoreFoundation + 53756) [0x1b6d211fc]
+                                      2   -[SignpostEvent(LoggingSupport) _parseMetadata:] + 144 (SignpostCollection + 11928) [0x1d6c84e98]
+                                        2   -[__NSCFString UTF8String] + 76 (CoreFoundation + 391356) [0x1b6d738bc]
+                                          2   bytesInEncoding + 200 (Foundation + 158572) [0x1b7c31b6c]
+                                            2   __CFDataInit + 852 (CoreFoundation + 1214300) [0x1b6e3c75c]
+                                              1   CFDataReplaceBytes + 400 (CoreFoundation + 247272) [0x1b6d505e8]
+                                              1   _platform_memmove + 0 (libsystem_platform.dylib + 16656) [0x1b6ce4110]
+                                      2   -[SignpostEvent(LoggingSupport) _parseMetadata:] + 720 (SignpostCollection + 12504) [0x1d6c850d8]
+                                        1   -[NSString stringByReplacingOccurrencesOfString:withString:options:range:] + 116 (Foundation + 200032) [0x1b7c3bd60]
+                                          1   CFStringFindAndReplace + 428 (CoreFoundation + 473340) [0x1b6d878fc]
+                                            1   CFStringFindWithOptionsAndLocale + 3228 (CoreFoundation + 54224) [0x1b6d213d0]
+                                        1   -[NSString stringByReplacingOccurrencesOfString:withString:options:range:] + 80 (Foundation + 199996) [0x1b7c3bd3c]
+                                          1   CFStringCreateMutableCopy + 296 (CoreFoundation + 320204) [0x1b6d622cc]
+                                            1   CFStringCreateMutable + 80 (CoreFoundation + 78524) [0x1b6d272bc]
+                                              1   _CFRuntimeCreateInstance + 332 (CoreFoundation + 16656) [0x1b6d18110]
+                                                1   _malloc_zone_calloc + 88 (libsystem_malloc.dylib + 125032) [0x1b6afe868]
+                                                  1   szone_malloc_should_clear + 92 (libsystem_malloc.dylib + 9620) [0x1b6ae2594]
+                                                    1   tiny_malloc_should_clear + 224 (libsystem_malloc.dylib + 14204) [0x1b6ae377c]
+                                                      1   tiny_malloc_from_free_list + 308 (libsystem_malloc.dylib + 16016) [0x1b6ae3e90]
+                                      1   -[SignpostEvent(LoggingSupport) _parseMetadata:] + 332 (SignpostCollection + 12116) [0x1d6c84f54]
+                                        1   CFStringCreateWithBytes + 48 (CoreFoundation + 65828) [0x1b6d24124]
+                                          1   __CFStringCreateImmutableFunnel3 + 1768 (CoreFoundation + 14456) [0x1b6d17878]
+                                            1   _CFRuntimeCreateInstance + 332 (CoreFoundation + 16656) [0x1b6d18110]
+                                              1   _malloc_zone_calloc + 88 (libsystem_malloc.dylib + 125032) [0x1b6afe868]
+                                                1   szone_malloc_should_clear + 92 (libsystem_malloc.dylib + 9620) [0x1b6ae2594]
+                                                  1   tiny_malloc_should_clear + 224 (libsystem_malloc.dylib + 14204) [0x1b6ae377c]
+                                                    1   tiny_malloc_from_free_list + 436 (libsystem_malloc.dylib + 16144) [0x1b6ae3f10]
+                                    7   -[SignpostEvent(LoggingSupport) initWithOSLogEventProxy:] + 1236 (SignpostCollection + 9808) [0x1d6c84650]
+                                      3   +[SignpostSupportMetadataSegment(LoggingSupport) placeholderArrayWithOSLogEventProxy:] + 812 (SignpostCollection + 11396) [0x1d6c84c84]
+                                        3   -[OSLogMessagePlaceholder dealloc] + 76 (LoggingSupport + 96972) [0x1d66b3acc]
+                                          2   free_tiny + 212 (libsystem_malloc.dylib + 25408) [0x1b6ae6340]
+                                          1   _objc_rootDealloc + 36 (libobjc.A.dylib + 34852) [0x1b6b5a824]
+                                      1   +[SignpostSupportMetadataSegment(LoggingSupport) placeholderArrayWithOSLogEventProxy:] + 764 (SignpostCollection + 11348) [0x1d6c84c54]
+                                        1   -[SignpostSupportMetadataSegment initWithArgumentObject:typeNamespace:type:tokens:stringPrefix:] + 180 (SignpostSupport + 11636) [0x1e3560d74]
+                                          1   objc_storeStrong + 84 (libobjc.A.dylib + 48304) [0x1b6b5dcb0]
+                                      1   +[SignpostSupportMetadataSegment(LoggingSupport) placeholderArrayWithOSLogEventProxy:] + 656 (SignpostCollection + 11240) [0x1d6c84be8]
+                                        1   DYLD-STUB$$objc_msgSend + 0 (LoggingSupport + 361224) [0x1d66f4308]
+                                      1   +[SignpostSupportMetadataSegment(LoggingSupport) placeholderArrayWithOSLogEventProxy:] + 616 (SignpostCollection + 11200) [0x1d6c84bc0]
+                                        1   -[__NSPlaceholderArray initWithArray:copyItems:] + 108 (CoreFoundation + 466240) [0x1b6d85d40]
+                                          1   -[NSArray initWithArray:range:copyItems:] + 408 (CoreFoundation + 181716) [0x1b6d405d4]
+                                            1   -[__NSPlaceholderArray initWithObjects:count:] + 28 (CoreFoundation + 18008) [0x1b6d18658]
+                                      1   +[SignpostSupportMetadataSegment(LoggingSupport) placeholderArrayWithOSLogEventProxy:] + 536 (SignpostCollection + 11120) [0x1d6c84b70]
+                                        1   -[OSLogMessagePlaceholder tokens] + 272 (LoggingSupport + 96164) [0x1d66b37a4]
+                                          1   _CFStringCreateWithBytesNoCopy + 48 (CoreFoundation + 1222680) [0x1b6e3e818]
+                                            1   __CFStringCreateImmutableFunnel3 + 1768 (CoreFoundation + 14456) [0x1b6d17878]
+                                              1   DYLD-STUB$$object_setClass + 8 (CoreFoundation + 1980532) [0x1b6ef7874]
+                                    2   -[SignpostEvent(LoggingSupport) initWithOSLogEventProxy:] + 868 (SignpostCollection + 9440) [0x1d6c844e0]
+                                      2   _compose_log_message + 680 (LoggingSupport + 83212) [0x1d66b050c]
+                                        2   os_log_fmt_compose + 1208 (LoggingSupport + 84908) [0x1d66b0bac]
+                                          2   _os_log_fmt_plugin_annotated + 208 (LoggingSupport + 91836) [0x1d66b26bc]
+                                            2   OSLogCopyFormattedString + 24 (liblog_signpost.description.dylib + 15576) [0x1f5585cd8]
+                                              2   SignpostFormattedString + 276 (liblog_signpost.description.dylib + 15880) [0x1f5585e08]
+                                                2   +[NSString stringWithFormat:] + 76 (Foundation + 113548) [0x1b7c26b8c]
+                                                  2   _CFStringCreateWithFormatAndArgumentsReturningMetadata + 172 (CoreFoundation + 1523828) [0x1b6e88074]
+                                                    2   __CFStringAppendFormatCore + 10584 (CoreFoundation + 201964) [0x1b6d454ec]
+                                                      2   _NSDescriptionWithLocaleFunc + 48 (Foundation + 53852) [0x1b7c1825c]
+                                                        1   objc_msgSend + 76 (libobjc.A.dylib + 25612) [0x1b6b5840c]
+                                                        1   objc_msgSend + 8 (libobjc.A.dylib + 25544) [0x1b6b583c8]
+                                  14  -[SignpostSupportObjectExtractor(OSLogEventStreamProcessing) _processOSLogEventProxy:] + 1048 (SignpostCollection + 28572) [0x1d6c88f9c]
+                                    11  -[SignpostSupportObjectExtractor _processSignpostEvent:shouldReport:] + 1040 (SignpostSupport + 14124) [0x1e356172c]
+                                      7   -[SignpostSupportObjectExtractor _generateIntervalFromEnd:shouldReport:] + 100 (SignpostSupport + 17492) [0x1e3562454]
+                                        7   -[SignpostIntervalBuilder processEndEvent:isAnimation:] + 236 (SignpostSupport + 18368) [0x1e35627c0]
+                                          7   _dispatch_lane_barrier_sync_invoke_and_complete + 56 (libdispatch.dylib + 77312) [0x1b6b1de00]
+                                            7   _dispatch_client_callout + 20 (libdispatch.dylib + 15276) [0x1b6b0ebac]
+                                              4   __55-[SignpostIntervalBuilder processEndEvent:isAnimation:]_block_invoke + 292 (SignpostSupport + 18788) [0x1e3562964]
+                                                3   -[SignpostCAInstrumentationProcessor handleSignpostInterval:] + 2012 (SignpostSupport + 25948) [0x1e356455c]
+                                                  3   -[SignpostCAInstrumentationProcessor _handleFrameLifetimeInterval:isLong:] + 80 (SignpostSupport + 79124) [0x1e3571514]
+                                                    1   -[SignpostCAInstrumentationProcessor _cleanupStateWithSeed:] + 292 (SignpostSupport + 77508) [0x1e3570ec4]
+                                                      1   _objc_rootDealloc + 80 (libobjc.A.dylib + 34896) [0x1b6b5a850]
+                                                        1   objc_destructInstance + 80 (libobjc.A.dylib + 34992) [0x1b6b5a8b0]
+                                                          1   object_cxxDestructFromClass(objc_object*, objc_class*) + 116 (libobjc.A.dylib + 71888) [0x1b6b638d0]
+                                                            1   -[SignpostFrameAccumulatedState .cxx_destruct] + 56 (SignpostSupport + 76132) [0x1e3570964]
+                                                              1   -[__NSDictionaryM dealloc] + 148 (CoreFoundation + 188368) [0x1b6d41fd0]
+                                                                1   cow_cleanup + 172 (CoreFoundation + 188620) [0x1b6d420cc]
+                                                                  1   -[__NSArrayM dealloc] + 276 (CoreFoundation + 141996) [0x1b6d36aac]
+                                                                    1   __RELEASE_OBJECTS_IN_THE_ARRAY__ + 116 (CoreFoundation + 142196) [0x1b6d36b74]
+                                                                      1   _objc_rootDealloc + 80 (libobjc.A.dylib + 34896) [0x1b6b5a850]
+                                                                        1   objc_destructInstance + 80 (libobjc.A.dylib + 34992) [0x1b6b5a8b0]
+                                                                          1   objc_release + 116 (libobjc.A.dylib + 34740) [0x1b6b5a7b4]
+                                                    1   -[SignpostCAInstrumentationProcessor _cleanupStateWithSeed:] + 248 (SignpostSupport + 77464) [0x1e3570e98]
+                                                      1   -[__NSCFNumber unsignedLongLongValue] + 44 (CoreFoundation + 437148) [0x1b6d7eb9c]
+                                                        1   CFNumberGetValue + 240 (CoreFoundation + 121604) [0x1b6d31b04]
+                                                          1   __CFNumberGetValueCompat + 252 (CoreFoundation + 344312) [0x1b6d680f8]
+                                                    1   -[SignpostCAInstrumentationProcessor _cleanupStateWithSeed:] + 112 (SignpostSupport + 77328) [0x1e3570e10]
+                                                      1   -[NSDictionary allKeys] + 140 (CoreFoundation + 471244) [0x1b6d870cc]
+                                                        1   -[__NSDictionaryM getObjects:andKeys:count:] + 192 (CoreFoundation + 145852) [0x1b6d379bc]
+                                                1   -[SignpostCAInstrumentationProcessor handleSignpostInterval:] + 748 (SignpostSupport + 24684) [0x1e356406c]
+                                                  1   -[SignpostRenderServerRenderInterval initWithRenderServerRenderInterval:] + 280 (SignpostSupport + 155740) [0x1e358405c]
+                                                    1   -[SignpostEvent _numberArgumentWithName:] + 76 (SignpostSupport + 39952) [0x1e3567c10]
+                                                      1   -[SignpostEvent _argumentObjectWithName:expectedClass:] + 32 (SignpostSupport + 40040) [0x1e3567c68]
+                                                        1   -[SignpostEvent _argumentObjectWithName:] + 88 (SignpostSupport + 40220) [0x1e3567d1c]
+                                                          1   +[NSString stringWithFormat:] + 76 (Foundation + 113548) [0x1b7c26b8c]
+                                                            1   _CFStringCreateWithFormatAndArgumentsReturningMetadata + 188 (CoreFoundation + 1523844) [0x1b6e88084]
+                                                              1   _CFNonObjCStringCreateCopy + 556 (CoreFoundation + 43628) [0x1b6d1ea6c]
+                                                                1   __CFStringCreateImmutableFunnel3 + 2264 (CoreFoundation + 14952) [0x1b6d17a68]
+                                              1   __55-[SignpostIntervalBuilder processEndEvent:isAnimation:]_block_invoke + 244 (SignpostSupport + 18740) [0x1e3562934]
+                                                1   -[SignpostIntervalBuilder _processCompositeInterval:] + 0 (SignpostSupport + 23160) [0x1e3563a78]
+                                              1   __55-[SignpostIntervalBuilder processEndEvent:isAnimation:]_block_invoke + 196 (SignpostSupport + 18692) [0x1e3562904]
+                                                1   -[SignpostInterval initWithBeginEvent:endEvent:] + 2040 (SignpostSupport + 21968) [0x1e35635d0]
+                                                  1   -[SignpostObject initWithSubsystem:category:name:signpostId:scope:timebaseRatio:attributes:] + 156 (SignpostSupport + 22624) [0x1e3563860]
+                                                    1   -[SignpostSupportObject initWithSubsystem:category:timebaseRatio:] + 140 (SignpostSupport + 11200) [0x1e3560bc0]
+                                                      1   objc_msgSend + 64 (libobjc.A.dylib + 25600) [0x1b6b58400]
+                                              1   __55-[SignpostIntervalBuilder processEndEvent:isAnimation:]_block_invoke + 64 (SignpostSupport + 18560) [0x1e3562880]
+                                                1   -[SignpostIntervalBuilder _matchingEventForEvent:removeIfFound:] + 760 (SignpostSupport + 19624) [0x1e3562ca8]
+                                                  1   -[SignpostEvent _key] + 168 (SignpostSupport + 16932) [0x1e3562224]
+                                                    1   +[NSString stringWithFormat:] + 76 (Foundation + 113548) [0x1b7c26b8c]
+                                                      1   _CFStringCreateWithFormatAndArgumentsReturningMetadata + 172 (CoreFoundation + 1523828) [0x1b6e88074]
+                                                        1   __CFStringAppendFormatCore + 8148 (CoreFoundation + 199528) [0x1b6d44b68]
+                                                          1   objc_opt_respondsToSelector + 0 (libobjc.A.dylib + 177880) [0x1b6b7d6d8]
+                                      3   -[SignpostSupportObjectExtractor _generateIntervalFromEnd:shouldReport:] + 672 (SignpostSupport + 18064) [0x1e3562690]
+                                        2   ??? (signpost_reporter + 31788) [0x100073c2c]
+                                          2   ??? (signpost_reporter + 30348) [0x10007368c]
+                                            2   ??? (signpost_reporter + 42608) [0x100076670]
+                                              2   ??? (signpost_reporter + 43468) [0x1000769cc]
+                                                1   ??? (signpost_reporter + 41716) [0x1000762f4]
+                                                  1   -[__NSDictionaryM setObject:forKeyedSubscript:] + 508 (CoreFoundation + 301956) [0x1b6d5db84]
+                                                    1   objc_msgSend + 64 (libobjc.A.dylib + 25600) [0x1b6b58400]
+                                                1   ??? (signpost_reporter + 41612) [0x10007628c]
+                                                  1   -[__NSDictionaryM objectForKeyedSubscript:] + 184 (CoreFoundation + 292740) [0x1b6d5b784]
+                                                    1   objc_msgSend + 64 (libobjc.A.dylib + 25600) [0x1b6b58400]
+                                        1   ??? (signpost_reporter + 31768) [0x100073c18]
+                                          1   -[SignpostCAStallAggregationBuilder handleSignpostInterval:] + 84 (SignpostSupport + 23892) [0x1e3563d54]
+                                            1   -[SignpostCAInstrumentationProcessor handleSignpostInterval:] + 56 (SignpostSupport + 23992) [0x1e3563db8]
+                                              1   -[__NSCFString isEqualToString:] + 0 (CoreFoundation + 380936) [0x1b6d71008]
+                                      1   -[SignpostSupportObjectExtractor _generateIntervalFromEnd:shouldReport:] + 652 (SignpostSupport + 18044) [0x1e356267c]
+                                        1   -[__NSMallocBlock__ retain] + 24 (libsystem_blocks.dylib + 6964) [0x1b6a11b34]
+                                    2   -[SignpostSupportObjectExtractor _processSignpostEvent:shouldReport:] + 412 (SignpostSupport + 13496) [0x1e35614b8]
+                                      1   ??? (signpost_reporter + 32008) [0x100073d08]
+                                        1   ??? (signpost_reporter + 30348) [0x10007368c]
+                                          1   ??? (signpost_reporter + 42608) [0x100076670]
+                                            1   ??? (signpost_reporter + 43648) [0x100076a80]
+                                              1   ??? (signpost_reporter + 41612) [0x10007628c]
+                                                1   -[__NSDictionaryM objectForKeyedSubscript:] + 116 (CoreFoundation + 292672) [0x1b6d5b740]
+                                                  1   ??? (signpost_reporter + 40008) [0x100075c48]
+                                      1   ??? (signpost_reporter + 31988) [0x100073cf4]
+                                        1   -[SignpostCAStallAggregationBuilder handleSignpostEvent:] + 84 (SignpostSupport + 38180) [0x1e3567524]
+                                          1   -[SignpostCAInstrumentationProcessor handleSignpostEvent:] + 76 (SignpostSupport + 38300) [0x1e356759c]
+                                            1   -[SignpostContextInfo initWithContextInfoEvent:] + 128 (SignpostSupport + 154304) [0x1e3583ac0]
+                                              1   -[SignpostEvent _numberArgumentWithName:] + 76 (SignpostSupport + 39952) [0x1e3567c10]
+                                                1   -[SignpostEvent _argumentObjectWithName:expectedClass:] + 32 (SignpostSupport + 40040) [0x1e3567c68]
+                                                  1   -[SignpostEvent _argumentObjectWithName:] + 88 (SignpostSupport + 40220) [0x1e3567d1c]
+                                                    1   +[NSString stringWithFormat:] + 76 (Foundation + 113548) [0x1b7c26b8c]
+                                                      1   _CFStringCreateWithFormatAndArgumentsReturningMetadata + 172 (CoreFoundation + 1523828) [0x1b6e88074]
+                                                        1   __CFStringAppendFormatCore + 7632 (CoreFoundation + 199012) [0x1b6d44964]
+                                                          1   __CFStringAppendBytes + 620 (CoreFoundation + 206784) [0x1b6d467c0]
+                                                            1   __CFStringChangeSizeMultiple + 452 (CoreFoundation + 81508) [0x1b6d27e64]
+                                                              1   __CFStrAllocateMutableContents + 100 (CoreFoundation + 83584) [0x1b6d28680]
+                                                                1   _malloc_zone_malloc + 156 (libsystem_malloc.dylib + 124784) [0x1b6afe770]
+                                                                  1   szone_malloc_should_clear + 92 (libsystem_malloc.dylib + 9620) [0x1b6ae2594]
+                                                                    1   tiny_malloc_should_clear + 224 (libsystem_malloc.dylib + 14204) [0x1b6ae377c]
+                                                                      1   tiny_malloc_from_free_list + 464 (libsystem_malloc.dylib + 16172) [0x1b6ae3f2c]
+                                    1   -[SignpostSupportObjectExtractor _processSignpostEvent:shouldReport:] + 656 (SignpostSupport + 13740) [0x1e35615ac]
+                                      1   -[SignpostIntervalBuilder processBeginEvent:] + 192 (SignpostSupport + 15000) [0x1e3561a98]
+                                        1   _dispatch_lane_barrier_sync_invoke_and_complete + 56 (libdispatch.dylib + 77312) [0x1b6b1de00]
+                                          1   _dispatch_client_callout + 20 (libdispatch.dylib + 15276) [0x1b6b0ebac]
+                                            1   __45-[SignpostIntervalBuilder processBeginEvent:]_block_invoke + 132 (SignpostSupport + 15232) [0x1e3561b80]
+                                              1   -[SignpostIntervalBuilder signpostIsCompositeLoop:] + 160 (SignpostSupport + 17220) [0x1e3562344]
+                                                1   -[__NSCFString retain] + 24 (CoreFoundation + 18480) [0x1b6d18830]
+                                                  1   _CFRetain + 32 (CoreFoundation + 1207712) [0x1b6e3ada0]
+                                  4   -[SignpostSupportObjectExtractor(OSLogEventStreamProcessing) _processOSLogEventProxy:] + 1120 (SignpostCollection + 28644) [0x1d6c88fe4]
+                                    4   objc_autoreleasePoolPop + 208 (libobjc.A.dylib + 40472) [0x1b6b5be18]
+                                      3   AutoreleasePoolPage::releaseUntil(objc_object**) + 200 (libobjc.A.dylib + 54396) [0x1b6b5f47c]
+                                        2   _objc_rootDealloc + 80 (libobjc.A.dylib + 34896) [0x1b6b5a850]
+                                          2   objc_destructInstance + 80 (libobjc.A.dylib + 34992) [0x1b6b5a8b0]
+                                            2   object_cxxDestructFromClass(objc_object*, objc_class*) + 116 (libobjc.A.dylib + 71888) [0x1b6b638d0]
+                                              2   -[SignpostEvent .cxx_destruct] + 80 (SignpostSupport + 27472) [0x1e3564b50]
+                                                2   -[__NSArrayM dealloc] + 276 (CoreFoundation + 141996) [0x1b6d36aac]
+                                                  2   __RELEASE_OBJECTS_IN_THE_ARRAY__ + 116 (CoreFoundation + 142196) [0x1b6d36b74]
+                                                    1   _objc_rootDealloc + 80 (libobjc.A.dylib + 34896) [0x1b6b5a850]
+                                                      1   objc_destructInstance + 80 (libobjc.A.dylib + 34992) [0x1b6b5a8b0]
+                                                        1   object_cxxDestructFromClass(objc_object*, objc_class*) + 116 (libobjc.A.dylib + 71888) [0x1b6b638d0]
+                                                          1   -[SignpostSupportMetadataSegment .cxx_destruct] + 68 (SignpostSupport + 27656) [0x1e3564c08]
+                                                            1   _CFRelease + 1180 (CoreFoundation + 1432216) [0x1b6e71a98]
+                                                              1   free_tiny + 428 (libsystem_malloc.dylib + 25624) [0x1b6ae6418]
+                                                                1   tiny_free_no_lock + 76 (libsystem_malloc.dylib + 26084) [0x1b6ae65e4]
+                                                    1   free_tiny + 428 (libsystem_malloc.dylib + 25624) [0x1b6ae6418]
+                                                      1   tiny_free_no_lock + 560 (libsystem_malloc.dylib + 26568) [0x1b6ae67c8]
+                                                        1   tiny_free_list_add_ptr + 124 (libsystem_malloc.dylib + 28432) [0x1b6ae6f10]
+                                        1   _CFRelease + 308 (CoreFoundation + 1431344) [0x1b6e71730]
+                                      1   objc_msgSend + 64 (libobjc.A.dylib + 25600) [0x1b6b58400]
+                                  1   -[SignpostSupportObjectExtractor(OSLogEventStreamProcessing) _processOSLogEventProxy:] + 956 (SignpostCollection + 28480) [0x1d6c88f40]
+                                    1   -[SignpostSupportObjectExtractor _shouldBuildEventWithPid:uniquePid:processName:subsystem:category:shouldReport:] + 180 (SignpostSupport + 9820) [0x1e356065c]
+                                      1   DYLD-STUB$$objc_release + 0 (SignpostSupport + 180520) [0x1e358a128]
+                                  1   -[SignpostSupportObjectExtractor(OSLogEventStreamProcessing) _processOSLogEventProxy:] + 848 (SignpostCollection + 28372) [0x1d6c88ed4]
+                                    1   -[OSLogEventProxy process] + 24 (LoggingSupport + 76576) [0x1d66aeb20]
+                                      1   -[OSLogEventProxy processImagePath] + 44 (LoggingSupport + 76652) [0x1d66aeb6c]
+                                        1   _resolve_uuid_slow + 84 (LoggingSupport + 76752) [0x1d66aebd0]
+                                          1   uuidpath_lookup_fd + 40 (LoggingSupport + 77172) [0x1d66aed74]
+                                            1   pthread_getspecific + 0 (libsystem_pthread.dylib + 9024) [0x1b6cc8340]
+                                  1   objc_alloc + 20 (libobjc.A.dylib + 42228) [0x1b6b5c4f4]
+                                  1   objc_msgSend + 64 (libobjc.A.dylib + 25600) [0x1b6b58400]
+                            1   __77-[_OSLogIndex enumerateEntriesInRange:options:usingCatalogFilter:usingBlock:]_block_invoke + 84 (LoggingSupport + 69660) [0x1d66ad01c]
+                              1   -[OSLogEventProxy _setLogEvent:rangeUUIDIndex:machTimebase:] + 244 (LoggingSupport + 70444) [0x1d66ad32c]
+  1   start_wqthread + 0 (libsystem_pthread.dylib + 8892) [0x1b6cc82bc]
+    1   <Kernel mode>
+
+  Binary Images:
+           0x10006c000 -        0x100083fff  signpost_reporter (67)                             <E30EB063-344B-3E49-8F2B-3921F6BB9F31>  /usr/libexec/signpost_reporter
+           0x1b6a10000 -        0x1b6a11fff  libsystem_blocks.dylib (79)                        <06DA29C0-4674-3332-9466-44FD0108C65A>  /usr/lib/system/libsystem_blocks.dylib
+           0x1b6ae0000 -        0x1b6b0afff  libsystem_malloc.dylib (374.40.6)                  <0B1B0684-D16A-3CEE-A9E6-126236D29C51>  /usr/lib/system/libsystem_malloc.dylib
+           0x1b6b0b000 -        0x1b6b51fff  libdispatch.dylib (1324.41.2)                      <3D7A56A3-23BF-3077-B5C6-9CE65CE7333E>  /usr/lib/system/libdispatch.dylib
+           0x1b6b52000 -        0x1b6b8dfff  libobjc.A.dylib (838)                              <2EABED7F-1E81-3A1B-BB4B-985B8DD3B77F>  /usr/lib/libobjc.A.dylib
+           0x1b6cc6000 -        0x1b6cd2fff  libsystem_pthread.dylib (485.40.4)                 <4786E19A-9312-38E6-80EF-9C1394548118>  /usr/lib/system/libsystem_pthread.dylib
+           0x1b6ce0000 -        0x1b6ce7fff  libsystem_platform.dylib (273.40.1)                <06CE953D-F22A-3724-B6D5-829B45179897>  /usr/lib/system/libsystem_platform.dylib
+           0x1b6d14000 -        0x1b7257fff  com.apple.CoreFoundation 6.9 (1855.105)            <B2FF96D0-AE99-31EF-9014-FC9964B4F3E0>  /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+           0x1b7c0b000 -        0x1b7ff8fff  com.apple.Foundation 6.9 (1855.105)                <DE039F1B-FFE5-3644-A8CF-7BA52C32CD73>  /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+           0x1b914d000 -        0x1b93f7fff  libicucore.A.dylib (68232)                         <047E2353-42C7-3235-A8E9-B288BAF11876>  /usr/lib/libicucore.A.dylib
+           0x1d669c000 -        0x1d6709fff  com.apple.LoggingSupport 1.0 (1375.40.2)           <19E3EE2B-5793-393E-AFEC-23984C371D47>  /System/Library/PrivateFrameworks/LoggingSupport.framework/Versions/A/LoggingSupport
+           0x1d6c82000 -        0x1d6c8dfff  com.apple.performance.SignpostCollection 1.67 (67) <F3A1EF2D-8AE1-3269-8BA6-518932FBE454>  /System/Library/PrivateFrameworks/SignpostCollection.framework/Versions/A/SignpostCollection
+           0x1e355e000 -        0x1e35a3fff  com.apple.signpost.SignpostSupport 1.67 (67)       <97BD97F4-B6A0-30B1-BB4F-80FB2ED96CE2>  /System/Library/PrivateFrameworks/SignpostSupport.framework/Versions/A/SignpostSupport
+           0x1f5582000 -        0x1f5585fff  liblog_signpost.description.dylib (67)             <68DA6D54-03C4-3FB8-A2AD-CBA88FE67FFE>  /usr/lib/log/liblog_signpost.description.dylib
+
+
+Powerstats for:   rekordbox
+UUID:             C529D92A-3239-3A63-AD3F-347CEDEB4710
+Path:             /Applications/rekordbox 6/rekordbox.app/Contents/MacOS/rekordbox
+Identifier:       com.pioneerdj.rekordboxdj
+Version:          6.6.3.0001 (6.6.3.0001)
+Team ID:          6BRHGXQ6VU
+Shared Cache:     B5084610-AFE4-3485-BADE-628C4468B057 slid base address 0x7ff816844000, slide 0x16844000
+Architecture:     x86_64 (translated)
+Start time:       2022-04-18 16:04:06.958 +0200
+End time:         2022-04-18 16:05:52.058 +0200
+Num samples:      24 (33%)
+Primary state:    17 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Unspecified, Requested Thread QoS Unspecified, Override Thread QoS Unspecified
+User Activity:    24 samples Idle, 0 samples Active
+Power Source:     0 samples on Battery, 24 samples on AC
+  21  thread_start + 15 (libsystem_pthread.dylib + 8239) [0x7ff816b5d02f]
+    21  _pthread_start + 125 (libsystem_pthread.dylib + 25876) [0x7ff816b61514]
+      20  threadEntryProc + 26 (rekordbox + 27233786) [0x1023a0dfa]
+        20  juce::Thread::threadEntryPoint() + 335 (rekordbox + 27113615) [0x10238388f]
+          10  MetalDisplayLink::Pimpl::run() + 497 (rekordbox + 21961265) [0x101e99a31]
+            8   MetalLayer::Pimpl::callbackMetalDisplayLink() + 807 (rekordbox + 18911271) [0x101bb1027]
+              5   MetalContext::renderMetalContext(MetalDevice*) + 5315 (rekordbox + 22282995) [0x101ee82f3]
+                5   ??? (AGXMetal13_3 + 3248173) [0x7ffa3130a02d]
+                  1   ??? [0x7ffac9d09954]
+                  1   ??? [0x7ffac9d08b34]
+                  1   ??? (AGXMetal13_3 + 3299513) [0x7ffa313168b9]
+                    1   ??? (AGXMetal13_3 + 2639641) [0x7ffa31275719]
+                      1   ??? [0x7ff8a73d27c4]
+                  1   ??? [0x7ff8a73d2e14]
+                  1   ??? [0x10b1da018]
+              1   MetalContext::renderMetalContext(MetalDevice*) + 4788 (rekordbox + 22282468) [0x101ee80e4]
+                1   ??? [0x7ff8a73d277c]
+              1   MetalContext::renderMetalContext(MetalDevice*) + 4739 (rekordbox + 22282419) [0x101ee80b3]
+                1   ??? [0x10b247938]
+              1   MetalContext::renderMetalContext(MetalDevice*) + 4069 (rekordbox + 22281749) [0x101ee7e15]
+                1   ??? [0x7ffac9cf64c0]
+            2   MetalLayer::Pimpl::callbackMetalDisplayLink() + 728 (rekordbox + 18911192) [0x101bb0fd8]
+              2   non-virtual thunk to MainComponent::renderMetal(MetalContext*) + 77 (rekordbox + 5147389) [0x100e90afd]
+                1   MetalRenderComponentImpl::renderMetal(MetalContext*) + 353 (rekordbox + 17462609) [0x101a4f551]
+                  1   djplay::LevelMeter::drawMetalTextures(MetalContext*, juce::Rectangle<float> const&) + 317 (rekordbox + 8802349) [0x10120d02d]
+                    1   ??? [0x1090d2d08]
+                1   djplay::OverlayComponentRenderer::renderMetal(MetalContext*) + 440 (rekordbox + 4427960) [0x100de10b8]
+                  1   djplay::WidgetWaveView::drawMetal(MetalContext*) + 46 (rekordbox + 17336878) [0x101a30a2e]
+                    1   djplay::WidgetWaveView::renderMetal(MetalContext*) + 299 (rekordbox + 17336747) [0x101a309ab]
+                      1   djplay::WidgetWaveView::renderOpenGL() + 1106 (rekordbox + 17334242) [0x101a2ffe2]
+                        1   djplay::WidgetWaveView::drawBackgroundBeatGridGL(bool, bool, bool) + 2315 (rekordbox + 17267387) [0x101a1fabb]
+                          1   djplay::WidgetWaveView::drawBeat2ST(float, float, float, float, bool, juce::Colour, float) + 250 (rekordbox + 17244410) [0x101a1a0fa]
+                            1   djplay::WidgetWaveView::fillRectWithColour(float, float, float, float, juce::Colour const&, float) + 183 (rekordbox + 3976791) [0x100d72e57]
+                              1   djplay::WidgetWaveView::fillRectWithColourMetal(float, float, float, float, juce::Colour const&, float) + 183 (rekordbox + 17247431) [0x101a1acc7]
+                                1   ??? [0x1090d9f78]
+          5   juce::CoreAudioClasses::AudioIODeviceBinder::run() + 1546 (rekordbox + 26650570) [0x1023127ca]
+            5   juce::AudioDeviceManager::audioDeviceIOCallbackInt(float const**, int, float**, int, int) + 500 (rekordbox + 26600564) [0x102306474]
+              5   juce::AudioProcessorPlayer::audioDeviceIOCallback(float const**, int, float**, int, int) + 1032 (rekordbox + 26893320) [0x10234dc08]
+                5   rbxfrm::FixedFsAudioProcessor<rbxfrm::Float4>::processBlock(juce::AudioSampleBuffer&, juce::MidiBuffer&) + 416 (rekordbox + 23386304) [0x101ff58c0]
+                  4   juce::AudioProcessorGraph::processBlock(juce::AudioSampleBuffer&, juce::MidiBuffer&) + 202 (rekordbox + 26875866) [0x1023497da]
+                    4   juce::GraphRenderingOps::ProcessBufferOp::perform(juce::AudioSampleBuffer&, juce::OwnedArray<juce::MidiBuffer, juce::DummyCriticalSection> const&, int) + 238 (rekordbox + 26891150) [0x10234d38e]
+                      4   DjMixerUnit::processBlock(juce::AudioSampleBuffer&, juce::MidiBuffer&) + 59 (rekordbox + 24947147) [0x1021729cb]
+                        4   juce::AudioProcessorGraph::processBlock(juce::AudioSampleBuffer&, juce::MidiBuffer&) + 202 (rekordbox + 26875866) [0x1023497da]
+                          4   juce::GraphRenderingOps::ProcessBufferOp::perform(juce::AudioSampleBuffer&, juce::OwnedArray<juce::MidiBuffer, juce::DummyCriticalSection> const&, int) + 238 (rekordbox + 26891150) [0x10234d38e]
+                            3   juce::AudioProcessorGraph::processBlock(juce::AudioSampleBuffer&, juce::MidiBuffer&) + 202 (rekordbox + 26875866) [0x1023497da]
+                              3   juce::GraphRenderingOps::ProcessBufferOp::perform(juce::AudioSampleBuffer&, juce::OwnedArray<juce::MidiBuffer, juce::DummyCriticalSection> const&, int) + 238 (rekordbox + 26891150) [0x10234d38e]
+                                2   MixerComponentProcessor::processBlock(juce::AudioSampleBuffer&, juce::MidiBuffer&) + 48 (rekordbox + 25001376) [0x10217fda0]
+                                  2   EnvelopeGeneratorArray::processBlock(AudioBuffer&) + 82 (rekordbox + 25010738) [0x102182232]
+                                    1   ??? [0x108d4565c]
+                                    1   EnvelopeGenerator::createEnvelope(float const*, float const*, int) + 947 (rekordbox + 25085251) [0x102194543]
+                                      1   ??? [0x108b197ec]
+                                1   FxUnitProcessor::processBlock(juce::AudioSampleBuffer&, juce::MidiBuffer&) + 172 (rekordbox + 24999644) [0x10217f6dc]
+                                  1   AbstractFxUnit::processBlock(EffectPosition_id, AudioBuffer&) + 123 (rekordbox + 25013067) [0x102182b4b]
+                                    1   EffectLayerBase::processEffect(EffectPosition_id, AudioBuffer&) + 138 (rekordbox + 25616762) [0x10221617a]
+                                      1   FxQuantizeManager::processQuantizeEffect(float*, float*, int) + 54 (rekordbox + 25693894) [0x102228ec6]
+                                        1   ??? [0x108b8d8ec]
+                            1   rbxfrm::AutoBPMDetectorUnit::processBlock(juce::AudioSampleBuffer&, juce::MidiBuffer&) + 569 (rekordbox + 23988745) [0x102088a09]
+                              1   rbxfrm::AutoBPMDetectorUnit::beat_watch(int) + 69 (rekordbox + 23988869) [0x102088a85]
+                                1   ??? [0x108b13d2c]
+                  1   rbxfrm::ClientProcessorCaller::processBlock(juce::AudioSampleBuffer&, juce::MidiBuffer&) + 164 (rekordbox + 23346644) [0x101febdd4]
+                    1   rbxfrm::SyncManager::broadcastSyncMasterPlayHead(int) + 1138 (rekordbox + 24013538) [0x10208eae2]
+                      1   ??? [0x108a4ecb8]
+          3   djplay::MidiOutputHelper::run() + 134 (rekordbox + 20107862) [0x101cd5256]
+            2   juce::WaitableEvent::wait(int) const + 206 (rekordbox + 27110654) [0x102382cfe]
+              2   ??? [0x7ff8a6fe6940]
+                1   <Kernel mode>
+            1   juce::WaitableEvent::wait(int) const + 90 (rekordbox + 27110538) [0x102382c8a]
+              1   gettimeofday + 45 (libsystem_c.dylib + 38474) [0x7ff816a3564a]
+                1   __commpage_gettimeofday_internal + 36 (libsystem_kernel.dylib + 8896) [0x7ff816b262c0]
+                  1   ??? [0x7ff8a6fe4148]
+          1   juce::Timer::TimerThread::run() + 392 (rekordbox + 27428088) [0x1023d04f8]
+            1   CFRunLoopWakeUp + 285 (CoreFoundation + 420414) [0x7ff816c0ea3e]
+              1   ??? [0x7ff8a6fe6940]
+                1   <Kernel mode>
+          1   juce::CoreAudioClasses::AudioIODeviceBinder::run() + 997 (rekordbox + 26650021) [0x1023125a5]
+            1   juce::WaitableEvent::wait(int) const + 206 (rekordbox + 27110654) [0x102382cfe]
+              1   ??? [0x7ff8a6fe6940]
+                1   <Kernel mode>
+      1   juce::HighResolutionTimer::Pimpl::timerThread(void*) + 31 (rekordbox + 27337183) [0x1023ba1df]
+        1   ??? [0x7ff8a6fe6940]
+          1   <Kernel mode>
+  2   start_wqthread + 15 (libsystem_pthread.dylib + 8219) [0x7ff816b5d01b]
+    2   _pthread_wqthread + 326 (libsystem_pthread.dylib + 12431) [0x7ff816b5e08f]
+      2   _dispatch_workloop_worker_thread + 758 (libdispatch.dylib + 79841) [0x7ff8169b87e1]
+        2   _dispatch_lane_invoke + 366 (libdispatch.dylib + 38856) [0x7ff8169ae7c8]
+          2   _dispatch_lane_serial_drain + 335 (libdispatch.dylib + 35717) [0x7ff8169adb85]
+            2   _dispatch_source_invoke + 2150 (libdispatch.dylib + 92762) [0x7ff8169bba5a]
+              2   _dispatch_continuation_pop + 460 (libdispatch.dylib + 22342) [0x7ff8169aa746]
+                2   _dispatch_client_callout + 8 (libdispatch.dylib + 11465) [0x7ff8169a7cc9]
+                  2   -[_MTLCommandQueue _submitAvailableCommandBuffers] + 826 (Metal + 134957) [0x7ff81f8f0f2d]
+                    2   -[IOGPUMetalCommandQueue submitCommandBuffers:count:] + 65 (IOGPU + 23293) [0x7ff9172d0afd]
+                      2   -[IOGPUMetalCommandQueue _submitCommandBuffers:count:] + 687 (IOGPU + 24014) [0x7ff9172d0dce]
+                        2   IOGPUCommandQueueSubmitCommandBuffers + 133 (IOGPU + 74066) [0x7ff9172dd152]
+                          2   IOConnectCallMethod + 186 (IOKit + 13654) [0x7ff819428556]
+                            2   io_connect_method + 387 (IOKit + 14145) [0x7ff819428741]
+                              2   ??? [0x7ff8a6fe6940]
+                                2   <Kernel mode, Effective Thread QoS User Interactive, Requested Thread QoS User Interactive>
+  1   ??? [0x1009a8000]
+    1   ??? [0x3]
+      1   start + 462 (dyld + 21758) [0x2067484fe]
+        1   juce::JUCEApplicationBase::main(int, char const**) + 83 (rekordbox + 27412339) [0x1023cc773]
+          1   juce::JUCEApplicationBase::main() + 143 (rekordbox + 27412511) [0x1023cc81f]
+            1   -[NSApplication run] + 586 (AppKit + 193369) [0x7ff819568359]
+              1   -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1411 (AppKit + 249692) [0x7ff819575f5c]
+                1   _DPSNextEvent + 886 (AppKit + 256240) [0x7ff8195778f0]
+                  1   _BlockUntilNextEventMatchingListInModeWithFilter + 70 (HIToolbox + 192213) [0x7ff81fc91ed5]
+                    1   ReceiveNextEventCommon + 587 (HIToolbox + 192823) [0x7ff81fc92137]
+                      1   RunCurrentEventLoopInMode + 292 (HIToolbox + 193505) [0x7ff81fc923e1]
+                        1   CFRunLoopRunSpecific + 567 (CoreFoundation + 514057) [0x7ff816c25809]
+                          1   __CFRunLoopRun + 897 (CoreFoundation + 516703) [0x7ff816c2625f]
+                            1   __CFRunLoopDoSources0 + 242 (CoreFoundation + 522307) [0x7ff816c27843]
+                              1   __CFRunLoopDoSource0 + 180 (CoreFoundation + 522960) [0x7ff816c27ad0]
+                                1   __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17 (CoreFoundation + 523112) [0x7ff816c27b68]
+                                  1   juce::MessageQueue::runLoopSourceCallback(void*) + 57 (rekordbox + 27431673) [0x1023d12f9]
+                                    1   juce::Timer::TimerThread::callTimers() + 238 (rekordbox + 27429182) [0x1023d093e]
+                                      1   juce::CriticalSection::enter() const + 9 (rekordbox + 27226633) [0x10239f209]
+                                        1   ??? [0x7ff8a73a6490]
+                                          1   <Effective Thread QoS User Interactive, Requested Thread QoS User Interactive>
+
+  Binary Images:
+           0x1009a8000 -        0x104927fff  com.pioneerdj.rekordboxdj 6.6.3.0001 (6.6.3.0001) <C529D92A-3239-3A63-AD3F-347CEDEB4710>  /Applications/rekordbox 6/rekordbox.app/Contents/MacOS/rekordbox
+           0x206743000 -        0x2067befff  dyld (940)                                        <1A6AE033-9438-33C0-8077-988FD885250A>  /usr/lib/dyld
+        0x7ff8169a5000 -     0x7ff8169ebfff  libdispatch.dylib (1324.41.2)                     <BE53A13C-8CE1-3E40-B9BC-98473D3EED3E>  /usr/lib/system/libdispatch.dylib
+        0x7ff816a2c000 -     0x7ff816ab4fff  libsystem_c.dylib (1506.40.4)                     <991F58B7-B4C0-3C3A-84A8-C9C571DE5A27>  /usr/lib/system/libsystem_c.dylib
+        0x7ff816b24000 -     0x7ff816b5afff  libsystem_kernel.dylib (8019.41.5)                <12BD6F13-C452-35EE-9069-51BEFEF29F1A>  /usr/lib/system/libsystem_kernel.dylib
+        0x7ff816b5b000 -     0x7ff816b66fff  libsystem_pthread.dylib (485.40.4)                <29A2750E-F31B-3630-8761-242A6BC3E99E>  /usr/lib/system/libsystem_pthread.dylib
+        0x7ff816ba8000 -     0x7ff8170a8fff  com.apple.CoreFoundation 6.9 (1855.105)           <AFCC752E-074D-340F-890C-263EFD2DA77F>  /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+        0x7ff819425000 -     0x7ff8194dafff  com.apple.framework.IOKit 2.0.2 (1955.40.6)       <7D46C110-4106-3280-9031-F7E035792F22>  /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+        0x7ff819539000 -     0x7ff81a3c5fff  com.apple.AppKit 6.9 (2113)                       <DD0028A3-78E3-3A8A-A51B-DDD68123ADEF>  /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit
+        0x7ff81f8d0000 -     0x7ff81fa06fff  com.apple.Metal 258.13 (258.13)                   <E8E48B19-B8DB-3ED2-830B-01E242F09E0F>  /System/Library/Frameworks/Metal.framework/Versions/A/Metal
+        0x7ff81fc63000 -     0x7ff81ff5afff  com.apple.HIToolbox 2.1.1 (1112.4)                <4163A93F-BF71-3219-80ED-6F65E9266B81>  /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox
+        0x7ff9172cb000 -     0x7ff9172f5fff  com.apple.IOGPU 35.11 (35.11)                     <BC1FA996-5A1A-30BF-9F00-668E2CCB0754>  /System/Library/PrivateFrameworks/IOGPU.framework/Versions/A/IOGPU
+        0x7ffa30ff1000 -     0x7ffa31676fff  com.apple.AGXMetal13-3 187.57 (187.57)            <9F0BA56E-8688-344E-A660-2EE0AB368F0C>  /System/Library/Extensions/AGXMetal13_3.bundle/Contents/MacOS/AGXMetal13_3

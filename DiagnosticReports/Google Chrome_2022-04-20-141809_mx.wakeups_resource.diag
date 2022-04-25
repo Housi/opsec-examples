@@ -1,0 +1,136 @@
+Date/Time:        2022-04-20 14:14:06.416 +0200
+End time:         2022-04-20 14:18:09.517 +0200
+OS Version:       macOS 12.0.1 (Build 21A559)
+Architecture:     arm64e
+Report Version:   35
+Incident Identifier: 198D2A54-FFDA-467B-8F38-B390F5E5DF85
+
+Data Source:      Microstackshots
+Shared Cache:     A6162D66-93E3-3251-93CC-B11F7C8C830E slid base address 0x1b69c0000, slide 0x369c0000
+
+Command:          Google Chrome
+Path:             /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Identifier:       com.google.Chrome
+Version:          100.0.4896.88 (4896.88)
+Team ID:          EQHXZ8M8AV
+Architecture:     arm64
+PID:              95093
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45001 wakeups over the last 243 seconds (185 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45001
+Wakeups duration: 243s
+Duration:         243.10s
+Duration Sampled: 213.14s
+Steps:            5
+
+Hardware model:   MacBookPro17,1
+Active cpus:      8
+HW page size:     16384
+VM page size:     16384
+
+Fan speed:        0 rpm
+Advisory levels:  Battery -> 3, User -> 2, ThermalPressure -> 0, Combined -> 2
+Free disk space:  200.71 GB/460.43 GB, low space threshold 3072 MB
+
+Heaviest stack for the target process:
+  4  thread_start + 8 (libsystem_pthread.dylib + 8912) [0x1b6cc82d0]
+  4  _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x1b6ccd4ec]
+  2  _NSEventThread + 196 (AppKit + 1764388) [0x1b9a58c24]
+  2  CFRunLoopRunSpecific + 600 (CoreFoundation + 534164) [0x1b6d96694]
+  2  __CFRunLoopRun + 2380 (CoreFoundation + 538496) [0x1b6d97780]
+  2  __CFRunLoopDoSource1 + 596 (CoreFoundation + 545524) [0x1b6d992f4]
+  2  __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE1_PERFORM_FUNCTION__ + 60 (CoreFoundation + 545848) [0x1b6d99438]
+  2  __CFMachPortPerform + 260 (CoreFoundation + 742052) [0x1b6dc92a4]
+  2  MessageHandler(__CFMachPort*, void*, long, void*) + 60 (HIToolbox + 250812) [0x1bf9193bc]
+  2  PullEventsFromWindowServerOnConnection(unsigned int, unsigned char, __CFMachPortBoost*) + 60 (HIToolbox + 250932) [0x1bf919434]
+  2  SLEventCreateNextEvent + 16 (SkyLight + 1181252) [0x1bbfa9644]
+  2  SLSGetNextEventRecordInternal + 408 (SkyLight + 3099588) [0x1bc17dbc4]
+  1  CGSSnarfAndDispatchDatagrams + 808 (SkyLight + 45244) [0x1bbe940bc]
+  1  CGSDecodeEventRecord + 56 (SkyLight + 47416) [0x1bbe94938]
+  1  SLEventGetFieldDecodeDescriptor(SLEventToken)::$_20::__invoke(SLSEventRecord*, SLEventToken, SLEventData&) + 0 (SkyLight + 1182568) [0x1bbfa9b68]
+
+
+Powerstats for:   Google Chrome (Chrome) [95093]
+UUID:             4C4C44BE-5555-3144-A1FB-10A03BD7B521
+Path:             /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Identifier:       com.google.Chrome
+Version:          100.0.4896.88 (4896.88)
+Team ID:          EQHXZ8M8AV
+Architecture:     arm64
+Footprint:        184.69 MB
+Pageins:          2 pages
+Start time:       2022-04-20 14:14:12.301 +0200
+End time:         2022-04-20 14:17:45.443 +0200
+Num samples:      5 (100%)
+Primary state:    2 samples Frontmost App, Non-Suppressed, User mode, Effective Thread QoS User Interactive, Requested Thread QoS User Interactive, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 5 samples Active
+Power Source:     0 samples on Battery, 5 samples on AC
+  4  thread_start + 8 (libsystem_pthread.dylib + 8912) [0x1b6cc82d0]
+    4  _pthread_start + 148 (libsystem_pthread.dylib + 29932) [0x1b6ccd4ec]
+      2  _NSEventThread + 196 (AppKit + 1764388) [0x1b9a58c24]
+        2  CFRunLoopRunSpecific + 600 (CoreFoundation + 534164) [0x1b6d96694]
+          2  __CFRunLoopRun + 2380 (CoreFoundation + 538496) [0x1b6d97780]
+            2  __CFRunLoopDoSource1 + 596 (CoreFoundation + 545524) [0x1b6d992f4]
+              2  __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE1_PERFORM_FUNCTION__ + 60 (CoreFoundation + 545848) [0x1b6d99438]
+                2  __CFMachPortPerform + 260 (CoreFoundation + 742052) [0x1b6dc92a4]
+                  2  MessageHandler(__CFMachPort*, void*, long, void*) + 60 (HIToolbox + 250812) [0x1bf9193bc]
+                    2  PullEventsFromWindowServerOnConnection(unsigned int, unsigned char, __CFMachPortBoost*) + 60 (HIToolbox + 250932) [0x1bf919434]
+                      2  SLEventCreateNextEvent + 16 (SkyLight + 1181252) [0x1bbfa9644]
+                        2  SLSGetNextEventRecordInternal + 408 (SkyLight + 3099588) [0x1bc17dbc4]
+                          1  CGSSnarfAndDispatchDatagrams + 808 (SkyLight + 45244) [0x1bbe940bc]
+                            1  CGSDecodeEventRecord + 56 (SkyLight + 47416) [0x1bbe94938]
+                              1  SLEventGetFieldDecodeDescriptor(SLEventToken)::$_20::__invoke(SLSEventRecord*, SLEventToken, SLEventData&) + 0 (SkyLight + 1182568) [0x1bbfa9b68]
+                          1  CGSSnarfAndDispatchDatagrams + 164 (SkyLight + 44600) [0x1bbe93e38]
+                            1  mach_msg_trap + 8 (libsystem_kernel.dylib + 6484) [0x1b6c91954]
+                              1  <Kernel mode>
+      2  ChromeMain + 50911088 (Google Chrome Framework + 50924184) [0x1189fca98]
+        2  ChromeMain + 50791264 (Google Chrome Framework + 50804360) [0x1189df688]
+          2  ChromeMain + 17273068 (Google Chrome Framework + 17286164) [0x1169e8414]
+            2  ChromeMain + 50790888 (Google Chrome Framework + 50803984) [0x1189df510]
+              2  ChromeMain + 50453836 (Google Chrome Framework + 50466932) [0x11898d074]
+                2  ChromeMain + 50671444 (Google Chrome Framework + 50684540) [0x1189c227c]
+                  1  kevent64 + 8 (libsystem_kernel.dylib + 51784) [0x1b6c9ca48]
+                    1  <Kernel mode, Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+                  1  ChromeMain + 51095872 (Google Chrome Framework + 51108968) [0x118a29c68]
+                    1  mach_msg + 228 (libsystem_kernel.dylib + 7576) [0x1b6c91d98]
+                      1  <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+  1  start + 520 (dyld + 20724) [0x1029850f4]
+    1  main + 196 (Google Chrome + 2156) [0x10280c86c]
+      1  ChromeMain + 212 (Google Chrome Framework + 13308) [0x11596f3fc]
+        1  ChromeMain + 46350664 (Google Chrome Framework + 46363760) [0x1185a3470]
+          1  ChromeMain + 46356108 (Google Chrome Framework + 46369204) [0x1185a49b4]
+            1  ChromeMain + 17253700 (Google Chrome Framework + 17266796) [0x1169e386c]
+              1  ChromeMain + 17263204 (Google Chrome Framework + 17276300) [0x1169e5d8c]
+                1  ChromeMain + 50453836 (Google Chrome Framework + 50466932) [0x11898d074]
+                  1  ChromeMain + 50671444 (Google Chrome Framework + 50684540) [0x1189c227c]
+                    1  ChromeMain + 50936228 (Google Chrome Framework + 50949324) [0x118a02ccc]
+                      1  ChromeMain + 50941392 (Google Chrome Framework + 50954488) [0x118a040f8]
+                        1  -[NSApplication run] + 636 (AppKit + 205784) [0x1b98dc3d8]
+                          1  -[NSApplication _handleEvent:] + 76 (AppKit + 4625800) [0x1b9d13588]
+                            1  ChromeMain + 46722160 (Google Chrome Framework + 46735256) [0x1185fdf98]
+                              1  ChromeMain + 1467080 (Google Chrome Framework + 1480176) [0x115ad55f0]
+                                1  ChromeMain + 46723760 (Google Chrome Framework + 46736856) [0x1185fe5d8]
+                                  1  -[NSApplication(NSEvent) sendEvent:] + 3176 (AppKit + 1773940) [0x1b9a5b174]
+                                    1  ChromeMain + 73239320 (Google Chrome Framework + 73252416) [0x119f47e40]
+                                      1  ChromeMain + 65410964 (Google Chrome Framework + 65424060) [0x1197d0abc]
+                                        1  ChromeMain + 65408716 (Google Chrome Framework + 65421812) [0x1197d01f4]
+                                          1  -[NSObject conformsToProtocol:] + 56 (libobjc.A.dylib + 58584) [0x1b6b604d8]
+                                            1  class_conformsToProtocol + 400 (libobjc.A.dylib + 59072) [0x1b6b606c0]
+                                              1  getProtocol(char const*) + 40 (libobjc.A.dylib + 15540) [0x1b6b55cb4]
+                                                1  _mapStrHash(_NXMapTable*, void const*) + 0 (libobjc.A.dylib + 15936) [0x1b6b55e40]
+
+  Binary Images:
+           0x10280c000 -        0x102837fff  com.google.Chrome 100.0.4896.88 (4896.88)           <4C4C44BE-5555-3144-A1FB-10A03BD7B521>  /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+           0x102980000 -        0x1029f3fff  dyld (940)                                          <86A8BA48-8BB4-3B30-9CDA-051F73C74F44>  /usr/lib/dyld
+           0x11596c000 -        0x11e823fff  com.google.Chrome.framework 100.0.4896.88 (4896.88) <4C4C4434-5555-3144-A15C-F4AE4F6491A7>  /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/100.0.4896.88/Google Chrome Framework
+           0x1b6b52000 -        0x1b6b8dfff  libobjc.A.dylib (838)                               <2EABED7F-1E81-3A1B-BB4B-985B8DD3B77F>  /usr/lib/libobjc.A.dylib
+           0x1b6c90000 -        0x1b6cc5fff  libsystem_kernel.dylib (8019.41.5)                  <C8524C02-B14F-30BD-A228-C44B4A448E68>  /usr/lib/system/libsystem_kernel.dylib
+           0x1b6cc6000 -        0x1b6cd2fff  libsystem_pthread.dylib (485.40.4)                  <4786E19A-9312-38E6-80EF-9C1394548118>  /usr/lib/system/libsystem_pthread.dylib
+           0x1b6d14000 -        0x1b7257fff  com.apple.CoreFoundation 6.9 (1855.105)             <B2FF96D0-AE99-31EF-9014-FC9964B4F3E0>  /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+           0x1b98aa000 -        0x1ba75bfff  com.apple.AppKit 6.9 (2113)                         <518F4E68-C324-320F-9D7F-85C224EAE972>  /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit
+           0x1bbe89000 -        0x1bc250fff  com.apple.SkyLight 1.600.0 (645.14)                 <C8F2838B-E64C-34DB-ACA6-1FAA164C762A>  /System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/SkyLight
+           0x1bf8dc000 -        0x1bfc0bfff  com.apple.HIToolbox 2.1.1 (1112.4)                  <98EA191E-B6F8-3036-B267-EEADB5F03C7D>  /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox
