@@ -1,0 +1,308 @@
+Apr 25 00:30:02: aslmanager starting
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing data store /var/log/asl
+Apr 25 00:30:02: Data Store Size = 500593
+Apr 25 00:30:02: Data Store YMD Files (TTL = 7 days)
+Apr 25 00:30:02:   2022.04.17.G80.asl   30808 (age 7 days 00:30:02 - expired)
+Apr 25 00:30:02:   2022.04.18.G80.asl   30055 (age 6 days 00:30:02)
+Apr 25 00:30:02:   2022.04.19.G80.asl   28408 (age 5 days 00:30:02)
+Apr 25 00:30:02:   2022.04.20.G80.asl   32503 (age 4 days 00:30:02)
+Apr 25 00:30:02:   2022.04.21.G80.asl   24870 (age 3 days 00:30:02)
+Apr 25 00:30:02:   2022.04.22.G80.asl   64704 (age 2 days 00:30:02)
+Apr 25 00:30:02:   2022.04.23.G80.asl   43011 (age 1 day 00:30:02)
+Apr 25 00:30:02:   2022.04.24.G80.asl   157727 (age 00:30:02)
+Apr 25 00:30:02:   2022.04.25.G80.asl   5511 (age 0)
+Apr 25 00:30:02: Data Store AUX Directories
+Apr 25 00:30:02: Data Store BB.AUX Directories
+Apr 25 00:30:02: Data Store BB Files
+Apr 25 00:30:02:   BB.2022.11.30.G80.asl   1657 (age 0)
+Apr 25 00:30:02:   BB.2023.02.28.G80.asl   14175 (age 0)
+Apr 25 00:30:02:   BB.2023.03.31.G80.asl   24708 (age 0)
+Apr 25 00:30:02:   BB.2023.04.30.G80.asl   42456 (age 0)
+Apr 25 00:30:02: Start YMD File Scan
+Apr 25 00:30:02:   remove 2022.04.17.G80.asl
+Apr 25 00:30:02: Finished YMD File Scan
+Apr 25 00:30:02: Start AUX Directory Scan
+Apr 25 00:30:02: Finished AUX Directory Scan
+Apr 25 00:30:02: Start BB.AUX Directory Scan
+Apr 25 00:30:02: Finished BB.AUX Directory Scan
+Apr 25 00:30:02: Start BB Scan
+Apr 25 00:30:02: Finished BB Scan
+Apr 25 00:30:02: Data Store Size = 469785
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing module com.apple.asl
+Apr 25 00:30:02: Checking file /var/log/system.log
+Apr 25 00:30:02: - Rename, move to destination directory, and compress as required
+Apr 25 00:30:02:     ignore src file system.log since it is internal and syslogd will checkpoint it when it needs to be renamed
+Apr 25 00:30:02:     no src files
+Apr 25 00:30:02: - Check for expired files - TTL = 7 days
+Apr 25 00:30:02:     dst files
+Apr 25 00:30:02:       system.log.6.gz (age 7 days 00:30:02 - expired)
+Apr 25 00:30:02:       system.log.5.gz (age 6 days 00:30:02)
+Apr 25 00:30:02:       system.log.4.gz (age 5 days 00:30:02)
+Apr 25 00:30:02:       system.log.3.gz (age 4 days 00:24:33)
+Apr 25 00:30:02:       system.log.2.gz (age 3 days 00:30:02)
+Apr 25 00:30:02:       system.log.1.gz (age 2 days 00:30:02)
+Apr 25 00:30:02:       system.log.0.gz (age 00:30:02)
+Apr 25 00:30:02:   remove /var/log/system.log.6.gz
+Apr 25 00:30:02: - Check total storage used - MAX = 52428800
+Apr 25 00:30:02:     dst files
+Apr 25 00:30:02:       system.log.5.gz size 993
+Apr 25 00:30:02:       system.log.4.gz size 968
+Apr 25 00:30:02:       system.log.3.gz size 1028
+Apr 25 00:30:02:       system.log.2.gz size 806
+Apr 25 00:30:02:       system.log.1.gz size 3869
+Apr 25 00:30:02:       system.log.0.gz size 8462
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing data store /var/log/asl
+Apr 25 00:30:02: Data Store Size = 469785
+Apr 25 00:30:02: Data Store YMD Files (TTL = 7 days)
+Apr 25 00:30:02:   2022.04.18.G80.asl   30055 (age 6 days 00:30:02)
+Apr 25 00:30:02:   2022.04.19.G80.asl   28408 (age 5 days 00:30:02)
+Apr 25 00:30:02:   2022.04.20.G80.asl   32503 (age 4 days 00:30:02)
+Apr 25 00:30:02:   2022.04.21.G80.asl   24870 (age 3 days 00:30:02)
+Apr 25 00:30:02:   2022.04.22.G80.asl   64704 (age 2 days 00:30:02)
+Apr 25 00:30:02:   2022.04.23.G80.asl   43011 (age 1 day 00:30:02)
+Apr 25 00:30:02:   2022.04.24.G80.asl   157727 (age 00:30:02)
+Apr 25 00:30:02:   2022.04.25.G80.asl   5511 (age 0)
+Apr 25 00:30:02: Data Store AUX Directories
+Apr 25 00:30:02: Data Store BB.AUX Directories
+Apr 25 00:30:02: Data Store BB Files
+Apr 25 00:30:02:   BB.2022.11.30.G80.asl   1657 (age 0)
+Apr 25 00:30:02:   BB.2023.02.28.G80.asl   14175 (age 0)
+Apr 25 00:30:02:   BB.2023.03.31.G80.asl   24708 (age 0)
+Apr 25 00:30:02:   BB.2023.04.30.G80.asl   42456 (age 0)
+Apr 25 00:30:02: Start YMD File Scan
+Apr 25 00:30:02: Finished YMD File Scan
+Apr 25 00:30:02: Start AUX Directory Scan
+Apr 25 00:30:02: Finished AUX Directory Scan
+Apr 25 00:30:02: Start BB.AUX Directory Scan
+Apr 25 00:30:02: Finished BB.AUX Directory Scan
+Apr 25 00:30:02: Start BB Scan
+Apr 25 00:30:02: Finished BB Scan
+Apr 25 00:30:02: Data Store Size = 469785
+Apr 25 00:30:02: Checking file /var/log/asl/Logs/aslmanager
+Apr 25 00:30:02: - Rename, move to destination directory, and compress as required
+Apr 25 00:30:02:     no src files
+Apr 25 00:30:02: - Check for expired files - TTL = 2 days
+Apr 25 00:30:02:     dst files
+Apr 25 00:30:02:       aslmanager.20220423T000000+02 (age 2 days 00:30:02 - expired)
+Apr 25 00:30:02:       aslmanager.20220423T003004+02 (age 1 day 23:59:58)
+Apr 25 00:30:02:       aslmanager.20220424T005706+02 (age 23:32:56)
+Apr 25 00:30:02:       aslmanager.20220424T233619+02 (age 00:53:43)
+Apr 25 00:30:02:       aslmanager.20220425T000000+02 (age 00:30:02)
+Apr 25 00:30:02:       aslmanager.20220425T003002+02 (age 0)
+Apr 25 00:30:02:   remove /var/log/asl/Logs/aslmanager.20220423T000000+02
+Apr 25 00:30:02: Finished processing module com.apple.asl
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing module com.apple.mkb.internal
+Apr 25 00:30:02: Finished processing module com.apple.mkb.internal
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing module com.apple.cdscheduler
+Apr 25 00:30:02: Checking file /var/log/module/com.apple.cdscheduler/cdscheduler.log
+Apr 25 00:30:02: - Rename, move to destination directory, and compress as required
+Apr 25 00:30:02:     no src files
+Apr 25 00:30:02: - Check for expired files - TTL = 3 days
+Apr 25 00:30:02:     no dst files
+Apr 25 00:30:02: - Check total storage used - MAX = 2097152
+Apr 25 00:30:02:     no dst files
+Apr 25 00:30:02: Finished processing module com.apple.cdscheduler
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing module com.apple.install
+Apr 25 00:30:02: Checking file /var/log/install.log
+Apr 25 00:30:02: - Rename, move to destination directory, and compress as required
+Apr 25 00:30:02:     ignore src file install.log since it is internal and syslogd will checkpoint it when it needs to be renamed
+Apr 25 00:30:02:     no src files
+Apr 25 00:30:02: - Check total storage used - MAX = 157286400
+Apr 25 00:30:02:     no dst files
+Apr 25 00:30:02: Finished processing module com.apple.install
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing module com.apple.authd
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing data store /var/log/asl
+Apr 25 00:30:02: Data Store Size = 469785
+Apr 25 00:30:02: Data Store YMD Files (TTL = 7 days)
+Apr 25 00:30:02:   2022.04.18.G80.asl   30055 (age 6 days 00:30:02)
+Apr 25 00:30:02:   2022.04.19.G80.asl   28408 (age 5 days 00:30:02)
+Apr 25 00:30:02:   2022.04.20.G80.asl   32503 (age 4 days 00:30:02)
+Apr 25 00:30:02:   2022.04.21.G80.asl   24870 (age 3 days 00:30:02)
+Apr 25 00:30:02:   2022.04.22.G80.asl   64704 (age 2 days 00:30:02)
+Apr 25 00:30:02:   2022.04.23.G80.asl   43011 (age 1 day 00:30:02)
+Apr 25 00:30:02:   2022.04.24.G80.asl   157727 (age 00:30:02)
+Apr 25 00:30:02:   2022.04.25.G80.asl   5511 (age 0)
+Apr 25 00:30:02: Data Store AUX Directories
+Apr 25 00:30:02: Data Store BB.AUX Directories
+Apr 25 00:30:02: Data Store BB Files
+Apr 25 00:30:02:   BB.2022.11.30.G80.asl   1657 (age 0)
+Apr 25 00:30:02:   BB.2023.02.28.G80.asl   14175 (age 0)
+Apr 25 00:30:02:   BB.2023.03.31.G80.asl   24708 (age 0)
+Apr 25 00:30:02:   BB.2023.04.30.G80.asl   42456 (age 0)
+Apr 25 00:30:02: Start YMD File Scan
+Apr 25 00:30:02: Finished YMD File Scan
+Apr 25 00:30:02: Start AUX Directory Scan
+Apr 25 00:30:02: Finished AUX Directory Scan
+Apr 25 00:30:02: Start BB.AUX Directory Scan
+Apr 25 00:30:02: Finished BB.AUX Directory Scan
+Apr 25 00:30:02: Start BB Scan
+Apr 25 00:30:02: Finished BB Scan
+Apr 25 00:30:02: Data Store Size = 469785
+Apr 25 00:30:02: Checking file /var/log/authd.log
+Apr 25 00:30:02: - Rename, move to destination directory, and compress as required
+Apr 25 00:30:02:     no src files
+Apr 25 00:30:02: - Check for expired files - TTL = 7 days
+Apr 25 00:30:02:     no dst files
+Apr 25 00:30:02: - Check total storage used - MAX = 20971520
+Apr 25 00:30:02:     no dst files
+Apr 25 00:30:02: Finished processing module com.apple.authd
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing module com.apple.eventmonitor
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing data store /var/log/eventmonitor
+Apr 25 00:30:02: Finished processing module com.apple.eventmonitor
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing module com.apple.coreduetd
+Apr 25 00:30:02: Checking file /var/log/CoreDuet/coreduetd.log
+Apr 25 00:30:02: - Rename, move to destination directory, and compress as required
+Apr 25 00:30:02:     no src files
+Apr 25 00:30:02: - Check for expired files - TTL = 1 day
+Apr 25 00:30:02:     no dst files
+Apr 25 00:30:02: - Check total storage used - MAX = 16777216
+Apr 25 00:30:02:     no dst files
+Apr 25 00:30:02: Finished processing module com.apple.coreduetd
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing module com.apple.mail
+Apr 25 00:30:02: Checking file /var/log/mail.log
+Apr 25 00:30:02: - Rename, move to destination directory, and compress as required
+Apr 25 00:30:02:     no src files
+Apr 25 00:30:02: - Check for expired files - TTL = 7 days
+Apr 25 00:30:02:     no dst files
+Apr 25 00:30:02: - Check total storage used - MAX = 52428800
+Apr 25 00:30:02:     no dst files
+Apr 25 00:30:02: Finished processing module com.apple.mail
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing module com.apple.login.guest
+Apr 25 00:30:02: Finished processing module com.apple.login.guest
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing module com.apple.performance
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing data store /var/log/performance
+Apr 25 00:30:02: Finished processing module com.apple.performance
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing module com.apple.iokit.power
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing data store /var/log/powermanagement
+Apr 25 00:30:02: Data Store Size = 6142529
+Apr 25 00:30:02: Data Store YMD Files (TTL = 14 days)
+Apr 25 00:30:02:   2022.04.10.asl   305986 (age 14 days 00:30:02 - expired)
+Apr 25 00:30:02:   2022.04.11.asl   424923 (age 13 days 00:30:02)
+Apr 25 00:30:02:   2022.04.12.asl   392142 (age 12 days 00:30:02)
+Apr 25 00:30:02:   2022.04.13.asl   494639 (age 11 days 00:30:02)
+Apr 25 00:30:02:   2022.04.14.asl   392503 (age 10 days 00:30:02)
+Apr 25 00:30:02:   2022.04.15.asl   658685 (age 9 days 00:30:02)
+Apr 25 00:30:02:   2022.04.16.asl   169947 (age 8 days 00:30:02)
+Apr 25 00:30:02:   2022.04.17.asl   353779 (age 7 days 00:30:02)
+Apr 25 00:30:02:   2022.04.18.asl   275901 (age 6 days 00:30:02)
+Apr 25 00:30:02:   2022.04.19.asl   253883 (age 5 days 00:30:02)
+Apr 25 00:30:02:   2022.04.20.asl   542043 (age 4 days 00:30:02)
+Apr 25 00:30:02:   2022.04.21.asl   397563 (age 3 days 00:30:02)
+Apr 25 00:30:02:   2022.04.22.asl   198393 (age 2 days 00:30:02)
+Apr 25 00:30:02:   2022.04.23.asl   155417 (age 1 day 00:30:02)
+Apr 25 00:30:02:   2022.04.24.asl   1124248 (age 00:30:02)
+Apr 25 00:30:02:   2022.04.25.asl   2477 (age 0)
+Apr 25 00:30:02: Data Store AUX Directories
+Apr 25 00:30:02: Data Store BB.AUX Directories
+Apr 25 00:30:02: Data Store BB Files
+Apr 25 00:30:02: Start YMD File Scan
+Apr 25 00:30:02:   remove 2022.04.10.asl
+Apr 25 00:30:02: Finished YMD File Scan
+Apr 25 00:30:02: Start AUX Directory Scan
+Apr 25 00:30:02: Finished AUX Directory Scan
+Apr 25 00:30:02: Start BB.AUX Directory Scan
+Apr 25 00:30:02: Finished BB.AUX Directory Scan
+Apr 25 00:30:02: Start BB Scan
+Apr 25 00:30:02: Finished BB Scan
+Apr 25 00:30:02: Data Store Size = 5836543
+Apr 25 00:30:02: Finished processing module com.apple.iokit.power
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing module com.apple.contacts.ContactsAutocomplete
+Apr 25 00:30:02: Checking file /var/log/com.apple.contacts.ContactsAutocomplete/Probes.log
+Apr 25 00:30:02: - Rename, move to destination directory, and compress as required
+Apr 25 00:30:02:     no src files
+Apr 25 00:30:02: - Check for expired files - TTL = 7 days
+Apr 25 00:30:02:     no dst files
+Apr 25 00:30:02: - Check total storage used - MAX = 209715200
+Apr 25 00:30:02:     no dst files
+Apr 25 00:30:02: Checking file /var/log/com.apple.contacts.ContactsAutocomplete/Sorting.log
+Apr 25 00:30:02: - Rename, move to destination directory, and compress as required
+Apr 25 00:30:02:     no src files
+Apr 25 00:30:02: - Check for expired files - TTL = 7 days
+Apr 25 00:30:02:     no dst files
+Apr 25 00:30:02: - Check total storage used - MAX = 209715200
+Apr 25 00:30:02:     no dst files
+Apr 25 00:30:02: Checking file /var/log/com.apple.contacts.ContactsAutocomplete/Performance.log
+Apr 25 00:30:02: - Rename, move to destination directory, and compress as required
+Apr 25 00:30:02:     no src files
+Apr 25 00:30:02: - Check for expired files - TTL = 7 days
+Apr 25 00:30:02:     no dst files
+Apr 25 00:30:02: - Check total storage used - MAX = 209715200
+Apr 25 00:30:02:     no dst files
+Apr 25 00:30:02: Checking file /var/log/com.apple.contacts.ContactsAutocomplete/Debug.log
+Apr 25 00:30:02: - Rename, move to destination directory, and compress as required
+Apr 25 00:30:02:     no src files
+Apr 25 00:30:02: - Check for expired files - TTL = 7 days
+Apr 25 00:30:02:     no dst files
+Apr 25 00:30:02: - Check total storage used - MAX = 209715200
+Apr 25 00:30:02:     no dst files
+Apr 25 00:30:02: Finished processing module com.apple.contacts.ContactsAutocomplete
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing module com.apple.mkb
+Apr 25 00:30:02: Checking file /private/var/log/keybagd.log
+Apr 25 00:30:02: - Rename, move to destination directory, and compress as required
+Apr 25 00:30:02:     no src files
+Apr 25 00:30:02: - Check for expired files - TTL = 5 days
+Apr 25 00:30:02:     no dst files
+Apr 25 00:30:02: - Check total storage used - MAX = 20971520
+Apr 25 00:30:02:     no dst files
+Apr 25 00:30:02: Finished processing module com.apple.mkb
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing module com.apple.MessageTracer
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing data store /var/log/DiagnosticMessages
+Apr 25 00:30:02: Data Store Size = 2193747
+Apr 25 00:30:02: Data Store YMD Files (TTL = 30 days)
+Apr 25 00:30:02:   2022.04.18.asl   342545 (age 6 days 00:30:02)
+Apr 25 00:30:02:   2022.04.19.asl   291260 (age 5 days 00:30:02)
+Apr 25 00:30:02:   2022.04.20.asl   382502 (age 4 days 00:30:02)
+Apr 25 00:30:02:   2022.04.21.asl   313706 (age 3 days 00:30:02)
+Apr 25 00:30:02:   2022.04.22.asl   279504 (age 2 days 00:30:02)
+Apr 25 00:30:02:   2022.04.23.asl   161887 (age 1 day 00:30:02)
+Apr 25 00:30:02:   2022.04.24.asl   414796 (age 00:30:02)
+Apr 25 00:30:02:   2022.04.25.asl   7547 (age 0)
+Apr 25 00:30:02: Data Store AUX Directories
+Apr 25 00:30:02: Data Store BB.AUX Directories
+Apr 25 00:30:02: Data Store BB Files
+Apr 25 00:30:02: Start YMD File Scan
+Apr 25 00:30:02: Finished YMD File Scan
+Apr 25 00:30:02: Start AUX Directory Scan
+Apr 25 00:30:02: Finished AUX Directory Scan
+Apr 25 00:30:02: Start BB.AUX Directory Scan
+Apr 25 00:30:02: Finished BB.AUX Directory Scan
+Apr 25 00:30:02: Start BB Scan
+Apr 25 00:30:02: Finished BB Scan
+Apr 25 00:30:02: Data Store Size = 2193747
+Apr 25 00:30:02: Finished processing module com.apple.MessageTracer
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing module com.apple.networking.boringssl
+Apr 25 00:30:02: Checking file /Library/Logs/CrashReporter/com.apple.networking.boringssl.log
+Apr 25 00:30:02: - Rename, move to destination directory, and compress as required
+Apr 25 00:30:02:     no src files
+Apr 25 00:30:02: - Check for expired files - TTL = 7 days
+Apr 25 00:30:02:     no dst files
+Apr 25 00:30:02: Finished processing module com.apple.networking.boringssl
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing module com.apple.clouddocs
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: Processing data store /var/log/com.apple.clouddocs.asl
+Apr 25 00:30:02: Finished processing module com.apple.clouddocs
+Apr 25 00:30:02: ----------------------------------------
+Apr 25 00:30:02: aslmanager finished

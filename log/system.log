@@ -1,0 +1,51 @@
+Apr 26 00:06:31 mx syslogd[127]: ASL Sender Statistics
+Apr 26 00:24:20 mx syslogd[127]: ASL Sender Statistics
+Apr 26 00:40:42 mx syslogd[127]: ASL Sender Statistics
+Apr 26 00:40:43 mx syslogd[127]: Configuration Notice:
+	ASL Module "com.apple.cdscheduler" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 26 00:40:43 mx syslogd[127]: Configuration Notice:
+	ASL Module "com.apple.install" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 26 00:40:43 mx syslogd[127]: Configuration Notice:
+	ASL Module "com.apple.authd" sharing output destination "/var/log/asl" with ASL Module "com.apple.asl".
+	Output parameters from ASL Module "com.apple.asl" override any specified in ASL Module "com.apple.authd".
+Apr 26 00:40:43 mx syslogd[127]: Configuration Notice:
+	ASL Module "com.apple.authd" sharing output destination "/var/log/system.log" with ASL Module "com.apple.asl".
+	Output parameters from ASL Module "com.apple.asl" override any specified in ASL Module "com.apple.authd".
+Apr 26 00:40:43 mx syslogd[127]: Configuration Notice:
+	ASL Module "com.apple.authd" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 26 00:40:43 mx syslogd[127]: Configuration Notice:
+	ASL Module "com.apple.eventmonitor" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 26 00:40:43 mx syslogd[127]: Configuration Notice:
+	ASL Module "com.apple.mail" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 26 00:40:43 mx syslogd[127]: Configuration Notice:
+	ASL Module "com.apple.performance" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 26 00:40:43 mx syslogd[127]: Configuration Notice:
+	ASL Module "com.apple.iokit.power" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 26 00:40:43 mx syslogd[127]: Configuration Notice:
+	ASL Module "com.apple.contacts.ContactsAutocomplete" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 26 00:40:43 mx syslogd[127]: Configuration Notice:
+	ASL Module "com.apple.mkb" sharing output destination "/private/var/log/keybagd.log" with ASL Module "com.apple.mkb.internal".
+	Output parameters from ASL Module "com.apple.mkb.internal" override any specified in ASL Module "com.apple.mkb".
+Apr 26 00:40:43 mx syslogd[127]: Configuration Notice:
+	ASL Module "com.apple.mkb" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 26 00:40:43 mx syslogd[127]: Configuration Notice:
+	ASL Module "com.apple.MessageTracer" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 26 00:40:43 mx syslogd[127]: Configuration Notice:
+	ASL Module "com.apple.clouddocs" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 26 00:58:31 mx syslogd[127]: ASL Sender Statistics
+Apr 26 01:08:43 mx syslogd[127]: ASL Sender Statistics
+Apr 26 01:19:31 mx syslogd[127]: ASL Sender Statistics
+Apr 26 01:30:29 mx syslogd[127]: ASL Sender Statistics
+Apr 26 01:45:36 mx login[24689]: USER_PROCESS: 24689 ttys001
+Apr 26 01:45:36 mx syslogd[127]: ASL Sender Statistics

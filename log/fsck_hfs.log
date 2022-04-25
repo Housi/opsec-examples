@@ -1,0 +1,350 @@
+
+/dev/rdisk4: fsck_hfs started at Fri Nov 26 01:29:57 2021
+/dev/rdisk4: /dev/rdisk4: ** /dev/rdisk4 (NO WRITE)
+/dev/rdisk4:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4: fsck_hfs completed at Fri Nov 26 01:29:57 2021
+
+
+/dev/rdisk4: fsck_hfs started at Fri Nov 26 01:35:58 2021
+/dev/rdisk4: /dev/rdisk4: ** /dev/rdisk4 (NO WRITE)
+/dev/rdisk4:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4: fsck_hfs completed at Fri Nov 26 01:35:58 2021
+
+
+/dev/rdisk4s2: fsck_hfs started at Mon Jan 31 23:32:49 2022
+/dev/rdisk4s2: /dev/rdisk4s2: ** /dev/rdisk4s2 (NO WRITE)
+/dev/rdisk4s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s2: fsck_hfs completed at Mon Jan 31 23:32:49 2022
+
+
+/dev/rdisk5s1: fsck_hfs started at Tue Feb  1 00:09:01 2022
+/dev/rdisk5s1: /dev/rdisk5s1: ** /dev/rdisk5s1 (NO WRITE)
+/dev/rdisk5s1:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk5s1: fsck_hfs completed at Tue Feb  1 00:09:02 2022
+
+
+/dev/rdisk6s1: fsck_hfs started at Tue Feb  1 00:24:44 2022
+/dev/rdisk6s1: /dev/rdisk6s1: ** /dev/rdisk6s1 (NO WRITE)
+/dev/rdisk6s1:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk6s1: fsck_hfs completed at Tue Feb  1 00:24:44 2022
+
+
+/dev/rdisk4s1: fsck_hfs started at Fri Feb  4 14:07:22 2022
+/dev/rdisk4s1: /dev/rdisk4s1: ** /dev/rdisk4s1 (NO WRITE)
+/dev/rdisk4s1:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s1: fsck_hfs completed at Fri Feb  4 14:07:22 2022
+
+
+/dev/rdisk5s1: fsck_hfs started at Mon Feb  7 11:39:31 2022
+/dev/rdisk5s1: /dev/rdisk5s1: ** /dev/rdisk5s1 (NO WRITE)
+/dev/rdisk5s1:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk5s1: fsck_hfs completed at Mon Feb  7 11:39:31 2022
+
+
+/dev/rdisk6s1: fsck_hfs started at Mon Feb  7 14:24:54 2022
+/dev/rdisk6s1: /dev/rdisk6s1: ** /dev/rdisk6s1 (NO WRITE)
+/dev/rdisk6s1:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk6s1: fsck_hfs completed at Mon Feb  7 14:24:54 2022
+
+
+/dev/rdisk4s2: fsck_hfs started at Tue Feb  8 12:22:20 2022
+/dev/rdisk4s2: /dev/rdisk4s2: ** /dev/rdisk4s2 (NO WRITE)
+/dev/rdisk4s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s2: fsck_hfs completed at Tue Feb  8 12:22:20 2022
+
+
+/dev/rdisk4s2: fsck_hfs started at Tue Feb  8 12:22:20 2022
+/dev/rdisk4s2: /dev/rdisk4s2: ** /dev/rdisk4s2 (NO WRITE)
+/dev/rdisk4s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s2: fsck_hfs completed at Tue Feb  8 12:22:20 2022
+
+
+/dev/rdisk4s2: fsck_hfs started at Tue Feb  8 18:53:50 2022
+/dev/rdisk4s2: /dev/rdisk4s2: ** /dev/rdisk4s2 (NO WRITE)
+/dev/rdisk4s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s2: fsck_hfs completed at Tue Feb  8 18:53:50 2022
+
+
+/dev/rdisk4s2: fsck_hfs started at Tue Feb  8 18:53:50 2022
+/dev/rdisk4s2: /dev/rdisk4s2: ** /dev/rdisk4s2 (NO WRITE)
+/dev/rdisk4s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s2: fsck_hfs completed at Tue Feb  8 18:53:50 2022
+
+
+/dev/rdisk4s1: fsck_hfs started at Wed Feb  9 14:34:59 2022
+/dev/rdisk4s1: /dev/rdisk4s1: ** /dev/rdisk4s1 (NO WRITE)
+/dev/rdisk4s1:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s1: fsck_hfs completed at Wed Feb  9 14:34:59 2022
+
+
+/dev/rdisk4s1: fsck_hfs started at Wed Feb  9 14:34:59 2022
+/dev/rdisk4s1: /dev/rdisk4s1: ** /dev/rdisk4s1 (NO WRITE)
+/dev/rdisk4s1:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s1: fsck_hfs completed at Wed Feb  9 14:34:59 2022
+
+
+/dev/rdisk4s1: fsck_hfs started at Mon Feb 14 20:52:08 2022
+/dev/rdisk4s1: /dev/rdisk4s1: ** /dev/rdisk4s1 (NO WRITE)
+/dev/rdisk4s1:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s1: fsck_hfs completed at Mon Feb 14 20:52:08 2022
+
+
+/dev/rdisk4s2: fsck_hfs started at Thu Feb 17 14:44:38 2022
+/dev/rdisk4s2: /dev/rdisk4s2: ** /dev/rdisk4s2 (NO WRITE)
+/dev/rdisk4s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s2: fsck_hfs completed at Thu Feb 17 14:44:38 2022
+
+
+/dev/rdisk4s2: fsck_hfs started at Thu Feb 17 14:44:38 2022
+/dev/rdisk4s2: /dev/rdisk4s2: ** /dev/rdisk4s2 (NO WRITE)
+/dev/rdisk4s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s2: fsck_hfs completed at Thu Feb 17 14:44:38 2022
+
+
+/dev/rdisk4s1: fsck_hfs started at Sat Feb 19 22:04:17 2022
+/dev/rdisk4s1: /dev/rdisk4s1: ** /dev/rdisk4s1 (NO WRITE)
+/dev/rdisk4s1:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s1: fsck_hfs completed at Sat Feb 19 22:04:18 2022
+
+
+/dev/rdisk5s1: fsck_hfs started at Tue Feb 22 20:10:38 2022
+/dev/rdisk5s1: /dev/rdisk5s1: ** /dev/rdisk5s1 (NO WRITE)
+/dev/rdisk5s1:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk5s1: fsck_hfs completed at Tue Feb 22 20:10:38 2022
+
+
+/dev/rdisk6s2: fsck_hfs started at Fri Feb 25 02:44:12 2022
+/dev/rdisk6s2: /dev/rdisk6s2: ** /dev/rdisk6s2 (NO WRITE)
+/dev/rdisk6s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk6s2: fsck_hfs completed at Fri Feb 25 02:44:12 2022
+
+
+/dev/rdisk6s2: fsck_hfs started at Fri Feb 25 02:44:12 2022
+/dev/rdisk6s2: /dev/rdisk6s2: ** /dev/rdisk6s2 (NO WRITE)
+/dev/rdisk6s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk6s2: fsck_hfs completed at Fri Feb 25 02:44:12 2022
+
+
+/dev/rdisk6s2: fsck_hfs started at Sat Feb 26 15:46:57 2022
+/dev/rdisk6s2: /dev/rdisk6s2: ** /dev/rdisk6s2 (NO WRITE)
+/dev/rdisk6s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk6s2: fsck_hfs completed at Sat Feb 26 15:46:57 2022
+
+
+/dev/rdisk7s1: fsck_hfs started at Sat Feb 26 16:37:22 2022
+/dev/rdisk7s1: /dev/rdisk7s1: ** /dev/rdisk7s1 (NO WRITE)
+/dev/rdisk7s1:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk7s1: fsck_hfs completed at Sat Feb 26 16:37:22 2022
+
+
+/dev/rdisk4s1: fsck_hfs started at Thu Mar  3 22:19:54 2022
+/dev/rdisk4s1: /dev/rdisk4s1: ** /dev/rdisk4s1 (NO WRITE)
+/dev/rdisk4s1:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s1: fsck_hfs completed at Thu Mar  3 22:19:54 2022
+
+
+/dev/rdisk4s1: fsck_hfs started at Sun Mar  6 21:41:27 2022
+/dev/rdisk4s1: /dev/rdisk4s1: ** /dev/rdisk4s1 (NO WRITE)
+/dev/rdisk4s1:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s1: fsck_hfs completed at Sun Mar  6 21:41:27 2022
+
+
+/dev/rdisk5s1: fsck_hfs started at Mon Mar  7 00:17:16 2022
+/dev/rdisk5s1: /dev/rdisk5s1: ** /dev/rdisk5s1 (NO WRITE)
+/dev/rdisk5s1:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk5s1: fsck_hfs completed at Mon Mar  7 00:17:16 2022
+
+
+/dev/rdisk6s2: fsck_hfs started at Tue Mar  8 15:03:28 2022
+/dev/rdisk6s2: /dev/rdisk6s2: ** /dev/rdisk6s2 (NO WRITE)
+/dev/rdisk6s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk6s2: fsck_hfs completed at Tue Mar  8 15:03:28 2022
+
+
+/dev/rdisk6s2: fsck_hfs started at Tue Mar  8 15:03:29 2022
+/dev/rdisk6s2: /dev/rdisk6s2: ** /dev/rdisk6s2 (NO WRITE)
+/dev/rdisk6s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk6s2: fsck_hfs completed at Tue Mar  8 15:03:29 2022
+
+
+/dev/rdisk4s2: fsck_hfs started at Tue Mar 15 22:02:08 2022
+/dev/rdisk4s2: /dev/rdisk4s2: ** /dev/rdisk4s2 (NO WRITE)
+/dev/rdisk4s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s2: fsck_hfs completed at Tue Mar 15 22:02:08 2022
+
+
+/dev/rdisk4s2: fsck_hfs started at Tue Mar 15 22:02:08 2022
+/dev/rdisk4s2: /dev/rdisk4s2: ** /dev/rdisk4s2 (NO WRITE)
+/dev/rdisk4s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s2: fsck_hfs completed at Tue Mar 15 22:02:08 2022
+
+
+/dev/rdisk5s1: fsck_hfs started at Sun Mar 20 16:04:52 2022
+/dev/rdisk5s1: /dev/rdisk5s1: ** /dev/rdisk5s1 (NO WRITE)
+/dev/rdisk5s1:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk5s1: fsck_hfs completed at Sun Mar 20 16:04:52 2022
+
+
+/dev/rdisk6s2: fsck_hfs started at Sun Mar 20 16:51:45 2022
+/dev/rdisk6s2: /dev/rdisk6s2: ** /dev/rdisk6s2 (NO WRITE)
+/dev/rdisk6s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk6s2: fsck_hfs completed at Sun Mar 20 16:51:45 2022
+
+
+/dev/rdisk6s2: fsck_hfs started at Sun Mar 20 16:51:45 2022
+/dev/rdisk6s2: /dev/rdisk6s2: ** /dev/rdisk6s2 (NO WRITE)
+/dev/rdisk6s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk6s2: fsck_hfs completed at Sun Mar 20 16:51:45 2022
+
+
+/dev/rdisk5s2: fsck_hfs started at Tue Mar 29 00:17:40 2022
+/dev/rdisk5s2: /dev/rdisk5s2: ** /dev/rdisk5s2 (NO WRITE)
+/dev/rdisk5s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk5s2: fsck_hfs completed at Tue Mar 29 00:17:40 2022
+
+
+/dev/rdisk5s2: fsck_hfs started at Tue Mar 29 00:17:40 2022
+/dev/rdisk5s2: /dev/rdisk5s2: ** /dev/rdisk5s2 (NO WRITE)
+/dev/rdisk5s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk5s2: fsck_hfs completed at Tue Mar 29 00:17:40 2022
+
+
+/dev/rdisk5s1: fsck_hfs started at Tue Mar 29 22:14:20 2022
+/dev/rdisk5s1: /dev/rdisk5s1: ** /dev/rdisk5s1 (NO WRITE)
+/dev/rdisk5s1:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk5s1: fsck_hfs completed at Tue Mar 29 22:14:20 2022
+
+
+/dev/rdisk4s1: fsck_hfs started at Tue Apr  5 00:36:55 2022
+/dev/rdisk4s1: /dev/rdisk4s1: ** /dev/rdisk4s1 (NO WRITE)
+/dev/rdisk4s1:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s1: fsck_hfs completed at Tue Apr  5 00:36:55 2022
+
+
+/dev/rdisk4s2: fsck_hfs started at Wed Apr  6 21:51:32 2022
+/dev/rdisk4s2: /dev/rdisk4s2: ** /dev/rdisk4s2 (NO WRITE)
+/dev/rdisk4s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s2: fsck_hfs completed at Wed Apr  6 21:51:32 2022
+
+
+/dev/rdisk4s2: fsck_hfs started at Wed Apr  6 21:51:32 2022
+/dev/rdisk4s2: /dev/rdisk4s2: ** /dev/rdisk4s2 (NO WRITE)
+/dev/rdisk4s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s2: fsck_hfs completed at Wed Apr  6 21:51:32 2022
+
+
+/dev/rdisk5s1: fsck_hfs started at Wed Apr 13 03:06:55 2022
+/dev/rdisk5s1: /dev/rdisk5s1: ** /dev/rdisk5s1 (NO WRITE)
+/dev/rdisk5s1:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk5s1: fsck_hfs completed at Wed Apr 13 03:06:55 2022
+
+
+/dev/rdisk4s2: fsck_hfs started at Thu Apr 14 00:12:01 2022
+/dev/rdisk4s2: /dev/rdisk4s2: ** /dev/rdisk4s2 (NO WRITE)
+/dev/rdisk4s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s2: fsck_hfs completed at Thu Apr 14 00:12:01 2022
+
+
+/dev/rdisk4s2: fsck_hfs started at Thu Apr 14 00:12:01 2022
+/dev/rdisk4s2: /dev/rdisk4s2: ** /dev/rdisk4s2 (NO WRITE)
+/dev/rdisk4s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s2: fsck_hfs completed at Thu Apr 14 00:12:01 2022
+
+
+/dev/rdisk4s2: fsck_hfs started at Mon Apr 18 05:21:04 2022
+/dev/rdisk4s2: /dev/rdisk4s2: ** /dev/rdisk4s2 (NO WRITE)
+/dev/rdisk4s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s2: fsck_hfs completed at Mon Apr 18 05:21:04 2022
+
+
+/dev/rdisk4s2: fsck_hfs started at Mon Apr 18 05:21:04 2022
+/dev/rdisk4s2: /dev/rdisk4s2: ** /dev/rdisk4s2 (NO WRITE)
+/dev/rdisk4s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s2: fsck_hfs completed at Mon Apr 18 05:21:04 2022
+
+
+/dev/rdisk5s2: fsck_hfs started at Mon Apr 18 05:21:16 2022
+/dev/rdisk5s2: /dev/rdisk5s2: ** /dev/rdisk5s2 (NO WRITE)
+/dev/rdisk5s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk5s2: fsck_hfs completed at Mon Apr 18 05:21:16 2022
+
+
+/dev/rdisk5s2: fsck_hfs started at Mon Apr 18 05:21:16 2022
+/dev/rdisk5s2: /dev/rdisk5s2: ** /dev/rdisk5s2 (NO WRITE)
+/dev/rdisk5s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk5s2: fsck_hfs completed at Mon Apr 18 05:21:16 2022
+
+
+/dev/rdisk4s1: fsck_hfs started at Mon Apr 18 23:19:21 2022
+/dev/rdisk4s1: /dev/rdisk4s1: ** /dev/rdisk4s1 (NO WRITE)
+/dev/rdisk4s1:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s1: fsck_hfs completed at Mon Apr 18 23:19:21 2022
+
+
+/dev/rdisk4s2: fsck_hfs started at Wed Apr 20 14:49:36 2022
+/dev/rdisk4s2: /dev/rdisk4s2: ** /dev/rdisk4s2 (NO WRITE)
+/dev/rdisk4s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s2: fsck_hfs completed at Wed Apr 20 14:49:36 2022
+
+
+/dev/rdisk4s2: fsck_hfs started at Wed Apr 20 14:49:36 2022
+/dev/rdisk4s2: /dev/rdisk4s2: ** /dev/rdisk4s2 (NO WRITE)
+/dev/rdisk4s2:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s2: fsck_hfs completed at Wed Apr 20 14:49:36 2022
+
+
+/dev/rdisk4s1: fsck_hfs started at Tue Apr 26 01:30:46 2022
+/dev/rdisk4s1: /dev/rdisk4s1: ** /dev/rdisk4s1 (NO WRITE)
+/dev/rdisk4s1:    Executing fsck_hfs (version hfs-582.40.4).
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk4s1: fsck_hfs completed at Tue Apr 26 01:30:46 2022
+

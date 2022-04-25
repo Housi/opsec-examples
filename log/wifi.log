@@ -1,0 +1,1334 @@
+Apr 26 00:40:43 mx newsyslog[20771]: logfile turned over
+Tue Apr 26 00:40:43.373 <airport[236]> _configureTCPKeepAlive: Unable to enable TCP keep-alive on en0 (Operation not supported)
+Tue Apr 26 00:40:43.398 <airport[236]> _configureTCPKeepAlive: Unable to enable TCP keep-alive on en0 (Operation not supported)
+Tue Apr 26 00:40:43.480 Usb Host Notification Apple80211Set: seqNum 223 Total 0 chg 0 en0
+Tue Apr 26 00:40:43.659 Usb Host Notification Apple80211Set: seqNum 224 Total 0 chg 0 en0
+Tue Apr 26 00:40:43.685 Usb Host Notification Apple80211Set: seqNum 225 Total 0 chg 0 en0
+Tue Apr 26 00:40:43.730 <airport[236]> ERROR: rapportd (8835) is not entitled for com.apple.wifi.join_history, will not allow request
+Tue Apr 26 00:40:43.730 <airport[236]> ERROR: sharingd (8892) is not entitled for com.apple.wifi.join_history, will not allow request
+Tue Apr 26 00:40:43.844 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 00:40:47.493 <Apple80[8858]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 00:40:47.850 <Apple80[1501]> -[CWInterface(Private) setActiveUCMProfileIndexFor2g:and5g:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 00:58:31.893 <airport[236]> systemWokenByWiFi: System Wake Reason not found
+Tue Apr 26 00:58:31.893 <airport[236]> systemWokenByWiFi: System Wake Reason not found
+Tue Apr 26 00:58:32.375 <airport[236]> _configureTCPKeepAlive: Unable to enable TCP keep-alive on en0 (Operation not supported)
+Tue Apr 26 00:58:32.377 <airport[236]> _configureTCPKeepAlive: Unable to enable TCP keep-alive on en0 (Operation not supported)
+Tue Apr 26 00:58:32.429 Usb Host Notification Apple80211Set: seqNum 226 Total 0 chg 0 en0
+Tue Apr 26 00:58:32.616 Usb Host Notification Apple80211Set: seqNum 227 Total 0 chg 0 en0
+Tue Apr 26 00:58:32.640 Usb Host Notification Apple80211Set: seqNum 228 Total 0 chg 0 en0
+Tue Apr 26 00:58:32.678 <airport[236]> ERROR: rapportd (8835) is not entitled for com.apple.wifi.join_history, will not allow request
+Tue Apr 26 00:58:32.678 <airport[236]> ERROR: sharingd (8892) is not entitled for com.apple.wifi.join_history, will not allow request
+Tue Apr 26 00:58:35.047 <Apple80[8858]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 00:58:35.356 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:05:27.453 <airport[236]> _configureTCPKeepAlive: Unable to enable TCP keep-alive on en0 (Operation not supported)
+Tue Apr 26 01:05:27.458 <airport[236]> airportdProcessDLILEvent: <en0> event=1, flags=0xFFFF8863, lastPowerPref=on
+Tue Apr 26 01:05:27.458 <airport[236]> airportdProcessDLILEvent: en0 marked UP, applying user power preferences (ON).
+Tue Apr 26 01:05:27.458 <airport[236]> airportdProcessDLILEvent: <en0> Setting power ON
+Tue Apr 26 01:05:27.465 <airport[236]> _configureTCPKeepAlive: Unable to enable TCP keep-alive on en0 (Operation not supported)
+Tue Apr 26 01:05:27.640 Usb Host Notification Apple80211Set: seqNum 229 Total 0 chg 0 en0
+Tue Apr 26 01:05:27.786 Usb Host Notification Apple80211Set: seqNum 230 Total 0 chg 0 en0
+Tue Apr 26 01:05:27.804 Usb Host Notification Apple80211Set: seqNum 231 Total 0 chg 0 en0
+Tue Apr 26 01:05:27.847 <airport[236]> ERROR: sharingd (8892) is not entitled for com.apple.wifi.join_history, will not allow request
+Tue Apr 26 01:05:27.848 <airport[236]> ERROR: rapportd (8835) is not entitled for com.apple.wifi.join_history, will not allow request
+Tue Apr 26 01:05:27.873 <airport[236]> ERROR: rapportd (8835) is not entitled for com.apple.wifi.join_history, will not allow request
+Tue Apr 26 01:05:27.873 <airport[236]> ERROR: sharingd (8892) is not entitled for com.apple.wifi.join_history, will not allow request
+Tue Apr 26 01:05:28.910 <Apple80[8858]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:05:29.167 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:05:31.523 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:05:33.173 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:05:35.628 <Apple80[8858]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:05:37.180 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:05:39.681 <Apple80[8858]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:05:41.186 <Apple80[1501]> -[CWInterface(Private) setActiveUCMProfileIndexFor2g:and5g:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:05:43.736 <Apple80[8858]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:05:45.192 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:05:47.780 <Apple80[8858]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:05:49.198 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:05:50.972 Apple80211Set:10289 Processing APPLE80211_IOC_ROAM
+Tue Apr 26 01:05:50.972 Apple80211Set:10303 Processing APPLE80211_IOC_ROAM dataRef:0x129e987f0
+Tue Apr 26 01:05:50.973 Apple80211Set:10324 CFType is CFData
+Tue Apr 26 01:05:51.833 <Apple80[8858]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:05:53.204 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:05:57.210 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:06:01.215 <Apple80[1501]> -[CWInterface(Private) setActiveUCMProfileIndexFor2g:and5g:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:06:01.769 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:06:05.220 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:06:09.226 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:06:13.231 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:06:17.235 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:06:21.238 <Apple80[1501]> -[CWInterface(Private) setActiveUCMProfileIndexFor2g:and5g:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:06:25.239 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:06:29.245 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:06:33.250 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:06:37.256 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:06:41.259 <Apple80[1501]> -[CWInterface(Private) setActiveUCMProfileIndexFor2g:and5g:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:06:45.265 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:06:49.269 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:06:53.274 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:06:57.278 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:07:01.284 <Apple80[1501]> -[CWInterface(Private) setActiveUCMProfileIndexFor2g:and5g:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:07:05.286 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:07:09.291 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:07:13.296 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:07:17.302 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:07:21.308 <Apple80[1501]> -[CWInterface(Private) setActiveUCMProfileIndexFor2g:and5g:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:07:25.313 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:07:29.314 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:07:33.319 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:07:37.324 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:07:41.328 <Apple80[1501]> -[CWInterface(Private) setActiveUCMProfileIndexFor2g:and5g:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:07:45.332 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:07:49.335 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:07:53.341 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:07:57.347 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:08:01.352 <Apple80[1501]> -[CWInterface(Private) setActiveUCMProfileIndexFor2g:and5g:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:08:05.358 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:08:09.364 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:08:13.370 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:08:17.376 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:08:21.382 <Apple80[1501]> -[CWInterface(Private) setActiveUCMProfileIndexFor2g:and5g:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:08:25.386 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:08:29.392 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:08:33.398 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:08:37.403 <Apple80[1501]> -[CWInterface(Private) setUCMProfile:atIndex:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:08:41.409 <Apple80[1501]> -[CWInterface(Private) setActiveUCMProfileIndexFor2g:and5g:error:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:11:01.761 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:12.443 <Apple80[8858]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:13.577 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:17.649 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:21.675 <Apple80[8858]> -[CWWiFiUIProxyClient queryWiFiDebugLoggingEnabled]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:21.753 <Apple80[8858]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:21.764 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:25.808 <Apple80[20987]> -[CWWiFiUIProxyClient queryWiFiUIState]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:25.847 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:29.816 <Apple80[20987]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:29.855 <Apple80[8858]> -[CWWiFiUIProxyClient stopScanning]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:29.925 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:33.876 <Apple80[20987]> -[CWWiFiUIProxyClient queryCachedScanResultsAndReturnError:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:33.915 <Apple80[8858]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:33.995 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:38.011 <Apple80[20987]> -[CWWiFiUIProxyClient queryCachedScanResultsAndReturnError:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:38.069 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:38.166 <Apple80[8858]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:42.016 <Apple80[20987]> -[CWWiFiUIProxyClient queryWiFiUIState]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:42.130 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:46.023 <Apple80[20987]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:46.186 <Apple80[8858]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:46.196 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:50.079 <Apple80[20987]> -[CWWiFiUIProxyClient queryCachedScanResultsAndReturnError:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:50.264 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:54.080 <Apple80[20987]> -[CWWiFiUIProxyClient stopScanning]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:54.277 <Apple80[8858]> -[CWWiFiUIProxyClient queryWiFiDebugLoggingEnabled]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:54.337 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:54.374 <Apple80[8858]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:58.084 <Apple80[20987]> -[CWWiFiUIProxyClient queryCachedScanResultsAndReturnError:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:12:58.398 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:02.090 <Apple80[20987]> -[CWWiFiUIProxyClient queryWiFiUIState]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:02.495 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:06.094 <Apple80[20987]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:06.546 <Apple80[8858]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:07.793 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:10.135 <Apple80[20987]> -[CWWiFiUIProxyClient queryCachedScanResultsAndReturnError:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:11.873 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:14.140 <Apple80[20987]> -[CWWiFiUIProxyClient queryCachedScanResultsAndReturnError:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:15.941 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:18.146 <Apple80[20987]> -[CWWiFiUIProxyClient queryWiFiUIState]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:19.954 <Apple80[8858]> -[CWWiFiUIProxyClient queryWiFiDebugLoggingEnabled]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:20.019 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:20.052 <Apple80[8858]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:22.152 <Apple80[20987]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:24.090 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:26.180 <Apple80[20987]> -[CWWiFiUIProxyClient queryCachedScanResultsAndReturnError:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:28.168 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:30.185 <Apple80[20987]> -[CWWiFiUIProxyClient queryCachedScanResultsAndReturnError:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:32.181 <Apple80[8858]> -[CWWiFiUIProxyClient queryWiFiDebugLoggingEnabled]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:32.245 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:32.264 <Apple80[8858]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:34.188 <Apple80[20987]> -[CWWiFiUIProxyClient queryWiFiUIState]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:36.311 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:38.192 <Apple80[20987]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:40.381 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:42.269 <Apple80[20987]> -[CWWiFiUIProxyClient queryCachedScanResultsAndReturnError:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:44.452 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:48.468 <Apple80[20987]> -[CWWiFiUIProxyClient queryCachedScanResultsAndReturnError:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:48.526 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:48.530 <Apple80[8858]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:52.474 <Apple80[20987]> -[CWWiFiUIProxyClient queryWiFiUIState]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:52.594 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:56.481 <Apple80[20987]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:13:56.665 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:14:00.551 <Apple80[20987]> -[CWWiFiUIProxyClient queryCachedScanResultsAndReturnError:]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:14:00.734 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:14:04.818 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:14:06.206 <airport[236]> -[dpsManager handleDPSEventWithType:eventInfo:networkName:BSSID:channelInfo:isCriticalAppInUse:]_block_invoke: Ignoring non-dps events while not in monitoring period/ Ignoring DPS event while in monitoring period
+Tue Apr 26 01:14:08.903 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:14:10.283 <Apple80[1501]> -[CWInterface(Private) stateInfo]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:14:10.371 <Apple80[1325]> -[CWInterface(Private) stateInfo]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:14:11.395 <Apple80[8858]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:14:12.976 <Apple80[8841]> -[CWInterface(Private) lastTetherDeviceJoined]: FAILED to complete operation within 4.0s, continuing
+Tue Apr 26 01:14:14.331 Info: <airport[236]> __addDeviceUUID: Adding WiFi-specific device UUID
+Tue Apr 26 01:14:14.807 <airport[21062]> BluetoothCoexistenceInitialize: Registered for bluetooth audio notifications
+Tue Apr 26 01:14:14.808 <airport[21062]> BluetoothCoexistenceInitialize: Registered for bluetooth status notifications
+Tue Apr 26 01:14:14.884 Usb Host Notification activated
+Tue Apr 26 01:14:14.886 <airport[21062]> _initAttachedAirPortInterfaces: Considering lo0
+Tue Apr 26 01:14:14.886 <airport[21062]> _initAttachedAirPortInterfaces: Considering gif0
+Tue Apr 26 01:14:14.886 <airport[21062]> _initAttachedAirPortInterfaces: Considering stf0
+Tue Apr 26 01:14:14.886 <airport[21062]> _initAttachedAirPortInterfaces: Considering anpi1
+Tue Apr 26 01:14:14.886 <airport[21062]> _initAttachedAirPortInterfaces: Considering anpi0
+Tue Apr 26 01:14:14.886 <airport[21062]> _initAttachedAirPortInterfaces: Considering en3
+Tue Apr 26 01:14:14.886 <airport[21062]> _initAttachedAirPortInterfaces: Considering en4
+Tue Apr 26 01:14:14.886 <airport[21062]> _initAttachedAirPortInterfaces: Considering en1
+Tue Apr 26 01:14:14.887 <airport[21062]> _initAttachedAirPortInterfaces: Considering en2
+Tue Apr 26 01:14:14.887 <airport[21062]> _initAttachedAirPortInterfaces: Considering ap1
+Tue Apr 26 01:14:14.887 <airport[21062]> _initAttachedAirPortInterfaces: Considering en0
+Tue Apr 26 01:14:14.887 <airport[21062]> _initAttachedAirPortInterfaces: Found AirPort interface en0
+Tue Apr 26 01:14:14.887 <airport[21062]> _initInterface: en0 is up
+Tue Apr 26 01:14:14.888 SC: <airport[21062]> scInitInterface for device en0
+Tue Apr 26 01:14:14.890 <airport[21062]> _bsdDriver_init: registration for monitoring bssSteeringRequest event 
+Tue Apr 26 01:14:14.890 
+Tue Apr 26 01:14:14.890 Info: <airport[21062]> psCallback: powerSource = Battery Power
+Tue Apr 26 01:14:14.891 Info: <airport[21062]> psCallback: set powersave max throughput on en0
+Tue Apr 26 01:14:14.891 Roam: <airport[21062]> _initInterface: AirPort Interface <en0> <11>
+Tue Apr 26 01:14:14.891 P2P: <airport[21062]> CreateVirtualInterface: Attempting to create AWDL interface for en0 with MAC address 9e:d9:69:21:1c:b1 (attemptNumber = 0)
+Tue Apr 26 01:14:14.891 Offload: <airport[21062]> tcpKeepAliveActive: TCP keep-alive is active.
+Tue Apr 26 01:14:14.892 WoW: <airport[21062]> WoW params successfully configured on en0 ({
+Tue Apr 26 01:14:14.892     "WOW_ENABLE_CAPTIVE" = 0;
+Tue Apr 26 01:14:14.892     "WOW_ENABLE_LPAS" = 1;
+Tue Apr 26 01:14:14.892     "WOW_PATTERNS" =     (
+Tue Apr 26 01:14:14.892     );
+Tue Apr 26 01:14:14.892     "WOW_WAKE_CONDITIONS" =     (
+Tue Apr 26 01:14:14.892         0
+Tue Apr 26 01:14:14.892     );
+Tue Apr 26 01:14:14.892 })
+Tue Apr 26 01:14:14.892 WoW: <airport[21062]> WoW DISABLED (assert=no, pref=no activity=no, ps=battery (80), icloud=yes, tcpka=enabled, pno=69261094, lpas=yes)
+Tue Apr 26 01:14:14.892 P2P: <airport[21062]> CreateVirtualInterface: awdl0 is a P2P interface (role=4).
+Tue Apr 26 01:14:14.892 Driver Discovery: <airport[21062]> _initInterface: ap1 is down
+Tue Apr 26 01:14:14.892 SC: <airport[21062]> scInitInterface for device ap1
+Tue Apr 26 01:14:14.893 <airport[21062]> _bsdDriver_init: registration for monitoring bssSteeringRequest event 
+Tue Apr 26 01:14:14.893 
+Tue Apr 26 01:14:14.894 Info: <airport[21062]> psCallback: powerSource = Battery Power
+Tue Apr 26 01:14:14.894 Info: <airport[21062]> psCallback: set powersave max throughput on ap1
+Tue Apr 26 01:14:14.894 Info: <airport[21062]> psCallback: set powersave disabled on en0
+Tue Apr 26 01:14:14.894 Roam: <airport[21062]> _initInterface: AirPort Interface <ap1> <10>
+Tue Apr 26 01:14:14.894 Driver Discovery: <airport[21062]> _virtualInterfaceShouldBeMarkedUp: ap1 should not be marked up
+Tue Apr 26 01:14:14.894 P2P: <airport[21062]> _ipv6Request: Attaching IPv6 on ap1
+Tue Apr 26 01:14:14.895 Roam: <airport[21062]> DISABLED, 2.4GHz on ap1 => {
+Tue Apr 26 01:14:14.895     "ROAM_PROF" =     (
+Tue Apr 26 01:14:14.895                 {
+Tue Apr 26 01:14:14.895             "ROAM_PROF_BACKOFF_MULTIPLIER" = 10;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_FULLSCAN_PERIOD" = 3000;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_INIT_SCAN_PERIOD" = 600;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_MAX_SCAN_PERIOD" = 60000;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_NFSCAN" = 1;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_ROAM_DELTA" = 50;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_ROAM_FLAGS" = 0;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_ROAM_TRIGGER" = "-120";
+Tue Apr 26 01:14:14.895             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_RSSI_BOOST_THRESH" = "-70";
+Tue Apr 26 01:14:14.895             "ROAM_PROF_RSSI_LOWER" = "-128";
+Tue Apr 26 01:14:14.895         }
+Tue Apr 26 01:14:14.895     );
+Tue Apr 26 01:14:14.895     "ROAM_PROF_BAND" = 4;
+Tue Apr 26 01:14:14.895     "ROAM_PROF_NUM" = 1;
+Tue Apr 26 01:14:14.895 }
+Tue Apr 26 01:14:14.895 Roam: <airport[21062]> SINGLE-BAND, SINGLE-AP, 2.4GHz on ap1 => {
+Tue Apr 26 01:14:14.895     "ROAM_PROF" =     (
+Tue Apr 26 01:14:14.895                 {
+Tue Apr 26 01:14:14.895             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_FULLSCAN_PERIOD" = 3600;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_INIT_SCAN_PERIOD" = 60;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_MAX_SCAN_PERIOD" = 1200;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_NFSCAN" = 1;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_ROAM_DELTA" = 12;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_ROAM_FLAGS" = 0;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_ROAM_TRIGGER" = "-80";
+Tue Apr 26 01:14:14.895             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Tue Apr 26 01:14:14.895             "ROAM_PROF_RSSI_LOWER" = "-128";
+Tue Apr 26 01:14:14.895         }
+Tue Apr 26 01:14:14.895     );
+Tue Apr 26 01:14:14.895     "ROAM_PROF_BAND" = 4;
+Tue Apr 26 01:14:14.895     "ROAM_PROF_NUM" = 1;
+Tue Apr 26 01:14:14.895 }
+Tue Apr 26 01:14:14.895 Roam: <airport[21062]> DUAL-BAND, SINGLE-AP, 2.4GHz on ap1 => {
+Tue Apr 26 01:14:14.895     "ROAM_PROF" =     (
+Tue Apr 26 01:14:14.895                 {
+Tue Apr 26 01:14:14.895             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_FULLSCAN_PERIOD" = 300;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_INIT_SCAN_PERIOD" = 180;
+            "ROAM_PROF_MAX_SCAN_PERIOD" = 180;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_NFSCAN" = 2;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_ROAM_DELTA" = 16;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_ROAM_FLAGS" = 1;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_ROAM_TRIGGER" = "-10";
+Tue Apr 26 01:14:14.895             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_RSSI_BOOST_THRESH" = "-70";
+Tue Apr 26 01:14:14.895             "ROAM_PROF_RSSI_LOWER" = "-75";
+Tue Apr 26 01:14:14.895         },
+Tue Apr 26 01:14:14.895                 {
+Tue Apr 26 01:14:14.895             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_NFSCAN" = 2;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_ROAM_DELTA" = 12;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_ROAM_FLAGS" = 0;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Tue Apr 26 01:14:14.895             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Tue Apr 26 01:14:14.895             "ROAM_PROF_RSSI_LOWER" = "-128";
+Tue Apr 26 01:14:14.895         }
+Tue Apr 26 01:14:14.895     );
+Tue Apr 26 01:14:14.895     "ROAM_PROF_BAND" = 4;
+Tue Apr 26 01:14:14.895     "ROAM_PROF_NUM" = 2;
+Tue Apr 26 01:14:14.895 }
+Tue Apr 26 01:14:14.895 Roam: <airport[21062]> MULTI-AP, 2.4GHz on ap1 => {
+Tue Apr 26 01:14:14.895     "ROAM_PROF" =     (
+Tue Apr 26 01:14:14.895                 {
+Tue Apr 26 01:14:14.895             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.895             "ROAM_PROF_FULLSCAN_PERIOD" = 1200;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_INIT_SCAN_PERIOD" = 180;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_MAX_SCAN_PERIOD" = 600;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_NFSCAN" = 2;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_ROAM_DELTA" = 20;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_ROAM_FLAGS" = 1;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_ROAM_TRIGGER" = "-10";
+Tue Apr 26 01:14:14.896             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_RSSI_BOOST_THRESH" = "-70";
+Tue Apr 26 01:14:14.896             "ROAM_PROF_RSSI_LOWER" = "-50";
+Tue Apr 26 01:14:14.896         },
+Tue Apr 26 01:14:14.896                 {
+Tue Apr 26 01:14:14.896             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_FULLSCAN_PERIOD" = 600;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_INIT_SCAN_PERIOD" = 180;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_MAX_SCAN_PERIOD" = 180;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_NFSCAN" = 2;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_ROAM_DELTA" = 16;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_ROAM_FLAGS" = 1;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_ROAM_TRIGGER" = "-50";
+Tue Apr 26 01:14:14.896             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_RSSI_BOOST_THRESH" = "-70";
+Tue Apr 26 01:14:14.896             "ROAM_PROF_RSSI_LOWER" = "-75";
+Tue Apr 26 01:14:14.896         },
+Tue Apr 26 01:14:14.896                 {
+Tue Apr 26 01:14:14.896             "ROAM_PROF_BACKOFF_MULTIPLIER" = 1;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_NFSCAN" = 2;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_ROAM_DELTA" = 12;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_ROAM_FLAGS" = 0;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Tue Apr 26 01:14:14.896             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_RSSI_BOOST_THRESH" = "-70";
+Tue Apr 26 01:14:14.896             "ROAM_PROF_RSSI_LOWER" = "-128";
+Tue Apr 26 01:14:14.896         }
+Tue Apr 26 01:14:14.896     );
+Tue Apr 26 01:14:14.896     "ROAM_PROF_BAND" = 4;
+Tue Apr 26 01:14:14.896     "ROAM_PROF_NUM" = 3;
+Tue Apr 26 01:14:14.896 }
+Tue Apr 26 01:14:14.896 Roam: <airport[21062]> AC POWER, 2.4GHz on ap1 => {
+Tue Apr 26 01:14:14.896     "ROAM_PROF" =     (
+Tue Apr 26 01:14:14.896                 {
+Tue Apr 26 01:14:14.896             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_NFSCAN" = 2;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_ROAM_DELTA" = 16;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_ROAM_FLAGS" = 1;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_ROAM_TRIGGER" = "-10";
+Tue Apr 26 01:14:14.896             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_RSSI_BOOST_THRESH" = "-70";
+Tue Apr 26 01:14:14.896             "ROAM_PROF_RSSI_LOWER" = "-75";
+Tue Apr 26 01:14:14.896         },
+Tue Apr 26 01:14:14.896                 {
+Tue Apr 26 01:14:14.896             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_NFSCAN" = 2;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_ROAM_DELTA" = 12;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_ROAM_FLAGS" = 0;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Tue Apr 26 01:14:14.896             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_RSSI_BOOST_THRESH" = "-70";
+Tue Apr 26 01:14:14.896             "ROAM_PROF_RSSI_LOWER" = "-128";
+Tue Apr 26 01:14:14.896         }
+Tue Apr 26 01:14:14.896     );
+Tue Apr 26 01:14:14.896     "ROAM_PROF_BAND" = 4;
+Tue Apr 26 01:14:14.896     "ROAM_PROF_NUM" = 2;
+Tue Apr 26 01:14:14.896 }
+Tue Apr 26 01:14:14.896 Roam: <airport[21062]> DISABLED, 5GHz on ap1 => {
+Tue Apr 26 01:14:14.896     "ROAM_PROF" =     (
+Tue Apr 26 01:14:14.896                 {
+Tue Apr 26 01:14:14.896             "ROAM_PROF_BACKOFF_MULTIPLIER" = 10;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_FULLSCAN_PERIOD" = 3000;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_INIT_SCAN_PERIOD" = 600;
+Tue Apr 26 01:14:14.896             "ROAM_PROF_MAX_SCAN_PERIOD" = 60000;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_NFSCAN" = 1;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_ROAM_DELTA" = 50;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_ROAM_FLAGS" = 0;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_ROAM_TRIGGER" = "-120";
+Tue Apr 26 01:14:14.897             "ROAM_PROF_RSSI_BOOST_DELTA" = 0;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_RSSI_BOOST_THRESH" = 0;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_RSSI_LOWER" = "-128";
+Tue Apr 26 01:14:14.897         }
+Tue Apr 26 01:14:14.897     );
+Tue Apr 26 01:14:14.897     "ROAM_PROF_BAND" = 2;
+Tue Apr 26 01:14:14.897     "ROAM_PROF_NUM" = 1;
+Tue Apr 26 01:14:14.897 }
+Tue Apr 26 01:14:14.897 Roam: <airport[21062]> SINGLE-BAND, SINGLE-AP, 5GHz on ap1 => {
+Tue Apr 26 01:14:14.897     "ROAM_PROF" =     (
+Tue Apr 26 01:14:14.897                 {
+Tue Apr 26 01:14:14.897             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_FULLSCAN_PERIOD" = 3600;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_INIT_SCAN_PERIOD" = 60;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_MAX_SCAN_PERIOD" = 1200;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_NFSCAN" = 1;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_ROAM_DELTA" = 12;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_ROAM_FLAGS" = 0;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_ROAM_TRIGGER" = "-80";
+Tue Apr 26 01:14:14.897             "ROAM_PROF_RSSI_BOOST_DELTA" = 0;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_RSSI_BOOST_THRESH" = 0;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_RSSI_LOWER" = "-128";
+Tue Apr 26 01:14:14.897         }
+Tue Apr 26 01:14:14.897     );
+Tue Apr 26 01:14:14.897     "ROAM_PROF_BAND" = 2;
+Tue Apr 26 01:14:14.897     "ROAM_PROF_NUM" = 1;
+Tue Apr 26 01:14:14.897 }
+Tue Apr 26 01:14:14.897 Roam: <airport[21062]> DUAL-BAND, SINGLE-AP, 5GHz on ap1 => {
+Tue Apr 26 01:14:14.897     "ROAM_PROF" =     (
+Tue Apr 26 01:14:14.897                 {
+Tue Apr 26 01:14:14.897             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_NFSCAN" = 2;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_ROAM_DELTA" = 12;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_ROAM_FLAGS" = 0;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Tue Apr 26 01:14:14.897             "ROAM_PROF_RSSI_BOOST_DELTA" = 0;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_RSSI_BOOST_THRESH" = 0;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_RSSI_LOWER" = "-128";
+Tue Apr 26 01:14:14.897         }
+Tue Apr 26 01:14:14.897     );
+Tue Apr 26 01:14:14.897     "ROAM_PROF_BAND" = 2;
+Tue Apr 26 01:14:14.897     "ROAM_PROF_NUM" = 1;
+Tue Apr 26 01:14:14.897 }
+Tue Apr 26 01:14:14.897 Roam: <airport[21062]> MULTI-AP, 5GHz on ap1 => {
+Tue Apr 26 01:14:14.897     "ROAM_PROF" =     (
+Tue Apr 26 01:14:14.897                 {
+Tue Apr 26 01:14:14.897             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_NFSCAN" = 2;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_ROAM_DELTA" = 12;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_ROAM_FLAGS" = 0;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Tue Apr 26 01:14:14.897             "ROAM_PROF_RSSI_BOOST_DELTA" = 0;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_RSSI_BOOST_THRESH" = 0;
+Tue Apr 26 01:14:14.897             "ROAM_PROF_RSSI_LOWER" = "-128";
+Tue Apr 26 01:14:14.897         }
+Tue Apr 26 01:14:14.897     );
+Tue Apr 26 01:14:14.897     "ROAM_PROF_BAND" = 2;
+Tue Apr 26 01:14:14.897     "ROAM_PROF_NUM" = 1;
+Tue Apr 26 01:14:14.897 }
+Tue Apr 26 01:14:14.897 Roam: <airport[21062]> AC POWER, 5GHz on ap1 => {
+Tue Apr 26 01:14:14.897     "ROAM_PROF" =     (
+Tue Apr 26 01:14:14.897                 {
+Tue Apr 26 01:14:14.897             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.898             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Tue Apr 26 01:14:14.898             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Tue Apr 26 01:14:14.898             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Tue Apr 26 01:14:14.898             "ROAM_PROF_NFSCAN" = 2;
+Tue Apr 26 01:14:14.898             "ROAM_PROF_ROAM_DELTA" = 12;
+Tue Apr 26 01:14:14.898             "ROAM_PROF_ROAM_FLAGS" = 0;
+Tue Apr 26 01:14:14.898             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Tue Apr 26 01:14:14.898             "ROAM_PROF_RSSI_BOOST_DELTA" = 0;
+Tue Apr 26 01:14:14.898             "ROAM_PROF_RSSI_BOOST_THRESH" = 0;
+Tue Apr 26 01:14:14.898             "ROAM_PROF_RSSI_LOWER" = "-128";
+Tue Apr 26 01:14:14.898         }
+Tue Apr 26 01:14:14.898     );
+Tue Apr 26 01:14:14.898     "ROAM_PROF_BAND" = 2;
+Tue Apr 26 01:14:14.898     "ROAM_PROF_NUM" = 1;
+Tue Apr 26 01:14:14.898 }
+Tue Apr 26 01:14:14.898 Driver Discovery: <airport[21062]> _initInterface: awdl0 is up
+Tue Apr 26 01:14:14.898 SC: <airport[21062]> scInitInterface for device awdl0
+Tue Apr 26 01:14:14.898 <airport[21062]> _bsdDriver_init: registration for monitoring bssSteeringRequest event 
+Tue Apr 26 01:14:14.898 
+Tue Apr 26 01:14:14.898 AutoJoin: <airport[21062]> -[CWXPCInterfaceContext __updateAutoJoinRetryIntervals]: On battery power, changing to inactive retry interval.
+Tue Apr 26 01:14:14.898 Info: <airport[21062]> psCallback: powerSource = Battery Power
+Tue Apr 26 01:14:14.898 Info: <airport[21062]> psCallback: set powersave max throughput on awdl0
+Tue Apr 26 01:14:14.898 Info: <airport[21062]> psCallback: set powersave disabled on en0
+Tue Apr 26 01:14:14.898 Roam: <airport[21062]> _initInterface: AirPort Interface <awdl0> <12>
+Tue Apr 26 01:14:14.898 Driver Discovery: <airport[21062]> _virtualInterfaceShouldBeMarkedUp: awdl0 should not be marked up
+Tue Apr 26 01:14:14.898 P2P: <airport[21062]> _ipv6Request: Attaching IPv6 on awdl0
+Tue Apr 26 01:14:14.899 Roam: <airport[21062]> DISABLED, 2.4GHz on awdl0 => {
+Tue Apr 26 01:14:14.899     "ROAM_PROF" =     (
+Tue Apr 26 01:14:14.899                 {
+Tue Apr 26 01:14:14.899             "ROAM_PROF_BACKOFF_MULTIPLIER" = 10;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_FULLSCAN_PERIOD" = 3000;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_INIT_SCAN_PERIOD" = 600;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_MAX_SCAN_PERIOD" = 60000;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_NFSCAN" = 1;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_ROAM_DELTA" = 50;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_ROAM_FLAGS" = 0;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_ROAM_TRIGGER" = "-120";
+Tue Apr 26 01:14:14.899             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_RSSI_BOOST_THRESH" = "-70";
+Tue Apr 26 01:14:14.899             "ROAM_PROF_RSSI_LOWER" = "-128";
+Tue Apr 26 01:14:14.899         }
+Tue Apr 26 01:14:14.899     );
+Tue Apr 26 01:14:14.899     "ROAM_PROF_BAND" = 4;
+Tue Apr 26 01:14:14.899     "ROAM_PROF_NUM" = 1;
+Tue Apr 26 01:14:14.899 }
+Tue Apr 26 01:14:14.899 Roam: <airport[21062]> SINGLE-BAND, SINGLE-AP, 2.4GHz on awdl0 => {
+Tue Apr 26 01:14:14.899     "ROAM_PROF" =     (
+Tue Apr 26 01:14:14.899                 {
+Tue Apr 26 01:14:14.899             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_FULLSCAN_PERIOD" = 3600;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_INIT_SCAN_PERIOD" = 60;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_MAX_SCAN_PERIOD" = 1200;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_NFSCAN" = 1;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_ROAM_DELTA" = 12;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_ROAM_FLAGS" = 0;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_ROAM_TRIGGER" = "-80";
+Tue Apr 26 01:14:14.899             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Tue Apr 26 01:14:14.899             "ROAM_PROF_RSSI_LOWER" = "-128";
+Tue Apr 26 01:14:14.899         }
+Tue Apr 26 01:14:14.899     );
+Tue Apr 26 01:14:14.899     "ROAM_PROF_BAND" = 4;
+Tue Apr 26 01:14:14.899     "ROAM_PROF_NUM" = 1;
+Tue Apr 26 01:14:14.899 }
+Tue Apr 26 01:14:14.899 Roam: <airport[21062]> FAILED to query roaming profile for 2.4GHz band on ap1, returned error 102
+Tue Apr 26 01:14:14.899 Roam: <airport[21062]> FAILED to update roaming profile for 2.4GHz band to SINGLE-BAND, SINGLE-AP, returned error 102
+Tue Apr 26 01:14:14.899 Roam: <airport[21062]> FAILED to query roaming profile for 5GHz band on ap1, returned error 102
+Tue Apr 26 01:14:14.899 Roam: <airport[21062]> FAILED to update roaming profile for 5GHz band to SINGLE-BAND, SINGLE-AP, returned error 102
+Tue Apr 26 01:14:14.899 Roam: <airport[21062]> DUAL-BAND, SINGLE-AP, 2.4GHz on awdl0 => {
+Tue Apr 26 01:14:14.899     "ROAM_PROF" =     (
+Tue Apr 26 01:14:14.899                 {
+Tue Apr 26 01:14:14.899             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_FULLSCAN_PERIOD" = 300;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_INIT_SCAN_PERIOD" = 180;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_MAX_SCAN_PERIOD" = 180;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_NFSCAN" = 2;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_ROAM_DELTA" = 16;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_ROAM_FLAGS" = 1;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_ROAM_TRIGGER" = "-10";
+Tue Apr 26 01:14:14.899             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_RSSI_BOOST_THRESH" = "-70";
+Tue Apr 26 01:14:14.899             "ROAM_PROF_RSSI_LOWER" = "-75";
+Tue Apr 26 01:14:14.899         },
+Tue Apr 26 01:14:14.899                 {
+Tue Apr 26 01:14:14.899             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_NFSCAN" = 2;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_ROAM_DELTA" = 12;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_ROAM_FLAGS" = 0;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Tue Apr 26 01:14:14.899             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Tue Apr 26 01:14:14.899             "ROAM_PROF_RSSI_LOWER" = "-128";
+Tue Apr 26 01:14:14.899         }
+Tue Apr 26 01:14:14.899     );
+Tue Apr 26 01:14:14.899     "ROAM_PROF_BAND" = 4;
+Tue Apr 26 01:14:14.899     "ROAM_PROF_NUM" = 2;
+Tue Apr 26 01:14:14.899 }
+Tue Apr 26 01:14:14.899 Roam: <airport[21062]> MULTI-AP, 2.4GHz on awdl0 => {
+Tue Apr 26 01:14:14.899     "ROAM_PROF" =     (
+Tue Apr 26 01:14:14.899                 {
+Tue Apr 26 01:14:14.899             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_FULLSCAN_PERIOD" = 1200;
+Tue Apr 26 01:14:14.899             "ROAM_PROF_INIT_SCAN_PERIOD" = 180;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_MAX_SCAN_PERIOD" = 600;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_NFSCAN" = 2;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_ROAM_DELTA" = 20;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_ROAM_FLAGS" = 1;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_ROAM_TRIGGER" = "-10";
+Tue Apr 26 01:14:14.900             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_RSSI_BOOST_THRESH" = "-70";
+Tue Apr 26 01:14:14.900             "ROAM_PROF_RSSI_LOWER" = "-50";
+Tue Apr 26 01:14:14.900         },
+Tue Apr 26 01:14:14.900                 {
+Tue Apr 26 01:14:14.900             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_FULLSCAN_PERIOD" = 600;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_INIT_SCAN_PERIOD" = 180;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_MAX_SCAN_PERIOD" = 180;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_NFSCAN" = 2;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_ROAM_DELTA" = 16;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_ROAM_FLAGS" = 1;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_ROAM_TRIGGER" = "-50";
+Tue Apr 26 01:14:14.900             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_RSSI_BOOST_THRESH" = "-70";
+Tue Apr 26 01:14:14.900             "ROAM_PROF_RSSI_LOWER" = "-75";
+Tue Apr 26 01:14:14.900         },
+Tue Apr 26 01:14:14.900                 {
+Tue Apr 26 01:14:14.900             "ROAM_PROF_BACKOFF_MULTIPLIER" = 1;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_NFSCAN" = 2;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_ROAM_DELTA" = 12;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_ROAM_FLAGS" = 0;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Tue Apr 26 01:14:14.900             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_RSSI_BOOST_THRESH" = "-70";
+Tue Apr 26 01:14:14.900             "ROAM_PROF_RSSI_LOWER" = "-128";
+Tue Apr 26 01:14:14.900         }
+Tue Apr 26 01:14:14.900     );
+Tue Apr 26 01:14:14.900     "ROAM_PROF_BAND" = 4;
+Tue Apr 26 01:14:14.900     "ROAM_PROF_NUM" = 3;
+Tue Apr 26 01:14:14.900 }
+Tue Apr 26 01:14:14.900 Roam: <airport[21062]> AC POWER, 2.4GHz on awdl0 => {
+Tue Apr 26 01:14:14.900     "ROAM_PROF" =     (
+Tue Apr 26 01:14:14.900                 {
+Tue Apr 26 01:14:14.900             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_NFSCAN" = 2;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_ROAM_DELTA" = 16;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_ROAM_FLAGS" = 1;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_ROAM_TRIGGER" = "-10";
+Tue Apr 26 01:14:14.900             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_RSSI_BOOST_THRESH" = "-70";
+Tue Apr 26 01:14:14.900             "ROAM_PROF_RSSI_LOWER" = "-75";
+Tue Apr 26 01:14:14.900         },
+Tue Apr 26 01:14:14.900                 {
+Tue Apr 26 01:14:14.900             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_NFSCAN" = 2;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_ROAM_DELTA" = 12;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_ROAM_FLAGS" = 0;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Tue Apr 26 01:14:14.900             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Tue Apr 26 01:14:14.900             "ROAM_PROF_RSSI_BOOST_THRESH" = "-70";
+Tue Apr 26 01:14:14.900             "ROAM_PROF_RSSI_LOWER" = "-128";
+Tue Apr 26 01:14:14.901         }
+Tue Apr 26 01:14:14.901     );
+Tue Apr 26 01:14:14.901     "ROAM_PROF_BAND" = 4;
+Tue Apr 26 01:14:14.901     "ROAM_PROF_NUM" = 2;
+Tue Apr 26 01:14:14.901 }
+Tue Apr 26 01:14:14.901 Roam: <airport[21062]> DISABLED, 5GHz on awdl0 => {
+Tue Apr 26 01:14:14.901     "ROAM_PROF" =     (
+Tue Apr 26 01:14:14.901                 {
+Tue Apr 26 01:14:14.901             "ROAM_PROF_BACKOFF_MULTIPLIER" = 10;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_FULLSCAN_PERIOD" = 3000;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_INIT_SCAN_PERIOD" = 600;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_MAX_SCAN_PERIOD" = 60000;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_NFSCAN" = 1;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_ROAM_DELTA" = 50;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_ROAM_FLAGS" = 0;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_ROAM_TRIGGER" = "-120";
+Tue Apr 26 01:14:14.901             "ROAM_PROF_RSSI_BOOST_DELTA" = 0;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_RSSI_BOOST_THRESH" = 0;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_RSSI_LOWER" = "-128";
+Tue Apr 26 01:14:14.901         }
+Tue Apr 26 01:14:14.901     );
+Tue Apr 26 01:14:14.901     "ROAM_PROF_BAND" = 2;
+Tue Apr 26 01:14:14.901     "ROAM_PROF_NUM" = 1;
+Tue Apr 26 01:14:14.901 }
+Tue Apr 26 01:14:14.901 Roam: <airport[21062]> SINGLE-BAND, SINGLE-AP, 5GHz on awdl0 => {
+Tue Apr 26 01:14:14.901     "ROAM_PROF" =     (
+Tue Apr 26 01:14:14.901                 {
+Tue Apr 26 01:14:14.901             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_FULLSCAN_PERIOD" = 3600;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_INIT_SCAN_PERIOD" = 60;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_MAX_SCAN_PERIOD" = 1200;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_NFSCAN" = 1;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_ROAM_DELTA" = 12;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_ROAM_FLAGS" = 0;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_ROAM_TRIGGER" = "-80";
+Tue Apr 26 01:14:14.901             "ROAM_PROF_RSSI_BOOST_DELTA" = 0;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_RSSI_BOOST_THRESH" = 0;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_RSSI_LOWER" = "-128";
+Tue Apr 26 01:14:14.901         }
+Tue Apr 26 01:14:14.901     );
+Tue Apr 26 01:14:14.901     "ROAM_PROF_BAND" = 2;
+Tue Apr 26 01:14:14.901     "ROAM_PROF_NUM" = 1;
+Tue Apr 26 01:14:14.901 }
+Tue Apr 26 01:14:14.901 Roam: <airport[21062]> DUAL-BAND, SINGLE-AP, 5GHz on awdl0 => {
+Tue Apr 26 01:14:14.901     "ROAM_PROF" =     (
+Tue Apr 26 01:14:14.901                 {
+Tue Apr 26 01:14:14.901             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_NFSCAN" = 2;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_ROAM_DELTA" = 12;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_ROAM_FLAGS" = 0;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Tue Apr 26 01:14:14.901             "ROAM_PROF_RSSI_BOOST_DELTA" = 0;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_RSSI_BOOST_THRESH" = 0;
+Tue Apr 26 01:14:14.901             "ROAM_PROF_RSSI_LOWER" = "-128";
+Tue Apr 26 01:14:14.901         }
+Tue Apr 26 01:14:14.901     );
+Tue Apr 26 01:14:14.901     "ROAM_PROF_BAND" = 2;
+Tue Apr 26 01:14:14.901     "ROAM_PROF_NUM" = 1;
+Tue Apr 26 01:14:14.901 }
+Tue Apr 26 01:14:14.901 Roam: <airport[21062]> MULTI-AP, 5GHz on awdl0 => {
+Tue Apr 26 01:14:14.901     "ROAM_PROF" =     (
+Tue Apr 26 01:14:14.901                 {
+Tue Apr 26 01:14:14.901             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.902             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Tue Apr 26 01:14:14.902             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Tue Apr 26 01:14:14.902             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Tue Apr 26 01:14:14.902             "ROAM_PROF_NFSCAN" = 2;
+Tue Apr 26 01:14:14.902             "ROAM_PROF_ROAM_DELTA" = 12;
+Tue Apr 26 01:14:14.902             "ROAM_PROF_ROAM_FLAGS" = 0;
+Tue Apr 26 01:14:14.902             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Tue Apr 26 01:14:14.902             "ROAM_PROF_RSSI_BOOST_DELTA" = 0;
+Tue Apr 26 01:14:14.902             "ROAM_PROF_RSSI_BOOST_THRESH" = 0;
+Tue Apr 26 01:14:14.902             "ROAM_PROF_RSSI_LOWER" = "-128";
+Tue Apr 26 01:14:14.902         }
+Tue Apr 26 01:14:14.902     );
+Tue Apr 26 01:14:14.902     "ROAM_PROF_BAND" = 2;
+Tue Apr 26 01:14:14.902     "ROAM_PROF_NUM" = 1;
+Tue Apr 26 01:14:14.902 }
+Tue Apr 26 01:14:14.902 Roam: <airport[21062]> AC POWER, 5GHz on awdl0 => {
+Tue Apr 26 01:14:14.902     "ROAM_PROF" =     (
+Tue Apr 26 01:14:14.902                 {
+Tue Apr 26 01:14:14.902             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Tue Apr 26 01:14:14.902             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Tue Apr 26 01:14:14.902             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Tue Apr 26 01:14:14.902             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Tue Apr 26 01:14:14.902             "ROAM_PROF_NFSCAN" = 2;
+Tue Apr 26 01:14:14.902             "ROAM_PROF_ROAM_DELTA" = 12;
+Tue Apr 26 01:14:14.902             "ROAM_PROF_ROAM_FLAGS" = 0;
+Tue Apr 26 01:14:14.902             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Tue Apr 26 01:14:14.902             "ROAM_PROF_RSSI_BOOST_DELTA" = 0;
+Tue Apr 26 01:14:14.902             "ROAM_PROF_RSSI_BOOST_THRESH" = 0;
+Tue Apr 26 01:14:14.902             "ROAM_PROF_RSSI_LOWER" = "-128";
+Tue Apr 26 01:14:14.902         }
+Tue Apr 26 01:14:14.902     );
+Tue Apr 26 01:14:14.902     "ROAM_PROF_BAND" = 2;
+Tue Apr 26 01:14:14.902     "ROAM_PROF_NUM" = 1;
+Tue Apr 26 01:14:14.902 }
+Tue Apr 26 01:14:14.902 Offload: <airport[21062]> _openIpAddressMonitoringSockets: Monitoring IP address changes on en0
+Tue Apr 26 01:14:14.902 <airport[21062]> _initLocaleManager: Started locale manager
+Tue Apr 26 01:14:14.902 <airport[21062]> _initInterface: Failed to query current SSID (Operation not supported)
+Tue Apr 26 01:14:14.902 AutoJoin: <airport[21062]> -[CWXPCInterfaceContext __updateAutoJoinRetryIntervals]: On battery power, changing to inactive retry interval.
+Tue Apr 26 01:14:14.904 Info: <airport[21062]> -[CWXPCInterfaceContext configureOneStatsAssocInfo:]_block_invoke: -[CWXPCInterfaceContext configureOneStatsAssocInfo:]_block_invoke: Disabling OneStatsAssocInfo stats 
+Tue Apr 26 01:14:14.904 Roam: <airport[21062]> FAILED to query roaming profile for 2.4GHz band on awdl0, returned error 102
+Tue Apr 26 01:14:14.904 Roam: <airport[21062]> FAILED to update roaming profile for 2.4GHz band to SINGLE-BAND, SINGLE-AP, returned error 102
+Tue Apr 26 01:14:14.904 Roam: <airport[21062]> FAILED to query roaming profile for 5GHz band on awdl0, returned error 102
+Tue Apr 26 01:14:14.904 Roam: <airport[21062]> FAILED to update roaming profile for 5GHz band to SINGLE-BAND, SINGLE-AP, returned error 102
+Tue Apr 26 01:14:14.904 Info: <airport[21062]> -[CWXPCInterfaceContext configureOneStatsAssocInfo:]_block_invoke: -[CWXPCInterfaceContext configureOneStatsAssocInfo:]_block_invoke: Disabling OneStatsAssocInfo stats 
+Tue Apr 26 01:14:14.908 SC: <airport[21062]> CoreCapture preference: 1
+Tue Apr 26 01:14:14.908 SC: <airport[21062]> _initInterface: enable CoreCapture on en0
+Tue Apr 26 01:14:14.908 SC: <airport[21062]> finished with CoreCapture preferences
+Tue Apr 26 01:14:14.908 IPC: <airport[21062]> -[CWXPCSubsystem applyDeviceFeatureFlag:]: Apply feature flag 0x33f0
+Tue Apr 26 01:14:14.909 Info: <airport[21062]> RESET AWDL behavior for interface en0
+Tue Apr 26 01:14:14.909 Info: <airport[21062]> STOP AWDL behavior for interface en0
+Tue Apr 26 01:14:14.909 <airport[21062]> _enableCoreCaptureLogging: _enableCoreCaptureLogging: en0
+Tue Apr 26 01:14:14.909 IPC: <airport[21062]> -[CWXPCSubsystem applyDeviceFeatureFlag:]: Set Property status 0
+Tue Apr 26 01:14:14.909 <airport[21062]> _readControlFile: Unable to create CoreCapture stream: /Library/Preferences/com.apple.CoreCaptureEnable.plist
+Tue Apr 26 01:14:14.909 <airport[21062]> _readControlFile: Unable to create CoreCapture stream: /System/Library/PrivateFrameworks/WiFiVelocity.framework/Versions/A/Resources/CoreCaptureEnable.plist
+Tue Apr 26 01:14:14.909 <airport[21062]> _enableCoreCaptureLogging: Unable to open CoreCapture file!
+Tue Apr 26 01:14:14.911 Driver Discovery: <airport[21062]> _initAttachedAirPortInterfaces: Considering awdl0
+Tue Apr 26 01:14:14.911 Driver Discovery: <airport[21062]> _initAttachedAirPortInterfaces: Considering llw0
+Tue Apr 26 01:14:14.911 Driver Discovery: <airport[21062]> _initAttachedAirPortInterfaces: Considering bridge0
+Tue Apr 26 01:14:14.911 Driver Discovery: <airport[21062]> _initAttachedAirPortInterfaces: Considering utun0
+Tue Apr 26 01:14:14.911 Driver Discovery: <airport[21062]> _initAttachedAirPortInterfaces: Considering utun1
+Tue Apr 26 01:14:14.911 Driver Discovery: <airport[21062]> _initAttachedAirPortInterfaces: Considering utun2
+Tue Apr 26 01:14:14.911 Info: <airport[21062]> _initClamshellNotification: Registered for clamshell state notifications
+Tue Apr 26 01:14:14.915 IPC: <airport[21062]> ADDED XPC CLIENT CONNECTION [ControlCenter (pid=8858, euid=501, egid=20)]
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=7) received from pid 8858 (ControlCenter)
+Tue Apr 26 01:14:14.917 IPC: <airport[21062]> ADDED WIFI AGENT [WiFiAgent (pid=8841, euid=501, egid=20)]
+Tue Apr 26 01:14:14.917 <airport[21062]> ERROR: ControlCenter (8858) is not entitled for com.apple.wifi.events, but allowing anyways for event type 7
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=6) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=3) received from pid 8858 (ControlCenter)
+Tue Apr 26 01:14:14.917 <airport[21062]> ERROR: ControlCenter (8858) is not entitled for com.apple.wifi.events, but allowing anyways for event type 3
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=2) received from pid 8858 (ControlCenter)
+Tue Apr 26 01:14:14.917 <airport[21062]> ERROR: ControlCenter (8858) is not entitled for com.apple.wifi.events, but allowing anyways for event type 2
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=5) received from pid 8858 (ControlCenter)
+Tue Apr 26 01:14:14.917 <airport[21062]> ERROR: ControlCenter (8858) is not entitled for com.apple.wifi.events, but allowing anyways for event type 5
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=1) received from pid 8858 (ControlCenter)
+Tue Apr 26 01:14:14.917 <airport[21062]> ERROR: ControlCenter (8858) is not entitled for com.apple.wifi.events, but allowing anyways for event type 1
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=101) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=107) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=119) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.917 IPC: <airport[21062]> ADDED XPC CLIENT CONNECTION [rapportd (pid=8835, euid=501, egid=20)]
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=1) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=7) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=108) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=114) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=120) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=126) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=132) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=100) received from pid 8835 (rapportd)
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=2) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=8) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=103) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=109) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=115) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=121) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.917 Info: <airport[21062]> START MONITORING EVENT request (type=127) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.918 Info: <airport[21062]> START MONITORING EVENT request (type=133) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.918 Info: <airport[21062]> START MONITORING EVENT request (type=3) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.918 Info: <airport[21062]> START MONITORING EVENT request (type=110) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.918 Info: <airport[21062]> START MONITORING EVENT request (type=116) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.918 Info: <airport[21062]> START MONITORING EVENT request (type=122) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.918 Info: <airport[21062]> START MONITORING EVENT request (type=128) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.918 Info: <airport[21062]> START MONITORING EVENT request (type=134) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.919 IPC: <airport[21062]> ADDED XPC CLIENT CONNECTION [rapportd (pid=8835, euid=501, egid=20)]
+Tue Apr 26 01:14:14.919 Info: <airport[21062]> START MONITORING EVENT request (type=105) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.919 Info: <airport[21062]> START MONITORING EVENT request (type=111) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.919 Info: <airport[21062]> START MONITORING EVENT request (type=117) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.919 Info: <airport[21062]> START MONITORING EVENT request (type=7) received from pid 8835 (rapportd)
+Tue Apr 26 01:14:14.919 Info: <airport[21062]> START MONITORING EVENT request (type=122) received from pid 8835 (rapportd)
+Tue Apr 26 01:14:14.919 Info: <airport[21062]> START MONITORING EVENT request (type=2) received from pid 8835 (rapportd)
+Tue Apr 26 01:14:14.919 Info: <airport[21062]> START MONITORING EVENT request (type=5) received from pid 8835 (rapportd)
+Tue Apr 26 01:14:14.919 Info: <airport[21062]> START MONITORING EVENT request (type=1) received from pid 8835 (rapportd)
+Tue Apr 26 01:14:14.919 Info: <airport[21062]> START MONITORING EVENT request (type=123) received from pid 8835 (rapportd)
+Tue Apr 26 01:14:14.919 Info: <airport[21062]> START MONITORING EVENT request (type=123) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.919 Info: <airport[21062]> START MONITORING EVENT request (type=129) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.919 Info: <airport[21062]> START MONITORING EVENT request (type=135) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.919 Info: <airport[21062]> START MONITORING EVENT request (type=5) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.919 Info: <airport[21062]> START MONITORING EVENT request (type=100) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.919 Info: <airport[21062]> START MONITORING EVENT request (type=106) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.919 Info: <airport[21062]> START MONITORING EVENT request (type=130) received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.919 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:14.920 AutoJoin: <airport[21062]> AUTO-JOIN trigger requested (User Login)
+Tue Apr 26 01:14:14.920 IPC: <airport[21062]> ADDED XPC CLIENT CONNECTION [bluetoothd (pid=154, euid=0, egid=0)]
+Tue Apr 26 01:14:14.920 Info: <airport[21062]> START MONITORING EVENT request (type=1) received from pid 154 (bluetoothd)
+Tue Apr 26 01:14:14.920 <airport[21062]> ERROR: bluetoothd (154) is not entitled for com.apple.wifi.events, but allowing anyways for event type 1
+Tue Apr 26 01:14:14.920 Info: <airport[21062]> START MONITORING EVENT request (type=5) received from pid 154 (bluetoothd)
+Tue Apr 26 01:14:14.920 <airport[21062]> ERROR: bluetoothd (154) is not entitled for com.apple.wifi.events, but allowing anyways for event type 5
+Tue Apr 26 01:14:14.920 IPC: <airport[21062]> ADDED XPC CLIENT CONNECTION [bluetoothd (pid=154, euid=0, egid=0)]
+Tue Apr 26 01:14:14.920 Info: <airport[21062]> START MONITORING EVENT request (type=7) received from pid 154 (bluetoothd)
+Tue Apr 26 01:14:14.920 <airport[21062]> ERROR: bluetoothd (154) is not entitled for com.apple.wifi.events, but allowing anyways for event type 7
+Tue Apr 26 01:14:14.921 Info: <airport[21062]> START MONITORING EVENT request (type=2) received from pid 154 (bluetoothd)
+Tue Apr 26 01:14:14.921 <airport[21062]> ERROR: bluetoothd (154) is not entitled for com.apple.wifi.events, but allowing anyways for event type 2
+Tue Apr 26 01:14:14.921 Info: <airport[21062]> START MONITORING EVENT request (type=5) received from pid 154 (bluetoothd)
+Tue Apr 26 01:14:14.921 <airport[21062]> ERROR: bluetoothd (154) is not entitled for com.apple.wifi.events, but allowing anyways for event type 5
+Tue Apr 26 01:14:14.921 Info: <airport[21062]> START MONITORING EVENT request (type=1) received from pid 154 (bluetoothd)
+Tue Apr 26 01:14:14.921 <airport[21062]> ERROR: bluetoothd (154) is not entitled for com.apple.wifi.events, but allowing anyways for event type 1
+Tue Apr 26 01:14:14.921 IPC: <airport[21062]> ADDED XPC CLIENT CONNECTION [sharingd (pid=8892, euid=501, egid=20)]
+Tue Apr 26 01:14:14.921 Info: <airport[21062]> START MONITORING EVENT request (type=100) received from pid 8892 (sharingd)
+Tue Apr 26 01:14:14.921 Info: <WiFiAge[8841]> Wi-Fi Health is enabled in osx-21A559
+Tue Apr 26 01:14:14.922 IPC: <airport[21062]> ADDED XPC CLIENT CONNECTION [sharingd (pid=8892, euid=501, egid=20)]
+Tue Apr 26 01:14:14.922 Info: <airport[21062]> START MONITORING EVENT request (type=7) received from pid 8892 (sharingd)
+Tue Apr 26 01:14:14.922 Info: <airport[21062]> -[CWXPCInterfaceContext __createAssistedDiscoveryPolicyFromRequest:interface:active:]: no AWDL request.
+Tue Apr 26 01:14:14.922 Info: <airport[21062]> START MONITORING EVENT request (type=122) received from pid 8892 (sharingd)
+Tue Apr 26 01:14:14.922 Info: <airport[21062]> START MONITORING EVENT request (type=2) received from pid 8892 (sharingd)
+Tue Apr 26 01:14:14.922 Info: <airport[21062]> START MONITORING EVENT request (type=5) received from pid 8892 (sharingd)
+Tue Apr 26 01:14:14.922 Info: <airport[21062]> START MONITORING EVENT request (type=1) received from pid 8892 (sharingd)
+Tue Apr 26 01:14:14.922 Info: <airport[21062]> START MONITORING EVENT request (type=123) received from pid 8892 (sharingd)
+Tue Apr 26 01:14:14.922 IPC: <airport[21062]> ADDED XPC CLIENT CONNECTION [sharingd (pid=8892, euid=501, egid=20)]
+Tue Apr 26 01:14:14.923 Info: <airport[21062]> START MONITORING EVENT request (type=130) received from pid 8892 (sharingd)
+Tue Apr 26 01:14:14.923 IPC: <airport[21062]> ADDED XPC CLIENT CONNECTION [sharingd (pid=8892, euid=501, egid=20)]
+Tue Apr 26 01:14:14.923 IPC: <airport[21062]> FAILED to create CWXPCConnection object for pid=1501, will not accept new XPC connection
+Tue Apr 26 01:14:14.923 Info: <airport[21062]> START MONITORING EVENT request (type=131) received from pid 8892 (sharingd)
+Tue Apr 26 01:14:14.924 IPC: <airport[21062]> ADDED XPC CLIENT CONNECTION [WirelessRadioManagerd (pid=21063, euid=0, egid=0)]
+Tue Apr 26 01:14:14.924 Info: <airport[21062]> START MONITORING EVENT request (type=5) received from pid 21063 (WirelessRadioManagerd)
+Tue Apr 26 01:14:14.925 Info: <airport[21062]> START MONITORING EVENT request (type=7) received from pid 21063 (WirelessRadioManagerd)
+Tue Apr 26 01:14:14.925 IPC: <airport[21062]> ADDED XPC CLIENT CONNECTION [PerfPowerServices (pid=1325, euid=0, egid=0)]
+Tue Apr 26 01:14:14.925 Info: <airport[21062]> START MONITORING EVENT request (type=6) received from pid 21063 (WirelessRadioManagerd)
+Tue Apr 26 01:14:14.925 Info: <airport[21062]> START MONITORING EVENT request (type=130) received from pid 1325 (PerfPowerServices)
+Tue Apr 26 01:14:14.925 Info: <airport[21062]> START MONITORING EVENT request (type=121) received from pid 21063 (WirelessRadioManagerd)
+Tue Apr 26 01:14:14.925 Info: <airport[21062]> START MONITORING EVENT request (type=1) received from pid 21063 (WirelessRadioManagerd)
+Tue Apr 26 01:14:14.925 Info: <airport[21062]> START MONITORING EVENT request (type=100) received from pid 1325 (PerfPowerServices)
+Tue Apr 26 01:14:14.925 Info: <airport[21062]> START MONITORING EVENT request (type=5) received from pid 1325 (PerfPowerServices)
+Tue Apr 26 01:14:14.925 Info: <airport[21062]> START MONITORING EVENT request (type=1) received from pid 1325 (PerfPowerServices)
+Tue Apr 26 01:14:14.925 Info: <airport[21062]> START MONITORING EVENT request (type=121) received from pid 1325 (PerfPowerServices)
+Tue Apr 26 01:14:14.925 Info: <airport[21062]> START MONITORING EVENT request (type=119) received from pid 21063 (WirelessRadioManagerd)
+Tue Apr 26 01:14:14.925 IPC: <airport[21062]> ADDED XPC CLIENT CONNECTION [PerfPowerServices (pid=1325, euid=0, egid=0)]
+Tue Apr 26 01:14:14.926 Info: <airport[21062]> START MONITORING EVENT request (type=120) received from pid 21063 (WirelessRadioManagerd)
+Tue Apr 26 01:14:14.926 Info: <airport[21062]> START MONITORING EVENT request (type=1) received from pid 1325 (PerfPowerServices)
+Tue Apr 26 01:14:14.926 Info: <airport[21062]> START MONITORING EVENT request (type=100) received from pid 21063 (WirelessRadioManagerd)
+Tue Apr 26 01:14:14.926 Info: <airport[21062]> START MONITORING EVENT request (type=130) received from pid 21063 (WirelessRadioManagerd)
+Tue Apr 26 01:14:14.926 Info: <airport[21062]> START MONITORING EVENT request (type=136) received from pid 21063 (WirelessRadioManagerd)
+Tue Apr 26 01:14:14.926 Info: <airport[21062]> START MONITORING EVENT request (type=137) received from pid 21063 (WirelessRadioManagerd)
+Tue Apr 26 01:14:14.926 IPC: <airport[21062]> ADDED XPC CLIENT CONNECTION [symptomsd (pid=221, euid=24, egid=24)]
+Tue Apr 26 01:14:14.926 Info: <airport[21062]> START MONITORING EVENT request (type=3) received from pid 221 (symptomsd)
+Tue Apr 26 01:14:14.926 Info: <airport[21062]> START MONITORING EVENT request (type=6) received from pid 221 (symptomsd)
+Tue Apr 26 01:14:14.927 IPC: <airport[21062]> ADDED XPC CLIENT CONNECTION [systemstats (pid=102, euid=0, egid=0)]
+Tue Apr 26 01:14:14.927 Info: <airport[21062]> START MONITORING EVENT request (type=1) received from pid 102 (systemstats)
+Tue Apr 26 01:14:14.930 AutoJoin: <airport[21062]> user: h00si
+Tue Apr 26 01:14:14.932 Info: <WiFiAge[8841]> Wi-Fi Health is enabled in osx-21A559
+Tue Apr 26 01:14:14.935 Info: <airport[21062]> AWDL operating mode currently set to 0 (not AWDL_OPER_MODE_SUSPENDED), will not resume AWDL
+Tue Apr 26 01:14:14.937 Info: <WiFiAge[8841]> current=(no_assoc, scan) changed=(join)
+Tue Apr 26 01:14:14.937 Info: <WiFiAge[8841]> current=(no_assoc) changed=(scan)
+Tue Apr 26 01:14:14.938 Info: <WiFiAge[8841]> Wi-Fi Health is enabled in osx-21A559
+Tue Apr 26 01:14:14.938 IPC: <airport[21062]> ADDED XPC CLIENT CONNECTION [WirelessRadioManagerd (pid=21063, euid=0, egid=0)]
+Tue Apr 26 01:14:14.938 Info: <airport[21062]> SET UCM PROFILE AT INDEX request received from pid 21063 (WirelessRadioManagerd)
+Tue Apr 26 01:14:14.944 IPC: <airport[21062]> New XPC connection for 'airportd' pid=21062, should review to prevent IPC loop
+Tue Apr 26 01:14:14.945 IPC: <airport[21062]> ADDED XPC CLIENT CONNECTION [airportd (pid=21062, euid=0, egid=0)]
+Tue Apr 26 01:14:14.945 Info: <airport[21062]> QUERY ALL WIFI NETWORKS request received from pid 21062 (airportd)
+Tue Apr 26 01:14:14.946 Info: <airport[21062]> TRIMMED QUERY SCAN CACHE request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.948 Info: <airport[21062]> SET UCM PROFILE AT INDEX request received from pid 21063 (WirelessRadioManagerd)
+Tue Apr 26 01:14:14.948 <airport[21062]> airportdProcessDLILEvent: <en0> event=9, flags=0xFFFF8863, lastPowerPref=on
+Tue Apr 26 01:14:14.948 <airport[21062]> airportdProcessDLILEvent: en0 attached (up)
+Tue Apr 26 01:14:14.948 Info: <airport[21062]> PRIORITY LOCK ADDED [client=airportd, type=4, interface=en0, priority=7]
+Tue Apr 26 01:14:14.948 Info: <airport[21062]> -[CWXPCSubsystem clearScanCacheWithInterfaceName:daemon:familyAndDriver:connection:error:]: Clearing family+driver scan cache for interface en0
+Tue Apr 26 01:14:14.948 AutoJoin: <airport[21062]> AUTO-JOIN STARTED for interface en0 (User Login)
+Tue Apr 26 01:14:14.951 Info: <airport[21062]> QUERY GAS CACHE request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.953 AutoJoin: <airport[21062]> NOT RECOVERY MODE => continuing
+Tue Apr 26 01:14:14.953 Info: <airport[21062]> SET UCM PROFILE AT INDEX request received from pid 21063 (WirelessRadioManagerd)
+Tue Apr 26 01:14:14.953 IPC: <airport[21062]> ADDED XPC CLIENT CONNECTION [WiFiAgent (pid=8841, euid=501, egid=20)]
+Tue Apr 26 01:14:14.953 Info: <airport[21062]> QUERY ALL WIFI NETWORKS request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.953 BTC: <airport[21062]> __BluetoothCoexHandleUpdateForNode: <en0> Handle Bluetooth Coex: FrequencyBand <0>, Bluetooth Bandwidth Utilization <0>, Clamshell Mode <0>
+Tue Apr 26 01:14:14.953 BTC: <airport[21062]> __BluetoothCoexHandleUpdateForNode: Driver supports APPLE80211_CAP_COEX_PROFILE_OFFLOAD. Airportd won't BluetoothCoexModeSet() and defer coex profile loading to UDM coex manager (UCM/WRM) ...
+Tue Apr 26 01:14:14.953 
+Tue Apr 26 01:14:14.953 AutoJoin: <airport[21062]> Reviewing the preferred networks list
+Tue Apr 26 01:14:14.953 AutoJoin: <airport[21062]> Adding network ['UPC5315863' (wifi.ssid.55504335333135383633) - WPA/WPA2 Personal]
+Tue Apr 26 01:14:14.953 AutoJoin: <airport[21062]> Adding network ['Kupa' (wifi.ssid.4b757061) - WPA2/WPA3 Personal]
+Tue Apr 26 01:14:14.953 AutoJoin: <airport[21062]> Ignoring disabled network ['rokkit' (wifi.ssid.726f6b6b6974) - WPA2/WPA3 Personal]
+Tue Apr 26 01:14:14.953 AutoJoin: <airport[21062]> Ignoring disabled network ['magix' (wifi.ssid.6d61676978) - WPA2/WPA3 Personal]
+Tue Apr 26 01:14:14.953 AutoJoin: <airport[21062]> Ignoring disabled network ['sahara' (wifi.ssid.736168617261) - WPA2/WPA3 Personal]
+Tue Apr 26 01:14:14.953 AutoJoin: <airport[21062]> Ignoring disabled network ['G666' (wifi.ssid.47363636) - WPA2/WPA3 Personal]
+Tue Apr 26 01:14:14.953 AutoJoin: <airport[21062]> Ignoring disabled network ['NETIASPOT-2.4GHz-n43y' (wifi.ssid.4e4554494153504f542d322e3447487a2d6e343379) - WPA2/WPA3 Personal]
+Tue Apr 26 01:14:14.953 AutoJoin: <airport[21062]> Ignoring disabled network ['Xyz' (wifi.ssid.58797a) - WPA2/WPA3 Personal]
+Tue Apr 26 01:14:14.953 AutoJoin: <airport[21062]> NOT FILE VAULT BOOT => continuing
+Tue Apr 26 01:14:14.954 AutoJoin: <airport[21062]> NOT LOGINWINDOW MODE 802.1X => continuing
+Tue Apr 26 01:14:14.954 AutoJoin: <airport[21062]> NOT LINK DOWN RECOVERY => continuing
+Tue Apr 26 01:14:14.954 AutoJoin: <airport[21062]> NOT MAINTENANCE WAKE => continuing
+Tue Apr 26 01:14:14.954 AutoJoin: <airport[21062]> NOT PERSONAL HOTSPOT TRANSITION => continuing
+Tue Apr 26 01:14:14.954 AutoJoin: <airport[21062]> No known colocated network for preferred network (null)
+Tue Apr 26 01:14:14.954 AutoJoin: <airport[21062]> NOT MORE-PREFERRED USER MODE 802.1X NETWORKS => continuing
+Tue Apr 26 01:14:14.954 AutoJoin: <airport[21062]> NOT SYSTEM MODE 802.1X => continuing
+Tue Apr 26 01:14:14.954 Info: <airport[21062]> systemWokenByWiFi: System wake reason: <SMC.OutboxNotEmpty smc.70070000 lid>, was not woken by WiFi
+Tue Apr 26 01:14:14.955 AutoJoin: <airport[21062]> NOT WOW => continuing
+Tue Apr 26 01:14:14.955 AutoJoin: <airport[21062]> NOT WATCHDOG RESET => continuing
+Tue Apr 26 01:14:14.955 AutoJoin: <airport[21062]> NOT PNL Changed => continuing
+Tue Apr 26 01:14:14.955 AutoJoin: <airport[21062]> AUTOJOIN => auto-join using the entire preferred networks list
+Tue Apr 26 01:14:14.955 <airport[21062]> _SC_callback: Changed keys = { 'State:/Network/Interface/ap1/AirPort/AirPlay' 'State:/Network/Interface/ap1/AirPort/BluetoothAudioInUse' 'State:/Network/Interface/ap1/AirPort/BluetoothPagingInProgress ' 'State:/Network/Interface/ap1/AirPort/SmartCCADesenseSupported' 'State:/Network/Interface/ap1/AirPort/SmartCCADesenseUSBPresence' }
+Tue Apr 26 01:14:14.955 <airport[21062]> _interfaceFlagsChanged: KEV_DL_SIFFLAGS received for ap1 [flags=0xffff8843 (up)].
+Tue Apr 26 01:14:14.955 <airport[21062]> _interfaceFlagsChanged: Flags changed for ap1 (0xffff8802 -> 0xffff8843) (up).
+Tue Apr 26 01:14:14.955 Driver Discovery: <airport[21062]> _interfaceFlagsChanged: ap1 transitioning from down to up.
+Tue Apr 26 01:14:14.956 Info: <airport[21062]> GET CURRENT TETHER DEVICE request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.957 Info: <airport[21062]> SET UCM PROFILE AT INDEX request received from pid 21063 (WirelessRadioManagerd)
+Tue Apr 26 01:14:14.957 <airport[21062]> _SC_callback: Changed keys = { 'State:/Network/Interface/en0/AirPort/SmartCCADesenseSupported' }
+Tue Apr 26 01:14:14.958 <airport[21062]> _SC_callback: Changed keys = { 'State:/Network/Interface/en0/AirPort/BluetoothPagingInProgress ' 'State:/Network/Interface/en0/AirPort/WEP40' }
+Tue Apr 26 01:14:14.958 <airport[21062]> _SC_callback: Changed keys = { 'State:/Network/Interface/en0/AirPort/AirPlay' }
+Tue Apr 26 01:14:14.959 <airport[21062]> _SC_callback: Changed keys = { 'State:/Network/Interface/en0/AirPort/SmartCCADesenseUSBPresence' 'State:/Network/Interface/en0/AirPort/AutoJoinTimestamp' }
+Tue Apr 26 01:14:14.959 Driver Event: <airport[21062]> _bsd_80211_event_callback: POWER_CHANGED (en0)
+Tue Apr 26 01:14:14.962 SC: <airport[21062]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/ap1/AirPort/AirPlay'
+Tue Apr 26 01:14:14.962 SC: <airport[21062]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/ap1/AirPort/BluetoothAudioInUse'
+Tue Apr 26 01:14:14.962 SC: <airport[21062]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/ap1/AirPort/BluetoothPagingInProgress '
+Tue Apr 26 01:14:14.962 SC: <airport[21062]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/ap1/AirPort/SmartCCADesenseSupported'
+Tue Apr 26 01:14:14.962 SC: <airport[21062]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/ap1/AirPort/SmartCCADesenseUSBPresence'
+Tue Apr 26 01:14:14.962 SC: <airport[21062]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/SmartCCADesenseSupported'
+Tue Apr 26 01:14:14.962 SC: <airport[21062]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothPagingInProgress '
+Tue Apr 26 01:14:14.962 SC: <airport[21062]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/WEP40'
+Tue Apr 26 01:14:14.962 SC: <airport[21062]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/AirPlay'
+Tue Apr 26 01:14:14.962 SC: <airport[21062]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/SmartCCADesenseUSBPresence'
+Tue Apr 26 01:14:14.962 SC: <airport[21062]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/AutoJoinTimestamp'
+Tue Apr 26 01:14:14.962 Info: <airport[21062]> QUERY ALL WIFI NETWORKS request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.962 AutoJoin: <airport[21062]> Will try to auto-join non-captive networks only
+Tue Apr 26 01:14:14.962 Offload: <airport[21062]> tcpKeepAliveActive: TCP keep-alive is active.
+Tue Apr 26 01:14:14.963 WoW: <airport[21062]> WoW params successfully configured on en0 ({
+Tue Apr 26 01:14:14.963     "WOW_ENABLE_CAPTIVE" = 0;
+Tue Apr 26 01:14:14.963     "WOW_ENABLE_LPAS" = 1;
+Tue Apr 26 01:14:14.963     "WOW_PATTERNS" =     (
+Tue Apr 26 01:14:14.963     );
+Tue Apr 26 01:14:14.963     "WOW_WAKE_CONDITIONS" =     (
+Tue Apr 26 01:14:14.963         0
+Tue Apr 26 01:14:14.963     );
+Tue Apr 26 01:14:14.963 })
+Tue Apr 26 01:14:14.963 WoW: <airport[21062]> WoW not supported on ap1, skipping
+Tue Apr 26 01:14:14.963 WoW: <airport[21062]> WoW not supported on awdl0, skipping
+Tue Apr 26 01:14:14.964 Info: <airport[21062]> -[CWAnalyticsManager submitWiFiAnalyticsMessage:]: -[CWAnalyticsManager submitWiFiAnalyticsMessage:] Received call to submit WiFi Analytics message with (com.apple.wifi.PowerState) value
+Tue Apr 26 01:14:14.967 Info: <airport[21062]> GET ACTIVE UCM PROFILE INDICES request received from pid 21063 (WirelessRadioManagerd)
+Tue Apr 26 01:14:14.974 BTC: <airport[21062]> BluetoothCoexistenceTickle: Triggering BTC status notification
+Tue Apr 26 01:14:14.974 Info: <WiFiAge[8841]> -[CWWiFiAgent __updateScanning]: Updated scanning state to 0
+Tue Apr 26 01:14:14.974 P2P: <airport[21062]> AwdlNodeShouldBeMarkedUp: awdl0 should be marked up
+Tue Apr 26 01:14:14.974 P2P: <airport[21062]> _bsd_80211_event_callback: Marking awdl0 up because en0 was powered on
+Tue Apr 26 01:14:14.974 P2P: <airport[21062]> _interfaceLinkChanged: Starting IPv6 link local on awdl0
+Tue Apr 26 01:14:14.976 Info: <WiFiAge[8841]> current=(no_assoc, aj) changed=(aj)
+Tue Apr 26 01:14:14.976 Info: <airport[21062]> QUERY ALL WIFI NETWORKS request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.976 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:14.976 IPC: <airport[21062]> ADDED XPC CLIENT CONNECTION [com.apple.preference.network.remoteservice (pid=20987, euid=501, egid=20)]
+Tue Apr 26 01:14:14.976 Info: <airport[21062]> GET CURRENT TETHER DEVICE request received from pid 20987 (com.apple.preference.network.remoteservice)
+Tue Apr 26 01:14:14.983 AutoJoin: <airport[21062]> BACKGROUND SCAN SCHEDULED on interface en0 in 60.0s with SSID list (null), remaining SSID list (null)
+Tue Apr 26 01:14:14.987 Info: <airport[21062]> QUERY ALL WIFI NETWORKS request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.992 Info: <airport[21062]> QUERY ALL WIFI NETWORKS request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:14.992 AutoJoin: <airport[21062]> MULTI-SSID AUTO-JOIN on interface en0, optimized channel list {(
+Tue Apr 26 01:14:14.992     Channel: 44
+Tue Apr 26 01:14:14.992 Weight: 0.7285
+Tue Apr 26 01:14:14.992 ,
+Tue Apr 26 01:14:14.992     Channel: 36
+Tue Apr 26 01:14:14.992 Weight: 0.2715
+Tue Apr 26 01:14:14.992 ,
+Tue Apr 26 01:14:14.992     Channel: 40
+Tue Apr 26 01:14:14.992 Weight: 0.0000
+Tue Apr 26 01:14:14.992 ,
+Tue Apr 26 01:14:14.992     Channel: 48
+Tue Apr 26 01:14:14.992 Weight: 0.0000
+Tue Apr 26 01:14:14.992 ,
+Tue Apr 26 01:14:14.992     Channel: 64
+Tue Apr 26 01:14:14.992 Weight: 0.0000
+Tue Apr 26 01:14:14.992 ,
+Tue Apr 26 01:14:14.992     Channel: 144
+Tue Apr 26 01:14:14.992 Weight: 0.0000
+Tue Apr 26 01:14:14.992 ,
+Tue Apr 26 01:14:14.992     Channel: 149
+Tue Apr 26 01:14:14.992 Weight: 0.0000
+Tue Apr 26 01:14:14.992 ,
+Tue Apr 26 01:14:14.992     Channel: 153
+Tue Apr 26 01:14:14.992 Weight: 0.0000
+Tue Apr 26 01:14:14.992 ,
+Tue Apr 26 01:14:14.992     Channel: 157
+Tue Apr 26 01:14:14.992 Weight: 0.0000
+Tue Apr 26 01:14:14.992 ,
+Tue Apr 26 01:14:14.992     Channel: 161
+Tue Apr 26 01:14:14.992 Weight: 0.0000
+Tue Apr 26 01:14:14.992 ,
+Tue Apr 26 01:14:14.992     Channel: 165
+Tue Apr 26 01:14:14.992 Weight: 0.0000
+Tue Apr 26 01:14:14.992 ,
+Tue Apr 26 01:14:14.992     Channel: 1
+Tue Apr 26 01:14:14.992 Weight: 0.0000
+Tue Apr 26 01:14:14.992 ,
+Tue Apr 26 01:14:14.992     Channel: 2
+Tue Apr 26 01:14:14.992 Weight: 0.0000
+Tue Apr 26 01:14:14.992 ,
+Tue Apr 26 01:14:14.992     Channel: 3
+Tue Apr 26 01:14:14.992 Weight: 0.0000
+Tue Apr 26 01:14:14.992 ,
+Tue Apr 26 01:14:14.992     Channel: 4
+Tue Apr 26 01:14:14.992 Weight: 0.0000
+Tue Apr 26 01:14:14.992 ,
+Tue Apr 26 01:14:14.992     Channel: 5
+Tue Apr 26 01:14:14.992 Weight: 0.0000
+Tue Apr 26 01:14:14.992 ,
+Tue Apr 26 01:14:14.992     Channel: 6
+Tue Apr 26 01:14:14.992 Weight: 0.0000
+Tue Apr 26 01:14:14.992 ,
+Tue Apr 26 01:14:14.992     Channel: 7
+Tue Apr 26 01:14:14.993 Weight: 0.0000
+Tue Apr 26 01:14:14.993 ,
+Tue Apr 26 01:14:14.993     Channel: 8
+Tue Apr 26 01:14:14.993 Weight: 0.0000
+Tue Apr 26 01:14:14.993 ,
+Tue Apr 26 01:14:14.993     Channel: 9
+Tue Apr 26 01:14:14.993 Weight: 0.0000
+Tue Apr 26 01:14:14.993 ,
+Tue Apr 26 01:14:14.993     Channel: 10
+Tue Apr 26 01:14:14.993 Weight: 0.0000
+Tue Apr 26 01:14:14.993 ,
+Tue Apr 26 01:14:14.993     Channel: 11
+Tue Apr 26 01:14:14.993 Weight: 0.0000
+Tue Apr 26 01:14:14.993 ,
+Tue Apr 26 01:14:14.993     Channel: 12
+Tue Apr 26 01:14:14.993 Weight: 0.0000
+Tue Apr 26 01:14:14.993 ,
+Tue Apr 26 01:14:14.993     Channel: 13
+Tue Apr 26 01:14:14.993 Weight: 0.0000
+Tue Apr 26 01:14:14.993 ,
+Tue Apr 26 01:14:14.993     Channel: 52
+Tue Apr 26 01:14:14.993 Weight: 0.0000
+Tue Apr 26 01:14:14.993 ,
+Tue Apr 26 01:14:14.993     Channel: 56
+Tue Apr 26 01:14:14.993 Weight: 0.0000
+Tue Apr 26 01:14:14.993 ,
+Tue Apr 26 01:14:14.993     Channel: 60
+Tue Apr 26 01:14:14.993 Weight: 0.0000
+Tue Apr 26 01:14:14.993 ,
+Tue Apr 26 01:14:14.993     Channel: 100
+Tue Apr 26 01:14:14.993 Weight: 0.0000
+Tue Apr 26 01:14:14.993 ,
+Tue Apr 26 01:14:14.993     Channel: 104
+Tue Apr 26 01:14:14.993 Weight: 0.0000
+Tue Apr 26 01:14:14.993 ,
+Tue Apr 26 01:14:14.993     Channel: 108
+Tue Apr 26 01:14:14.993 Weight: 0.0000
+Tue Apr 26 01:14:14.993 ,
+Tue Apr 26 01:14:14.993     Channel: 112
+Tue Apr 26 01:14:14.993 Weight: 0.0000
+Tue Apr 26 01:14:14.993 ,
+Tue Apr 26 01:14:14.993     Channel: 116
+Tue Apr 26 01:14:14.993 Weight: 0.0000
+Tue Apr 26 01:14:14.993 ,
+Tue Apr 26 01:14:14.993     Channel: 120
+Tue Apr 26 01:14:14.993 Weight: 0.0000
+Tue Apr 26 01:14:14.993 ,
+Tue Apr 26 01:14:14.993     Channel: 124
+Tue Apr 26 01:14:14.993 Weight: 0.0000
+Tue Apr 26 01:14:14.993 ,
+Tue Apr 26 01:14:14.993     Channel: 128
+Tue Apr 26 01:14:14.993 Weight: 0.0000
+Tue Apr 26 01:14:14.993 ,
+Tue Apr 26 01:14:14.993     Channel: 132
+Tue Apr 26 01:14:14.993 Weight: 0.0000
+Tue Apr 26 01:14:14.993 ,
+Tue Apr 26 01:14:14.993     Channel: 136
+Tue Apr 26 01:14:14.993 Weight: 0.0000
+Tue Apr 26 01:14:14.993 ,
+Tue Apr 26 01:14:14.993     Channel: 140
+Tue Apr 26 01:14:14.993 Weight: 0.0000
+Tue Apr 26 01:14:14.993 
+Tue Apr 26 01:14:14.993 )}, optimized SSID List {(
+Tue Apr 26 01:14:14.993 )}
+Tue Apr 26 01:14:14.999 Info: <airport[21062]> SET UCM PROFILE AT INDEX request received from pid 21063 (WirelessRadioManagerd)
+Tue Apr 26 01:14:15.023 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:15.028 BTC: <airport[21062]> __BluetoothCoexHandleUpdateForNode: <en0> Handle Bluetooth Coex: FrequencyBand <0>, Bluetooth Bandwidth Utilization <0>, Clamshell Mode <0>
+Tue Apr 26 01:14:15.028 BTC: <airport[21062]> __BluetoothCoexHandleUpdateForNode: Driver supports APPLE80211_CAP_COEX_PROFILE_OFFLOAD. Airportd won't BluetoothCoexModeSet() and defer coex profile loading to UDM coex manager (UCM/WRM) ...
+Tue Apr 26 01:14:15.029 
+Tue Apr 26 01:14:15.029 <airport[21062]> _SC_callback: Changed keys = { 'State:/Network/Interface/en0/AirPort/CHANNEL' 'State:/Network/Interface/en0/AirPort/Busy' 'State:/Network/Interface/en0/AirPort/Power Status' 'State:/Network/Interface/en0/AirPort/WEPOPENSYSTEM' 'State:/Network/Interface/en0/AirPort/UserMode8021X' 'State:/Network/Interface/en0/AirPort/BluetoothAudioInUse' 'State:/Network/Interface/en0/AirPort/BusyUI' }
+Tue Apr 26 01:14:15.032 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:15.079 Offload: <airport[21062]> tcpKeepAliveActive: TCP keep-alive is active.
+Tue Apr 26 01:14:15.088 AutoJoin: <airport[21062]> -[CWXPCInterfaceContext clearAllProblematicNetworks]_block_invoke: Unblacklisting all networks.
+Tue Apr 26 01:14:15.088 AutoJoin: <airport[21062]> -[CWXPCInterfaceContext clearAllNetworksBlacklistedForScanOffload]_block_invoke: Clearing all networks blacklisted for scan offload.
+Tue Apr 26 01:14:15.091 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:15.119 WoW: <airport[21062]> WoW params successfully configured on en0 ({
+Tue Apr 26 01:14:15.119     "WOW_ENABLE_CAPTIVE" = 0;
+Tue Apr 26 01:14:15.119     "WOW_ENABLE_LPAS" = 1;
+Tue Apr 26 01:14:15.119     "WOW_PATTERNS" =     (
+Tue Apr 26 01:14:15.119     );
+Tue Apr 26 01:14:15.119     "WOW_WAKE_CONDITIONS" =     (
+Tue Apr 26 01:14:15.119         0
+Tue Apr 26 01:14:15.119     );
+Tue Apr 26 01:14:15.119 })
+Tue Apr 26 01:14:15.119 WoW: <airport[21062]> WoW not supported on ap1, skipping
+Tue Apr 26 01:14:15.119 WoW: <airport[21062]> WoW not supported on awdl0, skipping
+Tue Apr 26 01:14:15.119 SC: <airport[21062]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CHANNEL'
+Tue Apr 26 01:14:15.119 SC: <airport[21062]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Busy'
+Tue Apr 26 01:14:15.119 AutoJoin: <airport[21062]> AUTO-JOIN trigger requested (Power On)
+Tue Apr 26 01:14:15.133 Info: <airport[21062]> SET UCM PROFILE AT INDEX request received from pid 21063 (WirelessRadioManagerd)
+Tue Apr 26 01:14:15.154 Scan: <airport[21062]> -[CWXPCSubsystem performScanWithChannelList:ssidList:legacyScanSSID:dwellTimeOverride:includeHiddenNetworks:mergeScanResults:interfaceName:scanParametersOverride:allowDuringAWDLRealTimeMode:connection:error:]: Using non-default scan channel dwell time of 110ms
+Tue Apr 26 01:14:15.174 SC: <airport[21062]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Power Status'
+Tue Apr 26 01:14:15.174 SC: <airport[21062]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/WEPOPENSYSTEM'
+Tue Apr 26 01:14:15.174 SC: <airport[21062]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/UserMode8021X'
+Tue Apr 26 01:14:15.174 SC: <airport[21062]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothAudioInUse'
+Tue Apr 26 01:14:15.174 SC: <airport[21062]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BusyUI'
+Tue Apr 26 01:14:15.184 Info: <airport[21062]> SET UCM PROFILE AT INDEX request received from pid 21063 (WirelessRadioManagerd)
+Tue Apr 26 01:14:15.200 AutoJoin: <airport[21062]> user: h00si
+Tue Apr 26 01:14:15.214 Info: <airport[21062]> SET UCM PROFILE AT INDEX request received from pid 21063 (WirelessRadioManagerd)
+Tue Apr 26 01:14:15.225 Assoc: <wps[21066]> wps launched..
+Tue Apr 26 01:14:15.225 
+Tue Apr 26 01:14:15.225 Assoc: <wps[21066]> _APXMIGcancelWPS() 
+Tue Apr 26 01:14:15.225 
+Tue Apr 26 01:14:15.260 AutoJoin: <airport[21062]> Ignoring redundant auto-join invocation for interface en0
+Tue Apr 26 01:14:15.260 Info: <airport[21062]> GET CURRENT TETHER DEVICE request received from pid 8858 (ControlCenter)
+Tue Apr 26 01:14:15.280 Info: <airport[21062]> GET ACTIVE UCM PROFILE INDICES request received from pid 21063 (WirelessRadioManagerd)
+Tue Apr 26 01:14:15.298 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:15.299 Info: <WiFiAge[8841]> QUERY CACHED SCAN RESULTS request received from pid 20987 (com.apple.preference.network.remoteservice)
+Tue Apr 26 01:14:15.306 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:15.308 Info: <airport[21062]> TRIMMED QUERY SCAN CACHE request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:15.312 Info: <airport[21062]> QUERY GAS CACHE request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:15.312 Info: <airport[21062]> QUERY ALL WIFI NETWORKS request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:15.315 Info: <airport[21062]> GET CURRENT TETHER DEVICE request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:15.316 Info: <airport[21062]> QUERY ALL WIFI NETWORKS request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:15.319 Info: <WiFiAge[8841]> QUERY CACHED SCAN RESULTS request received from pid 20987 (com.apple.preference.network.remoteservice)
+Tue Apr 26 01:14:15.333 Info: <airport[21062]> TRIMMED QUERY SCAN CACHE request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:15.337 Info: <airport[21062]> QUERY GAS CACHE request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:15.338 Info: <airport[21062]> QUERY ALL WIFI NETWORKS request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:15.342 Info: <airport[21062]> GET CURRENT TETHER DEVICE request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:15.343 Info: <airport[21062]> QUERY ALL WIFI NETWORKS request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:15.359 Info: <WiFiAge[8841]> QUERY UI STATE request received from pid 20987 (com.apple.preference.network.remoteservice)
+Tue Apr 26 01:14:15.362 Info: <airport[21062]> GET CURRENT TETHER DEVICE request received from pid 20987 (com.apple.preference.network.remoteservice)
+Tue Apr 26 01:14:15.373 Driver Event: <airport[21062]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Tue Apr 26 01:14:15.392 IPC: <airport[21062]> ADDED XPC CLIENT CONNECTION [locationd (pid=141, euid=205, egid=205)]
+Tue Apr 26 01:14:15.393 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:15.394 Info: <airport[21062]> TRIMMED QUERY SCAN CACHE request received from pid 141 (locationd)
+Tue Apr 26 01:14:15.401 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 44 took 0.3385 seconds, returned 3 results
+Tue Apr 26 01:14:15.401 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 36:a0:57:42:e4:14] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:15.401 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 0a:a0:57:42:e4:14] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:15.422 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:15.427 Scan: <airport[21062]> -[CWXPCSubsystem performScanWithChannelList:ssidList:legacyScanSSID:dwellTimeOverride:includeHiddenNetworks:mergeScanResults:interfaceName:scanParametersOverride:allowDuringAWDLRealTimeMode:connection:error:]: Using non-default scan channel dwell time of 110ms
+Tue Apr 26 01:14:15.443 Info: <airport[21062]> GET CURRENT TETHER DEVICE request received from pid 8858 (ControlCenter)
+Tue Apr 26 01:14:15.491 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:15.502 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:15.527 IPC: <airport[21062]> ADDED XPC CLIENT CONNECTION [sharingd (pid=8892, euid=501, egid=20)]
+Tue Apr 26 01:14:15.527 Info: <airport[21062]> QUERY ALL WIFI NETWORKS request received from pid 8892 (sharingd)
+Tue Apr 26 01:14:15.598 Driver Event: <airport[21062]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Tue Apr 26 01:14:15.610 Info: <airport[21062]> TRIMMED QUERY SCAN CACHE request received from pid 141 (locationd)
+Tue Apr 26 01:14:15.615 Info: <WiFiAge[8841]> QUERY CACHED SCAN RESULTS request received from pid 20987 (com.apple.preference.network.remoteservice)
+Tue Apr 26 01:14:15.635 Info: <airport[21062]> TRIMMED QUERY SCAN CACHE request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:15.643 Info: <airport[21062]> QUERY GAS CACHE request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:15.643 Info: <airport[21062]> QUERY ALL WIFI NETWORKS request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:15.648 Info: <airport[21062]> GET CURRENT TETHER DEVICE request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:15.657 Info: <airport[21062]> QUERY ALL WIFI NETWORKS request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:15.661 Info: <WiFiAge[8841]> QUERY CACHED SCAN RESULTS request received from pid 20987 (com.apple.preference.network.remoteservice)
+Tue Apr 26 01:14:15.665 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 36 took 0.2450 seconds, returned 9 results
+Tue Apr 26 01:14:15.666 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 36:a0:57:42:e5:fc] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:15.666 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 0a:a0:57:42:e6:d8] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:15.666 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 0a:a0:57:42:e6:47] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:15.666 Info: <airport[21062]> GET CURRENT TETHER DEVICE request received from pid 8858 (ControlCenter)
+Tue Apr 26 01:14:15.666 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 36:a0:57:42:e6:47] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:15.666 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 36:a0:57:42:e6:d8] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:15.666 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 0a:a0:57:42:e5:fc] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:15.678 Info: <airport[21062]> TRIMMED QUERY SCAN CACHE request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:15.683 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:15.683 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:15.687 Scan: <airport[21062]> -[CWXPCSubsystem performScanWithChannelList:ssidList:legacyScanSSID:dwellTimeOverride:includeHiddenNetworks:mergeScanResults:interfaceName:scanParametersOverride:allowDuringAWDLRealTimeMode:connection:error:]: Using non-default scan channel dwell time of 110ms
+Tue Apr 26 01:14:15.688 Info: <airport[21062]> QUERY GAS CACHE request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:15.688 Info: <airport[21062]> QUERY ALL WIFI NETWORKS request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:15.691 Info: <airport[21062]> GET CURRENT TETHER DEVICE request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:15.694 Info: <airport[21062]> QUERY ALL WIFI NETWORKS request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:15.822 Info: <airport[21062]> GET CURRENT TETHER DEVICE request received from pid 8858 (ControlCenter)
+Tue Apr 26 01:14:15.822 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:15.823 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:15.859 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 40 took 0.1752 seconds, returned 0 results
+Tue Apr 26 01:14:15.902 Scan: <airport[21062]> -[CWXPCSubsystem performScanWithChannelList:ssidList:legacyScanSSID:dwellTimeOverride:includeHiddenNetworks:mergeScanResults:interfaceName:scanParametersOverride:allowDuringAWDLRealTimeMode:connection:error:]: Using non-default scan channel dwell time of 110ms
+Tue Apr 26 01:14:15.973 Info: <airport[21062]> GET CURRENT TETHER DEVICE request received from pid 8858 (ControlCenter)
+Tue Apr 26 01:14:15.973 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:15.974 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:16.078 Driver Event: <airport[21062]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Tue Apr 26 01:14:16.097 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 48 took 0.2163 seconds, returned 1 results
+Tue Apr 26 01:14:16.097 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 78:c5:f8:0b:2b:fc] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:16.097 Info: <airport[21062]> GET CURRENT TETHER DEVICE request received from pid 8858 (ControlCenter)
+Tue Apr 26 01:14:16.100 Info: <airport[21062]> TRIMMED QUERY SCAN CACHE request received from pid 141 (locationd)
+Tue Apr 26 01:14:16.107 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:16.108 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:16.113 Scan: <airport[21062]> -[CWXPCSubsystem performScanWithChannelList:ssidList:legacyScanSSID:dwellTimeOverride:includeHiddenNetworks:mergeScanResults:interfaceName:scanParametersOverride:allowDuringAWDLRealTimeMode:connection:error:]: Using non-default scan channel dwell time of 110ms
+Tue Apr 26 01:14:16.250 Info: <airport[21062]> GET CURRENT TETHER DEVICE request received from pid 8858 (ControlCenter)
+Tue Apr 26 01:14:16.250 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:16.251 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:16.262 Info: <airport[21062]> QUERY ALL WIFI NETWORKS request received from pid 8841 (WiFiAgent)
+Tue Apr 26 01:14:16.274 Driver Event: <airport[21062]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Tue Apr 26 01:14:16.292 Info: <airport[21062]> TRIMMED QUERY SCAN CACHE request received from pid 141 (locationd)
+Tue Apr 26 01:14:16.296 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:16.296 Info: <airport[21062]> SCAN request received from pid 8841 (WiFiAgent) with priority=2, qos=-1 (default), frontmost=no, flags=0x20 (lowPriority=0, lowLatency=1)
+Tue Apr 26 01:14:16.306 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:16.306 Scan: <airport[21062]> Perform scan for pid 8841 (WiFiAgent) (entitled=1, bypassScanThrottle=1, allowDelayedResults=0, lowLatency=0, isAssociated=0, isFaceTimeCallInProgress=0, channelSubsetCount=6, channelSubsetDelay=0.00s)
+Tue Apr 26 01:14:16.307 Info: <airport[21062]> REQUEST DEFERRED minimum=7 [client=WiFiAgent, type=4, interface=en0, priority=5]
+Tue Apr 26 01:14:16.324 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 64 took 0.2160 seconds, returned 6 results
+Tue Apr 26 01:14:16.324 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 36:a0:57:42:e5:fe] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:16.324 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 36:a0:57:42:e5:fa] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:16.324 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 0a:a0:57:42:e5:fe] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:16.324 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 0a:a0:57:42:e5:fa] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:16.382 Info: <airport[21062]> -[CWXPCSubsystem performScanWithChannelList:ssidList:legacyScanSSID:dwellTimeOverride:includeHiddenNetworks:mergeScanResults:interfaceName:scanParametersOverride:allowDuringAWDLRealTimeMode:connection:error:]: No supported channels specified, will not continue scan
+Tue Apr 26 01:14:16.382 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 144 took 0.0354 seconds, returned 0 results
+Tue Apr 26 01:14:16.395 Info: <airport[21062]> GET CURRENT TETHER DEVICE request received from pid 8858 (ControlCenter)
+Tue Apr 26 01:14:16.404 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:16.405 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:16.470 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 149 took 0.0748 seconds, returned 0 results
+Tue Apr 26 01:14:16.544 Info: <airport[21062]> GET CURRENT TETHER DEVICE request received from pid 8858 (ControlCenter)
+Tue Apr 26 01:14:16.545 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:16.546 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:16.588 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 153 took 0.0982 seconds, returned 0 results
+Tue Apr 26 01:14:16.678 Info: <airport[21062]> GET CURRENT TETHER DEVICE request received from pid 8858 (ControlCenter)
+Tue Apr 26 01:14:16.679 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:16.679 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:16.716 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 157 took 0.1049 seconds, returned 0 results
+Tue Apr 26 01:14:16.810 Info: <airport[21062]> GET CURRENT TETHER DEVICE request received from pid 8858 (ControlCenter)
+Tue Apr 26 01:14:16.811 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:16.811 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:16.817 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 161 took 0.0813 seconds, returned 0 results
+Tue Apr 26 01:14:16.926 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 165 took 0.1001 seconds, returned 0 results
+Tue Apr 26 01:14:16.940 Info: <airport[21062]> GET CURRENT TETHER DEVICE request received from pid 8858 (ControlCenter)
+Tue Apr 26 01:14:16.948 Info: <airport[21062]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Tue Apr 26 01:14:17.020 Driver Event: <airport[21062]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Tue Apr 26 01:14:17.030 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 1 took 0.0898 seconds, returned 17 results
+Tue Apr 26 01:14:17.030 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 0a:a0:57:47:a4:05] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.030 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 36:a0:57:47:b3:bf] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.030 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 36:a0:57:47:af:8a] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.030 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 36:a0:57:47:a2:16] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.030 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 02:a0:57:47:b3:bf] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.031 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 36:a0:57:47:b4:ac] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.031 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 02:a0:57:47:a2:16] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.031 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 02:a0:57:47:b4:ac] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.031 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 0a:a0:57:47:a2:16] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.031 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 0a:a0:57:47:b3:bf] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.031 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 0a:a0:57:47:af:8a] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.031 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 02:a0:57:47:af:8a] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.031 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 36:a0:57:47:a4:05] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.032 Info: <airport[21062]> TRIMMED QUERY SCAN CACHE request received from pid 141 (locationd)
+Tue Apr 26 01:14:17.126 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 2 took 0.0847 seconds, returned 0 results
+Tue Apr 26 01:14:17.192 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 3 took 0.0582 seconds, returned 0 results
+Tue Apr 26 01:14:17.269 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 4 took 0.0672 seconds, returned 0 results
+Tue Apr 26 01:14:17.346 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 5 took 0.0670 seconds, returned 0 results
+Tue Apr 26 01:14:17.366 BTC: <airport[21062]> BluetoothCoexStatusMonitoringCallback: Bluetooth Status Notification
+Tue Apr 26 01:14:17.366 BTC: <airport[21062]> BluetoothCoexStatusNotificationProcess: BT: ON, Num HID Devices is <0>, Num SCO Devices is <0>, Num A2DP Devices is <0>, Bluetooth Bandwidth Utilization is <3>, LWM <5>, HWM <26>
+Tue Apr 26 01:14:17.424 Driver Event: <airport[21062]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Tue Apr 26 01:14:17.433 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 6 took 0.0776 seconds, returned 12 results
+Tue Apr 26 01:14:17.433 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 36:a0:57:47:9e:a5] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.433 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 0a:a0:57:47:ad:a9] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.433 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 0a:a0:57:47:b5:5d] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.433 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 02:a0:57:47:9e:a5] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.434 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 36:a0:57:47:ad:a9] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.434 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 36:a0:57:47:b5:5d] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.434 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 02:a0:57:47:ad:a9] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.434 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 02:a0:57:47:b5:5d] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.434 BTC: <airport[21062]> __BluetoothCoexHandleUpdateForNode: <en0> Handle Bluetooth Coex: FrequencyBand <0>, Bluetooth Bandwidth Utilization <3>, Clamshell Mode <0>
+Tue Apr 26 01:14:17.434 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 0a:a0:57:47:9e:a5] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.434 BTC: <airport[21062]> __BluetoothCoexHandleUpdateForNode: Driver supports APPLE80211_CAP_COEX_PROFILE_OFFLOAD. Airportd won't BluetoothCoexModeSet() and defer coex profile loading to UDM coex manager (UCM/WRM) ...
+Tue Apr 26 01:14:17.434 
+Tue Apr 26 01:14:17.435 Info: <airport[21062]> TRIMMED QUERY SCAN CACHE request received from pid 141 (locationd)
+Tue Apr 26 01:14:17.510 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 7 took 0.0668 seconds, returned 1 results
+Tue Apr 26 01:14:17.510 Driver Event: <airport[21062]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Tue Apr 26 01:14:17.523 Info: <airport[21062]> TRIMMED QUERY SCAN CACHE request received from pid 141 (locationd)
+Tue Apr 26 01:14:17.595 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 8 took 0.0668 seconds, returned 0 results
+Tue Apr 26 01:14:17.672 Driver Event: <airport[21062]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Tue Apr 26 01:14:17.680 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 9 took 0.0747 seconds, returned 1 results
+Tue Apr 26 01:14:17.683 Info: <airport[21062]> TRIMMED QUERY SCAN CACHE request received from pid 141 (locationd)
+Tue Apr 26 01:14:17.756 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 10 took 0.0671 seconds, returned 0 results
+Tue Apr 26 01:14:17.835 Driver Event: <airport[21062]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Tue Apr 26 01:14:17.842 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 11 took 0.0769 seconds, returned 7 results
+Tue Apr 26 01:14:17.842 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 0a:a0:57:47:a4:06] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.842 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 36:a0:57:47:a7:ff] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.843 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 36:a0:57:47:a4:06] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.843 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 02:a0:57:47:a4:06] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.843 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 0a:a0:57:47:a7:ff] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:17.843 Info: <airport[21062]> TRIMMED QUERY SCAN CACHE request received from pid 141 (locationd)
+Tue Apr 26 01:14:17.918 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 12 took 0.0671 seconds, returned 0 results
+Tue Apr 26 01:14:17.995 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 13 took 0.0669 seconds, returned 0 results
+Tue Apr 26 01:14:18.105 Driver Event: <airport[21062]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Tue Apr 26 01:14:18.114 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 52 took 0.1090 seconds, returned 3 results
+Tue Apr 26 01:14:18.115 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 36:a0:57:42:e6:38] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:18.115 AutoJoin: <airport[21062]> __filteredScanResultsForAutoJoin: ['(null)' - 0a:a0:57:42:e6:38] is not Passpoint and SSID==nil, remove from join candidates
+Tue Apr 26 01:14:18.117 Info: <airport[21062]> TRIMMED QUERY SCAN CACHE request received from pid 141 (locationd)
+Tue Apr 26 01:14:18.287 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 56 took 0.1624 seconds, returned 0 results
+Tue Apr 26 01:14:18.433 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 60 took 0.1364 seconds, returned 0 results
+Tue Apr 26 01:14:18.580 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 100 took 0.1362 seconds, returned 0 results
+Tue Apr 26 01:14:18.727 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 104 took 0.1368 seconds, returned 0 results
+Tue Apr 26 01:14:18.873 AutoJoin: <airport[21062]> Successful cache-assisted auto-join scan request on channel 108 took 0.1365 seconds, returned 0 results
+Tue Apr 26 01:14:25.434 Usb Host Notification activated
+Tue Apr 26 01:14:25.439 <airport[21086]> _bsdDriver_init: registration for monitoring bssSteeringRequest event 
+Tue Apr 26 01:14:25.439 
+Tue Apr 26 01:14:25.443 <airport[21086]> _bsdDriver_init: registration for monitoring bssSteeringRequest event 
+Tue Apr 26 01:14:25.443 
+Tue Apr 26 01:14:25.446 <airport[21086]> _bsdDriver_init: registration for monitoring bssSteeringRequest event 
+Tue Apr 26 01:14:25.446 
+Tue Apr 26 01:14:25.449 <airport[21086]> _initLocaleManager: Started locale manager
+Tue Apr 26 01:14:25.449 <airport[21086]> _initInterface: Failed to query current SSID (Operation not supported)
+Tue Apr 26 01:14:25.464 <airport[21086]> ERROR: ControlCenter (8858) is not entitled for com.apple.wifi.events, but allowing anyways for event type 7
+Tue Apr 26 01:14:25.464 <airport[21086]> ERROR: ControlCenter (8858) is not entitled for com.apple.wifi.events, but allowing anyways for event type 3
+Tue Apr 26 01:14:25.464 <airport[21086]> ERROR: ControlCenter (8858) is not entitled for com.apple.wifi.events, but allowing anyways for event type 2
+Tue Apr 26 01:14:25.464 <airport[21086]> ERROR: ControlCenter (8858) is not entitled for com.apple.wifi.events, but allowing anyways for event type 5
+Tue Apr 26 01:14:25.464 <airport[21086]> ERROR: ControlCenter (8858) is not entitled for com.apple.wifi.events, but allowing anyways for event type 1
+Tue Apr 26 01:14:25.477 <airport[21086]> ERROR: bluetoothd (154) is not entitled for com.apple.wifi.events, but allowing anyways for event type 7
+Tue Apr 26 01:14:25.477 <airport[21086]> ERROR: bluetoothd (154) is not entitled for com.apple.wifi.events, but allowing anyways for event type 2
+Tue Apr 26 01:14:25.477 <airport[21086]> ERROR: bluetoothd (154) is not entitled for com.apple.wifi.events, but allowing anyways for event type 5
+Tue Apr 26 01:14:25.477 <airport[21086]> ERROR: bluetoothd (154) is not entitled for com.apple.wifi.events, but allowing anyways for event type 1
+Tue Apr 26 01:14:25.477 <airport[21086]> ERROR: bluetoothd (154) is not entitled for com.apple.wifi.events, but allowing anyways for event type 1
+Tue Apr 26 01:14:25.477 <airport[21086]> ERROR: bluetoothd (154) is not entitled for com.apple.wifi.events, but allowing anyways for event type 5
+Tue Apr 26 01:14:25.501 <airport[21086]> airportdProcessDLILEvent: <en0> event=9, flags=0xFFFF8863, lastPowerPref=on
+Tue Apr 26 01:14:25.501 <airport[21086]> airportdProcessDLILEvent: en0 attached (up)
+Tue Apr 26 01:29:16.436 <airport[21086]> -[dpsManager handleDPSEventWithType:eventInfo:networkName:BSSID:channelInfo:isCriticalAppInUse:]_block_invoke: Ignoring non-dps events while not in monitoring period/ Ignoring DPS event while in monitoring period
+Tue Apr 26 01:29:16.443 <airport[21086]> ERROR: sharingd (8892) is not entitled for com.apple.wifi.join_history, will not allow request
+Tue Apr 26 01:29:16.450 <airport[21086]> ERROR: rapportd (8835) is not entitled for com.apple.wifi.join_history, will not allow request
+Tue Apr 26 01:29:16.450 <airport[21086]> ERROR: sharingd (8892) is not entitled for com.apple.wifi.join_history, will not allow request
+Tue Apr 26 01:29:16.462 <airport[21086]> ERROR: sharingd (8892) is not entitled for com.apple.wifi.join_history, will not allow request
+Tue Apr 26 01:29:16.464 <airport[21086]> ERROR: rapportd (8835) is not entitled for com.apple.wifi.join_history, will not allow request
+Tue Apr 26 01:29:16.479 <airport[21086]> ERROR: rapportd (8835) is not entitled for com.apple.wifi.join_history, will not allow request
+Tue Apr 26 01:29:16.480 <airport[21086]> ERROR: sharingd (8892) is not entitled for com.apple.wifi.join_history, will not allow request
+Tue Apr 26 01:29:16.485 <airport[21086]> ERROR: rapportd (8835) is not entitled for com.apple.wifi.join_history, will not allow request
+Tue Apr 26 01:29:23.504 <airport[21086]> __SymptomsMgrDNSFailureSymptomsCallback: __SymptomsMgrDNSFailureSymptomsCallback called at 672622163.504430
+Tue Apr 26 01:29:23.504 <airport[21086]> __SymptomsMgrDNSFailureSymptomsCallback: __SymptomsMgrDNSFailureSymptomsCallback called at 672622163.504858
+Tue Apr 26 01:29:36.071 <airport[21086]> __SymptomsMgrDNSFailureSymptomsCallback: __SymptomsMgrDNSFailureSymptomsCallback called at 672622176.071427
+Tue Apr 26 01:31:49.842 <airport[21086]> airportdProcessDLILEvent: <en0> event=1, flags=0xFFFF8863, lastPowerPref=on
+Tue Apr 26 01:31:49.842 <airport[21086]> airportdProcessDLILEvent: en0 marked UP, applying user power preferences (ON).
+Tue Apr 26 01:31:49.842 <airport[21086]> airportdProcessDLILEvent: <en0> Setting power ON
+Tue Apr 26 01:31:49.955 <airport[21086]> ERROR: sharingd (8892) is not entitled for com.apple.wifi.join_history, will not allow request
+Tue Apr 26 01:31:49.955 <airport[21086]> ERROR: rapportd (8835) is not entitled for com.apple.wifi.join_history, will not allow request
+Tue Apr 26 01:31:50.382 <airport[21086]> -[dpsManager handleDPSEventWithType:eventInfo:networkName:BSSID:channelInfo:isCriticalAppInUse:]_block_invoke: Ignoring non-dps events while not in monitoring period/ Ignoring DPS event while in monitoring period
+Tue Apr 26 01:31:51.804 <airport[21086]> -[dpsManager handleDPSEventWithType:eventInfo:networkName:BSSID:channelInfo:isCriticalAppInUse:]_block_invoke: Ignoring non-dps events while not in monitoring period/ Ignoring DPS event while in monitoring period
+Tue Apr 26 01:33:34.344 <airport[21086]> __SymptomsMgrDNSFailureSymptomsCallback: __SymptomsMgrDNSFailureSymptomsCallback called at 672622414.344508
+Tue Apr 26 01:33:46.826 <airport[21086]> __SymptomsMgrDNSFailureSymptomsCallback: __SymptomsMgrDNSFailureSymptomsCallback called at 672622426.826444
+Tue Apr 26 01:35:10.432 <airport[21086]> __SymptomsMgrDNSFailureSymptomsCallback: __SymptomsMgrDNSFailureSymptomsCallback called at 672622510.432265
+Tue Apr 26 01:35:22.713 <airport[21086]> __SymptomsMgrDNSFailureSymptomsCallback: __SymptomsMgrDNSFailureSymptomsCallback called at 672622522.713062
+Tue Apr 26 01:37:43.472 <airport[21086]> __SymptomsMgrDNSFailureSymptomsCallback: __SymptomsMgrDNSFailureSymptomsCallback called at 672622663.472425
+Tue Apr 26 01:37:55.529 <airport[21086]> __SymptomsMgrDNSFailureSymptomsCallback: __SymptomsMgrDNSFailureSymptomsCallback called at 672622675.529875
+Tue Apr 26 01:42:14.099 <airport[21086]> __SymptomsMgrDNSFailureSymptomsCallback: __SymptomsMgrDNSFailureSymptomsCallback called at 672622934.099290
+Tue Apr 26 01:42:26.690 <airport[21086]> __SymptomsMgrDNSFailureSymptomsCallback: __SymptomsMgrDNSFailureSymptomsCallback called at 672622946.690009

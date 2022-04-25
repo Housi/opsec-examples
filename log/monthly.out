@@ -1,0 +1,53 @@
+
+Wed Feb 16 22:00:27 CET 2022
+
+Rotating fax log files:/etc/periodic/monthly/199.rotate-fax: line 13: cd: /var/log/fax: No such file or directory
+
+
+Doing login accounting:
+	total      384.10
+	h00si      382.66
+	_mbsetupuser     1.44
+	root         0.00
+
+-- End of monthly output --
+
+Fri Mar 18 02:39:50 CET 2022
+
+Rotating fax log files:/etc/periodic/monthly/199.rotate-fax: line 13: cd: /var/log/fax: No such file or directory
+
+
+Doing login accounting:
+	total     1084.63
+	h00si     1083.18
+	_mbsetupuser     1.44
+	root         0.00
+
+-- End of monthly output --
+
+Sat Apr  2 17:32:11 CEST 2022
+
+Rotating fax log files:/etc/periodic/monthly/199.rotate-fax: line 13: cd: /var/log/fax: No such file or directory
+
+
+Doing login accounting:
+	total     1451.81
+	h00si     1450.37
+	_mbsetupuser     1.44
+	root         0.00
+
+-- End of monthly output --
+
+Mon Apr 25 12:08:24 CEST 2022
+
+Rotating fax log files:/etc/periodic/monthly/199.rotate-fax: line 13: cd: /var/log/fax: No such file or directory
+
+
+Doing login accounting:
+	total     1946.57
+	h00si     1934.01
+	xny         11.11
+	_mbsetupuser     1.44
+	root         0.00
+
+-- End of monthly output --

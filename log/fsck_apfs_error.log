@@ -1,0 +1,26 @@
+dev=/dev/rdisk1 uuid=00000000-0000-0000-0000-000000000000 vers=1933.41.2 default_ans=n result=65 pl=156:1 fp=2 fl=156 repairs=0 time=0 iter=1
+fsck_apfs completed at Mon Apr 25 00:59:26 2022
+dev= uuid=00000000-0000-0000-0000-000000000000 vers=1933.41.2 default_ans=n result=0 fp=0 fl=-1 repairs=0 time=0 iter=1
+fsck_apfs completed at Mon Apr 25 00:59:26 2022
+dev=/dev/rdisk3 uuid=00000000-0000-0000-0000-000000000000 vers=1933.41.2 default_ans=n result=65 pl=156:1 fp=2 fl=156 repairs=0 time=0 iter=1
+fsck_apfs completed at Mon Apr 25 00:59:26 2022
+dev=/dev/rdisk1 uuid=00000000-0000-0000-0000-000000000000 vers=1933.41.2 default_ans=n result=65 pl=156:1 fp=2 fl=156 repairs=0 time=0 iter=1
+fsck_apfs completed at Mon Apr 25 00:59:26 2022
+dev= uuid=86E1DBB6-0186-4ED7-BA37-D668C5169F43 vers=1933.41.2 default_ans=n result=0 fp=0 fl=-1 repairs=0 time=0 iter=1
+fsck_apfs completed at Mon Apr 25 00:59:26 2022
+dev=/dev/rdisk1 uuid=00000000-0000-0000-0000-000000000000 vers=1933.41.2 default_ans=n result=65 pl=156:1 fp=2 fl=156 repairs=0 time=0 iter=1
+fsck_apfs completed at Mon Apr 25 00:59:26 2022
+dev= uuid=00000000-0000-0000-0000-000000000000 vers=1933.41.2 default_ans=n result=0 fp=0 fl=-1 repairs=0 time=0 iter=1
+fsck_apfs completed at Mon Apr 25 00:59:26 2022
+dev= uuid=00000000-0000-0000-0000-000000000000 vers=1933.41.2 default_ans=n result=0 fp=0 fl=-1 repairs=0 time=0 iter=1
+fsck_apfs completed at Mon Apr 25 00:59:26 2022
+dev=/dev/rdisk3 uuid=00000000-0000-0000-0000-000000000000 vers=1933.41.2 default_ans=n result=65 pl=156:1 fp=2 fl=156 repairs=0 time=0 iter=1
+fsck_apfs completed at Mon Apr 25 00:59:26 2022
+dev=/dev/rdisk3 uuid=00000000-0000-0000-0000-000000000000 vers=1933.41.2 default_ans=n result=65 pl=156:1 fp=2 fl=156 repairs=0 time=0 iter=1
+fsck_apfs completed at Mon Apr 25 00:59:26 2022
+dev=/dev/rdisk3 uuid=00000000-0000-0000-0000-000000000000 vers=1933.41.2 default_ans=n result=65 pl=156:1 fp=2 fl=156 repairs=0 time=0 iter=1
+fsck_apfs completed at Mon Apr 25 00:59:26 2022
+dev= uuid=86E1DBB6-0186-4ED7-BA37-D668C5169F43 vers=1933.41.2 default_ans=n result=0 fp=0 fl=-1 repairs=0 time=0 iter=1
+fsck_apfs completed at Mon Apr 25 00:59:26 2022
+dev= uuid=00000000-0000-0000-0000-000000000000 vers=1933.41.2 default_ans=n result=0 fp=0 fl=-1 repairs=0 time=0 iter=1
+fsck_apfs completed at Mon Apr 25 00:59:26 2022
